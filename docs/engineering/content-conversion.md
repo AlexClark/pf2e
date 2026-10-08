@@ -39,7 +39,7 @@ The proficiency, spell-point, and advantage code compute the live DC, pool, and 
 
 One pipeline, fixed order, each pass pure:
 
-1. Split baked numbers into rank, ability, and residual.
+1. Split baked numbers into rank, ability, and residual. The minimal tool that does this for our packs and for third-party modules is planned in [proficiency-conversion.md](proficiency-conversion.md).
 2. Map condition references onto the advantage model.
 3. Convert spellcasting entries into spell-point inputs.
 4. Apply exclusions.
