@@ -12,7 +12,7 @@
         "damage": {},
         "defense": null,
         "description": {
-            "value": "<p>You infuse the target with magical energy to increase its processing power. The target gains the @UUID[Compendium.sf2e.conditions.Item.Quickened] condition and can use the extra action each round only to Stride or Strike.</p>"
+            "value": "<p>You infuse the target with magical energy to increase its processing power. The target gains the @UUID[Compendium.sf2e.conditions.Item.Quickened] condition and can use the extra action each round only to Stride or Strike.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.Spell Effect: Supercharge Satellite]</p>"
         },
         "duration": {
             "sustained": false,
@@ -35,7 +35,7 @@
             "value": "One tech minion you control"
         },
         "time": {
-            "value": "2"
+            "value": "1"
         },
         "traits": {
             "rarity": "uncommon",

@@ -1,0 +1,66 @@
+{
+    "_id": "kR4nW8pQ2vL6sY3d",
+    "folder": "vOBArzKmsJvj7VLe",
+    "img": "systems/sf2e/icons/abilities/green-dna-helix.webp",
+    "name": "Effect: Forceful Evolution",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Forceful Evolution]</p>\n<p>You gain a 1st-level ancestry feat from a different ancestry than your own. You must meet its other prerequisites. You can't use this temporary feat as a prerequisite for a permanent character option.</p>"
+        },
+        "duration": {
+            "expiry": null,
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 9
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": {
+                    "filter": [
+                        "item:level:1",
+                        "item:category:ancestry",
+                        {
+                            "not": "item:trait:{actor|system.details.ancestry.trait}"
+                        },
+                        {
+                            "not": "item:trait:ancestry"
+                        },
+                        {
+                            "not": "item:trait:lineage"
+                        }
+                    ],
+                    "itemType": "feat"
+                },
+                "flag": "forcefulEvolution",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.LevelOneAncestryFeat"
+            },
+            {
+                "key": "GrantItem",
+                "uuid": "{item|flags.system.rulesSelections.forcefulEvolution}"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

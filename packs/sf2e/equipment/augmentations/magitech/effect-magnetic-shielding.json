@@ -1,0 +1,93 @@
+{
+    "_id": "mG7kQp2nXvL9sR4a",
+    "folder": "vOBArzKmsJvj7VLe",
+    "img": "icons/magic/symbols/rune-sigil-red-orange.webp",
+    "name": "Effect: Magnetic Shielding",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Living Ink Tattoo]</p>\n<p>You have a raised electromagnetic shield until the start of your next turn. You gain a +1 circumstance bonus to AC, and you can use Shield Block with this shield. Unlike a normal shield cantrip, the effect doesn't end after you Shield Block.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 3
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.attributes.shield",
+                "predicate": [
+                    {
+                        "or": [
+                            "self:type:character",
+                            "self:type:npc"
+                        ]
+                    }
+                ],
+                "value": {
+                    "ac": 1,
+                    "broken": false,
+                    "brokenThreshold": 0,
+                    "destroyed": false,
+                    "hp": {
+                        "max": 0,
+                        "value": 0
+                    },
+                    "icon": "systems/pf2e/icons/spells/shield.webp",
+                    "itemId": "{item|_id}",
+                    "name": "PF2E.ShieldLabel",
+                    "raised": true
+                }
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.attributes.shield.hardness",
+                "predicate": [
+                    {
+                        "or": [
+                            "self:type:character",
+                            "self:type:npc"
+                        ]
+                    }
+                ],
+                "value": "5*ceil(ceil(@actor.level/2)/2)"
+            },
+            {
+                "key": "RollOption",
+                "option": "self:shield:equipped",
+                "predicate": [
+                    {
+                        "or": [
+                            "self:type:character",
+                            "self:type:npc"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

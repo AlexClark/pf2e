@@ -1,0 +1,70 @@
+{
+    "_id": "St6mH2vQx9LpN4wE",
+    "img": "icons/skills/targeting/target-glowing-yellow.webp",
+    "name": "Spell Effect: Sure Tracking",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Sure Tracking]</p>\n<p>A creature using the chosen weapon reduces the penalty for firing into its second range increment from –2 to 0. A ranged Strike with this weapon against a single creature ignores the target's circumstance bonus to AC from cover. Heightened (5th) can affect up to 10 weapons. Apply this effect once for each weapon.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 2
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "choices": {
+                    "ownedItems": true,
+                    "predicate": [
+                        "item:ranged",
+                        "item:trait:tech"
+                    ],
+                    "types": [
+                        "weapon"
+                    ]
+                },
+                "flag": "weapon",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+            },
+            {
+                "domain": "ranged-attack-roll",
+                "key": "RollOption",
+                "option": "ignore-range-penalty:2",
+                "predicate": [
+                    "item:id:{item|flags.system.rulesSelections.weapon}"
+                ]
+            },
+            {
+                "key": "Note",
+                "predicate": [
+                    "item:id:{item|flags.system.rulesSelections.weapon}"
+                ],
+                "selector": "strike-attack-roll",
+                "text": "A ranged Strike with this weapon against a single creature ignores the target's circumstance bonus to AC from cover.",
+                "title": "{item|name}"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

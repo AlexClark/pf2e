@@ -6,11 +6,11 @@
     "system": {
         "baseItem": null,
         "bulk": {
-            "value": 0.1
+            "value": 1
         },
         "containerId": null,
         "description": {
-            "value": "<p>This collapsible pole has screens and cameras connected to it at all angles, with an oversized hardlight emoji at the top. It includes camera equipment that allows you to Livestream to the local infosphere across multiple platforms, making you appear extra likable in the process. You gain a +3 item bonus to skill checks to @UUID[Compendium.sf2e.actions.Item.Access Infosphere] by using the spell server to stream and asking viewers directly, and you can roll [[/act access-infosphere skill=perfomance]] instead of Computers to do so.</p><ul><li><p><strong>Cantrip</strong> emoticon</p></li><li><p><strong>1st</strong> emoji spray, @UUID[Compendium.sf2e.spells.Item.Motivating Ringtone]{motivating ringtone,} optics feed</p></li><li><p><strong>2nd</strong> emoji shield, @UUID[Compendium.sf2e.spells.Item.Sift the Sphere], @UUID[Compendium.sf2e.spells.Item.Vibe Check]</p></li><li><p><strong>3rd</strong> emoji spam, @UUID[Compendium.sf2e.spells.Item.Holographic Memory], @UUID[Compendium.sf2e.spells.Item.Motivating Ringtone]</p></li><li><p><strong>4th</strong> bombarding emojis, burstmoji, optics feed</p></li><li><p><strong>5th</strong> censormoji, prayermoji, @UUID[Compendium.sf2e.spells.Item.Speak with Computers]</p></li><li><p><strong>6th</strong> emoji spam, @UUID[Compendium.sf2e.spells.Item.Motivating Ringtone]</p></li></ul>"
+            "value": "<p>This collapsible pole has screens and cameras connected to it at all angles, with an oversized hardlight emoji at the top. It includes camera equipment that allows you to Livestream to the local infosphere across multiple platforms, making you appear extra likable in the process. You gain a +3 item bonus to skill checks to @UUID[Compendium.sf2e.actions.Item.Access Infosphere] by using the spell server to stream and asking viewers directly, and you can roll [[/act access-infosphere skill=performance]] instead of Computers to do so.</p><ul><li><p><strong>Cantrip</strong> @UUID[Compendium.sf2e.spells.Item.Emoticon]</p></li><li><p><strong>1st</strong> @UUID[Compendium.sf2e.spells.Item.Emoji Spray], @UUID[Compendium.sf2e.spells.Item.Motivating Ringtone], @UUID[Compendium.sf2e.spells.Item.Optics Feed]</p></li><li><p><strong>2nd</strong> @UUID[Compendium.sf2e.spells.Item.Emoji Shield], @UUID[Compendium.sf2e.spells.Item.Sift the Sphere], @UUID[Compendium.sf2e.spells.Item.Vibe Check]</p></li><li><p><strong>3rd</strong> @UUID[Compendium.sf2e.spells.Item.Emoji Spam], @UUID[Compendium.sf2e.spells.Item.Holographic Memory], @UUID[Compendium.sf2e.spells.Item.Motivating Ringtone]</p></li><li><p><strong>4th</strong> @UUID[Compendium.sf2e.spells.Item.Bombarding Emojis], @UUID[Compendium.sf2e.spells.Item.Burstmoji], @UUID[Compendium.sf2e.spells.Item.Optics Feed]</p></li><li><p><strong>5th</strong> @UUID[Compendium.sf2e.spells.Item.Censormoji], @UUID[Compendium.sf2e.spells.Item.Prayermoji], @UUID[Compendium.sf2e.spells.Item.Speak with Computers]</p></li><li><p><strong>6th</strong> @UUID[Compendium.sf2e.spells.Item.Emoji Spam], @UUID[Compendium.sf2e.spells.Item.Motivating Ringtone]</p></li></ul>\n<p>Spell servers contain a number of permanently installed spell chips listed in their description that can contain cantrips and can't be overclocked. During daily preparations, you can prepare a spell server to add charges to it for free equal to your highest level spell slot. In order to Cast a Spell from a spell server, you must also expend either a spell slot of at least the spell's rank or a number of charges from the spell server equal to the spell's rank. You don't need to expend spell slots or charges to cast a cantrip this way.</p>"
         },
         "hardness": 0,
         "hp": {
@@ -35,7 +35,20 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "action:access-infosphere"
+                ],
+                "selector": [
+                    "computers",
+                    "performance"
+                ],
+                "type": "item",
+                "value": 3
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

@@ -12,7 +12,7 @@
         },
         "category": "ancestry",
         "description": {
-            "value": "<p><strong>Frequency</strong> once per round</p><hr /><p>You can shift the colors and patterns on your skin with barely a second thought, changing your appearance in an instant. You Shift Skin.</p>"
+            "value": "<p><strong>Frequency</strong> once per round</p><hr /><p>You can shift the colors and patterns on your skin with barely a second thought, changing your appearance in an instant. You @UUID[Compendium.sf2e.actions.Item.Shift Skin].</p>"
         },
         "frequency": {
             "max": 1,

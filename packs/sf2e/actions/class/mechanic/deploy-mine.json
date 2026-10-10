@@ -12,7 +12,7 @@
         },
         "category": "offensive",
         "description": {
-            "value": "<p>You deploy a mine that flies to an unoccupied square of your choice within 60 feet and hovers in place.</p>"
+            "value": "<p><strong>Cost</strong> 1 mine</p><hr /><p>You deploy a mine that flies to an unoccupied square of your choice within 60 feet and hovers in place.</p>"
         },
         "publication": {
             "license": "ORC",

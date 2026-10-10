@@ -6,11 +6,15 @@
     "system": {
         "baseItem": null,
         "bulk": {
+            "capacity": 12,
+            "heldOrStowed": 0.1,
+            "ignored": 12,
             "value": 0.1
         },
+        "collapsed": false,
         "containerId": null,
         "description": {
-            "value": "<p>These stylish faux-leather holsters store weapons in a specialized extradimensional space and eject them on command. They're a favorite of trick shooters, smugglers, and professional soldiers alike. A null-space holster functions as a commercial null-space chamber, except that it can only hold weapons and has a capacity of only 12 Bulk. It comes with a set of six tags that can be affixed to weapons, allowing them to be recalled remotely.</p><hr /><p><strong>Activate—Call Weapon</strong> <span class=\"action-glyph\">f</span> (auditory)</p>\n<p><strong>Frequency</strong> once per round</p>\n<p><strong>Effect</strong> With a whistle, snap, or other command, you summon a weapon into your hand. You can drop any number of weapons you're already wielding, then you Interact to draw a single weapon from your null-space holster.</p><hr /><p><strong>Activate—Recall Weapons</strong> <span class=\"action-glyph\">2</span> (auditory)</p>\n<p><strong>Effect</strong> You utter a different command sound, and any of your tagged weapons within 100 feet return to the null-space holster.</p>"
+            "value": "<p>These stylish faux-leather holsters store weapons in a specialized extradimensional space and eject them on command. They're a favorite of trick shooters, smugglers, and professional soldiers alike. A null-space holster functions as a @UUID[Compendium.sf2e.equipment.Item.Null Space Chamber (Commercial)]{commercial null-space chamber}, except that it can only hold weapons and has a capacity of only 12 Bulk. It comes with a set of six tags that can be affixed to weapons, allowing them to be recalled remotely.</p><hr /><p><strong>Activate—Call Weapon</strong> <span class=\"action-glyph\">f</span> (auditory)</p>\n<p><strong>Frequency</strong> once per round</p>\n<p><strong>Effect</strong> With a whistle, snap, or other command, you summon a weapon into your hand. You can drop any number of weapons you're already wielding, then you Interact to draw a single weapon from your null-space holster.</p><hr /><p><strong>Activate—Recall Weapons</strong> <span class=\"action-glyph\">2</span> (auditory)</p>\n<p><strong>Effect</strong> You utter a different command sound, and any of your tagged weapons within 100 feet return to the null-space holster.</p>"
         },
         "hardness": 0,
         "hp": {
@@ -25,7 +29,9 @@
             "type": null
         },
         "price": {
-            "value": {}
+            "value": {
+                "sp": 4750
+            }
         },
         "publication": {
             "license": "ORC",
@@ -35,6 +41,7 @@
         "quantity": 1,
         "rules": [],
         "size": "med",
+        "stowing": true,
         "traits": {
             "rarity": "common",
             "value": [
@@ -47,5 +54,5 @@
             "value": "worn"
         }
     },
-    "type": "equipment"
+    "type": "backpack"
 }

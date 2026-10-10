@@ -12,7 +12,7 @@
         },
         "category": "ancestry",
         "description": {
-            "value": "<p>Your face—if you have one—emotes differently than most creatures, making it hard for others to read your intentions and emotions. You become trained in Deception. In addition, you gain a +1 circumstance bonus to Deception checks to [[/act create-a-diversion]] and Lie. If you would automatically become trained in Deception (from your background or class, for example), you instead become trained in a skill of your choice.</p>"
+            "value": "<p>Your face—if you have one—emotes differently than most creatures, making it hard for others to read your intentions and emotions. You become trained in Deception. In addition, you gain a +1 circumstance bonus to Deception checks to @UUID[Compendium.sf2e.actions.Item.Create a Diversion] and @UUID[Compendium.sf2e.actions.Item.Lie]. If you would automatically become trained in Deception (from your background or class, for example), you instead become trained in a skill of your choice.</p>"
         },
         "level": {
             "value": 1
@@ -25,7 +25,28 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "ActiveEffectLike",
+                "mode": "upgrade",
+                "path": "system.skills.deception.rank",
+                "value": 1
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    {
+                        "or": [
+                            "action:create-a-diversion",
+                            "action:lie"
+                        ]
+                    }
+                ],
+                "selector": "deception",
+                "type": "circumstance",
+                "value": 1
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

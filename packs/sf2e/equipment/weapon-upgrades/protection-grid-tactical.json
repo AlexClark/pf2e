@@ -35,7 +35,28 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "itemType": "weapon",
+                "key": "ItemAlteration",
+                "mode": "add",
+                "predicate": [
+                    "item:id:{item|parentItem.id}"
+                ],
+                "property": "traits",
+                "value": "parry"
+            },
+            {
+                "key": "AdjustModifier",
+                "mode": "upgrade",
+                "predicate": [
+                    "self:effect:parry"
+                ],
+                "selector": "ac",
+                "slug": "parry-bonus",
+                "value": 2
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

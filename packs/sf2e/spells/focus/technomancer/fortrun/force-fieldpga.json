@@ -12,7 +12,7 @@
         "damage": {},
         "defense": null,
         "description": {
-            "value": "<p>You gain resistance 2 against one type of damage you took in the last minute. As a single action during the duration, you can change the resistance type to another type of damage you took in the last minute.</p><hr /><p><strong>Heightened (+1)</strong> The resistance increases by 2.</p>"
+            "value": "<p>You gain resistance 2 against one type of damage you took in the last minute. <span class=\"action-glyph\">1</span> During the duration, you can change the resistance type to another type of damage you took in the last minute.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.Spell Effect: Force-Fieldpga]</p><hr /><p><strong>Heightened (+1)</strong> The resistance increases by 2.</p>"
         },
         "duration": {
             "sustained": false,

@@ -4,7 +4,7 @@
     "img": "icons/equipment/hand/glove-armored-leather-steel-brown.webp",
     "name": "Overlord Buckle",
     "system": {
-        "acBonus": 2,
+        "acBonus": 1,
         "baseItem": null,
         "bulk": {
             "value": 0.1

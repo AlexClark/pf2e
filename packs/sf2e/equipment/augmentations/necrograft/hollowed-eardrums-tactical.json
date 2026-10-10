@@ -10,7 +10,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>Your eardrums are filled with hollow, necrotic tissue that can open and close to protect you from loud sounds.</p>\n<p><strong>Activate—Seal Drums</strong> <span class=\"action-glyph\">1</span> For 1 minute, your eardrums seal, muffling the sounds around you. You take a –1 circumstance penalty to Perception checks to hear. You gain resistance 6 to sonic damage and a +1 circumstance bonus to saving throws against auditory effects. You aren't clumsy while @UUID[Compendium.sf2e.conditions.Item.Untethered].</p>"
+            "value": "<p>Your eardrums are filled with hollow, necrotic tissue that can open and close to protect you from loud sounds.</p>\n<p><strong>Activate—Seal Drums</strong> <span class=\"action-glyph\">1</span> For 1 minute, your eardrums seal, muffling the sounds around you. You take a –1 circumstance penalty to Perception checks to hear. You gain resistance 6 to sonic damage and a +1 circumstance bonus to saving throws against auditory effects. You aren't clumsy while @UUID[Compendium.sf2e.conditions.Item.Untethered].</p>\n<p>@UUID[Compendium.sf2e.equipment.Item.Effect: Seal Drums (Tactical)]</p>"
         },
         "hardness": 0,
         "hp": {

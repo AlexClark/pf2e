@@ -17,7 +17,28 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "ActiveEffectLike",
+                "mode": "add",
+                "path": "system.build.languages.granted",
+                "value": {
+                    "slug": "azlanti",
+                    "source": "{item|name}"
+                }
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "add",
+                "path": "system.details.ancestry.countsAs",
+                "value": "human"
+            },
+            {
+                "key": "CreatureSize",
+                "priority": 110,
+                "value": "medium"
+            }
+        ],
         "traits": {
             "rarity": "common",
             "value": []

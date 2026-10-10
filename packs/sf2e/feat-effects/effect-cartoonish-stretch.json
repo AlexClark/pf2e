@@ -1,0 +1,45 @@
+{
+    "_id": "cN9OvywIuL8Wlx2U",
+    "img": "icons/magic/unholy/hand-claw-fire-green.webp",
+    "name": "Effect: Cartoonish Stretch",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.Cartoonish Stretch]</p>\n<p>Your reach increases by 5 feet until the end of your turn. Each time you have taken @UUID[Compendium.sf2e.feats.Item.Extra Stretchy], the increase is 5 feet higher.</p>"
+        },
+        "duration": {
+            "expiry": "turn-end",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 0
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "ActiveEffectLike",
+                "mode": "add",
+                "path": "system.attributes.reach.base",
+                "phase": "afterDerived",
+                "value": 5
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

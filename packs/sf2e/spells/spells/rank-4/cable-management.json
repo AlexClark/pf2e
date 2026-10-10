@@ -6,7 +6,7 @@
     "system": {
         "area": {
             "type": "burst",
-            "value": 5
+            "value": 20
         },
         "cost": {
             "value": ""

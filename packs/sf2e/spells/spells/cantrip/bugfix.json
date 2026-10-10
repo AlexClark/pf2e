@@ -12,7 +12,7 @@
         "damage": {},
         "defense": null,
         "description": {
-            "value": "<p>You release a magically self-editing line of code into the target, tackling the root cause of any technical failings afflicting it. You attempt to counteract the glitching condition affecting the target. Regardless of the result, the target becomes immune to <em>bugfix</em> for 1 minute.</p>"
+            "value": "<p>You release a magically self-editing line of code into the target, tackling the root cause of any technical failings afflicting it. You attempt to counteract the @UUID[Compendium.sf2e.conditions.Item.Glitching]{glitching} condition affecting the target. Regardless of the result, the target becomes immune to <em>bugfix</em> for 1 minute.</p>"
         },
         "duration": {
             "sustained": false,
@@ -29,10 +29,10 @@
         "range": {
             "value": "30 feet"
         },
-        "requirements": "1 creature or object with the glitching condition",
+        "requirements": "",
         "rules": [],
         "target": {
-            "value": ""
+            "value": "1 creature or object with the glitching condition"
         },
         "time": {
             "value": "2"

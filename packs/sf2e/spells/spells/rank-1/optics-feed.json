@@ -29,10 +29,10 @@
         "range": {
             "value": "touch"
         },
-        "requirements": "1 willing creature with the tech trait or a visual augmentation",
+        "requirements": "",
         "rules": [],
         "target": {
-            "value": ""
+            "value": "1 willing creature with the tech trait or a visual augmentation"
         },
         "time": {
             "value": "2"
@@ -44,7 +44,9 @@
                 "occult"
             ],
             "value": [
-                "concentrate"
+                "concentrate",
+                "manipulate",
+                "scrying"
             ]
         }
     },

@@ -23,9 +23,16 @@
             }
         },
         "description": {
-            "value": "<p>No matter how wondrous and advanced modern technology becomes, to many it will never compare to the raw beauty and strength of the natural world and its countless inhabitants. You're one of these people, or you grew up among them, and prioritizing the happiness of yourself and your trusty companion, you know how to live off the bounty of the natural world to survive without needing the modern conveniences that keep others from forming a bond with a pet like yours.</p>\n<p>Choose two attribute boosts. One must be to <strong>Constitution</strong> or <strong>Wisdom</strong>, and one is a free attribute boost.</p>\n<p>You're trained in your choice of either the Nature or Survival skill as well as the Labor Lore skill. You gain the Pet skill feat.</p>"
+            "value": "<p>No matter how wondrous and advanced modern technology becomes, to many it will never compare to the raw beauty and strength of the natural world and its countless inhabitants. You're one of these people, or you grew up among them, and prioritizing the happiness of yourself and your trusty companion, you know how to live off the bounty of the natural world to survive without needing the modern conveniences that keep others from forming a bond with a pet like yours.</p>\n<p>Choose two attribute boosts. One must be to <strong>Constitution</strong> or <strong>Wisdom</strong>, and one is a free attribute boost.</p>\n<p>You're trained in your choice of either the Nature or Survival skill as well as the Labor Lore skill. You gain the @UUID[Compendium.sf2e.feats.Item.Pet] skill feat.</p>"
         },
-        "items": {},
+        "items": {
+            "kR7pE": {
+                "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+                "level": 1,
+                "name": "Pet",
+                "uuid": "Compendium.sf2e.feats.Item.Pet"
+            }
+        },
         "publication": {
             "license": "ORC",
             "remaster": true,

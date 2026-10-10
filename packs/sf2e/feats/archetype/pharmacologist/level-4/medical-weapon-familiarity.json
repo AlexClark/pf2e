@@ -29,7 +29,71 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "definition": [
+                    "item:category:martial",
+                    {
+                        "or": [
+                            "item:trait:injection",
+                            "item:group:knife"
+                        ]
+                    }
+                ],
+                "key": "MartialProficiency",
+                "label": "SF2E.SpecificRule.Pharmacologist.WeaponFamiliarity.MartialWeapons",
+                "sameAs": "simple",
+                "slug": "martial-injection-and-knife-weapons"
+            },
+            {
+                "definition": [
+                    "item:category:advanced",
+                    {
+                        "or": [
+                            "item:trait:injection",
+                            "item:group:knife"
+                        ]
+                    }
+                ],
+                "key": "MartialProficiency",
+                "label": "SF2E.SpecificRule.Pharmacologist.WeaponFamiliarity.AdvancedWeapons",
+                "sameAs": "martial",
+                "slug": "advanced-injection-and-knife-weapons"
+            },
+            {
+                "itemType": "weapon",
+                "key": "ItemAlteration",
+                "mode": "upgrade",
+                "predicate": [
+                    "item:category:simple",
+                    "item:equipped",
+                    {
+                        "or": [
+                            "item:trait:injection",
+                            "item:group:knife"
+                        ]
+                    }
+                ],
+                "property": "damage-dice-faces"
+            },
+            {
+                "key": "CriticalSpecialization",
+                "predicate": [
+                    {
+                        "gte": [
+                            "self:level",
+                            5
+                        ]
+                    },
+                    {
+                        "or": [
+                            "item:trait:injection",
+                            "item:group:knife"
+                        ]
+                    }
+                ]
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

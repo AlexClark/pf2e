@@ -81,7 +81,7 @@
             "emitsSound": "encounter",
             "hardness": 16,
             "hp": {
-                "details": "",
+                "details": "(BT 35)",
                 "max": 70,
                 "temp": 0,
                 "value": 70

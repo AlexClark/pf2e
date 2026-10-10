@@ -1,0 +1,45 @@
+{
+    "_id": "eO3wYb8cTdH6uN1f",
+    "folder": "vOBArzKmsJvj7VLe",
+    "img": "icons/magic/light/beam-layered-teal.webp",
+    "name": "Effect: Engage Overdrive",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Moonlight Fibers (Commercial)] or @UUID[Compendium.sf2e.equipment.Item.Moonlight Fibers (Tactical)]</p>\n<p>You are @UUID[Compendium.sf2e.conditions.Item.Quickened] until the end of this turn. You can use the extra action only to Stride or Strike.</p>"
+        },
+        "duration": {
+            "expiry": "turn-end",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 0
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 9
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "inMemoryOnly": true,
+                "key": "GrantItem",
+                "uuid": "Compendium.sf2e.conditions.Item.Quickened"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

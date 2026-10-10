@@ -1,0 +1,156 @@
+{
+    "_id": "6pIkDC7vIHsmIgop",
+    "img": "systems/sf2e/icons/equipment/other/blue-pillbottle.webp",
+    "name": "Effect: Antitoxin",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Antitoxin (Commercial)], @UUID[Compendium.sf2e.equipment.Item.Antitoxin (Tactical)], @UUID[Compendium.sf2e.equipment.Item.Antitoxin (Advanced)], @UUID[Compendium.sf2e.equipment.Item.Antitoxin (Superior)], @UUID[Compendium.sf2e.equipment.Item.Antitoxin (Elite)]</p>\n<p>You gain an item bonus to Fortitude saves against poisons.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "hours",
+            "value": 6
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 0
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:antitoxin-commercial"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Antitoxin (Commercial)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:antitoxin-tactical"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Antitoxin (Tactical)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:antitoxin-advanced"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Antitoxin (Advanced)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:antitoxin-superior"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Antitoxin (Superior)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:antitoxin-elite"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Antitoxin (Elite)"
+                    }
+                ],
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.EquipmentVariety",
+                "rollOption": "antitoxin"
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "item:trait:poison"
+                ],
+                "selector": "fortitude",
+                "slug": "antitoxin-bonus",
+                "type": "item",
+                "value": 1
+            },
+            {
+                "key": "AdjustModifier",
+                "mode": "upgrade",
+                "predicate": [
+                    "antitoxin:antitoxin-tactical"
+                ],
+                "selector": "fortitude",
+                "slug": "antitoxin-bonus",
+                "value": 2
+            },
+            {
+                "key": "AdjustModifier",
+                "mode": "upgrade",
+                "predicate": [
+                    "antitoxin:antitoxin-advanced"
+                ],
+                "selector": "fortitude",
+                "slug": "antitoxin-bonus",
+                "value": 3
+            },
+            {
+                "key": "AdjustModifier",
+                "mode": "upgrade",
+                "predicate": [
+                    {
+                        "or": [
+                            "antitoxin:antitoxin-superior",
+                            "antitoxin:antitoxin-elite"
+                        ]
+                    }
+                ],
+                "selector": "fortitude",
+                "slug": "antitoxin-bonus",
+                "value": 4
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

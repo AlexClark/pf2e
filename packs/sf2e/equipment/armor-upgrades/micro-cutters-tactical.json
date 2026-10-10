@@ -10,7 +10,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>Tiny spinning blades strategically installed at various locations on the armor let you burrow in loose material and bore through harder surfaces.</p><hr /><p><strong>Activate—Burrow</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Effect</strong> You enable the cutters and gain a burrow Speed of 40 feet. This effect lasts for 1 minute or until you Dismiss it.</p><hr /><p><strong>Activate—Bore</strong> (concentrate, manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> You enable the cutters and bore a hole 5 feet wide, 5 feet tall, and 1 foot deep in a solid, non-metal surface. This activity takes a number of minutes equal to the surface's Hardness.</p>"
+            "value": "<p>Tiny spinning blades strategically installed at various locations on the armor let you burrow in loose material and bore through harder surfaces.</p><hr /><p><strong>Activate—Burrow</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Effect</strong> You enable the cutters and gain a burrow Speed of 40 feet. This effect lasts for 1 minute or until you Dismiss it.</p><hr /><p><strong>Activate—Bore</strong> (concentrate, manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> You enable the cutters and bore a hole 5 feet wide, 5 feet tall, and 1 foot deep in a solid, non-metal surface. This activity takes a number of minutes equal to the surface's Hardness.</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.Effect: Micro-cutters]</p>"
         },
         "hardness": 0,
         "hp": {

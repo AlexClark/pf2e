@@ -12,7 +12,7 @@
         },
         "category": "ancestry",
         "description": {
-            "value": "<p>You've tapped into the captivating magical power of emoji. You can cast <em>emoticon</em> as an occult innate cantrip at will. A cantrip is heightened to a spell rank equal to half your level rounded up.</p>"
+            "value": "<p>You've tapped into the captivating magical power of emoji. You can cast @UUID[Compendium.sf2e.spells.Item.Emoticon] as an occult innate cantrip at will. A cantrip is heightened to a spell rank equal to half your level rounded up.</p>"
         },
         "level": {
             "value": 1

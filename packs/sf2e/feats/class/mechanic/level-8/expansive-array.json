@@ -17,6 +17,7 @@
         "level": {
             "value": 8
         },
+        "maxTakable": 2,
         "prerequisites": {
             "value": [
                 {
@@ -29,7 +30,98 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "SF2E.SpecificRule.Mechanic.ExpansiveArray.Mental",
+                        "predicate": [
+                            {
+                                "not": "feat:expansive-array:mental"
+                            }
+                        ],
+                        "value": "mental"
+                    },
+                    {
+                        "label": "SF2E.SpecificRule.Mechanic.ExpansiveArray.Poison",
+                        "predicate": [
+                            {
+                                "not": "feat:expansive-array:poison"
+                            }
+                        ],
+                        "value": "poison"
+                    },
+                    {
+                        "label": "SF2E.SpecificRule.Mechanic.ExpansiveArray.Vitality",
+                        "predicate": [
+                            {
+                                "not": "feat:expansive-array:vitality"
+                            }
+                        ],
+                        "value": "vitality"
+                    },
+                    {
+                        "label": "SF2E.SpecificRule.Mechanic.ExpansiveArray.Void",
+                        "predicate": [
+                            {
+                                "not": "feat:expansive-array:void"
+                            }
+                        ],
+                        "value": "void"
+                    }
+                ],
+                "flag": "arrayOne",
+                "key": "ChoiceSet",
+                "prompt": "SF2E.SpecificRule.Mechanic.ExpansiveArray.Prompt",
+                "rollOption": "feat:expansive-array"
+            },
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "SF2E.SpecificRule.Mechanic.ExpansiveArray.Mental",
+                        "predicate": [
+                            {
+                                "not": "feat:expansive-array:mental"
+                            }
+                        ],
+                        "value": "mental"
+                    },
+                    {
+                        "label": "SF2E.SpecificRule.Mechanic.ExpansiveArray.Poison",
+                        "predicate": [
+                            {
+                                "not": "feat:expansive-array:poison"
+                            }
+                        ],
+                        "value": "poison"
+                    },
+                    {
+                        "label": "SF2E.SpecificRule.Mechanic.ExpansiveArray.Vitality",
+                        "predicate": [
+                            {
+                                "not": "feat:expansive-array:vitality"
+                            }
+                        ],
+                        "value": "vitality"
+                    },
+                    {
+                        "label": "SF2E.SpecificRule.Mechanic.ExpansiveArray.Void",
+                        "predicate": [
+                            {
+                                "not": "feat:expansive-array:void"
+                            }
+                        ],
+                        "value": "void"
+                    }
+                ],
+                "flag": "arrayTwo",
+                "key": "ChoiceSet",
+                "prompt": "SF2E.SpecificRule.Mechanic.ExpansiveArray.Prompt",
+                "rollOption": "feat:expansive-array"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

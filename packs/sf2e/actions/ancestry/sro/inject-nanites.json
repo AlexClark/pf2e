@@ -12,7 +12,7 @@
         },
         "category": "interaction",
         "description": {
-            "value": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> You inject yourself or a creature in your reach with medical nanites, which have the effects of both a commercial hypopen and a commercial medpatch. The grade of these items increases to tactical at level 9, advanced at level 13, and superior at level 18.</p><hr /><p><strong>Special</strong> If you have the medic SRO heritage, you can Inject Nanites once per 10 minutes.</p>"
+            "value": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> You inject yourself or a creature in your reach with medical nanites, which have the effects of both a @UUID[Compendium.sf2e.equipment.Item.Hypopen (Commercial)] and a @UUID[Compendium.sf2e.equipment.Item.Medpatch (Commercial)]. The grade of these items increases to tactical (@UUID[Compendium.sf2e.equipment.Item.Hypopen (Tactical)] and @UUID[Compendium.sf2e.equipment.Item.Medpatch (Tactical)]) at level 9, advanced (@UUID[Compendium.sf2e.equipment.Item.Hypopen (Advanced)] and @UUID[Compendium.sf2e.equipment.Item.Medpatch (Advanced)]) at level 13, and superior (@UUID[Compendium.sf2e.equipment.Item.Hypopen (Superior)] and @UUID[Compendium.sf2e.equipment.Item.Medpatch (Superior)]) at level 18.</p><hr /><p><strong>Special</strong> If you have the medic SRO heritage, you can Inject Nanites once per 10 minutes.</p>"
         },
         "frequency": {
             "max": 1,

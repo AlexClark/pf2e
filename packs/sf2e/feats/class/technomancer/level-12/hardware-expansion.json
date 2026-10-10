@@ -29,7 +29,49 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "adjustName": true,
+                "choices": [
+                    {
+                        "predicate": [
+                            {
+                                "not": "feature:dps"
+                            }
+                        ],
+                        "value": "Compendium.sf2e.class-features.Item.DPS++"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "not": "feature:fortrun"
+                            }
+                        ],
+                        "value": "Compendium.sf2e.class-features.Item.FORTRUN"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "not": "feature:servoshell"
+                            }
+                        ],
+                        "value": "Compendium.sf2e.class-features.Item.Servoshell"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "not": "feature:viper"
+                            }
+                        ],
+                        "value": "Compendium.sf2e.class-features.Item.Viper"
+                    }
+                ],
+                "flag": "hardwareExpansion",
+                "key": "ChoiceSet",
+                "prompt": "SF2E.SpecificRule.Technomancer.ProgrammingLanguages.Prompt",
+                "rollOption": "hardware-expansion"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

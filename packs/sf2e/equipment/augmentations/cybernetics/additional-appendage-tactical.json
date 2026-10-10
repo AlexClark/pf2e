@@ -35,7 +35,14 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "key": "ActiveEffectLike",
+                "mode": "add",
+                "path": "system.hands.max.value",
+                "value": 1
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

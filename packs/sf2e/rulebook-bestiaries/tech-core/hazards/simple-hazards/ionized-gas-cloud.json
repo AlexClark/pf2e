@@ -24,15 +24,7 @@
                     "remaster": false,
                     "title": ""
                 },
-                "rules": [
-                    {
-                        "key": "Immunity",
-                        "mode": "remove",
-                        "type": [
-                            "object-immunities"
-                        ]
-                    }
-                ],
+                "rules": [],
                 "slug": null,
                 "traits": {
                     "value": []

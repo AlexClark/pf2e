@@ -12,7 +12,7 @@
         },
         "category": "ancestry",
         "description": {
-            "value": "<p>You've installed powerful jet thrusters into your frame, granting you the ability to fly. You gain a fly Speed equal to your Speed.</p><hr /><p><strong>Special</strong> If you have the Hoverbot feat, when you Overload Thrusters, you gain a fly Speed equal to twice your land Speed, and your thrusters don't deactivate.</p>"
+            "value": "<p>You've installed powerful jet thrusters into your frame, granting you the ability to fly. You gain a fly Speed equal to your Speed.</p><hr /><p><strong>Special</strong> If you have the @UUID[Compendium.sf2e.feats.Item.Hoverbot] feat, when you @UUID[Compendium.sf2e.actions.Item.Overload Thrusters], you gain a fly Speed equal to twice your land Speed, and your thrusters don't deactivate.</p>"
         },
         "level": {
             "value": 9
@@ -25,7 +25,13 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "BaseSpeed",
+                "selector": "fly",
+                "value": "@actor.system.movement.speeds.land.value"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

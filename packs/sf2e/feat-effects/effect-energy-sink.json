@@ -1,0 +1,80 @@
+{
+    "_id": "vH3cF8yBn6Jt2mQa",
+    "img": "icons/magic/defensive/shield-barrier-blue.webp",
+    "name": "Effect: Energy Sink",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.Energy Sink]</p>\n<p>You gain resistance to the chosen energy type equal to twice the chosen spell rank for 1 minute. Choose the rank of the spell you cast and one of acid, cold, electricity, fire, or sonic.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 2
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": {
+                    "config": "ranks"
+                },
+                "flag": "rank",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.Rank"
+            },
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "PF2E.TraitAcid",
+                        "value": "acid"
+                    },
+                    {
+                        "label": "PF2E.TraitCold",
+                        "value": "cold"
+                    },
+                    {
+                        "label": "PF2E.TraitElectricity",
+                        "value": "electricity"
+                    },
+                    {
+                        "label": "PF2E.TraitFire",
+                        "value": "fire"
+                    },
+                    {
+                        "label": "PF2E.TraitSonic",
+                        "value": "sonic"
+                    }
+                ],
+                "flag": "energy",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.EnergyType"
+            },
+            {
+                "key": "Resistance",
+                "type": "{item|flags.system.rulesSelections.energy}",
+                "value": "2*@item.flags.system.rulesSelections.rank"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

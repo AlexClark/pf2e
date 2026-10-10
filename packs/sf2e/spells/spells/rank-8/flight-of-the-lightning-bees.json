@@ -27,7 +27,7 @@
         "defense": {
             "save": {
                 "basic": false,
-                "statistic": "will"
+                "statistic": "fortitude"
             }
         },
         "description": {

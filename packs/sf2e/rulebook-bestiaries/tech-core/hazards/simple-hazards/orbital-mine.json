@@ -17,7 +17,7 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Trigger</strong> A starship moves into the trap's zone the mine is destroyed</p><hr /><p><strong>Effect</strong> The mine detonates, dealing 1d6+2 piercing and @Damage[(1d6+2)[fire]] damage to all starships in its zone (@Check[reflex|dc:16|basic] save).</p>"
+                    "value": "<p><strong>Trigger</strong> A starship moves into the trap's zone the mine is destroyed</p><hr /><p><strong>Effect</strong> The mine detonates, dealing @Damage[(1d6+2)[piercing]] and @Damage[(1d6+2)[fire]] damage to all starships in its zone (@Check[reflex|dc:16|basic] save).</p>"
                 },
                 "publication": {
                     "license": "OGL",
@@ -42,7 +42,7 @@
             "emitsSound": "encounter",
             "hardness": 5,
             "hp": {
-                "details": "",
+                "details": "(BT 7)",
                 "max": 14,
                 "temp": 0,
                 "value": 14

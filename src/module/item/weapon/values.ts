@@ -144,7 +144,7 @@ const WEAPON_PROPERTY_RUNE_TYPES = new Set([
 ] as const);
 
 const THROWN_RANGES = new Set([10, 15, 20, 30, 40, 60, 80, 100] as const);
-const WEAPON_RANGES = new Set([...THROWN_RANGES, 50, 70, 90, 110, 120, 140, 150, 180, 200, 240, 300] as const);
+const WEAPON_RANGES = new Set([...THROWN_RANGES, 5, 25, 45, 50, 70, 90, 110, 120, 140, 150, 180, 200, 240, 300] as const);
 
 const RANGED_ONLY_TRAITS: Set<WeaponTrait> = new Set([
     "brutal",

@@ -1,0 +1,43 @@
+{
+    "_id": "M6tP1kS8uG2hZ4qA",
+    "img": "icons/magic/lightning/barrier-shield-crackling-orb-pink.webp",
+    "name": "Effect: Power Absorption",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.Power Absorption]</p>\n<p>You are @UUID[Compendium.sf2e.conditions.Item.Quickened] for 2 rounds. You can use the extra action each round only to Stride.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 2
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 9
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "inMemoryOnly": true,
+                "key": "GrantItem",
+                "uuid": "Compendium.sf2e.conditions.Item.Quickened"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

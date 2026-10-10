@@ -31,7 +31,7 @@
             }
         },
         "description": {
-            "value": "<p>You create a ghostly, semi-corporeal turret made of divine force in an unoccupied space in range. The turret is Medium; creatures can move through the turret's space but can't end their movement in it. When you Cast the Spell and the first time you Sustain it each turn on subsequent rounds, the turret fires, dealing 8d8 spirit damage to all creatures in a 60- foot line originating from the turret (basic Reflex save).</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>"
+            "value": "<p>You create a ghostly, semi-corporeal turret made of divine force in an unoccupied space in range. The turret is Medium; creatures can move through the turret's space but can't end their movement in it. When you Cast the Spell and the first time you Sustain it each turn on subsequent rounds, the turret fires, dealing 8d8 spirit damage to all creatures in a 60-foot line originating from the turret (basic Reflex save).</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>"
         },
         "duration": {
             "sustained": true,
@@ -62,7 +62,7 @@
             "value": ""
         },
         "time": {
-            "value": "2"
+            "value": "3"
         },
         "traits": {
             "rarity": "common",

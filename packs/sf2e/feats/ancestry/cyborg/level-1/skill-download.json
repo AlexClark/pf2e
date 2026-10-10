@@ -25,7 +25,25 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "choices": {
+                    "config": "skills",
+                    "predicate": [
+                        "skill:{choice|value}:rank:0"
+                    ]
+                },
+                "flag": "skillDownload",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.Skill"
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "upgrade",
+                "path": "system.skills.{item|flags.system.rulesSelections.skillDownload}.rank",
+                "value": "ternary(gte(@actor.level,17),3,ternary(gte(@actor.level,9),2,1))"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

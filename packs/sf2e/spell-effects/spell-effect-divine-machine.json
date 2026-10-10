@@ -4,7 +4,7 @@
     "name": "Spell Effect: Divine Machine",
     "system": {
         "description": {
-            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Divine Machine]</p>\n<p>You grow to Large size, your reach increases by 5 feet (or by 10 feet if it started out Tiny), gain a +2 status bonus to AC and saving throws, and temporary Hit Points.<br /></p>"
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Divine Machine]</p>\n<p>You grow to Large unless you are already Large or larger. Your equipment grows with you and returns to its usual size if removed. Your reach increases by 5 feet, or by 10 feet if you started out Tiny. You gain a +2 status bonus to AC and saving throws and temporary Hit Points. The spell ends when you have no temporary Hit Points.</p>"
         },
         "duration": {
             "expiry": "turn-start",
@@ -23,15 +23,116 @@
         },
         "rules": [
             {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "PF2E.ActorSizeTiny",
+                        "predicate": [
+                            "self:size:tiny"
+                        ],
+                        "value": "tiny"
+                    },
+                    {
+                        "label": "PF2E.ActorSizeSmall",
+                        "predicate": [
+                            "self:size:small"
+                        ],
+                        "value": "small"
+                    },
+                    {
+                        "label": "PF2E.ActorSizeMedium",
+                        "predicate": [
+                            "self:size:medium"
+                        ],
+                        "value": "medium"
+                    },
+                    {
+                        "label": "PF2E.ActorSizeLarge",
+                        "predicate": [
+                            "self:size:large"
+                        ],
+                        "value": "large"
+                    },
+                    {
+                        "label": "PF2E.ActorSizeHuge",
+                        "predicate": [
+                            "self:size:huge"
+                        ],
+                        "value": "huge"
+                    },
+                    {
+                        "label": "PF2E.ActorSizeGargantuan",
+                        "predicate": [
+                            "self:size:gargantuan"
+                        ],
+                        "value": "gargantuan"
+                    }
+                ],
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.CreatureSize",
+                "rollOption": "divine-machine-size"
+            },
+            {
                 "key": "CreatureSize",
                 "predicate": [
+                    "divine-machine-size:tiny",
                     "self:trait:tech"
                 ],
                 "reach": {
-                    "override": 10
+                    "add": 10
                 },
                 "resizeEquipment": true,
                 "value": "large"
+            },
+            {
+                "key": "CreatureSize",
+                "predicate": [
+                    "self:trait:tech",
+                    {
+                        "or": [
+                            "divine-machine-size:small",
+                            "divine-machine-size:medium"
+                        ]
+                    }
+                ],
+                "reach": {
+                    "add": 5
+                },
+                "resizeEquipment": true,
+                "value": "large"
+            },
+            {
+                "key": "CreatureSize",
+                "predicate": [
+                    "divine-machine-size:large",
+                    "self:trait:tech"
+                ],
+                "reach": {
+                    "add": 5
+                },
+                "value": "large"
+            },
+            {
+                "key": "CreatureSize",
+                "predicate": [
+                    "divine-machine-size:huge",
+                    "self:trait:tech"
+                ],
+                "reach": {
+                    "add": 5
+                },
+                "value": "huge"
+            },
+            {
+                "key": "CreatureSize",
+                "predicate": [
+                    "divine-machine-size:gargantuan",
+                    "self:trait:tech"
+                ],
+                "reach": {
+                    "add": 5
+                },
+                "value": "gargantuan"
             },
             {
                 "key": "FlatModifier",

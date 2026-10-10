@@ -81,7 +81,7 @@
             "emitsSound": "encounter",
             "hardness": 3,
             "hp": {
-                "details": "",
+                "details": "(BT 8)",
                 "max": 16,
                 "temp": 0,
                 "value": 16

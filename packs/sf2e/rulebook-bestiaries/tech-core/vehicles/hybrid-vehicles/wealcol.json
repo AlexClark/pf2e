@@ -72,7 +72,7 @@
                 "value": 30
             },
             "collisionDamage": {
-                "value": "8d8"
+                "value": "8d8 slashing"
             },
             "emitsSound": "encounter",
             "hardness": 15,
@@ -109,8 +109,8 @@
             },
             "space": {
                 "high": 5,
-                "long": 10,
-                "wide": 10
+                "long": 12,
+                "wide": 8
             },
             "speed": "65 feet (motorized), fly 65 feet (motorized), swim 65 feet (motorized)"
         },

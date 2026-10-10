@@ -74,7 +74,7 @@
             },
             "space": {
                 "high": 10,
-                "long": 10,
+                "long": 8,
                 "wide": 10
             },
             "speed": "40 feet (motorized), climb 30 feet (motorized)"

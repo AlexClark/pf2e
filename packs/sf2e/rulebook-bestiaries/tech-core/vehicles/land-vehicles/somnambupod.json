@@ -46,7 +46,7 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>While riding in a somnambupod, the pilot can choose to initiate complete luxury relaxation mode. The pod's enclosure becomes opaque, obscuring the outside world, and it plays calming music to allow for easy sleep. The pilot can take no actions while riding this way, including vehicle actions, but if the journey is at least 6 hours long, they gain the benefits of 8 hours of rest.</p>"
+                    "value": "<p>While riding in a somnambupod, the pilot can choose to initiate complete luxury relaxation mode. The pod's enclosure becomes opaque, obscuring the outside world, and it plays calming music to allow for easy sleep. The pilot can take no actions while riding this way, including vehicle actions, but if the journey is at least 6 hours long, they gain the benefits of 8 hours of rest (Player Core 432).</p>"
                 },
                 "publication": {
                     "license": "OGL",
@@ -103,7 +103,7 @@
             },
             "space": {
                 "high": 5,
-                "long": 10,
+                "long": 8,
                 "wide": 5
             },
             "speed": "30 feet (motorized)"

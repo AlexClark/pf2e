@@ -1,0 +1,98 @@
+{
+    "_id": "JjpjF5P3oQvxOYNw",
+    "folder": "YiIxZ2S4eLwcF8p2",
+    "img": "systems/sf2e/icons/default-icons/vehicle.svg",
+    "items": [
+        {
+            "_id": "dHroz7gb7osTO0U3",
+            "img": "systems/sf2e/icons/actions/Passive.webp",
+            "name": "Suspension Wheels",
+            "sort": 0,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>An all-terrain dune buggy ignores non-magical difficult terrain (but not greater difficult terrain). In addition, it treats falls as 10 feet shorter as the buggy's suspension absorbs some of the impact.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {
+                    "value": []
+                }
+            },
+            "type": "action"
+        }
+    ],
+    "name": "All-Terrain Dune Buggy",
+    "system": {
+        "attributes": {
+            "ac": {
+                "value": 14
+            },
+            "collisionDC": {
+                "value": 19
+            },
+            "collisionDamage": {
+                "value": "2d10"
+            },
+            "emitsSound": "encounter",
+            "hardness": 4,
+            "hp": {
+                "details": "",
+                "max": 64,
+                "temp": 0,
+                "value": 64
+            },
+            "immunities": [],
+            "resistances": [],
+            "weaknesses": []
+        },
+        "details": {
+            "AC": 0,
+            "crew": "1 pilot",
+            "description": "<p>Often employed by Starfinder Society agents when they need to traverse open ground at high speeds, the all-terrain dune buggy is designed with an emphasis on a strong suspension for rugged terrain. The open-air design doesn't offer much protection, but the buggy's large wheels are capable of rolling over most small boulders without issue, and the sturdy roll cage allows the vehicle to be easily righted if it overturns.</p>",
+            "level": {
+                "value": 4
+            },
+            "passengers": "3",
+            "pilotingCheck": "Piloting (DC 20)",
+            "price": 3450,
+            "publication": {
+                "license": "ORC",
+                "remaster": true,
+                "title": "Starfinder Tech Core"
+            },
+            "space": {
+                "high": 4,
+                "long": 10,
+                "wide": 10
+            },
+            "speed": "45 feet (motorized)"
+        },
+        "saves": {
+            "fortitude": {
+                "value": 12
+            }
+        },
+        "traits": {
+            "rarity": "common",
+            "size": {
+                "value": "lg"
+            },
+            "value": [
+                "tech"
+            ]
+        }
+    },
+    "type": "vehicle"
+}

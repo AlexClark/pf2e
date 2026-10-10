@@ -1,0 +1,156 @@
+{
+    "_id": "tT3AOBpThNe4XURc",
+    "img": "icons/consumables/potions/bottle-circular-corked-labeled-green.webp",
+    "name": "Effect: Antibiotic",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Antibiotic (Commercial)], @UUID[Compendium.sf2e.equipment.Item.Antibiotic (Tactical)], @UUID[Compendium.sf2e.equipment.Item.Antibiotic (Advanced)], @UUID[Compendium.sf2e.equipment.Item.Antibiotic (Superior)], @UUID[Compendium.sf2e.equipment.Item.Antibiotic (Elite)]</p>\n<p>You gain an item bonus to Fortitude saves against diseases. This applies to your daily save against a disease's progression.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "hours",
+            "value": 24
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 0
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:antibiotic-commercial"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Antibiotic (Commercial)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:antibiotic-tactical"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Antibiotic (Tactical)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:antibiotic-advanced"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Antibiotic (Advanced)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:antibiotic-superior"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Antibiotic (Superior)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:antibiotic-elite"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Antibiotic (Elite)"
+                    }
+                ],
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.EquipmentVariety",
+                "rollOption": "antibiotic"
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "item:trait:disease"
+                ],
+                "selector": "fortitude",
+                "slug": "antibiotic-bonus",
+                "type": "item",
+                "value": 1
+            },
+            {
+                "key": "AdjustModifier",
+                "mode": "upgrade",
+                "predicate": [
+                    "antibiotic:antibiotic-tactical"
+                ],
+                "selector": "fortitude",
+                "slug": "antibiotic-bonus",
+                "value": 2
+            },
+            {
+                "key": "AdjustModifier",
+                "mode": "upgrade",
+                "predicate": [
+                    "antibiotic:antibiotic-advanced"
+                ],
+                "selector": "fortitude",
+                "slug": "antibiotic-bonus",
+                "value": 3
+            },
+            {
+                "key": "AdjustModifier",
+                "mode": "upgrade",
+                "predicate": [
+                    {
+                        "or": [
+                            "antibiotic:antibiotic-superior",
+                            "antibiotic:antibiotic-elite"
+                        ]
+                    }
+                ],
+                "selector": "fortitude",
+                "slug": "antibiotic-bonus",
+                "value": 4
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

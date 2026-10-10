@@ -69,10 +69,10 @@
                 "value": 16
             },
             "collisionDC": {
-                "value": 26
+                "value": 16
             },
             "collisionDamage": {
-                "value": "16"
+                "value": "2d6"
             },
             "emitsSound": "encounter",
             "hardness": 5,

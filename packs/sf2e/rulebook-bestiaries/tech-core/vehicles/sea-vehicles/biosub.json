@@ -24,15 +24,7 @@
                     "remaster": false,
                     "title": ""
                 },
-                "rules": [
-                    {
-                        "key": "Immunity",
-                        "mode": "remove",
-                        "type": [
-                            "object-immunities"
-                        ]
-                    }
-                ],
+                "rules": [],
                 "slug": null,
                 "traits": {
                     "value": []
@@ -61,7 +53,15 @@
                     "remaster": false,
                     "title": ""
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "key": "Immunity",
+                        "mode": "remove",
+                        "type": [
+                            "object-immunities"
+                        ]
+                    }
+                ],
                 "slug": null,
                 "traits": {
                     "value": []
@@ -168,7 +168,7 @@
         "details": {
             "AC": 0,
             "crew": "1 pilot, 2 crew",
-            "description": "<p>In an effort to overcome the enormous challenge of creating vessels that can withstand the pressures of the deep sea, some engineers have capitalized on life's ability to adapt to even the most extreme conditions. Biosubs use a combination of cutting-edge submersible technology and advanced biotech grafts to create a semi-living ship. Thanks to this unique construction, they enjoy some of the benefits (and drawbacks) of being simultaneously a living creature and a piece of technology.</p>",
+            "description": "<p>In an effort to overcome the enormous challenge of creating vessels that can withstand the pressures of the deep sea, some engineers have capitalized on life's ability to adapt to even the most extreme conditions. Biosubs use a combination of cutting-edge submersible technology and advanced biotech grafts to create a semi-living ship. Thanks to this unique construction, they enjoy some of the benefits (and drawbacks) of being simultaneously a living creature and a piece of technology.</p><p><strong>Will</strong> +22</p>",
             "level": {
                 "value": 11
             },

@@ -37,7 +37,14 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "key": "Note",
+                "selector": "{item|id}-attack",
+                "text": "<p>Treat the target's cover as one stage lower (none instead of lesser, lesser instead of standard, or standard instead of greater).</p>",
+                "title": "Drift Pulse Ammunition"
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

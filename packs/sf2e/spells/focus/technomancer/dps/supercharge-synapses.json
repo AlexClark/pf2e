@@ -12,7 +12,7 @@
         "damage": {},
         "defense": null,
         "description": {
-            "value": "<p>You infuse yourself with magical energy to speed up your attacks. You gain the @UUID[Compendium.sf2e.conditions.Item.Quickened] condition and can use the extra action each round only to Overclock Pulse or Strike.</p>"
+            "value": "<p>You infuse yourself with magical energy to speed up your attacks. You gain the @UUID[Compendium.sf2e.conditions.Item.Quickened] condition and can use the extra action each round only to Overclock Pulse or Strike.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.Spell Effect: Supercharge Synapses]</p>"
         },
         "duration": {
             "sustained": false,

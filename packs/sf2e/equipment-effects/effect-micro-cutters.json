@@ -1,0 +1,88 @@
+{
+    "_id": "bM8pQ4sT6vYxL3wN",
+    "img": "icons/commodities/tech/cog-gear-crank-steel.webp",
+    "name": "Effect: Micro-cutters",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Micro-cutters (Commercial)], @UUID[Compendium.sf2e.equipment.Item.Micro-cutters (Tactical)]</p>\n<p>You gain a burrow Speed. Dismiss this effect to turn the cutters off.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 5
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    "parent:origin:item:slug:micro-cutters-commercial",
+                                    {
+                                        "not": "parent:origin:item"
+                                    }
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Micro-cutters (Commercial)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    "parent:origin:item:slug:micro-cutters-tactical",
+                                    {
+                                        "not": "parent:origin:item"
+                                    }
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Micro-cutters (Tactical)"
+                    }
+                ],
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.EquipmentVariety",
+                "rollOption": "micro-cutters"
+            },
+            {
+                "key": "BaseSpeed",
+                "predicate": [
+                    "micro-cutters:micro-cutters-commercial"
+                ],
+                "selector": "burrow",
+                "value": 20
+            },
+            {
+                "key": "BaseSpeed",
+                "predicate": [
+                    "micro-cutters:micro-cutters-tactical"
+                ],
+                "selector": "burrow",
+                "value": 40
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

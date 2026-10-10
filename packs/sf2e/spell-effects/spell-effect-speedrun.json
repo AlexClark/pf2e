@@ -1,0 +1,54 @@
+{
+    "_id": "p8Nj4Ka1Mv7Xc3Dq",
+    "img": "systems/sf2e/icons/abilities/blue-person-running.webp",
+    "name": "Spell Effect: Speedrun",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Speedrun]</p>\n<p>You gain resistance 10 to all damage except force. You gain the cosmic and incorporeal traits. You can phase through walls, move through the air as easily as you would normally walk, and move through enemy squares unless those enemies are incorporeal. This movement still triggers reactions.</p>\n<p>If you ended an overclock as you cast this spell, increase this effect's duration to 2 rounds.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 9
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "exceptions": [
+                    "force"
+                ],
+                "key": "Resistance",
+                "type": "all-damage",
+                "value": 10
+            },
+            {
+                "add": [
+                    "cosmic",
+                    "incorporeal"
+                ],
+                "key": "ActorTraits",
+                "remove": []
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

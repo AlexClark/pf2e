@@ -16,7 +16,6 @@
                     "value": null
                 },
                 "category": "offensive",
-                "deathNote": true,
                 "description": {
                     "value": "<p>The pilot of an aerobike can add the reckless trait to a Drive action, or attempt the Piloting check with a –1 circumstance penalty if it was already reckless, to shift the vehicle 5 feet to either side at any point during the movement without changing its heading.</p>"
                 },
@@ -74,7 +73,7 @@
                 "title": "Starfinder Tech Core"
             },
             "space": {
-                "high": 5,
+                "high": 4,
                 "long": 10,
                 "wide": 5
             },

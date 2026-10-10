@@ -6,11 +6,11 @@
     "system": {
         "baseItem": null,
         "bulk": {
-            "value": 0.1
+            "value": 0
         },
         "containerId": null,
         "description": {
-            "value": "<p>Remote lock apps allow you to control locks using your comm unit. Attempting a Thievery check to Pick a smart lock without first successfully @UUID[Compendium.sf2e.actions.Item.Hack]{Hacking} (one [[/act hack dc=20]] check) it automatically alerts the owner of the lock (and often, the local authorities) of a break-in progress.</p>"
+            "value": "<p>Remote lock apps allow you to control locks using your comm unit. Attempting a Thievery check to @UUID[Compendium.sf2e.actions.Item.Pick a Lock]{Pick} a smart lock without first successfully @UUID[Compendium.sf2e.actions.Item.Hack]{Hacking} it automatically alerts the owner of the lock (and often, the local authorities) of a break-in progress. This virtual lock cannot be dismantled with the Thievery skill, only hacked using Computers.</p>\n<p>Hacking requires one successful @Check[computers|dc:20] check.</p>"
         },
         "hardness": 0,
         "hp": {
@@ -40,11 +40,12 @@
         "traits": {
             "rarity": "common",
             "value": [
-                "tech"
+                "tech",
+                "virtual"
             ]
         },
         "usage": {
-            "value": "other"
+            "value": "installed-on-atech-lock"
         }
     },
     "type": "equipment"

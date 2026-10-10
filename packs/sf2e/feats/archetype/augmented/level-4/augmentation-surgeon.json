@@ -29,7 +29,25 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "ActiveEffectLike",
+                "mode": "upgrade",
+                "path": "system.skills.medicine.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    "skill:medicine:rank:1"
+                ],
+                "value": 2
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "upgrade",
+                "path": "system.skills.medicine.rank",
+                "phase": "beforeDerived",
+                "value": 1
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

@@ -10,7 +10,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>Your teeth are replaced with the large, hollow incisors of a vampire, designed to tear into flesh. You gain a jaws unarmed attack that deals 1d4 piercing damage, is in the knife group, and has the agile, finesse, and unarmed traits. If you hit a creature that's taking persistent bleed damage with your jaws unarmed attack, you gain temporary Hit Points equal to half your level, rounded up, that last for 1 minute.</p>\n<p>Whenever you get a critical hit with your jaws unarmed attack, you get its critical specialization effect.</p>\n<p><strong>Activate—Ripping Teeth</strong> <span class=\"action-glyph\">1</span></p>\n<p><strong>Requirements</strong> Your last action was a successful Strike with your jaws unarmed attack</p><hr /><p><strong>Effect</strong> You rip through your prey's flesh. The target of the required Strike takes 1d4 persistent bleed damage.</p>"
+            "value": "<p>Your teeth are replaced with the large, hollow incisors of a vampire, designed to tear into flesh. You gain a jaws unarmed attack that deals 1d4 piercing damage, is in the knife group, and has the agile, finesse, and unarmed traits. If you hit a creature that's taking persistent bleed damage with your jaws unarmed attack, you gain temporary Hit Points equal to half your level, rounded up, that last for 1 minute.</p>\n<p>Whenever you get a critical hit with your jaws unarmed attack, you get its critical specialization effect.</p>\n<p><strong>Activate—Ripping Teeth</strong> <span class=\"action-glyph\">1</span></p>\n<p><strong>Requirements</strong> Your last action was a successful Strike with your jaws unarmed attack</p><hr /><p><strong>Effect</strong> You rip through your prey's flesh. The target of the required Strike takes @Damage[1d4[persistent,bleed]] damage.</p>"
         },
         "hardness": 0,
         "hp": {
@@ -61,6 +61,18 @@
                 "predicate": [
                     "item:id:{item|id}"
                 ]
+            },
+            {
+                "key": "Note",
+                "outcome": [
+                    "success",
+                    "criticalSuccess"
+                ],
+                "selector": [
+                    "{item|id}-damage"
+                ],
+                "text": "If the target is taking persistent bleed damage, you gain temporary Hit Points equal to half your level, rounded up, for 1 minute.",
+                "title": "Vampiric Teeth"
             }
         ],
         "size": "med",

@@ -26,7 +26,7 @@
             "type": null
         },
         "price": {
-            "per": 1,
+            "per": 10,
             "value": {
                 "sp": 1800
             }
@@ -37,7 +37,25 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "category": "persistent",
+                "damageType": "void",
+                "diceNumber": 1,
+                "dieSize": "d4",
+                "key": "DamageDice",
+                "selector": "{item|id}-ranged-damage"
+            },
+            {
+                "key": "Note",
+                "outcome": [
+                    "criticalSuccess"
+                ],
+                "selector": "{item|id}-ranged-damage",
+                "text": "<p>The target is @UUID[Compendium.sf2e.conditions.Item.Clumsy]{clumsy 1} for as long as it takes this persistent void damage.</p>",
+                "title": "Flesh Eater Ammunition"
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

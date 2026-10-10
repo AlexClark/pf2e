@@ -1,0 +1,94 @@
+{
+    "_id": "3robtdGErM6hGduO",
+    "img": "systems/sf2e/icons/equipment/consumables/potions/potion-of-disguise.webp",
+    "name": "Effect: Antiemetic (1 Hour)",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Antiemetic (Advanced)], @UUID[Compendium.sf2e.equipment.Item.Antiemetic (Superior)]</p>\n<p>Your sickened value is reduced for 1 hour. A value reduced to 0 doesn't remove the condition.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "hours",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 10
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:antiemetic-advanced"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Antiemetic (Advanced)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:antiemetic-superior"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Antiemetic (Superior)"
+                    }
+                ],
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.EquipmentVariety",
+                "rollOption": "antiemetic"
+            },
+            {
+                "itemType": "condition",
+                "key": "ItemAlteration",
+                "mode": "subtract",
+                "predicate": [
+                    "antiemetic:antiemetic-advanced",
+                    "item:slug:sickened"
+                ],
+                "property": "badge-value",
+                "value": 2
+            },
+            {
+                "itemType": "condition",
+                "key": "ItemAlteration",
+                "mode": "subtract",
+                "predicate": [
+                    "antiemetic:antiemetic-superior",
+                    "item:slug:sickened"
+                ],
+                "property": "badge-value",
+                "value": 3
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

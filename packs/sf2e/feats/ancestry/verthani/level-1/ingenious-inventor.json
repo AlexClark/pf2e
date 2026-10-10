@@ -12,7 +12,7 @@
         },
         "category": "ancestry",
         "description": {
-            "value": "<p>You're a talented engineer or programmer who frequently creates new innovations in your field. You become trained in your choice of either Computers or Crafting. If you selected Crafting, you gain the @UUID[Compendium.sf2e.feats.Item.Specialty Crafting] skill feat. If you chose Computers, you gain the Programmer skill feat.</p>"
+            "value": "<p>You're a talented engineer or programmer who frequently creates new innovations in your field. You become trained in your choice of either Computers or Crafting. If you selected Crafting, you gain the @UUID[Compendium.sf2e.feats.Item.Specialty Crafting] skill feat. If you chose Computers, you gain the @UUID[Compendium.sf2e.feats.Item.Programmer] skill feat.</p>"
         },
         "level": {
             "value": 1
@@ -25,7 +25,58 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "choices": [
+                    {
+                        "label": "PF2E.Skill.Computers",
+                        "value": "computers"
+                    },
+                    {
+                        "label": "PF2E.Skill.Crafting",
+                        "value": "crafting"
+                    }
+                ],
+                "flag": "skill",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.Skill",
+                "rollOption": "ingenious-inventor"
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "upgrade",
+                "path": "system.skills.computers.rank",
+                "predicate": [
+                    "ingenious-inventor:computers"
+                ],
+                "value": 1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "upgrade",
+                "path": "system.skills.crafting.rank",
+                "predicate": [
+                    "ingenious-inventor:crafting"
+                ],
+                "value": 1
+            },
+            {
+                "key": "GrantItem",
+                "predicate": [
+                    "ingenious-inventor:crafting"
+                ],
+                "reevaluateOnUpdate": true,
+                "uuid": "Compendium.sf2e.feats.Item.Specialty Crafting"
+            },
+            {
+                "key": "GrantItem",
+                "predicate": [
+                    "ingenious-inventor:computers"
+                ],
+                "reevaluateOnUpdate": true,
+                "uuid": "Compendium.sf2e.feats.Item.Programmer"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

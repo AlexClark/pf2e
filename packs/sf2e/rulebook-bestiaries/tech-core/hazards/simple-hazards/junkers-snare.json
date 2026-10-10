@@ -24,15 +24,7 @@
                     "remaster": false,
                     "title": ""
                 },
-                "rules": [
-                    {
-                        "key": "Immunity",
-                        "mode": "remove",
-                        "type": [
-                            "object-immunities"
-                        ]
-                    }
-                ],
+                "rules": [],
                 "slug": "snare-starship",
                 "traits": {
                     "value": []
@@ -104,7 +96,7 @@
         },
         "details": {
             "description": "<p>Space junk hides a jury-rigged yet ingenious snare.</p>",
-            "disable": "<p>@Check[crafting|dc:17] (trained; drone console, pilot's console) or Thievery (trained; drone console) to disable the mechanism</p>",
+            "disable": "<p>@Check[crafting|dc:17] (trained; drone console, pilot's console) or @Check[thievery|dc:17] (trained; drone console) to disable the mechanism</p>",
             "isComplex": false,
             "level": {
                 "value": 1

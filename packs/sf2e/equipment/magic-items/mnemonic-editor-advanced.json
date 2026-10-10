@@ -28,7 +28,9 @@
         },
         "price": {
             "per": 1,
-            "value": {}
+            "value": {
+                "sp": 1000
+            }
         },
         "publication": {
             "license": "ORC",

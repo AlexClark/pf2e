@@ -25,7 +25,9 @@
             "type": null
         },
         "price": {
-            "value": {}
+            "value": {
+                "sp": 25000
+            }
         },
         "publication": {
             "license": "ORC",
@@ -33,7 +35,14 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "medicine",
+                "type": "item",
+                "value": 2
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

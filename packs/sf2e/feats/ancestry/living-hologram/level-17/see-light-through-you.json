@@ -30,6 +30,10 @@
             "title": "Starfinder Tech Core"
         },
         "rules": [],
+        "selfEffect": {
+            "name": "Effect: See Light Through You",
+            "uuid": "Compendium.sf2e.feat-effects.Item.Effect: See Light Through You"
+        },
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

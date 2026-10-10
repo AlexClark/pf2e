@@ -12,7 +12,7 @@
         },
         "category": "ancestry",
         "description": {
-            "value": "<p>Your augmentations push past their limits. Increase your implant limit by 2. You gain the Miraculous Activation action.</p>"
+            "value": "<p>Your augmentations push past their limits. Increase your implant limit by 2. You gain the @UUID[Compendium.sf2e.actions.Item.Miraculous Activation] action.</p>"
         },
         "level": {
             "value": 17
@@ -25,7 +25,12 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "GrantItem",
+                "uuid": "Compendium.sf2e.actions.Item.Miraculous Activation"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

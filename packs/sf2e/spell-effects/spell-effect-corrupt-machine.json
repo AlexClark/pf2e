@@ -1,0 +1,81 @@
+{
+    "_id": "Cm4qT7wRn8YpK3sD",
+    "img": "icons/magic/unholy/strike-beam-blood-red-purple.webp",
+    "name": "Spell Effect: Corrupt Machine",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Corrupt Machine]</p>\n<p>The chosen tech weapon gains the unholy trait and deals additional fire damage: 1d4 at 2nd rank, 2d4 at 4th, 3d4 at 6th, and 4d4 at 8th rank and above. A creature critically hit by this weapon becomes frightened 1. An unattended weapon that is not on this actor cannot be selected.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 2
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "choices": {
+                    "ownedItems": true,
+                    "predicate": [
+                        "item:trait:tech"
+                    ],
+                    "types": [
+                        "weapon"
+                    ]
+                },
+                "flag": "weapon",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+            },
+            {
+                "itemType": "weapon",
+                "key": "ItemAlteration",
+                "mode": "add",
+                "predicate": [
+                    "item:id:{item|flags.system.rulesSelections.weapon}"
+                ],
+                "property": "traits",
+                "value": "unholy"
+            },
+            {
+                "damageType": "fire",
+                "diceNumber": "min(4, 1 + floor((@item.level - 2) / 2))",
+                "dieSize": "d4",
+                "key": "DamageDice",
+                "selector": "{item|flags.system.rulesSelections.weapon}-damage"
+            },
+            {
+                "key": "Note",
+                "outcome": [
+                    "criticalSuccess"
+                ],
+                "predicate": [
+                    "item:id:{item|flags.system.rulesSelections.weapon}"
+                ],
+                "selector": "{item|flags.system.rulesSelections.weapon}-damage",
+                "text": "A creature critically hit by this weapon becomes frightened 1.",
+                "title": "{item|name}"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

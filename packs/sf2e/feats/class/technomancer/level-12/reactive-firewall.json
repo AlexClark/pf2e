@@ -12,7 +12,7 @@
         },
         "category": "class",
         "description": {
-            "value": "<p><strong>Trigger</strong> You would be hit, but not critically hit, by an attack.</p>\n<p><strong>Requirements</strong> Your gear is overclocked.</p><hr /><p>A wall of data bursts from your overclocked gear to shield you from harm. The attacker must roll its attack roll a second time and take the lower result.</p>"
+            "value": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Trigger</strong> You would be hit, but not critically hit, by an attack.</p>\n<p><strong>Requirements</strong> Your gear is overclocked.</p><hr /><p>A wall of data bursts from your overclocked gear to shield you from harm. The attacker must roll its attack roll a second time and take the lower result.</p>"
         },
         "frequency": {
             "max": 1,

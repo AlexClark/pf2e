@@ -10,14 +10,32 @@
             "uuid": "Compendium.sf2e.ancestries.Item.WmgIz3fJAh4xJ9Gk"
         },
         "description": {
-            "value": "<p>You've mastered your skin's pigmentation. The bonus you gain from Shift Skin whenever the color of your skin generally matches your surroundings increases to +2, rather than +1.</p>"
+            "value": "<p>You've mastered your skin's pigmentation. The bonus you gain from @UUID[Compendium.sf2e.actions.Item.Shift Skin] whenever the color of your skin generally matches your surroundings increases to +2, rather than +1.</p>"
         },
         "publication": {
             "license": "ORC",
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "shift-skin",
+                    {
+                        "or": [
+                            "action:hide",
+                            "action:sneak"
+                        ]
+                    }
+                ],
+                "selector": [
+                    "stealth"
+                ],
+                "type": "circumstance",
+                "value": 2
+            }
+        ],
         "traits": {
             "rarity": "common",
             "value": []

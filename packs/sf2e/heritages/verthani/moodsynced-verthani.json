@@ -10,14 +10,64 @@
             "uuid": "Compendium.sf2e.ancestries.Item.WmgIz3fJAh4xJ9Gk"
         },
         "description": {
-            "value": "<p>The colors and patterns on your skin shift naturally to match your mood. This has the same effect as a moodskin augmentation, though it doesn't count as an augmentation. You decide which color corresponds to each emotion when you select this heritage. You don't gain the skin artistry ability or Skin Shift action.</p>\n<p>In addition, your open and honest manner makes it easy for you to influence others. You gain a +1 circumstance bonus on Diplomacy checks to [[/act make-an-impression]] and Request whenever you're feeling a positive emotion (such as happiness or curiosity) and on Intimidation checks to [[/act coerce]] and [[/act demoralize]] whenever you're feeling a negative emotion (such as anger or frustration).</p>"
+            "value": "<p>The colors and patterns on your skin shift naturally to match your mood. This has the same effect as a moodskin augmentation, though it doesn't count as an augmentation. You decide which color corresponds to each emotion when you select this heritage. You don't gain the @UUID[Compendium.sf2e.ancestry-features.Item.Skin Artistry]{skin artistry} ability or @UUID[Compendium.sf2e.actions.Item.Shift Skin]{Skin Shift} action.</p>\n<p>In addition, your open and honest manner makes it easy for you to influence others. You gain a +1 circumstance bonus on Diplomacy checks to [[/act make-an-impression]] and [[/act request]] whenever you're feeling a positive emotion (such as happiness or curiosity) and on Intimidation checks to [[/act coerce]] and [[/act demoralize]] whenever you're feeling a negative emotion (such as anger or frustration).</p>"
         },
         "publication": {
             "license": "ORC",
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "RollOption",
+                "option": "moodsynced",
+                "suboptions": [
+                    {
+                        "label": "PF2E.Skill.Diplomacy",
+                        "value": "positive"
+                    },
+                    {
+                        "label": "PF2E.Skill.Intimidation",
+                        "value": "negative"
+                    }
+                ],
+                "toggleable": true
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "moodsynced:positive",
+                    {
+                        "or": [
+                            "action:make-an-impression",
+                            "action:request"
+                        ]
+                    }
+                ],
+                "selector": [
+                    "diplomacy"
+                ],
+                "type": "circumstance",
+                "value": 1
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "moodsynced:negative",
+                    {
+                        "or": [
+                            "action:coerce",
+                            "action:demoralize"
+                        ]
+                    }
+                ],
+                "selector": [
+                    "intimidation"
+                ],
+                "type": "circumstance",
+                "value": 1
+            }
+        ],
         "traits": {
             "rarity": "common",
             "value": []

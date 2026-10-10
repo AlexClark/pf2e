@@ -24,15 +24,7 @@
                     "remaster": false,
                     "title": ""
                 },
-                "rules": [
-                    {
-                        "key": "Immunity",
-                        "mode": "remove",
-                        "type": [
-                            "object-immunities"
-                        ]
-                    }
-                ],
+                "rules": [],
                 "slug": null,
                 "traits": {
                     "value": [
@@ -68,7 +60,7 @@
         },
         "details": {
             "description": "<p>The Drift inexplicably teleports a starship to the wrong destination.</p>",
-            "disable": "<p>@Check[drift-lore|dc:32] (expert; pilot's console, scanners) or Piloting (master; pilot's console) to navigate the Drift without triggering a malfunction, or @Check[religion|dc:34] (master; any battle station) to call on Triune for guidance</p>",
+            "disable": "<p>@Check[drift-lore|dc:32] (expert; pilot's console, scanners) or @Check[piloting|dc:32] (master; pilot's console) to navigate the Drift without triggering a malfunction, or @Check[religion|dc:34] (master; any battle station) to call on Triune for guidance</p>",
             "isComplex": false,
             "level": {
                 "value": 10
@@ -79,7 +71,7 @@
                 "title": "Starfinder Tech Core"
             },
             "reset": "<p>The hazard resets immediately.</p>",
-            "routine": "<p>@Check[drift-lore|dc:32] (expert; pilot's console, scanners) or @Check[piloting|dc:32] (master; pilot's console) to navigate the Drift without triggering a malfunction, or @Check[religion|dc:34] (master; any battle station) to call on Triune for guidance</p>"
+            "routine": ""
         },
         "saves": {
             "fortitude": {

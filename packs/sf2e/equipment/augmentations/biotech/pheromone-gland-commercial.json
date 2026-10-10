@@ -37,8 +37,15 @@
         "quantity": 1,
         "rules": [
             {
+                "key": "RollOption",
+                "label": "Communicating with animals",
+                "option": "pheromone-communication",
+                "toggleable": true
+            },
+            {
                 "key": "FlatModifier",
                 "predicate": [
+                    "pheromone-communication",
                     "target:trait:animal"
                 ],
                 "selector": [

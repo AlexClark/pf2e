@@ -37,7 +37,18 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "key": "Note",
+                "outcome": [
+                    "success",
+                    "criticalSuccess"
+                ],
+                "selector": "{item|id}-ranged-damage",
+                "text": "<p>If the target is within an airborne effect, that effect is @UUID[Compendium.sf2e.conditions.Item.Suppressed] in a @Template[type:emanation|distance:5] around the target until the end of your next turn.</p>",
+                "title": "Coalescing Ammunition"
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

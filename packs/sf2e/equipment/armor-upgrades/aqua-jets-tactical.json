@@ -10,7 +10,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>Propellers, underwater jets, and other hydrodynamic propulsion systems enhance your aquatic mobility.</p>\n<p>You don't take a penalty to bludgeoning or slashing attack Strikes underwater.</p>\n<p><strong>Activate—Propel</strong> <span class=\"action-glyph\">1</span></p><hr /><p><strong>Effect</strong> You activate the propulsion system to gain a swim Speed of 40 feet. This effect lasts for 1 minute or until you Dismiss it.</p>"
+            "value": "<p>Propellers, underwater jets, and other hydrodynamic propulsion systems enhance your aquatic mobility.</p>\n<p>You don't take a penalty to bludgeoning or slashing attack Strikes underwater.</p>\n<p><strong>Activate—Propel</strong> <span class=\"action-glyph\">1</span></p><hr /><p><strong>Effect</strong> You activate the propulsion system to gain a swim Speed of 40 feet. This effect lasts for 1 minute or until you Dismiss it.</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.Effect: Aqua Jets]</p>"
         },
         "hardness": 0,
         "hp": {

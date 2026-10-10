@@ -24,15 +24,7 @@
                     "remaster": false,
                     "title": ""
                 },
-                "rules": [
-                    {
-                        "key": "Immunity",
-                        "mode": "remove",
-                        "type": [
-                            "object-immunities"
-                        ]
-                    }
-                ],
+                "rules": [],
                 "slug": null,
                 "traits": {
                     "value": []
@@ -64,7 +56,7 @@
             "weaknesses": []
         },
         "details": {
-            "description": "<p>Superheated chunks of debris move at high velocity through the area. Starships in the hazard's zone are concealed from all starships outside the hazard's zone.</p>",
+            "description": "<p>Superheated chunks of debris move at high velocity through the area. Starships in the hazard's zone are @UUID[Compendium.sf2e.conditions.Item.Concealed] from all starships outside the hazard's zone.</p>",
             "disable": "<p>@Check[computers|dc:20] (trained) to calculate meteor trajectories, @Check[nature|dc:20] (trained) to anticipate meteor patterns, or @Check[piloting|dc:18] (trained) to evade the meteors</p>",
             "isComplex": false,
             "level": {

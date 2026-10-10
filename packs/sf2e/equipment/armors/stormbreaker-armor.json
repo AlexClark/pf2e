@@ -13,11 +13,11 @@
         "checkPenalty": -3,
         "containerId": null,
         "description": {
-            "value": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This dark-blue armor features a series of conductive rods along the spine that draw and discharge high-voltage electricity without harming the wearer. Originally developed to protect Veskarium troopers from Vesk-5's deadly vortex storms, stormbreaker armor is now worn most often by stormrunners and other smugglers who skim what profits they can from the dangerous gas giant. Stombreaker armor always has @UUID[Compendium.sf2e.equipment.Item.Energized Spikes (Commercial)]{commercial energized spikes} and @UUID[Compendium.sf2e.equipment.Item.Energy Shielding (Commercial)]{commercial energy shielding (electricity)} installed at no extra cost and using no upgrade slots.</p>"
+            "value": "<p><strong>Upgrades:</strong> 0</p><hr /><p>This dark-blue armor features a series of conductive rods along the spine that draw and discharge high-voltage electricity without harming the wearer. Originally developed to protect Veskarium troopers from Vesk-5's deadly vortex storms, stormbreaker armor is now worn most often by stormrunners and other smugglers who skim what profits they can from the dangerous gas giant. Stormbreaker armor always has @UUID[Compendium.sf2e.equipment.Item.Energized Spikes (Commercial)]{commercial energized spikes} and @UUID[Compendium.sf2e.equipment.Item.Energy Shielding (Commercial)]{commercial energy shielding (electricity)} installed at no extra cost and using no upgrade slots.</p>"
         },
         "dexCap": 0,
         "grade": "advanced",
-        "group": "plate",
+        "group": "ceramic",
         "hardness": 0,
         "hp": {
             "max": 0,

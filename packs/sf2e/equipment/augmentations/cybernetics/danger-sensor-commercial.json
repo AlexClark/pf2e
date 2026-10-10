@@ -38,6 +38,9 @@
         "rules": [
             {
                 "key": "FlatModifier",
+                "predicate": [
+                    "perception"
+                ],
                 "selector": [
                     "initiative"
                 ],
@@ -47,6 +50,14 @@
             {
                 "key": "FlatModifier",
                 "predicate": [
+                    {
+                        "or": [
+                            "target:type:character",
+                            "target:type:familiar",
+                            "target:type:hazard",
+                            "target:type:npc"
+                        ]
+                    },
                     {
                         "lte": [
                             "target:distance",

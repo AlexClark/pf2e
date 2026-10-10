@@ -33,7 +33,40 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "RollOption",
+                "label": "PF2E.TraitSpellshape",
+                "mergeable": true,
+                "option": "spellshape",
+                "placement": "spellcasting",
+                "suboptions": [
+                    {
+                        "label": "{item|name}",
+                        "value": "spell-protection-protocol"
+                    }
+                ],
+                "toggleable": true
+            },
+            {
+                "itemType": "spell",
+                "key": "ItemAlteration",
+                "mode": "add",
+                "predicate": [
+                    "spellshape:spell-protection-protocol"
+                ],
+                "property": "description",
+                "value": [
+                    {
+                        "text": "{item|description}"
+                    }
+                ]
+            }
+        ],
+        "selfEffect": {
+            "name": "Effect: Spell Protection Protocol",
+            "uuid": "Compendium.sf2e.feat-effects.Item.Effect: Spell Protection Protocol"
+        },
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

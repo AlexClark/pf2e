@@ -30,6 +30,10 @@
             "title": "Starfinder Tech Core"
         },
         "rules": [],
+        "selfEffect": {
+            "name": "Effect: Activate Repair Mode",
+            "uuid": "Compendium.sf2e.feat-effects.Item.Effect: Activate Repair Mode"
+        },
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

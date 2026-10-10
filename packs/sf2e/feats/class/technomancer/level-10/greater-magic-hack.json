@@ -25,7 +25,40 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "itemId": "{item|id}",
+                "key": "ItemAlteration",
+                "mode": "add",
+                "property": "description",
+                "value": [
+                    {
+                        "predicate": [
+                            "feature:dps"
+                        ],
+                        "text": "You learn @UUID[Compendium.sf2e.spells.Item.Supercharge Synapses]."
+                    },
+                    {
+                        "predicate": [
+                            "feature:fortrun"
+                        ],
+                        "text": "You learn @UUID[Compendium.sf2e.spells.Item.Supercharge Armor]."
+                    },
+                    {
+                        "predicate": [
+                            "feature:servoshell"
+                        ],
+                        "text": "You learn @UUID[Compendium.sf2e.spells.Item.Supercharge Satellite]."
+                    },
+                    {
+                        "predicate": [
+                            "feature:viper"
+                        ],
+                        "text": "You learn @UUID[Compendium.sf2e.spells.Item.Supercharge Prism]."
+                    }
+                ]
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

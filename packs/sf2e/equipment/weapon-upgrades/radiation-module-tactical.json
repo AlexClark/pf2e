@@ -10,7 +10,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>This radioactive core irradiates the weapon. The weapon deals an extra 1d6 poison damage. On a critical hit, the target must attempt a @Check[fortitude|dc:32] save against severe radiation sickness.</p>\n<p>Poison damage dealt by this weapon ignores the target’s poison resistance.</p>"
+            "value": "<p>This radioactive core irradiates the weapon. The weapon deals an extra 1d6 poison damage. On a critical hit, the target must attempt a @Check[fortitude|dc:32] save against incredible radiation sickness (GM Core 91).</p>\n<p>Poison damage dealt by this weapon ignores the target’s poison resistance.</p>"
         },
         "hardness": 0,
         "hp": {
@@ -59,6 +59,7 @@
         "traits": {
             "rarity": "common",
             "value": [
+                "radiation",
                 "tech"
             ]
         },

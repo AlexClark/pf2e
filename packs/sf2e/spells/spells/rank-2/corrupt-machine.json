@@ -12,7 +12,7 @@
         "damage": {},
         "defense": null,
         "description": {
-            "value": "<p>You fuse an unholy spirit into the target, causing it to morph into a visibly horrifying version. The weapon gains the unholy trait and deals an additional 1d4 fire damage on hit. Creatures critically hit by this weapon also become @UUID[Compendium.sf2e.conditions.Item.Frightened]{Frightened 1}.</p><hr /><p><strong>Heightened (4th)</strong> The damage increases to 2d4.</p>\n<p><strong>Heightened (6th)</strong> The damage increases to 3d4.</p>\n<p><strong>Heightened (8th)</strong> The damage increases to 4d4.</p>"
+            "value": "<p>You fuse an unholy spirit into the target, causing it to morph into a visibly horrifying version. The weapon gains the unholy trait and deals an additional 1d4 fire damage on hit. Creatures critically hit by this weapon also become @UUID[Compendium.sf2e.conditions.Item.Frightened]{Frightened 1}.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.Spell Effect: Corrupt Machine]</p><hr /><p><strong>Heightened (4th)</strong> The damage increases to 2d4.</p>\n<p><strong>Heightened (6th)</strong> The damage increases to 3d4.</p>\n<p><strong>Heightened (8th)</strong> The damage increases to 4d4.</p>"
         },
         "duration": {
             "sustained": false,

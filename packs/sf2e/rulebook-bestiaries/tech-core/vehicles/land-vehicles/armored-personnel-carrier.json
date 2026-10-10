@@ -65,7 +65,7 @@
                 "value": 7
             },
             "passengers": "6",
-            "pilotingCheck": "",
+            "pilotingCheck": "Piloting (DC 23)",
             "price": 10000,
             "publication": {
                 "license": "ORC",

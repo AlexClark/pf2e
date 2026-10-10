@@ -15,7 +15,7 @@
         "damage": {},
         "defense": null,
         "description": {
-            "value": "<p>You spray a blast of jagged scrap in an area in front of you. The scrap spray deals 1d6 bludgeoning, slashing, or piercing damage to each creature in the area. Each creature must attempt a Reflex save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.sf2e.conditions.Item.Suppressed] until the beginning of your next turn.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is suppressed until the beginning of your next turn.</p><hr /><p><strong>Heightened (+2)</strong> Increase the damage by 3d6.</p>"
+            "value": "<p>You spray a blast of jagged scrap in an area in front of you. The scrap spray deals 1d6 bludgeoning, slashing, or piercing damage to each creature in the area. Each creature must attempt a Reflex save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.sf2e.conditions.Item.Suppressed] until the beginning of your next turn.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.sf2e.conditions.Item.Suppressed] until the beginning of your next turn.</p><hr /><p><strong>Heightened (+2)</strong> Increase the damage by 3d6.</p>"
         },
         "duration": {
             "sustained": false,
@@ -143,9 +143,13 @@
         },
         "traits": {
             "rarity": "common",
-            "traditions": [],
+            "traditions": [
+                "arcane",
+                "occult"
+            ],
             "value": [
                 "concentrate",
+                "junk",
                 "manipulate"
             ]
         }

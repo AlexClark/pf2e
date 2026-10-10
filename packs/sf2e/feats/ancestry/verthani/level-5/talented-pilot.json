@@ -25,7 +25,57 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "ActiveEffectLike",
+                "mode": "upgrade",
+                "path": "system.skills.piloting.rank",
+                "phase": "beforeDerived",
+                "predicate": [
+                    "skill:piloting:rank:1"
+                ],
+                "value": 2
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "upgrade",
+                "path": "system.skills.piloting.rank",
+                "phase": "beforeDerived",
+                "value": 1
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    {
+                        "or": [
+                            "action:navigate",
+                            "action:plot-course",
+                            "action:stunt"
+                        ]
+                    }
+                ],
+                "selector": [
+                    "piloting"
+                ],
+                "type": "circumstance",
+                "value": 1
+            },
+            {
+                "adjustment": {
+                    "success": "one-degree-better"
+                },
+                "key": "AdjustDegreeOfSuccess",
+                "predicate": [
+                    {
+                        "or": [
+                            "action:navigate",
+                            "action:plot-course"
+                        ]
+                    }
+                ],
+                "selector": "piloting"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

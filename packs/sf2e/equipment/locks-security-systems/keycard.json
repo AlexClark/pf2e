@@ -6,11 +6,11 @@
     "system": {
         "baseItem": null,
         "bulk": {
-            "value": 0.1
+            "value": 0
         },
         "containerId": null,
         "description": {
-            "value": ""
+            "value": "<p>Keycards for keycard locks are level 0 items that cost 1 credit.</p>"
         },
         "hardness": 0,
         "hp": {

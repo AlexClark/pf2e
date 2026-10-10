@@ -1,0 +1,612 @@
+{
+    "_id": "mX1cD5eF7gIjV4yZ",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Effect: Alteration Array",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.Alteration Array]</p>\n<p>You have a nanite unarmed attack that deals 1d6 damage of the type you chose. It has the traits you chose.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 4
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "PF2E.TraitBludgeoning",
+                        "value": "bludgeoning"
+                    },
+                    {
+                        "label": "PF2E.TraitPiercing",
+                        "value": "piercing"
+                    },
+                    {
+                        "label": "PF2E.TraitSlashing",
+                        "value": "slashing"
+                    }
+                ],
+                "flag": "alterationArray",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.VersatileTrait"
+            },
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "Two traits",
+                        "value": "traits"
+                    },
+                    {
+                        "label": "PF2E.TraitBoost1d8",
+                        "value": "boost-1d8"
+                    },
+                    {
+                        "label": "PF2E.TraitDeadlyD8",
+                        "value": "deadly-d8"
+                    },
+                    {
+                        "label": "PF2E.TraitReach",
+                        "value": "reach"
+                    }
+                ],
+                "key": "ChoiceSet",
+                "predicate": [
+                    "feat:enhanced-nanite-armaments"
+                ],
+                "prompt": "PF2E.SpecificRule.Prompt.Trait",
+                "rollOption": "nanite-armament"
+            },
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "PF2E.TraitFinesse",
+                        "value": "finesse"
+                    },
+                    {
+                        "label": "PF2E.TraitForceful",
+                        "value": "forceful"
+                    },
+                    {
+                        "label": "PF2E.TraitRazing",
+                        "value": "razing"
+                    },
+                    {
+                        "label": "PF2E.TraitShove",
+                        "value": "shove"
+                    },
+                    {
+                        "label": "PF2E.TraitTrip",
+                        "value": "trip"
+                    },
+                    {
+                        "label": "PF2E.TraitBackswing",
+                        "value": "backswing",
+                        "predicate": [
+                            "feat:enhanced-nanite-armaments"
+                        ]
+                    },
+                    {
+                        "label": "PF2E.TraitGrapple",
+                        "value": "grapple",
+                        "predicate": [
+                            "feat:enhanced-nanite-armaments"
+                        ]
+                    },
+                    {
+                        "label": "PF2E.TraitKickback",
+                        "value": "kickback",
+                        "predicate": [
+                            "feat:enhanced-nanite-armaments"
+                        ]
+                    }
+                ],
+                "key": "ChoiceSet",
+                "predicate": [
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "prompt": "PF2E.SpecificRule.Prompt.Trait",
+                "rollOption": "nanite-trait-1"
+            },
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "PF2E.TraitFinesse",
+                        "value": "finesse",
+                        "predicate": [
+                            {
+                                "not": "nanite-trait-1:finesse"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "PF2E.TraitForceful",
+                        "value": "forceful",
+                        "predicate": [
+                            {
+                                "not": "nanite-trait-1:forceful"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "PF2E.TraitRazing",
+                        "value": "razing",
+                        "predicate": [
+                            {
+                                "not": "nanite-trait-1:razing"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "PF2E.TraitShove",
+                        "value": "shove",
+                        "predicate": [
+                            {
+                                "not": "nanite-trait-1:shove"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "PF2E.TraitTrip",
+                        "value": "trip",
+                        "predicate": [
+                            {
+                                "not": "nanite-trait-1:trip"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "PF2E.TraitBackswing",
+                        "value": "backswing",
+                        "predicate": [
+                            {
+                                "not": "nanite-trait-1:backswing"
+                            },
+                            "feat:enhanced-nanite-armaments"
+                        ]
+                    },
+                    {
+                        "label": "PF2E.TraitGrapple",
+                        "value": "grapple",
+                        "predicate": [
+                            {
+                                "not": "nanite-trait-1:grapple"
+                            },
+                            "feat:enhanced-nanite-armaments"
+                        ]
+                    },
+                    {
+                        "label": "PF2E.TraitKickback",
+                        "value": "kickback",
+                        "predicate": [
+                            {
+                                "not": "nanite-trait-1:kickback"
+                            },
+                            "feat:enhanced-nanite-armaments"
+                        ]
+                    }
+                ],
+                "key": "ChoiceSet",
+                "predicate": [
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "prompt": "PF2E.SpecificRule.Prompt.Trait",
+                "rollOption": "nanite-trait-2"
+            },
+            {
+                "category": "unarmed",
+                "damage": {
+                    "base": {
+                        "damageType": "{item|flags.system.rulesSelections.alterationArray}",
+                        "dice": 1,
+                        "die": "d6"
+                    }
+                },
+                "group": "brawling",
+                "key": "Strike",
+                "label": "Nanite",
+                "range": null,
+                "slug": "nanite",
+                "traits": [
+                    "tech",
+                    "unarmed"
+                ]
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-trait-1:finesse",
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "property": "weapon-traits",
+                "value": "finesse"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-trait-1:forceful",
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "property": "weapon-traits",
+                "value": "forceful"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-trait-1:razing",
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "property": "weapon-traits",
+                "value": "razing"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-trait-1:shove",
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "property": "weapon-traits",
+                "value": "shove"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-trait-1:trip",
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "property": "weapon-traits",
+                "value": "trip"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-trait-1:backswing",
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "property": "weapon-traits",
+                "value": "backswing"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-trait-1:grapple",
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "property": "weapon-traits",
+                "value": "grapple"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-trait-1:kickback",
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "property": "weapon-traits",
+                "value": "kickback"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-trait-2:finesse",
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "property": "weapon-traits",
+                "value": "finesse"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-trait-2:forceful",
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "property": "weapon-traits",
+                "value": "forceful"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-trait-2:razing",
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "property": "weapon-traits",
+                "value": "razing"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-trait-2:shove",
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "property": "weapon-traits",
+                "value": "shove"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-trait-2:trip",
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "property": "weapon-traits",
+                "value": "trip"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-trait-2:backswing",
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "property": "weapon-traits",
+                "value": "backswing"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-trait-2:grapple",
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "property": "weapon-traits",
+                "value": "grapple"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-trait-2:kickback",
+                    {
+                        "or": [
+                            {
+                                "not": "feat:enhanced-nanite-armaments"
+                            },
+                            "nanite-armament:traits"
+                        ]
+                    }
+                ],
+                "property": "weapon-traits",
+                "value": "kickback"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-armament:boost-1d8"
+                ],
+                "property": "weapon-traits",
+                "value": "boost-1d8"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-armament:deadly-d8"
+                ],
+                "property": "weapon-traits",
+                "value": "deadly-d8"
+            },
+            {
+                "definition": [
+                    "item:slug:nanite"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "nanite-armament:reach"
+                ],
+                "property": "weapon-traits",
+                "value": "reach"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

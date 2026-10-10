@@ -12,7 +12,7 @@
         "damage": {},
         "defense": null,
         "description": {
-            "value": "<p>You create a mystical bond between the targets, allowing them to switch positions. For the duration, creatures wielding either weapon gain the Swap action.</p>"
+            "value": "<p>You create a mystical bond between the targets, allowing them to switch positions. For the duration, creatures wielding either weapon gain the @UUID[Compendium.sf2e.actions.Item.Swap] action.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.Spell Effect: Hot Swap]</p>"
         },
         "duration": {
             "sustained": false,

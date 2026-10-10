@@ -10,14 +10,19 @@
             "uuid": "Compendium.sf2e.ancestries.Item.WmgIz3fJAh4xJ9Gk"
         },
         "description": {
-            "value": "<p>You spend a lot of your time in environments with extreme temperatures. You gain the Temperature Acclimation reaction.</p>"
+            "value": "<p>You spend a lot of your time in environments with extreme temperatures. You gain the @UUID[Compendium.sf2e.actions.Item.Temperature Acclimation] reaction.</p>"
         },
         "publication": {
             "license": "ORC",
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "GrantItem",
+                "uuid": "Compendium.sf2e.actions.Item.Temperature Acclimation"
+            }
+        ],
         "traits": {
             "rarity": "common",
             "value": []

@@ -44,7 +44,7 @@
             ]
         },
         "usage": {
-            "value": "installed-in-a-weapon"
+            "value": "installed-in-a-ranged-weapon"
         }
     },
     "type": "equipment"

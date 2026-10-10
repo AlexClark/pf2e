@@ -12,7 +12,7 @@
         },
         "category": "class",
         "description": {
-            "value": "<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p>Your summoned creature appears with unexpected fanfare and brilliant destruction. If your next action is to Cast a Spell with the summon trait, all creatures in a @Template[type:emanation|distance:10] around the creature you summoned take @Damage[1d4[sonic]|options:area-damage] damage per spell rank of the spell cast, with a basic Fortitude save against your spell DC.</p>"
+            "value": "<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p>Your summoned creature appears with unexpected fanfare and brilliant destruction. If your next action is to Cast a Spell with the summon trait, all creatures in a @Template[type:emanation|distance:10] around the creature you summoned take @Damage[1d4[sonic]|options:area-damage] damage per spell rank of the spell cast, with a @Check[fortitude|against:spell|basic] save against your spell DC.</p>"
         },
         "frequency": {
             "max": 1,
@@ -29,7 +29,36 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "RollOption",
+                "label": "PF2E.TraitSpellshape",
+                "mergeable": true,
+                "option": "spellshape",
+                "placement": "spellcasting",
+                "suboptions": [
+                    {
+                        "label": "{item|name}",
+                        "value": "booming-bootloader"
+                    }
+                ],
+                "toggleable": true
+            },
+            {
+                "itemType": "spell",
+                "key": "ItemAlteration",
+                "mode": "add",
+                "predicate": [
+                    "spellshape:booming-bootloader"
+                ],
+                "property": "description",
+                "value": [
+                    {
+                        "text": "{item|description}"
+                    }
+                ]
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

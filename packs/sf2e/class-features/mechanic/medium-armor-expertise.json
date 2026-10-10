@@ -25,7 +25,76 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "armor:category:medium",
+                    "armor:group:composite"
+                ],
+                "type": "piercing",
+                "value": "1 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "armor:category:medium",
+                    "armor:group:leather"
+                ],
+                "type": "bludgeoning",
+                "value": "1 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "armor:category:medium",
+                    "armor:group:plate"
+                ],
+                "type": "slashing",
+                "value": "1 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "armor:category:medium",
+                    "armor:group:skeletal"
+                ],
+                "type": "precision",
+                "value": "3 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "armor:category:medium",
+                    "armor:group:ceramic"
+                ],
+                "type": [
+                    "acid",
+                    "cold",
+                    "electricity",
+                    "fire"
+                ],
+                "value": "1 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "armor:category:medium",
+                    "armor:group:polymer"
+                ],
+                "type": "area-damage",
+                "value": "1 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "armor:category:medium",
+                    "armor:group:chain"
+                ],
+                "type": "critical-hits",
+                "value": "4 + @armor.system.traits.config.resilient"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {
                 "light": {

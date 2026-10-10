@@ -12,7 +12,7 @@
         },
         "category": "ancestry",
         "description": {
-            "value": "<p>You've installed tiny thrusters and vents into your frame that enable you to hover a few inches above the ground, avoiding the dirt and grime below. Your land Speed gains the hover trait. In addition, you gain the Overload Thrusters action.</p>"
+            "value": "<p>You've installed tiny thrusters and vents into your frame that enable you to hover a few inches above the ground, avoiding the dirt and grime below. Your land Speed gains the hover trait. In addition, you gain the @UUID[Compendium.sf2e.actions.Item.Overload Thrusters] action.</p>"
         },
         "level": {
             "value": 1
@@ -29,7 +29,12 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "GrantItem",
+                "uuid": "Compendium.sf2e.actions.Item.Overload Thrusters"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

@@ -11,7 +11,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>This shield (+2 AC, Hardness 9, HP 102, BT 51) prominently features Lissala's religious symbol. When a <em>spell gem</em> attached to the Lissalan barrier's weapon component is activated to Cast a Spell, the shield regains Hit Points equal to twice the spell's rank.</p>\n<p>The included weapon can have both a single <em>aeon stone</em> and up to seven <em>spell gems</em> attached to it at once.</p>"
+            "value": "<p>This shield (+2 AC, Hardness 9, HP 102, BT 51) prominently features Lissala's religious symbol. When a <em>spell gem</em> attached to the Lissalan barrier's weapon component is activated to Cast a Spell, the shield regains Hit Points equal to twice the spell's rank.</p>\n<p>Battlement 1d6 mental (aeon).</p>\n<p>The included weapon can have a single <em>aeon stone</em> and up to seven <em>spell gems</em> attached to it at once.</p>"
         },
         "grade": null,
         "hardness": 9,

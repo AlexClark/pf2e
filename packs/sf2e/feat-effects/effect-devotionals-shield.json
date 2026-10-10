@@ -1,0 +1,73 @@
+{
+    "_id": "hT6yZ1aB3cEfR9uV",
+    "img": "systems/sf2e/icons/spells/energy-aegis.webp",
+    "name": "Effect: Devotional's Shield",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.Devotional's Shield]</p>\n<p>You gain a +1 circumstance bonus to the triggering save, or +2 if it is a divine magical effect.</p>"
+        },
+        "duration": {
+            "expiry": null,
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "choices": [
+                    {
+                        "label": "PF2E.TraitMagical",
+                        "value": "magical"
+                    },
+                    {
+                        "label": "PF2E.TraitDivine",
+                        "value": "divine"
+                    }
+                ],
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.Trait",
+                "rollOption": "devotionals-shield"
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "devotionals-shield:magical"
+                ],
+                "removeAfterRoll": "if-enabled",
+                "selector": "saving-throw",
+                "type": "circumstance",
+                "value": 1
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "devotionals-shield:divine"
+                ],
+                "removeAfterRoll": "if-enabled",
+                "selector": "saving-throw",
+                "type": "circumstance",
+                "value": 2
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

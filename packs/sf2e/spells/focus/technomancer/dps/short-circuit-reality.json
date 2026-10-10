@@ -10,12 +10,7 @@
         },
         "counteraction": false,
         "damage": {},
-        "defense": {
-            "passive": {
-                "statistic": "ac"
-            },
-            "save": null
-        },
+        "defense": null,
         "description": {
             "value": "<p>You create a pathway through reality, launching yourself across space to get the jump on a foe. You teleport to an unoccupied space you can see within 30 feet. Then, attempt a Strike against a creature; you can use your spell attack roll for this Strike. The target is @UUID[Compendium.sf2e.conditions.Item.Off-Guard] against this Strike.</p><hr /><p><strong>Heightened (+1)</strong> Increase distance you can teleport by 20 feet.</p>"
         },

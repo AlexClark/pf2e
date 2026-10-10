@@ -30,6 +30,10 @@
             "title": "Starfinder Tech Core"
         },
         "rules": [],
+        "selfEffect": {
+            "name": "Effect: Script Kiddie",
+            "uuid": "Compendium.sf2e.feat-effects.Item.Effect: Script Kiddie"
+        },
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

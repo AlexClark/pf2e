@@ -6,7 +6,7 @@
     "system": {
         "baseItem": null,
         "bulk": {
-            "value": 0.1
+            "value": 0
         },
         "containerId": null,
         "description": {
@@ -35,7 +35,28 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "key": "ActiveEffectLike",
+                "mode": "add",
+                "path": "inventory.bulk.encumberedAfterAddend",
+                "value": 3
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    {
+                        "or": [
+                            "action:reposition",
+                            "action:shove"
+                        ]
+                    }
+                ],
+                "selector": "fortitude-dc",
+                "type": "item",
+                "value": 2
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",
@@ -44,7 +65,7 @@
             ]
         },
         "usage": {
-            "value": "held-in-one-hand"
+            "value": "implanted"
         }
     },
     "type": "equipment"

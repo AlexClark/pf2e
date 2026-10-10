@@ -24,6 +24,10 @@
             "title": "Starfinder Tech Core"
         },
         "rules": [],
+        "selfEffect": {
+            "name": "Effect: Overload Thrusters",
+            "uuid": "Compendium.sf2e.feat-effects.Item.Effect: Overload Thrusters"
+        },
         "traits": {
             "value": []
         }

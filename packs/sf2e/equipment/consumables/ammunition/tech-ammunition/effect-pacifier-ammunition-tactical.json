@@ -1,0 +1,46 @@
+{
+    "_id": "4SMgab3F5bUlj27V",
+    "folder": "lSOWDN0CGj0ewjcm",
+    "img": "systems/sf2e/icons/abilities/green-light-pointer.webp",
+    "name": "Effect: Pacifier Ammunition (Tactical)",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Pacifier Ammunition (Tactical)]</p>\n<p>You take a –2 status penalty to Will saves.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 12
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "will",
+                "slug": "pacifier-ammunition",
+                "type": "status",
+                "value": -2
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

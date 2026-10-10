@@ -6,7 +6,7 @@
         {
             "_id": "7NlXefjfn0RAVmrT",
             "img": "systems/sf2e/icons/actions/Reaction.webp",
-            "name": "Action",
+            "name": "Sensor Scream",
             "sort": 0,
             "system": {
                 "actionType": {
@@ -17,7 +17,7 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": ""
+                    "value": "<p><strong>Trigger</strong> A starship targets the hazard with Hack Comms</p><hr /><p><strong>Effect</strong> A cursed recording plays on every tech device inside the triggering starship. All creatures that can hear it must attempt a @Check[will|dc:18] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[3d8[mental]] damage and is @UUID[Compendium.sf2e.conditions.Item.Frightened]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[6d8[mental]] damage and is @UUID[Compendium.sf2e.conditions.Item.Frightened]{Frightened 2}.</p>"
                 },
                 "publication": {
                     "license": "OGL",
@@ -27,7 +27,13 @@
                 "rules": [],
                 "slug": null,
                 "traits": {
-                    "value": []
+                    "value": [
+                        "auditory",
+                        "emotion",
+                        "fear",
+                        "mental",
+                        "sonic"
+                    ]
                 }
             },
             "type": "action"
@@ -46,7 +52,7 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>This hazard appears as a Small starship on the sensor map and can be targeted with Hack Comms. Sensor Scream <span class=\"action-glyph\">R</span> (auditory, emotion, fear, mental, sonic)</p>\n<p><strong>Trigger</strong> A starship targets the hazard with Hack Comms</p><hr /><p><strong>Effect</strong> A cursed recording plays on every tech device inside the triggering starship. All creatures that can hear it must attempt a @Check[will|dc:18] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[3d8[mental]] damage and is frightened 1.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[6d8[mental]] damage and is @UUID[Compendium.sf2e.conditions.Item.Frightened]{Frightened 2}.</p>"
+                    "value": "<p>This hazard appears as a Small starship on the sensor map and can be targeted with Hack Comms.</p>"
                 },
                 "publication": {
                     "license": "OGL",
@@ -113,7 +119,7 @@
         "traits": {
             "rarity": "common",
             "size": {
-                "value": "lg"
+                "value": "sm"
             },
             "value": [
                 "haunt",

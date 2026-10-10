@@ -12,11 +12,12 @@
         },
         "category": "ancestry",
         "description": {
-            "value": "<p>Your body's frame is highly reconfigurable, allowing for additional augmentations. You can Implant Augmentation on yourself in 10 minutes using a medkit or repair toolkit. In addition, increase your augmentation implant limit by 1.</p><hr /><p><strong>Special</strong> You can select this feat more than once, increasing your augmentation implant limit by 1 each time you do.</p>"
+            "value": "<p>Your body's frame is highly reconfigurable, allowing for additional augmentations. You can @UUID[Compendium.sf2e.actions.Item.Implant Augmentation] on yourself in 10 minutes using a medkit or repair toolkit. In addition, increase your augmentation implant limit by 1.</p><hr /><p><strong>Special</strong> You can select this feat more than once, increasing your augmentation implant limit by 1 each time you do.</p>"
         },
         "level": {
             "value": 5
         },
+        "maxTakable": null,
         "prerequisites": {
             "value": []
         },

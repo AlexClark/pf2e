@@ -25,7 +25,29 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "RollOption",
+                "option": "long-reach",
+                "toggleable": true
+            },
+            {
+                "definition": [
+                    "item:melee",
+                    "item:usage:hands:2",
+                    {
+                        "not": "item:trait:reach"
+                    }
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "long-reach"
+                ],
+                "property": "weapon-traits",
+                "value": "reach"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

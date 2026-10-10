@@ -2,7 +2,7 @@
     "_id": "Y7tt91gYxRr46GPt",
     "folder": "qHTMxmV7HVy3uLww",
     "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
-    "name": "Sro Lore",
+    "name": "SRO Lore",
     "system": {
         "actionType": {
             "value": "passive"
@@ -25,7 +25,24 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "ActiveEffectLike",
+                "mode": "upgrade",
+                "path": "system.skills.crafting.rank",
+                "value": 1
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "upgrade",
+                "path": "system.skills.nature.rank",
+                "value": 1
+            },
+            {
+                "key": "GrantItem",
+                "uuid": "Compendium.sf2e.feats.Item.Additional Lore"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

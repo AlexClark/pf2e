@@ -46,7 +46,7 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>Any time the hazard takes damage, it can take a maximum of @Damage[6[untyped]] damage per targeted 5-foot cube of slime. For every @Damage[6[healing]] Hit Points it's missing after the damage is dealt, it loses 6 maximum Hit Points and one 5-foot cube of slime is destroyed.</p>"
+                    "value": "<p>Any time the hazard takes damage, it can take a maximum of 6 damage per targeted 5-foot cube of slime. For every 6 Hit Points it's missing after the damage is dealt, it loses 6 maximum Hit Points and one 5-foot cube of slime is destroyed.</p>"
                 },
                 "publication": {
                     "license": "OGL",

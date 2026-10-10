@@ -39,13 +39,23 @@
             {
                 "key": "BaseSpeed",
                 "predicate": [
-                    "fins"
+                    "fins",
+                    {
+                        "nor": [
+                            "armor:category:heavy",
+                            "armor:category:medium"
+                        ]
+                    },
+                    {
+                        "not": "self:condition:encumbered"
+                    }
                 ],
                 "selector": "swim",
                 "value": 40
             },
             {
                 "key": "RollOption",
+                "label": "Fins Deployed",
                 "option": "fins",
                 "toggleable": true
             }

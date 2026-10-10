@@ -1,0 +1,44 @@
+{
+    "_id": "Wc5pL9dHs2XnT4vB",
+    "img": "icons/skills/targeting/crosshair-bars-yellow.webp",
+    "name": "Spell Effect: Wishborne Shot (Cover Suppression)",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Wishborne Shot] via Ephemeral Effect</p>\n<p>This applies only during the Strike. You can't benefit from circumstance bonuses to AC from cover against that Strike.</p>"
+        },
+        "duration": {
+            "expiry": null,
+            "sustained": false,
+            "unit": "unlimited",
+            "value": -1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "AdjustModifier",
+                "selector": "ac",
+                "slug": "cover",
+                "suppress": true
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

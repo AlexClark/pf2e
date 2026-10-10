@@ -48,7 +48,6 @@
                             "kinds": [
                                 "damage"
                             ],
-                            "materials": [],
                             "type": "piercing"
                         }
                     }
@@ -62,7 +61,6 @@
                             "kinds": [
                                 "damage"
                             ],
-                            "materials": [],
                             "type": "piercing"
                         }
                     }
@@ -76,7 +74,6 @@
                             "kinds": [
                                 "damage"
                             ],
-                            "materials": [],
                             "type": "piercing"
                         }
                     }
@@ -90,7 +87,6 @@
                             "kinds": [
                                 "damage"
                             ],
-                            "materials": [],
                             "type": "piercing"
                         }
                     }
@@ -100,6 +96,38 @@
         },
         "level": {
             "value": 1
+        },
+        "overlays": {
+            "H7kL3mP9sW5xA2fG": {
+                "name": "Alchemical Shot (Silver)",
+                "overlayType": "override",
+                "sort": 2,
+                "system": {
+                    "damage": {
+                        "fO0YbxjmeEgG1ij1": {
+                            "category": null,
+                            "materials": [
+                                "silver"
+                            ]
+                        }
+                    }
+                }
+            },
+            "N4pQ8rT2vY6bC1dE": {
+                "name": "Alchemical Shot (Cold Iron)",
+                "overlayType": "override",
+                "sort": 1,
+                "system": {
+                    "damage": {
+                        "fO0YbxjmeEgG1ij1": {
+                            "category": null,
+                            "materials": [
+                                "cold-iron"
+                            ]
+                        }
+                    }
+                }
+            }
         },
         "publication": {
             "license": "ORC",

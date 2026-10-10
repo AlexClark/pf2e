@@ -42,7 +42,7 @@
                 "key": "FlatModifier",
                 "predicate": [
                     {
-                        "gte": [
+                        "gt": [
                             "target:distance",
                             60
                         ]
@@ -51,44 +51,58 @@
                 "selector": [
                     "{item|id}-ranged-damage"
                 ],
-                "slug": "accelerator-ammunition-damage",
+                "slug": "accelerator-ammunition",
                 "type": "circumstance",
                 "value": "@weapon.system.damage.dice"
             },
             {
-                "key": "AdjustModifier",
-                "mode": "upgrade",
+                "key": "FlatModifier",
                 "predicate": [
                     {
                         "or": [
                             {
-                                "gte": [
+                                "gt": [
                                     "target:distance",
                                     120
                                 ]
                             },
-                            "parent:origin:item:group:sniper"
+                            {
+                                "and": [
+                                    {
+                                        "gt": [
+                                            "target:distance",
+                                            60
+                                        ]
+                                    },
+                                    "item:group:sniper"
+                                ]
+                            }
                         ]
                     }
                 ],
-                "selector": "{item|id}-ranged-damage",
-                "slug": "accelerator-ammunition-damage",
+                "selector": [
+                    "{item|id}-ranged-damage"
+                ],
+                "slug": "accelerator-ammunition-doubled",
+                "type": "circumstance",
                 "value": "@weapon.system.damage.dice * 2"
             },
             {
-                "key": "AdjustModifier",
-                "mode": "upgrade",
+                "key": "FlatModifier",
                 "predicate": [
                     {
-                        "gte": [
+                        "gt": [
                             "target:distance",
                             120
                         ]
                     },
-                    "parent:origin:item:group:sniper"
+                    "item:group:sniper"
                 ],
-                "selector": "{item|id}-ranged-damage",
-                "slug": "accelerator-ammunition-damage",
+                "selector": [
+                    "{item|id}-ranged-damage"
+                ],
+                "slug": "accelerator-ammunition-tripled",
+                "type": "circumstance",
                 "value": "@weapon.system.damage.dice * 3"
             }
         ],

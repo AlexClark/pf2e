@@ -29,7 +29,18 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "itemType": "feat",
+                "key": "ItemAlteration",
+                "mode": "downgrade",
+                "predicate": [
+                    "item:slug:identity-mimicry"
+                ],
+                "property": "frequency-per",
+                "value": "PT10M"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

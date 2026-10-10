@@ -12,7 +12,7 @@
         "containerId": null,
         "damage": null,
         "description": {
-            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>You gain resistance 15 to fire and weakness 8 to cold, and you treat environmental heat effects as if they were two steps less severe.</p>"
+            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>This frothy red serum is warm to the touch. You gain resistance 15 to fire and weakness 8 to cold, and you treat environmental heat effects as if they were two steps less severe for 1 hour.</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.Effect: Corona Serum]</p>"
         },
         "hardness": 0,
         "hp": {

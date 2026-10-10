@@ -26,7 +26,7 @@
             "type": null
         },
         "price": {
-            "per": 1,
+            "per": 10,
             "value": {
                 "sp": 260
             }
@@ -37,7 +37,26 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "key": "Note",
+                "outcome": [
+                    "success"
+                ],
+                "selector": "{item|id}-ranged-damage",
+                "text": "<p>Until the start of your next turn, the target isn't @UUID[Compendium.sf2e.conditions.Item.Concealed] due to dim lighting. If it would be hidden or undetected due to darkness or invisibility, it's concealed instead.</p>",
+                "title": "Painter Ammunition"
+            },
+            {
+                "key": "Note",
+                "outcome": [
+                    "criticalSuccess"
+                ],
+                "selector": "{item|id}-ranged-damage",
+                "text": "<p>Until the start of your next turn, the target is fully visible in dim light or darkness, and any invisibility is @UUID[Compendium.sf2e.conditions.Item.Suppressed].</p>",
+                "title": "Painter Ammunition"
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

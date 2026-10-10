@@ -10,7 +10,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>Your stomach is replaced with that of a ghoul, allowing you to safely ingest a wide range of usually stomach-churning cuisine. Some with this augmentation report having subtle cravings for food they'd usually avoid. You gain a +3 circumstance bonus to Fortitude saves against ingested poisons and to retch while sickened. You become extremely hungry, needing to constantly satiate yourself. If you've eaten within the last hour, you gain a +10-foot item bonus to your Speeds and a +3 item bonus to Athletics checks to [[/act high-jump]] and [[/act long-jump]]. Otherwise, you take a –5-foot item penalty to your Speeds.</p>"
+            "value": "<p>Your stomach is replaced with that of a ghoul, allowing you to safely ingest a wide range of usually stomach-churning cuisine. Some with this augmentation report having subtle cravings for food they'd usually avoid. You gain a +3 circumstance bonus to Fortitude saves against ingested poisons and to retch while sickened. You become extremely hungry, needing to constantly satiate yourself. If you've eaten within the last hour, you gain a +10-foot item bonus to your Speeds and a +3 item bonus to Athletics checks to [[/act high-jump]] and [[/act long-jump]]. Otherwise, you take a –5-foot item penalty to your Speeds.</p>\n<p>@UUID[Compendium.sf2e.equipment.Item.Effect: Ghoul Stomach (Superior)]</p>"
         },
         "hardness": 0,
         "hp": {
@@ -39,13 +39,38 @@
             {
                 "key": "FlatModifier",
                 "predicate": [
-                    "ghoul-stomach"
+                    {
+                        "or": [
+                            {
+                                "and": [
+                                    "item:trait:ingested",
+                                    "item:trait:poison"
+                                ]
+                            },
+                            {
+                                "and": [
+                                    "action:retch",
+                                    "self:condition:sickened"
+                                ]
+                            }
+                        ]
+                    }
                 ],
                 "selector": [
                     "fortitude"
                 ],
-                "type": "item",
+                "slug": "ghoul-stomach",
+                "type": "circumstance",
                 "value": 3
+            },
+            {
+                "key": "FlatModifier",
+                "selector": [
+                    "all-speeds"
+                ],
+                "slug": "ghoul-stomach-hunger",
+                "type": "item",
+                "value": -5
             }
         ],
         "size": "med",

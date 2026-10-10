@@ -71,7 +71,7 @@
             "emitsSound": "encounter",
             "hardness": 22,
             "hp": {
-                "details": "",
+                "details": "(BT 45)",
                 "max": 90,
                 "temp": 0,
                 "value": 90
@@ -99,7 +99,7 @@
         },
         "details": {
             "description": "<p>A mysterious probe appears with a simple but deadly task: solve its equation or be destroyed.</p>",
-            "disable": "<p>@Check[computers|dc:35], Crafting, or Thievery (expert) to disarm the probe, or @Check[arcana|dc:37] or any Science Lore (expert) to solve the equation</p>",
+            "disable": "<p>@Check[computers|dc:35] (expert), @Check[crafting|dc:35] (expert), or @Check[thievery|dc:35] (expert) to disarm the probe, or @Check[arcana|dc:37] or any Science Lore (expert) to solve the equation</p>",
             "isComplex": false,
             "level": {
                 "value": 13

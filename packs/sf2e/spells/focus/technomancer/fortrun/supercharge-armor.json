@@ -12,7 +12,7 @@
         "damage": {},
         "defense": null,
         "description": {
-            "value": "<p>You infuse your armor with magical energy to bolster your defenses. You materialize a layer of energy encasing your armor that functions as a superior force field. You then become immune to supercharge armor for 10 minutes.</p><hr /><p><strong>Heightened (7th)</strong> The energy functions as an elite force field.</p>\n<p><strong>Heightened (9th)</strong> The energy functions as an ultimate force field.</p>"
+            "value": "<p>You infuse your armor with magical energy to bolster your defenses. You materialize a layer of energy encasing your armor that functions as a @UUID[Compendium.sf2e.equipment.Item.Force Field (Superior)]{superior force field}. You then become immune to supercharge armor for 10 minutes.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.Spell Effect: Supercharge Armor Immunity]</p><hr /><p><strong>Heightened (7th)</strong> The energy functions as an @UUID[Compendium.sf2e.equipment.Item.Force Field (Elite)]{elite force field}.</p>\n<p><strong>Heightened (9th)</strong> The energy functions as an @UUID[Compendium.sf2e.equipment.Item.Force Field (Ultimate)]{ultimate force field}.</p>"
         },
         "duration": {
             "sustained": false,

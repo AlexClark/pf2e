@@ -12,7 +12,7 @@
         "containerId": null,
         "damage": null,
         "description": {
-            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>This serum comes in a discreet, opaque black bottle. For 1 hour, your body sheds bright light in a 15-foot radius (and dim light for the next 15 feet) in the neon color or colors designated when the serum was created.</p>"
+            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>This serum comes in a discreet, opaque black bottle. For 1 hour, your body sheds bright light in a 15-foot radius (and dim light for the next 15 feet) in the neon color or colors designated when the serum was created.</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.Effect: Blacklight Serum]</p>"
         },
         "hardness": 0,
         "hp": {

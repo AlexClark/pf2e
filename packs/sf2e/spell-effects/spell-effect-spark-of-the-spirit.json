@@ -4,7 +4,7 @@
     "name": "Spell Effect: Spark of the Spirit",
     "system": {
         "description": {
-            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Spark of the Spirit]</p>\n<p>You are quickened and can use this additional action only to Interact or Step. You deal an additional 3d4 electricity damage when you Strike with a tech weapon.</p>"
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Spark of the Spirit]</p>\n<p>You are quickened and can use this additional action only to Interact or Step. You immediately regain all charges on batteries in your possession. You deal an additional 3d4 electricity damage when you Strike with a tech weapon.</p>"
         },
         "duration": {
             "expiry": "turn-start",

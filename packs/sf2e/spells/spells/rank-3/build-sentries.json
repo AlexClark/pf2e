@@ -39,7 +39,7 @@
             "damage": {
                 "bl6Nmolww4H5925N": "1d6"
             },
-            "interval": 1,
+            "interval": 2,
             "type": "interval"
         },
         "level": {
@@ -51,7 +51,7 @@
             "title": "Starfinder Tech Core"
         },
         "range": {
-            "value": ""
+            "value": "30 feet"
         },
         "requirements": "",
         "rules": [],

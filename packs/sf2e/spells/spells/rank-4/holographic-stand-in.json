@@ -15,7 +15,7 @@
             "value": "<p>You create a convincing holographic copy of yourself. This hologram looks exactly like you, but it's incorporeal and mimics your movements. When you Sustain the spell, you can Command the hologram to act differently. Characters can discern the nature of the hologram with a Perception check, or by interacting with it in any way, such as attempting to Strike it. You can look through the hologram's eyes by closing your own as part of a [[/act seek]] action. The spell immediately ends if you lose line of effect to your hologram.</p><hr /><p><strong>Heightened (9th)</strong> The maximum duration you can Sustain the spell increases to 10 minutes.</p>"
         },
         "duration": {
-            "sustained": false,
+            "sustained": true,
             "value": "1 minute"
         },
         "level": {

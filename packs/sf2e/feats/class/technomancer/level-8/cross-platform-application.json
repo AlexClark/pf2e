@@ -25,7 +25,85 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "DPS++",
+                        "predicate": [
+                            {
+                                "not": "feature:dps"
+                            }
+                        ],
+                        "value": "dps"
+                    },
+                    {
+                        "label": "FORTRUN",
+                        "predicate": [
+                            {
+                                "not": "feature:fortrun"
+                            }
+                        ],
+                        "value": "fortrun"
+                    },
+                    {
+                        "label": "Servoshell",
+                        "predicate": [
+                            {
+                                "not": "feature:servoshell"
+                            }
+                        ],
+                        "value": "servoshell"
+                    },
+                    {
+                        "label": "Viper",
+                        "predicate": [
+                            {
+                                "not": "feature:viper"
+                            }
+                        ],
+                        "value": "viper"
+                    }
+                ],
+                "flag": "language",
+                "key": "ChoiceSet",
+                "prompt": "SF2E.SpecificRule.Technomancer.ProgrammingLanguages.Prompt",
+                "rollOption": "cross-platform-application"
+            },
+            {
+                "key": "GrantItem",
+                "predicate": [
+                    "cross-platform-application:dps"
+                ],
+                "reevaluateOnUpdate": true,
+                "uuid": "Compendium.sf2e.spells.Item.A-Stellar Targetfinder Algorithm"
+            },
+            {
+                "key": "GrantItem",
+                "predicate": [
+                    "cross-platform-application:fortrun"
+                ],
+                "reevaluateOnUpdate": true,
+                "uuid": "Compendium.sf2e.spells.Item.Force-Fieldpga"
+            },
+            {
+                "key": "GrantItem",
+                "predicate": [
+                    "cross-platform-application:servoshell"
+                ],
+                "reevaluateOnUpdate": true,
+                "uuid": "Compendium.sf2e.spells.Item.Repair Protocols"
+            },
+            {
+                "key": "GrantItem",
+                "predicate": [
+                    "cross-platform-application:viper"
+                ],
+                "reevaluateOnUpdate": true,
+                "uuid": "Compendium.sf2e.spells.Item.Amplify Vulnerability"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

@@ -1,0 +1,37 @@
+{
+    "_id": "h9Rk5Tw3Uj7Ds2Lq",
+    "img": "systems/sf2e/icons/spells/mage-armor.webp",
+    "name": "Spell Effect: Supercharge Armor Immunity",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Supercharge Armor]</p>\n<p>You are immune to supercharge armor.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 10
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 5
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

@@ -1,0 +1,162 @@
+{
+    "_id": "pSYqn0eX79biewlJ",
+    "img": "systems/sf2e/icons/equipment/other/red-syringe.webp",
+    "name": "Effect: Corona Serum",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Corona Serum (Commercial)], @UUID[Compendium.sf2e.equipment.Item.Corona Serum (Tactical)], @UUID[Compendium.sf2e.equipment.Item.Corona Serum (Advanced)], @UUID[Compendium.sf2e.equipment.Item.Corona Serum (Superior)]</p>\n<p>You gain resistance to fire and weakness to cold. You treat environmental heat effects as if they were less severe.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "hours",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:corona-serum-commercial"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Corona Serum (Commercial)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:corona-serum-tactical"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Corona Serum (Tactical)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:corona-serum-advanced"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Corona Serum (Advanced)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:corona-serum-superior"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Corona Serum (Superior)"
+                    }
+                ],
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.EquipmentVariety",
+                "rollOption": "corona-serum"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "corona-serum:corona-serum-commercial"
+                ],
+                "type": "fire",
+                "value": 5
+            },
+            {
+                "key": "Weakness",
+                "predicate": [
+                    "corona-serum:corona-serum-commercial"
+                ],
+                "type": "cold",
+                "value": 2
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "corona-serum:corona-serum-tactical"
+                ],
+                "type": "fire",
+                "value": 10
+            },
+            {
+                "key": "Weakness",
+                "predicate": [
+                    "corona-serum:corona-serum-tactical"
+                ],
+                "type": "cold",
+                "value": 5
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "corona-serum:corona-serum-advanced"
+                ],
+                "type": "fire",
+                "value": 15
+            },
+            {
+                "key": "Weakness",
+                "predicate": [
+                    "corona-serum:corona-serum-advanced"
+                ],
+                "type": "cold",
+                "value": 8
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "corona-serum:corona-serum-superior"
+                ],
+                "type": "fire",
+                "value": 20
+            },
+            {
+                "key": "Weakness",
+                "predicate": [
+                    "corona-serum:corona-serum-superior"
+                ],
+                "type": "cold",
+                "value": 12
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

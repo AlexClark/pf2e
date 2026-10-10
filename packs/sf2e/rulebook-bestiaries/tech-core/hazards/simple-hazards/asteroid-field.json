@@ -81,7 +81,7 @@
             "emitsSound": "encounter",
             "hardness": 12,
             "hp": {
-                "details": "",
+                "details": "(BT 5) each",
                 "max": 10,
                 "temp": 0,
                 "value": 10

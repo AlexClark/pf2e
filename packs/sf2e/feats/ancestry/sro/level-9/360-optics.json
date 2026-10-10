@@ -25,7 +25,14 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "system.attributes.flanking.offGuardable",
+                "value": false
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

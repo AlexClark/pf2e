@@ -35,7 +35,28 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "key": "RollOption",
+                "label": "Patagium — Spread",
+                "option": "patagium-spread",
+                "toggleable": true
+            },
+            {
+                "key": "BaseSpeed",
+                "predicate": [
+                    "patagium-spread",
+                    {
+                        "not": "armor:category:heavy"
+                    },
+                    {
+                        "not": "self:condition:encumbered"
+                    }
+                ],
+                "selector": "fly",
+                "value": 20
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

@@ -17,7 +17,26 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "value": "Compendium.sf2e.feats.Item.Armor Proficiency"
+                    },
+                    {
+                        "value": "Compendium.sf2e.feats.Item.Weapon Proficiency"
+                    }
+                ],
+                "flag": "combatantSro",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.Feat"
+            },
+            {
+                "key": "GrantItem",
+                "uuid": "{item|flags.system.rulesSelections.combatantSro}"
+            }
+        ],
         "traits": {
             "rarity": "common",
             "value": []

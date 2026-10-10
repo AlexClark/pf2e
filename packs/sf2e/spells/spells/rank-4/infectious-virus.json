@@ -12,7 +12,18 @@
             "value": ""
         },
         "counteraction": false,
-        "damage": {},
+        "damage": {
+            "pV8nK2sR6tYwQ4mL": {
+                "applyMod": false,
+                "category": "persistent",
+                "formula": "10",
+                "kinds": [
+                    "damage"
+                ],
+                "materials": [],
+                "type": "electricity"
+            }
+        },
         "defense": {
             "save": {
                 "basic": false,
@@ -25,6 +36,14 @@
         "duration": {
             "sustained": false,
             "value": ""
+        },
+        "heightening": {
+            "area": 0,
+            "damage": {
+                "pV8nK2sR6tYwQ4mL": "5"
+            },
+            "interval": 2,
+            "type": "interval"
         },
         "level": {
             "value": 4

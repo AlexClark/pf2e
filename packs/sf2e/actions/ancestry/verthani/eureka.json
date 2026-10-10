@@ -12,7 +12,7 @@
         },
         "category": "interaction",
         "description": {
-            "value": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> Attempt a Life Science Lore or Physical Science Lore check to @UUID[Compendium.sf2e.actions.Item.Recall Knowledge]. Roll twice and take the better of the two results.</p>"
+            "value": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> Attempt a Life Science Lore or Physical Science Lore check to @UUID[Compendium.sf2e.actions.Item.Recall Knowledge]. Roll twice and take the better of the two results.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.Effect: Eureka!]</p>"
         },
         "frequency": {
             "max": 1,
@@ -24,6 +24,10 @@
             "title": "Starfinder Tech Core"
         },
         "rules": [],
+        "selfEffect": {
+            "name": "Effect: Eureka!",
+            "uuid": "Compendium.sf2e.feat-effects.Item.Effect: Eureka!"
+        },
         "traits": {
             "value": [
                 "fortune"

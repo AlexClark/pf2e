@@ -2,11 +2,11 @@
     "_id": "t4LHsWjN4fUy4I6L",
     "folder": "yMJWk71HGFcMXevQ",
     "img": "icons/commodities/tech/electronics-tech-sensor-steel-blue.webp",
-    "name": "Biometric Lock (Dna Matching)",
+    "name": "Biometric Lock (DNA Matching)",
     "system": {
         "baseItem": null,
         "bulk": {
-            "value": 0.1
+            "value": 0
         },
         "containerId": null,
         "description": {
@@ -44,7 +44,7 @@
             ]
         },
         "usage": {
-            "value": "held-in-one-hand"
+            "value": "held-in-two-hands"
         }
     },
     "type": "equipment"

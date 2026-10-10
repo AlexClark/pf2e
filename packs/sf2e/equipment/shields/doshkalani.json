@@ -11,7 +11,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>A doshkalani is a vesk shield that mixes defense and offense, featuring a ridge of spikes like those on a doshko.</p>"
+            "value": "<p>A doshkalani is a vesk shield that mixes defense and offense, featuring a ridge of spikes like those on a doshko.</p>\n<p>Battlement 1d8 P (unwieldy).</p>"
         },
         "grade": "commercial",
         "hardness": 5,

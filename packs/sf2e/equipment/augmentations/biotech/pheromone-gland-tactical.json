@@ -10,7 +10,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>Enhanced pheromone glands are implanted in your throat and wrists, constantly releasing faint but effective chemical hormones. These pheromones don't have a smell, and their effects are imperceptible unless you're communicating with a creature that normally communicates primarily through pheromones. You get a +2 item bonus to Nature checks to @UUID[Compendium.sf2e.actions.Item.Command an Animal]. If you have a wildwise graft or other way of communicating directly with animals, you also get a +2 item bonus to Diplomacy checks.</p>"
+            "value": "<p>Enhanced pheromone glands are implanted in your throat and wrists, constantly releasing faint but effective chemical hormones. These pheromones don't have a smell, and their effects are imperceptible unless you're communicating with a creature that normally communicates primarily through pheromones. You get a +2 item bonus to Nature checks to @UUID[Compendium.sf2e.actions.Item.Command an Animal] and a +2 item bonus to Diplomacy checks. The Diplomacy bonus applies to all creatures.</p>"
         },
         "hardness": 0,
         "hp": {

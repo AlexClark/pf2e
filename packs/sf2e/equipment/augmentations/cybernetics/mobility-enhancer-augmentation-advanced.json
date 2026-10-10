@@ -35,7 +35,50 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "PF2E.Actor.Speed.Type.Burrow",
+                        "predicate": [
+                            "speed:burrow"
+                        ],
+                        "value": "burrow"
+                    },
+                    {
+                        "label": "PF2E.Actor.Speed.Type.Climb",
+                        "predicate": [
+                            "speed:climb"
+                        ],
+                        "value": "climb"
+                    },
+                    {
+                        "label": "PF2E.Actor.Speed.Type.Fly",
+                        "predicate": [
+                            "speed:fly"
+                        ],
+                        "value": "fly"
+                    },
+                    {
+                        "label": "PF2E.Actor.Speed.Type.Swim",
+                        "predicate": [
+                            "speed:swim"
+                        ],
+                        "value": "swim"
+                    }
+                ],
+                "flag": "speed",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.MovementType"
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "{item|flags.system.rulesSelections.speed}-speed",
+                "type": "item",
+                "value": 15
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

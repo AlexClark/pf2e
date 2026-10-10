@@ -1,0 +1,43 @@
+{
+    "_id": "iU7zA2bC4dFgS1vW",
+    "img": "systems/sf2e/icons/actions/TwoActions.webp",
+    "name": "Effect: Leverage Ingenuity",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.Leverage Ingenuity]</p>\n<p>Roll your next skill check twice and use the higher result.</p>"
+        },
+        "duration": {
+            "expiry": "turn-end",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 5
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "keep": "higher",
+                "key": "RollTwice",
+                "selector": "skill-check"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

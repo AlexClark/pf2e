@@ -29,7 +29,42 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    {
+                        "or": [
+                            "hook-claws:existing-climb-speed",
+                            "hook-claws:no-climb-speed"
+                        ]
+                    }
+                ],
+                "selector": "climb-speed",
+                "value": 5
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "fins"
+                ],
+                "selector": "swim-speed",
+                "value": 5
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    {
+                        "or": [
+                            "wings-deployed",
+                            "patagium-spread"
+                        ]
+                    }
+                ],
+                "selector": "fly-speed",
+                "value": 5
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

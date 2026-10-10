@@ -1,0 +1,94 @@
+{
+    "_id": "JmfAK5NKvaN7w2hO",
+    "img": "systems/sf2e/icons/equipment/consumables/potions/potion-of-disguise.webp",
+    "name": "Effect: Antiemetic",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Antiemetic (Commercial)], @UUID[Compendium.sf2e.equipment.Item.Antiemetic (Tactical)]</p>\n<p>Your sickened value is reduced for 10 minutes. A value reduced to 0 doesn't remove the condition.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 10
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:antiemetic-commercial"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Antiemetic (Commercial)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:antiemetic-tactical"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Antiemetic (Tactical)"
+                    }
+                ],
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.EquipmentVariety",
+                "rollOption": "antiemetic"
+            },
+            {
+                "itemType": "condition",
+                "key": "ItemAlteration",
+                "mode": "subtract",
+                "predicate": [
+                    "antiemetic:antiemetic-commercial",
+                    "item:slug:sickened"
+                ],
+                "property": "badge-value",
+                "value": 1
+            },
+            {
+                "itemType": "condition",
+                "key": "ItemAlteration",
+                "mode": "subtract",
+                "predicate": [
+                    "antiemetic:antiemetic-tactical",
+                    "item:slug:sickened"
+                ],
+                "property": "badge-value",
+                "value": 2
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

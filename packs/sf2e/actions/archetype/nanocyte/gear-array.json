@@ -12,7 +12,7 @@
         },
         "category": "interaction",
         "description": {
-            "value": "<p><strong>Effect</strong> You can don or remove any one suit of armor registered as your nanocyte gear, then you can Interact to stow or draw any one weapon or shield registered as your nanocyte gear.</p>"
+            "value": "<p><strong>Effect</strong> You can don or remove any one suit of armor registered as your nanocyte gear, then you can Interact to stow or draw any one weapon or shield registered as your nanocyte gear.</p><hr /><p><strong>Special</strong> You can use Gear Array as a free action triggered when you roll for initiative.</p>"
         },
         "publication": {
             "license": "ORC",

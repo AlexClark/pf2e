@@ -6,11 +6,11 @@
     "system": {
         "baseItem": null,
         "bulk": {
-            "value": 0.1
+            "value": 0
         },
         "containerId": null,
         "description": {
-            "value": "<p>This sleek smartwatch functions as a datapad, but it also features unique firmware and magical components that allow the user control over their own personal chronology.</p>\n<p><strong>Activate—</strong></p>\n<p><strong>Access Chrono-App</strong> <span class=\"action-glyph\">1</span> (time)</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> You open the chronowatch's specialized software, altering the flow of time for yourself. Select one of the following options.</p>\n<p><strong>Accelerate</strong> You speed up time, making yourself a minute older. One condition affecting you that would end within the next minute ends immediately instead.</p>\n<p><strong>Freeze</strong> You briefly halt time, giving you precious seconds to strategize. You @UUID[Compendium.sf2e.actions.Item.Recall Knowledge] or [[/act seek]] up to three times, in any combination, and you gain a +1 item bonus to your Perception or skill checks to do so.</p>\n<p><strong>Rewind</strong> You rewind time, making yourself a minute younger. Choose one ongoing effect affecting you that started within the last minute and that you failed a saving throw</p>"
+            "value": "<p>This sleek smartwatch functions as a datapad, but it also features unique firmware and magical components that allow the user control over their own personal chronology.</p>\n<p><strong>Activate—Access Chrono-App</strong> <span class=\"action-glyph\">1</span> (time)</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> You open the chronowatch's specialized software, altering the flow of time for yourself. Select one of the following options.</p>\n<p><strong>Accelerate</strong> You speed up time, making yourself a minute older. One condition affecting you that would end within the next minute ends immediately instead.</p>\n<p><strong>Freeze</strong> You briefly halt time, giving you precious seconds to strategize. You @UUID[Compendium.sf2e.actions.Item.Recall Knowledge] or [[/act seek]] up to three times, in any combination, and you gain a +1 item bonus to your Perception or skill checks to do so.</p>\n<p><strong>Rewind</strong> You rewind time, making yourself a minute younger. Choose one ongoing effect affecting you that started within the last minute and that you failed a saving throw against. You immediately attempt a new save against the same effect, changing the ongoing effect based on your new result (even if it's worse). Access Chrono-App gains the fortune trait.</p>"
         },
         "hardness": 0,
         "hp": {

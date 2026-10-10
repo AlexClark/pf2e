@@ -10,7 +10,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>This magical mesh refines residual magic into ammunition.</p><hr /><p><strong>Activate—Conduct Ammunition</strong> <span class=\"action-glyph\">f</span> (manipulate)</p>\n<p><strong>Trigger</strong> Your last non-cantrip spell this turn had the acid, cold, electricity, fire, poison, or sonic trait</p>\n<p><strong>Effect</strong> The installed weapon's battery regains 2 charge. If this would exceed the maximum charges for its magazine, the weapon instead deals an additional @Damage[2[untyped]] damage of the triggering type until the end of your next turn.</p>"
+            "value": "<p>This magical mesh refines residual magic into ammunition.</p><hr /><p><strong>Activate—Conduct Ammunition</strong> <span class=\"action-glyph\">f</span> (manipulate)</p>\n<p><strong>Trigger</strong> Your last non-cantrip spell this turn had the acid, cold, electricity, fire, poison, or sonic trait</p>\n<p><strong>Effect</strong> The installed weapon's battery regains 2 charges. If this would exceed the maximum charges for its magazine, the weapon instead deals an additional 2 damage of the triggering type until the end of your next turn.</p>"
         },
         "hardness": 0,
         "hp": {
@@ -45,7 +45,7 @@
             ]
         },
         "usage": {
-            "value": "installed-in-a-weapon"
+            "value": "installed-in-a-weapon-that-uses-a-battery"
         }
     },
     "type": "equipment"

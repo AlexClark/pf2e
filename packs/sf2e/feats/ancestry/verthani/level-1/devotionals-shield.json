@@ -12,7 +12,7 @@
         },
         "category": "ancestry",
         "description": {
-            "value": "<p><strong>Trigger</strong> You attempt a saving throw against a magical effect, but you haven't rolled yet.</p><hr /><p>Your ardent devotion to your faith or philosophy shields you from other divine magic and effects. You gain a +1 circumstance bonus to the triggering saving throw or a +2 circumstance bonus if it's a divine magical effect.</p>"
+            "value": "<p><strong>Trigger</strong> You attempt a saving throw against a magical effect, but you haven't rolled yet.</p><hr /><p>Your ardent devotion to your faith or philosophy shields you from other divine magic and effects. You gain a +1 circumstance bonus to the triggering saving throw or a +2 circumstance bonus if it's a divine magical effect.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.Effect: Devotional's Shield]</p>"
         },
         "level": {
             "value": 1
@@ -30,6 +30,10 @@
             "title": "Starfinder Tech Core"
         },
         "rules": [],
+        "selfEffect": {
+            "name": "Effect: Devotional's Shield",
+            "uuid": "Compendium.sf2e.feat-effects.Item.Effect: Devotional's Shield"
+        },
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

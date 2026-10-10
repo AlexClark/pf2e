@@ -1,0 +1,116 @@
+{
+    "_id": "dP2tU6wX8yAbN5qR",
+    "img": "systems/sf2e/icons/abilities/yellow-thrusters.webp",
+    "name": "Effect: Overclocked",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.Overclock Gear]</p>\n<p>The chosen tech item is overclocked. Dismiss this effect when that gear stops being overclocked.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "actorFlag": true,
+                "adjustName": false,
+                "allowNoSelection": true,
+                "choices": {
+                    "ownedItems": true,
+                    "predicate": [
+                        "item:trait:tech"
+                    ],
+                    "types": [
+                        "physical"
+                    ]
+                },
+                "flag": "overclockedItem",
+                "key": "ChoiceSet",
+                "prompt": "Select the overclocked item."
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "overclock-weapon",
+                    "item:id:{item|flags.system.rulesSelections.overclockedItem}"
+                ],
+                "selector": "strike-attack-roll",
+                "type": "status",
+                "value": 1
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "overclock-weapon",
+                    "item:id:{item|flags.system.rulesSelections.overclockedItem}"
+                ],
+                "selector": "strike-damage",
+                "type": "status",
+                "value": "ceil(@actor.level / 2)"
+            },
+            {
+                "domain": "ranged-attack-roll",
+                "key": "RollOption",
+                "option": "ignore-range-penalty:2",
+                "predicate": [
+                    "feature:dps",
+                    "item:id:{item|flags.system.rulesSelections.overclockedItem}"
+                ]
+            },
+            {
+                "key": "Note",
+                "predicate": [
+                    "feature:dps",
+                    "item:id:{item|flags.system.rulesSelections.overclockedItem}",
+                    {
+                        "lt": [
+                            "self:level",
+                            12
+                        ]
+                    }
+                ],
+                "selector": "strike-attack-roll",
+                "text": "Reduce the circumstance bonus to AC your target has from cover by 2.",
+                "title": "Overclock Boost"
+            },
+            {
+                "key": "Note",
+                "predicate": [
+                    "feature:dps",
+                    "item:id:{item|flags.system.rulesSelections.overclockedItem}",
+                    {
+                        "gte": [
+                            "self:level",
+                            12
+                        ]
+                    }
+                ],
+                "selector": "strike-attack-roll",
+                "text": "Reduce the circumstance bonus to AC your target has from cover by 4.",
+                "title": "Overclock Boost"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

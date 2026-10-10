@@ -1,0 +1,66 @@
+{
+    "_id": "7mQvL2pR9sKdEe01",
+    "img": "systems/sf2e/icons/abilities/blue-circuit-board-2.webp",
+    "name": "Effect: Script Kiddie",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.Script Kiddie]</p>\n<p>Until the end of your turn, you gain a single spellshape feat from the technomancer class that has a level requirement of no more than half your level.</p>"
+        },
+        "duration": {
+            "expiry": "turn-end",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 0
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 16
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "ActiveEffectLike",
+                "mode": "override",
+                "path": "flags.system.technomancer.scriptKiddieMaxLevel",
+                "value": "floor(@actor.level/2)"
+            },
+            {
+                "choices": {
+                    "filter": [
+                        "item:trait:spellshape",
+                        "item:trait:technomancer",
+                        {
+                            "lte": [
+                                "item:level",
+                                "{actor|flags.system.technomancer.scriptKiddieMaxLevel}"
+                            ]
+                        }
+                    ],
+                    "itemType": "feat"
+                },
+                "flag": "scriptKiddie",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.Feat"
+            },
+            {
+                "key": "GrantItem",
+                "uuid": "{item|flags.system.rulesSelections.scriptKiddie}"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

@@ -25,7 +25,18 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "craftableItems": [
+                    "item:trait:grenade"
+                ],
+                "isDailyPrep": true,
+                "key": "CraftingAbility",
+                "maxSlots": "ternary(gte(@actor.system.skills.crafting.rank,4),6,ternary(gte(@actor.system.skills.crafting.rank,3),4,ternary(gte(@actor.system.skills.crafting.rank,2),3,2)))",
+                "priority": 60,
+                "slug": "grenade-specialist"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

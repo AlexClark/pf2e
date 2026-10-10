@@ -10,7 +10,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>One of your hands is implanted with a runic mesh infused with the essence of the Ethereal Plane, allowing you to reach into that dimension. You can touch incorporeal creatures and objects with the chosen hand and with any items you hold with it. Unarmed attacks made with the chosen hand, and one-handed weapons you wield with it, trigger vulnerabilities and bypass resistances as if they have the ghost killer upgrade.</p>"
+            "value": "<p>One of your hands is implanted with a runic mesh infused with the essence of the Ethereal Plane, allowing you to reach into that dimension. You can touch incorporeal creatures and objects with the chosen hand and with any items you hold with it. Unarmed attacks made with the chosen hand, and one-handed weapons you wield with it, trigger vulnerabilities and bypass resistances as if they have the @UUID[Compendium.sf2e.equipment.Item.Ghost Killer] upgrade.</p>"
         },
         "hardness": 0,
         "hp": {
@@ -35,7 +35,31 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "key": "RollOption",
+                "option": "phasic-limb",
+                "toggleable": true
+            },
+            {
+                "definition": [
+                    {
+                        "or": [
+                            "item:category:unarmed",
+                            "item:usage:hands:1",
+                            "item:usage:hands:1+"
+                        ]
+                    }
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    "phasic-limb"
+                ],
+                "property": "property-runes",
+                "value": "ghost-touch"
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

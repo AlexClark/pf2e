@@ -134,7 +134,7 @@
         },
         "details": {
             "description": "<p>A supernatural black hole sucks all heat and light into its maw.</p>",
-            "disable": "<p>@Check[computers|dc:47] (expert; scanners), Nature (expert; magic conduit), or Physical Science Lore (trained; generator or scanners) to take protective measures, or @Check[piloting|dc:50] (expert; pilot's console) to avoid the gravitational pull; one success is required per round for the triggering starship to act normally.</p>",
+            "disable": "<p>@Check[computers|dc:47] (expert; scanners), Nature (expert; magic conduit), or Physical Science Lore (trained; generator or scanners) to take protective measures, or @Check[piloting|dc:50] (expert; pilot's console) to avoid the gravitational pull; one success is required per round for the triggering starship to act normally (see below).</p>",
             "isComplex": true,
             "level": {
                 "value": 19

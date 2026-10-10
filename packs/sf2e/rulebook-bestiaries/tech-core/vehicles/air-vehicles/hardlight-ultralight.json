@@ -104,7 +104,7 @@
             "space": {
                 "high": 5,
                 "long": 10,
-                "wide": 10
+                "wide": 8
             },
             "speed": "fly 60 feet (motorized)"
         },

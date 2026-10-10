@@ -51,7 +51,7 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "range": 30,
+        "range": 25,
         "reload": {
             "value": "2"
         },

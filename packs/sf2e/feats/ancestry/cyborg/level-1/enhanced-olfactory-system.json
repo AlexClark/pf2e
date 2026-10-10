@@ -27,6 +27,11 @@
         },
         "rules": [
             {
+                "key": "RollOption",
+                "option": "enhanced-olfactory-system",
+                "toggleable": true
+            },
+            {
                 "key": "FlatModifier",
                 "predicate": [
                     "action:seek",

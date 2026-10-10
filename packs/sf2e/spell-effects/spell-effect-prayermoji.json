@@ -4,7 +4,7 @@
     "name": "Spell Effect: Prayermoji",
     "system": {
         "description": {
-            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Prayermoji]</p>\n<p>You gain one of the following benefits:</p><ul><li><p><strong>Prayer of Grace</strong> You gain a +20-foot status bonus to your Speeds until the start of your next turn.</p></li><li><p><strong>Prayer of Healing</strong> You regain healing Hit Points at the start of your next turn.</p></li><li><p><strong>Prayer of Protection</strong> You gain a +1 status bonus to AC and saving throws until the start of your next turn.</p></li><li><p><strong>Prayer of Retribution</strong> Until the start of your next turn, creatures that hit you with melee Strikes take spirit damage.</p></li></ul>"
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Prayermoji]</p>\n<p>You gain one of the following benefits:</p><ul><li><p><strong>Prayer of Grace</strong> You gain a +20-foot status bonus to your Speeds until the start of your next turn.</p></li><li><p><strong>Prayer of Healing</strong> You regain @Damage[(@item.level - 1)[healing]] Hit Points at the start of your next turn. This is one recovery, not fast healing.</p></li><li><p><strong>Prayer of Protection</strong> You gain a +1 status bonus to AC and saving throws until the start of your next turn.</p></li><li><p><strong>Prayer of Retribution</strong> Until the start of your next turn, creatures that hit you with melee Strikes take spirit damage.</p></li></ul>"
         },
         "duration": {
             "expiry": "turn-start",
@@ -25,7 +25,7 @@
             {
                 "alwaysActive": true,
                 "key": "RollOption",
-                "label": "Prayeremoji",
+                "label": "Prayermoji",
                 "option": "prayer",
                 "suboptions": [
                     {
@@ -59,13 +59,6 @@
                 "value": 20
             },
             {
-                "key": "FastHealing",
-                "predicate": [
-                    "prayer:healing"
-                ],
-                "value": "@item.level -1"
-            },
-            {
                 "key": "FlatModifier",
                 "predicate": [
                     "prayer:protection"
@@ -74,6 +67,7 @@
                     "ac",
                     "saving-throw"
                 ],
+                "type": "status",
                 "value": 1
             },
             {
@@ -88,15 +82,12 @@
                 "key": "Note",
                 "predicate": [
                     "self:prayer-of-retribution",
-                    "item:melee",
-                    {
-                        "not": "item:trait:reach"
-                    }
+                    "item:melee"
                 ],
                 "selector": [
                     "damage-received"
                 ],
-                "text": "You take @Damage[(@item.level - 1)[spirit]] damage",
+                "text": "The creature that hit you takes @Damage[(@item.level - 1)[spirit]] damage.",
                 "title": "{item|name}"
             }
         ],

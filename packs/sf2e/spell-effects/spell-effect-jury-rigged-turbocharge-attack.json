@@ -1,0 +1,44 @@
+{
+    "_id": "s9We3Hr7Yb1Tf5Gi",
+    "img": "systems/sf2e/icons/abilities/yellow-star-with-purple-aura.webp",
+    "name": "Spell Effect: Jury-Rigged Turbocharge (Attack)",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Jury-Rigged Turbocharge]</p>\n<p>The target gains a +1 status bonus to attack rolls for 1 round.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 4
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "attack-roll",
+                "type": "status",
+                "value": 1
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

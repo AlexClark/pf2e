@@ -1,0 +1,50 @@
+{
+    "_id": "r2Ls6Bg5Hw9Zt1Ey",
+    "img": "systems/sf2e/icons/spells/wall-of-force.webp",
+    "name": "Spell Effect: Force-Fieldpga",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Force-Fieldpga]</p>\n<p>You gain resistance equal to twice the spell's rank against one type of damage you took in the last minute.</p>\n<p><span class=\"action-glyph\">1</span> Delete this effect and apply it again to change the resistance to another type of damage you took in the last minute.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": "damageTypes",
+                "flag": "damageType",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.DamageType"
+            },
+            {
+                "key": "Resistance",
+                "type": "{item|flags.system.rulesSelections.damageType}",
+                "value": "2 * @item.level"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

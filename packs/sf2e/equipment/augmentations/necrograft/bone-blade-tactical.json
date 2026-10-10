@@ -61,6 +61,33 @@
                 "predicate": [
                     "item:id:{item|id}"
                 ]
+            },
+            {
+                "count": true,
+                "key": "RollOption",
+                "option": "bone-blades"
+            },
+            {
+                "definition": [
+                    {
+                        "or": [
+                            "item:slug:bone-blade",
+                            "item:slug:bone-blade-tactical"
+                        ]
+                    }
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "predicate": [
+                    {
+                        "gte": [
+                            "bone-blades",
+                            2
+                        ]
+                    }
+                ],
+                "property": "weapon-traits",
+                "value": "twin"
             }
         ],
         "size": "med",

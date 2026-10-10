@@ -38,7 +38,7 @@
                     "electricity",
                     "fire",
                     "force",
-                    "sonic "
+                    "sonic"
                 ],
                 "value": "@item.level"
             }

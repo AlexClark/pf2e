@@ -19,9 +19,34 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "RollOption",
+                "option": "shift-skin",
+                "toggleable": true
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "shift-skin",
+                    {
+                        "or": [
+                            "action:hide",
+                            "action:sneak"
+                        ]
+                    }
+                ],
+                "selector": [
+                    "stealth"
+                ],
+                "type": "circumstance",
+                "value": 1
+            }
+        ],
         "traits": {
-            "value": []
+            "value": [
+                "verthani"
+            ]
         }
     },
     "type": "action"

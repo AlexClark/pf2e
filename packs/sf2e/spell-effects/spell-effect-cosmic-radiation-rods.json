@@ -29,9 +29,16 @@
             },
             {
                 "key": "FlatModifier",
-                "selector": [
-                    "ac"
+                "predicate": [
+                    {
+                        "or": [
+                            "item:trait:poison",
+                            "item:trait:radiation"
+                        ]
+                    }
                 ],
+                "selector": "fortitude",
+                "type": "status",
                 "value": "ternary(gte(@item.level,10),3,ternary(gte(@item.level,7),2,1))"
             }
         ],

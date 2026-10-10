@@ -10,7 +10,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>Installed just behind your aural cavity, this tiny processing unit intercepts and interprets verbal audio using its limited onboard database, translating it on the fly into a language you can understand. You can understand and speak, two additional languages, chosen when you install this augmentation. You can change the stored languages during your daily preparations, but it must be to languages you can secure translation data for, typically one spoken by your companions or near the current settlement.</p>"
+            "value": "<p>Installed just behind your aural cavity, this tiny processing unit intercepts and interprets verbal audio using its limited onboard database, translating it on the fly into a language you can understand. You can both speak and understand two additional languages, chosen when you install this augmentation. You can change the stored languages during your daily preparations, but it must be to languages you can secure translation data for, typically one spoken by your companions or near the current settlement.</p>"
         },
         "hardness": 0,
         "hp": {

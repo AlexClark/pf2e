@@ -11,7 +11,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>This orbiting minibot protects its user. You can Raise a Shield with an independent obstructobot (+2 AC, Hardness 7, HP 74, BT 37) without a free hand. The controls for this minibot must be installed in your armor and use an armor upgrade slot.</p>\n<p><strong>Activate—Reconfigure Fields</strong> <span class=\"action-glyph\">1</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> You Raise a Shield and choose two of bludgeoning, piercing, or slashing. The shield gains the deflecting trait for those damage type for 10 minutes or until you Reconfigure Fields again, whichever comes first.</p>"
+            "value": "<p>This orbiting minibot protects its user. You can Raise a Shield with an independent obstructobot (+2 AC, Hardness 7, HP 74, BT 37) without a free hand. The controls for this minibot must be installed in your armor and use an armor upgrade slot.</p>\n<p><strong>Activate—Reconfigure Fields</strong> <span class=\"action-glyph\">1</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> You Raise a Shield and choose two of bludgeoning, piercing, or slashing. The shield gains the deflecting trait for those damage types for 10 minutes or until you Reconfigure Fields again, whichever comes first.</p>"
         },
         "grade": "commercial",
         "hardness": 7,

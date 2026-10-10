@@ -10,14 +10,38 @@
             "uuid": "Compendium.sf2e.ancestries.Item.WmgIz3fJAh4xJ9Gk"
         },
         "description": {
-            "value": "<p>You've dedicated much of your life to gaining a deeper understanding of a god or philosophy. You gain the Additional Lore skill feat for one Lore skill tied to a deity, faith, or philosophy of your choice, such as Oras Lore or Green Faith Lore. The religious symbol of this deity or philosophy is permanently marked onto your flesh, either as a birthmark, intentional pattern choice, or a devotional branding.</p>\n<p>This religious symbol sheds bright light in a 20-foot radius around you (and dim light to the next 20 feet). You can extinguish or rekindle this light as a single action that has the concentrate trait.</p>"
+            "value": "<p>You've dedicated much of your life to gaining a deeper understanding of a god or philosophy. You gain the @UUID[Compendium.sf2e.feats.Item.Additional Lore] skill feat for one Lore skill tied to a deity, faith, or philosophy of your choice, such as Oras Lore or Green Faith Lore. The religious symbol of this deity or philosophy is permanently marked onto your flesh, either as a birthmark, intentional pattern choice, or a devotional branding.</p>\n<p>This religious symbol sheds bright light in a 20-foot radius around you (and dim light to the next 20 feet). You can extinguish or rekindle this light as a single action (<span class=\"action-glyph\">1</span>) that has the concentrate trait.</p>"
         },
         "publication": {
             "license": "ORC",
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "GrantItem",
+                "uuid": "Compendium.sf2e.feats.Item.Additional Lore"
+            },
+            {
+                "key": "RollOption",
+                "option": "devotional-verthani",
+                "toggleable": true,
+                "value": true
+            },
+            {
+                "key": "TokenLight",
+                "predicate": [
+                    "devotional-verthani"
+                ],
+                "value": {
+                    "alpha": 0.4,
+                    "bright": 20,
+                    "color": "#ffffff",
+                    "coloration": 101,
+                    "dim": 40
+                }
+            }
+        ],
         "traits": {
             "rarity": "common",
             "value": []

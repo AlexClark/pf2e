@@ -1,0 +1,51 @@
+{
+    "_id": "R8mQ2vL6nK4pH1sT",
+    "img": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
+    "name": "Effect: Overload Thrusters",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.Overload Thrusters]</p>\n<p>You gain a fly Speed equal to your Speed for 2 rounds. If you have Jet Thrusters, this fly Speed is equal to twice your land Speed.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 2
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "BaseSpeed",
+                "selector": "fly",
+                "value": "@actor.system.movement.speeds.land.value"
+            },
+            {
+                "key": "BaseSpeed",
+                "predicate": [
+                    "feat:jet-thrusters"
+                ],
+                "selector": "fly",
+                "value": "2 * @actor.system.movement.speeds.land.value"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

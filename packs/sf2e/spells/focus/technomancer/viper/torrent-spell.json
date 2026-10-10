@@ -29,7 +29,7 @@
         "range": {
             "value": "60 feet"
         },
-        "requirements": "",
+        "requirements": "You have a spell gem with a spell stored that's of a rank equal to or higher than the triggering spell.",
         "rules": [],
         "target": {
             "value": "1 creature"

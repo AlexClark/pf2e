@@ -29,7 +29,19 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "Note",
+                "predicate": [
+                    "item:trait:grenade"
+                ],
+                "selector": [
+                    "area-fire-damage"
+                ],
+                "text": "A creature that fails or critically fails a saving throw against this grenade additionally becomes @UUID[Compendium.sf2e.conditions.Item.Off-Guard] against the next attack you make against it before the end of your turn.",
+                "title": "{item|name}"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

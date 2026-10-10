@@ -17,7 +17,7 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p><strong>Trigger</strong> A starship moves into the trap's zone or someone fails a check to rewire the mines</p><hr /><p><strong>Effect</strong> The mines detonate, dealing 2d8 piercing and @Damage[2d8[fire]] damage to the triggering starship (@Check[reflex|dc:24|basic] save).</p>"
+                    "value": "<p><strong>Trigger</strong> A starship moves into the trap's zone or someone fails a check to rewire the mines</p><hr /><p><strong>Effect</strong> The mines detonate, dealing @Damage[2d8[piercing]] and @Damage[2d8[fire]] damage to the triggering starship (@Check[reflex|dc:24|basic] save).</p>"
                 },
                 "publication": {
                     "license": "OGL",
@@ -42,7 +42,7 @@
             "emitsSound": "encounter",
             "hardness": 14,
             "hp": {
-                "details": "",
+                "details": "(BT 27)",
                 "max": 54,
                 "temp": 0,
                 "value": 54
@@ -70,7 +70,7 @@
         },
         "details": {
             "description": "<p>Mines packed with powerful explosives float in a concealed location.</p>",
-            "disable": "<p>@Check[computers|dc:19] (trained; scanners) or Perception (expert; any battle station) to locate the mines, or @Check[crafting|dc:25] (trained; generator) or Thievery (expert; drone console) to rewire the mines</p>",
+            "disable": "<p>@Check[computers|dc:19] (trained; scanners) or @Check[perception|dc:19] (expert; any battle station) to locate the mines, or @Check[crafting|dc:25] (trained; generator) or @Check[thievery|dc:25] (expert; drone console) to rewire the mines</p>",
             "isComplex": false,
             "level": {
                 "value": 6

@@ -1,0 +1,42 @@
+{
+    "_id": "Hs8kP3nWy5RtL7qF",
+    "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+    "name": "Spell Effect: Hot Swap",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Hot Swap]</p>\n<p>You gain the Swap action while you wield either bonded weapon. If more than 10 minutes remain on this effect when Swap is used, reduce the remaining duration to 10 minutes. No rule shortens this effect; change the duration by hand.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "hours",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 3
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "GrantItem",
+                "uuid": "Compendium.sf2e.actions.Item.Swap"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

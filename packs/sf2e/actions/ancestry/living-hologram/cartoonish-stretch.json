@@ -24,6 +24,10 @@
             "title": "Starfinder Tech Core"
         },
         "rules": [],
+        "selfEffect": {
+            "name": "Effect: Cartoonish Stretch",
+            "uuid": "Compendium.sf2e.feat-effects.Item.Effect: Cartoonish Stretch"
+        },
         "traits": {
             "value": []
         }

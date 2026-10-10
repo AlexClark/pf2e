@@ -10,7 +10,7 @@
             "expiry": "turn-end",
             "sustained": false,
             "unit": "rounds",
-            "value": 1
+            "value": 0
         },
         "fromSpell": false,
         "level": {

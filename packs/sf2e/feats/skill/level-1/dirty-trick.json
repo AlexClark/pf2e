@@ -12,7 +12,7 @@
         },
         "category": "skill",
         "description": {
-            "value": "<p><strong>Requirements</strong> You have a hand free and are within melee reach of an opponent.</p><hr /><p>You hook a foe's boot clasps together, pull their visor from their eyes, loosen their mag-belt, or otherwise confound their mobility through an underhanded tactic. Attempt a Thievery check against the target's Reflex DC.</p><hr /><p><strong>Critical Success</strong> The target is @UUID[Compendium.sf2e.conditions.Item.Clumsy]{Clumsy 1} until they use an Interact action to end the impediment</p>\n<p><strong>Success</strong> As critical success, but the condition ends automatically after 1 round.</p>\n<p><strong>Critical Failure</strong> You fall @UUID[Compendium.sf2e.conditions.Item.Prone] as your attempt backfires.</p>"
+            "value": "<p><strong>Requirements</strong> You have a hand free and are within melee reach of an opponent.</p><hr /><p>You hook a foe's boot clasps together, pull their visor from their eyes, loosen their mag-belt, or otherwise confound their mobility through an underhanded tactic. Attempt a @Check[thievery|against:reflex] check against the target's Reflex DC.</p><hr /><p><strong>Critical Success</strong> The target is @UUID[Compendium.sf2e.conditions.Item.Clumsy]{Clumsy 1} until they use an Interact action to end the impediment</p>\n<p><strong>Success</strong> As critical success, but the condition ends automatically after 1 round.</p>\n<p><strong>Critical Failure</strong> You fall @UUID[Compendium.sf2e.conditions.Item.Prone] as your attempt backfires.</p>"
         },
         "level": {
             "value": 1

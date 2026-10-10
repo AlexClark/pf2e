@@ -1,0 +1,46 @@
+{
+    "_id": "sV7tYk2nQh8pLm4a",
+    "folder": "ZfJ4Whszk7bGARUG",
+    "img": "icons/commodities/biological/eye-lizard-orange-red.webp",
+    "name": "Effect: See Vitality",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Eyes of the Soul (Commercial)] or @UUID[Compendium.sf2e.equipment.Item.Eyes of the Soul (Tactical)]</p>\n<p>You gain lifesense as a precise sense with a range of 10 feet, allowing you to sense and distinguish between the life force of living and undead creatures.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 10
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "acuity": "precise",
+                "key": "Sense",
+                "range": 10,
+                "selector": "lifesense"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

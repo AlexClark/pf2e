@@ -35,6 +35,10 @@
                 ],
                 "property": "strength",
                 "value": 2
+            },
+            {
+                "key": "GrantItem",
+                "uuid": "Compendium.sf2e.equipment.Item.Dermal Plating (Commercial)"
             }
         ],
         "subfeatures": {

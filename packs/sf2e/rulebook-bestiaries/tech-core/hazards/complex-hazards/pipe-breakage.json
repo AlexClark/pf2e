@@ -87,7 +87,7 @@
             "immunities": [],
             "resistances": [],
             "stealth": {
-                "details": "",
+                "details": "<p>(trained)</p>",
                 "value": 5
             },
             "weaknesses": []

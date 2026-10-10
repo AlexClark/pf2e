@@ -45,7 +45,7 @@
             ]
         },
         "usage": {
-            "value": "installed-in-armor"
+            "value": "installed-in-light-or-medium-armor"
         }
     },
     "type": "equipment"

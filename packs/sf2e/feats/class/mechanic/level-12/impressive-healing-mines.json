@@ -12,7 +12,7 @@
         },
         "category": "class",
         "description": {
-            "value": "<p>You've greatly improved the effectiveness of your healing mines. Whenever you apply the healing mines mod, rather than creatures in the area regaining a number of Hit Points equal to the mine's number of damage dice + your Intelligence modifier, creatures in the area regain 1d6 healing Hit Points per the mine's number of damage dice + your Intelligence modifier.</p>"
+            "value": "<p>You've greatly improved the effectiveness of your healing mines. Whenever you apply the healing mines mod, rather than creatures in the area regaining a number of Hit Points equal to the mine's number of damage dice + your Intelligence modifier, creatures in the area regain 1d6 Hit Points per the mine's number of damage dice + your Intelligence modifier.</p>"
         },
         "level": {
             "value": 12

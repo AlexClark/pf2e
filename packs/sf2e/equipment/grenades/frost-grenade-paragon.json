@@ -23,7 +23,7 @@
             "die": "d8"
         },
         "description": {
-            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Area Fire</p>\n<p><strong>Critical</strong> 20 foot cirumstance penalty to base Speed for 1 round</p><hr /><p>A frost grenade explodes into ice shards, dealing cold damage in a @Template[burst|distance:20] with a @Check[reflex|against:class|basic] save. If you have the critical weapon specialization of grenades, creatures that critically fail their saving throw against frost grenades gain a circumstance penalty of 20 feet to their base Speed for 1 round.</p>"
+            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Area Fire</p>\n<p><strong>Critical</strong> 20-foot circumstance penalty to base Speed for 1 round</p><hr /><p>A frost grenade explodes into ice shards, dealing cold damage in a @Template[burst|distance:20] with a @Check[reflex|against:class|basic] save. If you have the critical weapon specialization of grenades, creatures that critically fail their saving throw against frost grenades gain a circumstance penalty of 20 feet to their base Speed for 1 round.</p>"
         },
         "expend": 1,
         "grade": "commercial",

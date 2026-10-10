@@ -10,7 +10,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>Your eyes have been augmented to see the life energy of creatures around you, though your black sclera betray the undead nature of your augmented body. You gain a +2 item bonus to Medicine checks.</p>\n<p><strong>Activate—See Vitality</strong> <span class=\"action-glyph\">1</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> For the next minute, you gain lifesense as a precise sense with a range of 10 feet, allowing you to sense and distinguish between the life force of living and undead creatures.</p>"
+            "value": "<p>Your eyes have been augmented to see the life energy of creatures around you, though your black sclera betray the undead nature of your augmented body. You gain a +2 item bonus to Medicine checks.</p>\n<p><strong>Activate—See Vitality</strong> <span class=\"action-glyph\">1</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> For the next minute, you gain lifesense as a precise sense with a range of 10 feet, allowing you to sense and distinguish between the life force of living and undead creatures.</p>\n<p>@UUID[Compendium.sf2e.equipment.Item.Effect: See Vitality]</p>"
         },
         "hardness": 0,
         "hp": {

@@ -1,0 +1,44 @@
+{
+    "_id": "m4Qp8Dc2Vn6Jk3Ua",
+    "img": "systems/sf2e/icons/abilities/yellow-star-with-purple-aura.webp",
+    "name": "Spell Effect: Jury-Rigged Turbocharge (Speed)",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Jury-Rigged Turbocharge]</p>\n<p>The target gains a +10-foot status bonus to its Speeds for 1 round.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 4
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "all-speeds",
+                "type": "status",
+                "value": 10
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

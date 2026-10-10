@@ -37,7 +37,17 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "definition": [
+                    "item:id:{item|id}"
+                ],
+                "key": "AdjustStrike",
+                "mode": "add",
+                "property": "weapon-traits",
+                "value": "nonlethal"
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

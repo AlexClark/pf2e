@@ -29,9 +29,85 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": {
+                    "config": "skills",
+                    "predicate": [
+                        {
+                            "or": [
+                                {
+                                    "and": [
+                                        {
+                                            "eq": [
+                                                "{choice|value}",
+                                                "computers"
+                                            ]
+                                        },
+                                        {
+                                            "lt": [
+                                                "skill:computers:rank",
+                                                2
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "and": [
+                                        {
+                                            "eq": [
+                                                "{choice|value}",
+                                                "crafting"
+                                            ]
+                                        },
+                                        {
+                                            "lt": [
+                                                "skill:crafting:rank",
+                                                2
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "and": [
+                                        {
+                                            "gte": [
+                                                "skill:computers:rank",
+                                                2
+                                            ]
+                                        },
+                                        {
+                                            "gte": [
+                                                "skill:crafting:rank",
+                                                2
+                                            ]
+                                        },
+                                        "skill:{choice|value}:rank:1"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "flag": "skill",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.Skill"
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "upgrade",
+                "path": "system.skills.{item|flags.system.rulesSelections.skill}.rank",
+                "value": 2
+            }
+        ],
         "subfeatures": {
-            "proficiencies": {},
+            "proficiencies": {
+                "mechanic": {
+                    "attribute": "int",
+                    "rank": 2
+                }
+            },
             "senses": {},
             "suppressedFeatures": []
         },

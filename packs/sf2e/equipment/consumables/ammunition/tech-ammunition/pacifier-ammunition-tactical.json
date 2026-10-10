@@ -11,7 +11,7 @@
         "containerId": null,
         "craftableAs": [],
         "description": {
-            "value": "<p>Beloved by tyrants, mentalists, and law enforcement officers alike, these multicolored projectiles make targets more susceptible to mental effects. On a critical hit with this ammunition, the target takes a –2 status penalty to its Will saves for 1 minute.</p>"
+            "value": "<p>Beloved by tyrants, mentalists, and law enforcement officers alike, these multicolored projectiles make targets more susceptible to mental effects. On a critical hit with this ammunition, the target takes a –2 status penalty to its Will saves for 1 minute.</p>\n<p>@UUID[Compendium.sf2e.equipment.Item.Effect: Pacifier Ammunition (Tactical)]</p>"
         },
         "hardness": 0,
         "hp": {
@@ -37,7 +37,17 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "key": "Note",
+                "outcome": [
+                    "criticalSuccess"
+                ],
+                "selector": "{item|id}-ranged-damage",
+                "text": "<p>The target takes a –2 status penalty to its Will saves for 1 minute. @UUID[Compendium.sf2e.equipment.Item.Effect: Pacifier Ammunition (Tactical)]</p>",
+                "title": "Pacifier Ammunition (Tactical)"
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

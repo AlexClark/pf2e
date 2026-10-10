@@ -1,0 +1,43 @@
+{
+    "_id": "mR4kP8sN2wYqL6tH",
+    "folder": "cWe0UUWJ9cMZNa8C",
+    "img": "systems/sf2e/icons/actions/OneAction.webp",
+    "name": "Overclock Weapon",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 1
+        },
+        "category": "offensive",
+        "description": {
+            "value": "<p><strong>Requirements</strong> You're wielding an overclocked weapon.</p><hr /><p>Make a Strike with your overclocked weapon. You gain a +1 status bonus to your attack roll and a status bonus to damage equal to half your level rounded up.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "disabledIf": [
+                    {
+                        "not": "self:effect:overclocked"
+                    }
+                ],
+                "disabledValue": false,
+                "key": "RollOption",
+                "option": "overclock-weapon",
+                "toggleable": true
+            }
+        ],
+        "traits": {
+            "value": [
+                "flourish",
+                "technomancer"
+            ]
+        }
+    },
+    "type": "action"
+}

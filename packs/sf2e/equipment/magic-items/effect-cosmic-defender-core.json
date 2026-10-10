@@ -1,0 +1,103 @@
+{
+    "_id": "k7QmC0sm1cDef18B",
+    "folder": "JlUS4L43QWp3cPhu",
+    "img": "icons/commodities/tech/engine-tech-thrust-jet-teal.webp",
+    "name": "Effect: Cosmic Defender Core",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Cosmic Defender Core]</p>\n<p>You are an enormous hardlight robot for 1 minute, until you are reduced to 0 Hit Points, or until you Dismiss this effect.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 18
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "canCast": true,
+                "canSpeak": true,
+                "hasHands": true,
+                "key": "BattleForm",
+                "overrides": {
+                    "armorClass": {
+                        "modifier": "22 + @actor.level"
+                    },
+                    "senses": {
+                        "darkvision": {}
+                    },
+                    "skills": {
+                        "athletics": {
+                            "modifier": 33,
+                            "ownIfHigher": true
+                        }
+                    },
+                    "speeds": {
+                        "fly": 70,
+                        "land": 40
+                    },
+                    "strikes": {
+                        "galactic-beam": {
+                            "ability": "str",
+                            "category": "unarmed",
+                            "damage": {
+                                "damageType": "force",
+                                "dice": 6,
+                                "die": "d6",
+                                "modifier": 6
+                            },
+                            "label": "Galactic Beam",
+                            "modifier": 31,
+                            "ownIfHigher": true,
+                            "range": {
+                                "increment": 120
+                            },
+                            "traits": [
+                                "unarmed"
+                            ]
+                        },
+                        "stellar-blade": {
+                            "ability": "str",
+                            "category": "unarmed",
+                            "damage": {
+                                "damageType": "slashing",
+                                "dice": 3,
+                                "die": "d12",
+                                "modifier": 15
+                            },
+                            "label": "Stellar Blade",
+                            "modifier": 31,
+                            "ownIfHigher": true,
+                            "traits": [
+                                "reach-15",
+                                "unarmed"
+                            ]
+                        }
+                    },
+                    "tempHP": 25
+                }
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

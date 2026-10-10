@@ -12,11 +12,11 @@
         "damage": {},
         "defense": null,
         "description": {
-            "value": "<p>You accelerate and parallelize your thought processes using magic to hack and enhance the inner workings of your allies' tech systems. When you Cast this Spell and the first time you Sustain it on subsequent rounds, the target gains one of the following benefits of their choice (or your choice, if the target is mindless or a minion) for 1 round.</p><ul><li><p>The target gains a +10-foot status bonus to its Speeds.</p></li><li><p>The target gains a +1 status bonus to attack rolls.</p></li><li><p>The target gains a +1 status bonus to skill checks.</p></li><li><p>The target gains a +1 status bonus to AC and saving throws.</p></li></ul><hr /><p><strong>Heightened (+2)</strong> You can target one additional creature.</p>"
+            "value": "<p>You accelerate and parallelize your thought processes using magic to hack and enhance the inner workings of your allies' tech systems. When you Cast this Spell and the first time you Sustain it on subsequent rounds, the target gains one of the following benefits of their choice (or your choice, if the target is mindless or a minion) for 1 round.</p><ul><li><p>The target gains a +10-foot status bonus to its Speeds. @UUID[Compendium.sf2e.spell-effects.Item.Spell Effect: Jury-Rigged Turbocharge (Speed)]</p></li><li><p>The target gains a +1 status bonus to attack rolls. @UUID[Compendium.sf2e.spell-effects.Item.Spell Effect: Jury-Rigged Turbocharge (Attack)]</p></li><li><p>The target gains a +1 status bonus to skill checks. @UUID[Compendium.sf2e.spell-effects.Item.Spell Effect: Jury-Rigged Turbocharge (Skill)]</p></li><li><p>The target gains a +1 status bonus to AC and saving throws. @UUID[Compendium.sf2e.spell-effects.Item.Spell Effect: Jury-Rigged Turbocharge (Defense)]</p></li></ul><hr /><p><strong>Heightened (+2)</strong> You can target one additional creature.</p>"
         },
         "duration": {
             "sustained": true,
-            "value": "sustained up to 1 minute"
+            "value": "1 minute"
         },
         "level": {
             "value": 4

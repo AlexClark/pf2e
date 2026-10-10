@@ -4,7 +4,7 @@
     "name": "Verthani",
     "system": {
         "additionalLanguages": {
-            "count": 0,
+            "count": 1,
             "custom": "",
             "value": []
         },
@@ -42,14 +42,7 @@
         },
         "hands": 2,
         "hp": 8,
-        "items": {
-            "Q6Q03": {
-                "img": "icons/commodities/leather/scale-chitin-grey.webp",
-                "level": 1,
-                "name": "Skin Artistry",
-                "uuid": "Compendium.sf2e.ancestry-features.Item.Skin Artistry"
-            }
-        },
+        "items": {},
         "languages": {
             "custom": "",
             "value": [
@@ -63,7 +56,18 @@
             "title": "Starfinder Tech Core"
         },
         "reach": 5,
-        "rules": [],
+        "rules": [
+            {
+                "key": "GrantItem",
+                "predicate": [
+                    {
+                        "not": "heritage:moodsynced-verthani"
+                    }
+                ],
+                "reevaluateOnUpdate": true,
+                "uuid": "Compendium.sf2e.ancestry-features.Item.Skin Artistry"
+            }
+        ],
         "size": "med",
         "speed": 30,
         "traits": {

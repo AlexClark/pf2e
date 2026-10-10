@@ -12,7 +12,7 @@
         },
         "category": "ancestry",
         "description": {
-            "value": "<p>You're adept at producing and using nanites to treat a variety of medical conditions. You gain the Inject Nanites action.</p><hr /><p><strong>Special</strong> If you have the medic SRO heritage, you can Inject Nanites once per 10 minutes.</p>"
+            "value": "<p>You're adept at producing and using nanites to treat a variety of medical conditions. You gain the @UUID[Compendium.sf2e.actions.Item.Inject Nanites] action.</p><hr /><p><strong>Special</strong> If you have the medic SRO heritage, you can Inject Nanites once per 10 minutes.</p>"
         },
         "level": {
             "value": 5
@@ -25,7 +25,23 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "GrantItem",
+                "uuid": "Compendium.sf2e.actions.Item.Inject Nanites"
+            },
+            {
+                "itemType": "action",
+                "key": "ItemAlteration",
+                "mode": "downgrade",
+                "predicate": [
+                    "heritage:medic-sro",
+                    "item:slug:inject-nanites"
+                ],
+                "property": "frequency-per",
+                "value": "PT10M"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

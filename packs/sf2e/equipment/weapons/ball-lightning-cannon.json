@@ -13,7 +13,7 @@
             "value": 0
         },
         "bulk": {
-            "value": 1
+            "value": 2
         },
         "category": "martial",
         "containerId": null,
@@ -51,7 +51,7 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "range": 50,
+        "range": 45,
         "reload": {
             "value": "1"
         },

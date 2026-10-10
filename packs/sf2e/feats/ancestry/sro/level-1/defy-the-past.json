@@ -26,6 +26,10 @@
             "title": "Starfinder Tech Core"
         },
         "rules": [],
+        "selfEffect": {
+            "name": "Effect: Defy the Past",
+            "uuid": "Compendium.sf2e.feat-effects.Item.Effect: Defy the Past"
+        },
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

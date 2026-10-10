@@ -10,7 +10,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>This irregular gray torus is pitted and scarred, and it glows green in an environment with at least low levels of radiation, with higher levels causing a more intense glow. In addition to serving as a simple radiation detector, the stone absorbs radiation around the wearer. You gain resistance 8 to poison damage from radiation effects and a +3 status bonus to Fortitude saves against radiation.</p>\n<p>The resonant power allows you to cast protection as a 1st-rank occult innate spell once per day.</p>\n<p><strong>Activate—Radiation Pulse</strong> <span class=\"action-glyph\">2</span> (concentrate, magical, manipulate, radiation)</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> You unleash a @Template[type:burst|distance:10] centered on you that irradiates the area for 1 hour. Creatures that enter the area must attempt a @Check[fortitude|dc:22] save against severe radiation sickness. This magical radiation has an immediate onset, and the interval between each stage is 1 round.</p>"
+            "value": "<p>This irregular gray torus is pitted and scarred, and it glows green in an environment with at least low levels of radiation, with higher levels causing a more intense glow. In addition to serving as a simple radiation detector, the stone absorbs radiation around the wearer. You gain resistance 8 to poison damage from radiation effects and a +3 status bonus to Fortitude saves against radiation.</p>\n<p>The resonant power allows you to cast @UUID[Compendium.sf2e.spells.Item.Protection] as a 1st-rank occult innate spell once per day.</p>\n<p><strong>Activate—Radiation Pulse</strong> <span class=\"action-glyph\">2</span> (concentrate, magical, manipulate, radiation)</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> You unleash a @Template[type:burst|distance:10] centered on you that irradiates the area for 1 hour. Creatures that enter the area must attempt a @Check[fortitude|dc:22] save against severe radiation sickness (GM Core 91). This magical radiation has an immediate onset, and the interval between each stage is 1 round.</p>"
         },
         "hardness": 0,
         "hp": {
@@ -35,7 +35,27 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "definition": [
+                    "item:trait:radiation",
+                    "item:damage:type:poison"
+                ],
+                "key": "Resistance",
+                "label": "PF2E.IWR.Custom.RadiationPoison",
+                "type": "custom",
+                "value": 8
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "item:trait:radiation"
+                ],
+                "selector": "fortitude",
+                "type": "status",
+                "value": 3
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "uncommon",

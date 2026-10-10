@@ -29,7 +29,40 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "GrantItem",
+                "predicate": [
+                    "feature:dps"
+                ],
+                "reevaluateOnUpdate": true,
+                "uuid": "Compendium.sf2e.spells.Item.A-Stellar Targetfinder Algorithm"
+            },
+            {
+                "key": "GrantItem",
+                "predicate": [
+                    "feature:fortrun"
+                ],
+                "reevaluateOnUpdate": true,
+                "uuid": "Compendium.sf2e.spells.Item.Force-Fieldpga"
+            },
+            {
+                "key": "GrantItem",
+                "predicate": [
+                    "feature:servoshell"
+                ],
+                "reevaluateOnUpdate": true,
+                "uuid": "Compendium.sf2e.spells.Item.Repair Protocols"
+            },
+            {
+                "key": "GrantItem",
+                "predicate": [
+                    "feature:viper"
+                ],
+                "reevaluateOnUpdate": true,
+                "uuid": "Compendium.sf2e.spells.Item.Amplify Vulnerability"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

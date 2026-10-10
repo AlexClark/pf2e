@@ -53,6 +53,7 @@
         "traits": {
             "rarity": "common",
             "value": [
+                "magical",
                 "spellmail",
                 "tech"
             ]

@@ -576,6 +576,204 @@
                 "controls": true,
                 "volume": 0.5
             }
+        },
+        {
+            "_id": "h8Jt4NaS6dFpK3zR",
+            "category": null,
+            "image": {},
+            "name": "Mechanic",
+            "sort": 2200000,
+            "src": null,
+            "system": {},
+            "text": {
+                "content": "<p>You've created an exocortex and synced it with a creation of your own invention.</p><p>@Embed[Compendium.sf2e.feats.Item.zSFQxqmf97ReeU2C inline header=true traits=true publication=true journalLink=false]</p><p>@Embed[Compendium.sf2e.feats.Item.x2hv1bC7pKX43PKL inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.bWlPO9UZYtnHvmcC inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.vpuzqeIPIDlxd2If inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.vLfN1EomD1AehEm6 inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.uJ8vngvIfDcOFDZy inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.7JKZu3a3JiC0wBXF inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.3YWWEpymraa5vxQM inline header=true traits=true publication=true]</p>",
+                "format": 1
+            },
+            "title": {
+                "level": 2,
+                "show": true
+            },
+            "type": "text",
+            "video": {
+                "controls": true,
+                "volume": 0.5
+            }
+        },
+        {
+            "_id": "e1Vw7QmC5bLyU2xH",
+            "category": null,
+            "image": {},
+            "name": "Technomancer",
+            "sort": 2300000,
+            "src": null,
+            "system": {},
+            "text": {
+                "content": "<p>You wield magic and technology in conjunction to hack reality.</p><p>The technomancer archetype pairs well with spellcasters who want more spellshapes and martial characters who want to improve their firepower with magic and by Overclocking their tech equipment.</p><p>@Embed[Compendium.sf2e.feats.Item.ZMnWWa7WgjYRGgOv inline header=true traits=true publication=true journalLink=false]</p><p>@Embed[Compendium.sf2e.feats.Item.rqPa4WAQ6A5fWlfl inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.66QwnNVNQ7Z1oWgx inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.W4PdR8z1FAypstfK inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.7fbcnz0LXKnGTYkG inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.YfoLxP5Fk8noUsgb inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.PozTqQyUgos1diDI inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.2TnPY3xqKkcLY5x8 inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.KTnwlMa5GkNfB0Z7 inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.A4DqKN94cY008kWn inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.mO7JBI2h1b58Chza inline header=true traits=true publication=true]</p>",
+                "format": 1
+            },
+            "title": {
+                "level": 2,
+                "show": true
+            },
+            "type": "text",
+            "video": {
+                "controls": true,
+                "volume": 0.5
+            }
+        },
+        {
+            "_id": "a9Zk2PdF8gHsT4nJ",
+            "category": null,
+            "image": {},
+            "name": "Augmented",
+            "sort": 2400000,
+            "src": null,
+            "system": {},
+            "text": {
+                "content": "<p>Augmentations in their many forms have always drawn you in, and you've decided to reshape your body using technology. Now that you have the right resources and tools within your grasp, you pour more of yourself into building your body the way you want it to be.</p><p>@Embed[Compendium.sf2e.feats.Item.aRYbvlWhIpnMUZVJ inline header=true traits=true publication=true journalLink=false]</p><p>@Embed[Compendium.sf2e.feats.Item.QAtnWNwYkNJ3ZxHs inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.sZLRG34lTLSSdKOx inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.hEisOLfq9mtR11wK inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.pmVWQPZMjHdwix7g inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.kt1yaRw12tUXMWqF inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.fRxIpJltFrK4qgm0 inline header=true traits=true publication=true]</p>",
+                "format": 1
+            },
+            "title": {
+                "level": 2,
+                "show": true
+            },
+            "type": "text",
+            "video": {
+                "controls": true,
+                "volume": 0.5
+            }
+        },
+        {
+            "_id": "u3Xc6RbN1mQvE7wL",
+            "category": null,
+            "image": {},
+            "name": "Grenadier",
+            "sort": 2500000,
+            "src": null,
+            "system": {},
+            "text": {
+                "content": "<p>Anyone can toss a grenade, but you've learned a few tricks that elevate it to an art form. Now, there's nothing you love more than making things go “boom!”</p><p>@Embed[Compendium.sf2e.feats.Item.MlArjE4FjkYHNMCe inline header=true traits=true publication=true journalLink=false]</p><p>@Embed[Compendium.sf2e.feats.Item.l7WYKK6sOF70qMMn inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.0xhVTQwPdlwFljzj inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.NjdSm8KRwEhnQzIf inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.0N2S5bOrXstAbMvA inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.AY1Go7mSSbsOfiBo inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.qZMnE3kqLBMH4Qwy inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.TUAv1ri2nVtdKdmE inline header=true traits=true publication=true]</p>",
+                "format": 1
+            },
+            "title": {
+                "level": 2,
+                "show": true
+            },
+            "type": "text",
+            "video": {
+                "controls": true,
+                "volume": 0.5
+            }
+        },
+        {
+            "_id": "y5Gf0HjD4kPtS8aM",
+            "category": null,
+            "image": {},
+            "name": "Junkomancer",
+            "sort": 2600000,
+            "src": null,
+            "system": {},
+            "text": {
+                "content": "<p>Across the galaxy, ingenuity and creativity know no bounds. Junkomancers are masters of junkomancy, which is less of a school of magic and more of a vibe that compels some spellcasters to specialize in transmuting trash into temporary treasures. They are more common on worlds covered in scrap yards but can be found in most major settlements scavenging for useful bits and pieces.</p><p>@Embed[Compendium.sf2e.feats.Item.GNJqfY7mNo6YsQFG inline header=true traits=true publication=true journalLink=false]</p><p>@Embed[Compendium.sf2e.feats.Item.rQDYIDQRcsgD9bRm inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.m1nUqHjAIL5pDtaY inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.rhxjzSS4g9SQbJl9 inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.nhow9Elrd1ORFGAm inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.sxKiyDASFFM2SuDQ inline header=true traits=true publication=true]</p>",
+                "format": 1
+            },
+            "title": {
+                "level": 2,
+                "show": true
+            },
+            "type": "text",
+            "video": {
+                "controls": true,
+                "volume": 0.5
+            }
+        },
+        {
+            "_id": "i6Bn9LsW3cVrG2qP",
+            "category": null,
+            "image": {},
+            "name": "Nanocyte",
+            "sort": 2700000,
+            "src": null,
+            "system": {},
+            "text": {
+                "content": "<p>Nanocytes use their minds to control and shape hives of microscopic machines called nanites stored in their bodies.</p><p>@Embed[Compendium.sf2e.feats.Item.I9NVbjWCRvnUBAUm inline header=true traits=true publication=true journalLink=false]</p><p>@Embed[Compendium.sf2e.feats.Item.tSyGA5F9nuPP1nnN inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.K1bVHYOZthCY2C8V inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.sSNCFGpdOgP5PMQj inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.W1OuoBSzvR5dFxYF inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.Xx9dJ2qVhoG84CQr inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.j3qYyncNg4VE5ekw inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.1qken4xcjDOb1lRX inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.QxxXKLBRXDgeVGA0 inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.QYbtev2bTaFPkWTE inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.8uhOhlyw58uRHEmE inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.ESVzgBJaAjfb5shE inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.JlbYIWIRm3KSz07U inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.w3yI7Iipbx67HXoK inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.A0tAJB8UpuSIUGxb inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.ROptw8TAQLBxOsP2 inline header=true traits=true publication=true]</p>",
+                "format": 1
+            },
+            "title": {
+                "level": 2,
+                "show": true
+            },
+            "type": "text",
+            "video": {
+                "controls": true,
+                "volume": 0.5
+            }
+        },
+        {
+            "_id": "o2Mq7YtK5xHdF1eA",
+            "category": null,
+            "image": {},
+            "name": "Pharmacologist",
+            "sort": 2800000,
+            "src": null,
+            "system": {},
+            "text": {
+                "content": "<p>Across the stars, there are countless life-forms, each with their own biologies that require different forms of medical care. A panacea to one species is a poison to another. As a stellar pharmacologist, you travel the cosmos, uncover medical teachings from distant worlds, and apply your pharmacological acumen to save lives.</p><h2>Medical Consumables</h2><p>Medical consumables are medical items with the consumable trait. Medical items aren't magical, instead using the properties of chemicals and the latest advances in biotech. These items include hypopens, medpatches, serums, and sprayflesh. They don't include magic items, such as spell amps and spell gems, even if those items are consumable and provide healing.</p><p>@Embed[Compendium.sf2e.feats.Item.hiuBa1Y2UMA77ZlQ inline header=true traits=true publication=true journalLink=false]</p><p>@Embed[Compendium.sf2e.feats.Item.akak2s07J7YJs1zI inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.Aalz0UFokoztJTvo inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.h0dvl1IsRJaav9Ew inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.cS81bdbimzZiwwIF inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.SE05tUtM0BV996su inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.BsrFdVNb897HGFXw inline header=true traits=true publication=true]</p>",
+                "format": 1
+            },
+            "title": {
+                "level": 2,
+                "show": true
+            },
+            "type": "text",
+            "video": {
+                "controls": true,
+                "volume": 0.5
+            }
+        },
+        {
+            "_id": "s4Lp8ZcR6nJbV3uD",
+            "category": null,
+            "image": {},
+            "name": "Shield Ace",
+            "sort": 2900000,
+            "src": null,
+            "system": {},
+            "text": {
+                "content": "<p>The shield ace takes a classic approach to their personal safety by using shields to keep a sturdy piece of reinforced material between themselves and their enemies.</p><p>@Embed[Compendium.sf2e.feats.Item.jhrKPErQ8iykrNMk inline header=true traits=true publication=true journalLink=false]</p><p>@Embed[Compendium.sf2e.feats.Item.Rrl2NPYekwkurnwZ inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.se9TxluLwAWMGbsc inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.BHd1h174wmq9VWXu inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.Pg7ypM5Hg4UhPNy0 inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.NjPZgnvZsBLLA79b inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.2ZMV4KzfCZQPRxBa inline header=true traits=true publication=true]</p>",
+                "format": 1
+            },
+            "title": {
+                "level": 2,
+                "show": true
+            },
+            "type": "text",
+            "video": {
+                "controls": true,
+                "volume": 0.5
+            }
+        },
+        {
+            "_id": "f7Hw1XeQ9tMgB5kY",
+            "category": null,
+            "image": {},
+            "name": "Vehicle Pilot",
+            "sort": 3000000,
+            "src": null,
+            "system": {},
+            "text": {
+                "content": "<p>In every corner of the Pact Worlds, people excitedly push the limits of their piloting and their vehicles.</p><p>@Embed[Compendium.sf2e.feats.Item.IF8rTAKisq7mcjlg inline header=true traits=true publication=true journalLink=false]</p><p>@Embed[Compendium.sf2e.feats.Item.SZn6QoviYWXwVwvm inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.Wc0MPfCQkXe8FWZV inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.mJGZQ0U74omYjXxO inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.vO2eMj2gE1GvIP4Y inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.a94ZPHt2O6in4EHk inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.aC2o2R3MSEIOd4vR inline header=true traits=true publication=true]</p><p>@Embed[Compendium.sf2e.feats.Item.a4Y8BFkcrMHybz58 inline header=true traits=true publication=true]</p>",
+                "format": 1
+            },
+            "title": {
+                "level": 2,
+                "show": true
+            },
+            "type": "text",
+            "video": {
+                "controls": true,
+                "volume": 0.5
+            }
         }
     ]
 }

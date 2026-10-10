@@ -1,0 +1,73 @@
+{
+    "_id": "Ws3nR8vKt6YqP2mA",
+    "img": "icons/skills/targeting/crosshair-bars-yellow.webp",
+    "name": "Spell Effect: Wishborne Shot",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Wishborne Shot]</p>\n<p>The next Strike with the chosen locus before the end of your turn ignores the target's cover and any flat check required because the target is concealed or hidden. The attack is not rolled twice.</p>"
+        },
+        "duration": {
+            "expiry": "turn-end",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 0
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "choices": {
+                    "ownedItems": true,
+                    "predicate": [
+                        "item:equipped",
+                        "item:ranged"
+                    ],
+                    "types": [
+                        "weapon"
+                    ]
+                },
+                "flag": "weapon",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+            },
+            {
+                "affects": "target",
+                "key": "EphemeralEffect",
+                "predicate": [
+                    "item:id:{item|flags.system.rulesSelections.weapon}"
+                ],
+                "selectors": [
+                    "attack-roll"
+                ],
+                "uuid": "Compendium.sf2e.spell-effects.Item.Spell Effect: Wishborne Shot (Cover Suppression)"
+            },
+            {
+                "domain": "attack-roll",
+                "key": "RollOption",
+                "option": "wishborne-shot",
+                "predicate": [
+                    "item:id:{item|flags.system.rulesSelections.weapon}"
+                ],
+                "removeAfterRoll": true
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

@@ -25,7 +25,24 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "effects": [
+                    {
+                        "affects": "allies",
+                        "includesSelf": false,
+                        "predicate": [
+                            "target:trait:tech",
+                            "target:trait:minion"
+                        ],
+                        "uuid": "Compendium.sf2e.feat-effects.Item.Effect: Technological Superiority"
+                    }
+                ],
+                "key": "Aura",
+                "radius": 30,
+                "slug": "technological-superiority"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

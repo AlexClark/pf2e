@@ -6,11 +6,11 @@
     "system": {
         "baseItem": null,
         "bulk": {
-            "value": 0.1
+            "value": 1
         },
         "containerId": null,
         "description": {
-            "value": "<p>This steel box features colorful cascading LED lights, a convenient carrying handle, and a deep indentation in the side with a universal charging port. The indentation can accommodate a single minibot, which is linked to the spell server of the robot master.</p>\n<p><strong>Activate—Direct Minibot</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> You turn some dials and flick some levers to activate the linked minibot. You Activate Minibot for the linked minibot.</p><ul><li><p><strong>Cantrip</strong> @UUID[Compendium.sf2e.spells.Item.Analyze Target]</p></li><li><p><strong>1st</strong> @UUID[Compendium.sf2e.spells.Item.Mending], @UUID[Compendium.sf2e.spells.Item.Mindlink]</p></li><li><p><strong>2nd</strong> @UUID[Compendium.sf2e.spells.Item.Inject Nanobots], @UUID[Compendium.sf2e.spells.Item.Logic Bomb]</p></li><li><p><strong>3rd</strong> @UUID[Compendium.sf2e.spells.Item.Mending], upgrade construct</p></li><li><p><strong>4th</strong> cable management, optics feed</p></li></ul>"
+            "value": "<p>This steel box features colorful cascading LED lights, a convenient carrying handle, and a deep indentation in the side with a universal charging port. The indentation can accommodate a single minibot, which is linked to the spell server of the robot master.</p>\n<p><strong>Activate—Direct Minibot</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> You turn some dials and flick some levers to activate the linked minibot. You Activate Minibot for the linked minibot.</p><ul><li><p><strong>Cantrip</strong> @UUID[Compendium.sf2e.spells.Item.Analyze Target]</p></li><li><p><strong>1st</strong> @UUID[Compendium.sf2e.spells.Item.Mending], @UUID[Compendium.sf2e.spells.Item.Mindlink]</p></li><li><p><strong>2nd</strong> @UUID[Compendium.sf2e.spells.Item.Inject Nanobots], @UUID[Compendium.sf2e.spells.Item.Logic Bomb]</p></li><li><p><strong>3rd</strong> @UUID[Compendium.sf2e.spells.Item.Mending], upgrade</p></li><li><p><strong>4th</strong> @UUID[Compendium.sf2e.spells.Item.Cable Management], @UUID[Compendium.sf2e.spells.Item.Optics Feed]</p></li></ul>\n<p>Spell servers contain a number of permanently installed spell chips listed in their description that can contain cantrips and can't be overclocked. During daily preparations, you can prepare a spell server to add charges to it for free equal to your highest level spell slot. In order to Cast a Spell from a spell server, you must also expend either a spell slot of at least the spell's rank or a number of charges from the spell server equal to the spell's rank. You don't need to expend spell slots or charges to cast a cantrip this way.</p>"
         },
         "hardness": 0,
         "hp": {
@@ -18,7 +18,7 @@
             "value": 0
         },
         "level": {
-            "value": 9
+            "value": 10
         },
         "material": {
             "grade": null,

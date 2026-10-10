@@ -10,7 +10,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>This altered energy projection unit extends the lifetime of the exotic particles used by the weapon in lingering energy pools.</p>\n<p><strong>Activate—Reigning Fire</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Effect</strong> If your next action is to Area Fire the installed weapon, the affected area becomes hazardous terrain for 1 minute. The hazardous terrain deals @Damage[1[untyped]] damage per weapon damage die of the same damage type as the installed weapon.</p>"
+            "value": "<p>This altered energy projection unit extends the lifetime of the exotic particles used by the weapon in lingering energy pools.</p>\n<p><strong>Activate—Reigning Fire</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Effect</strong> If your next action is to Area Fire the installed weapon, the affected area becomes hazardous terrain for 1 minute. The hazardous terrain deals 1 damage per weapon damage die of the same damage type as the installed weapon.</p>"
         },
         "hardness": 0,
         "hp": {
@@ -44,7 +44,7 @@
             ]
         },
         "usage": {
-            "value": "installed-in-a-weapon"
+            "value": "installed-in-an-area-weapon-that-deals-acid-cold-fire-or-void-damage"
         }
     },
     "type": "equipment"

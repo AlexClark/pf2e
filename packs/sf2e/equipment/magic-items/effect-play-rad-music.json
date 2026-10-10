@@ -1,0 +1,53 @@
+{
+    "_id": "pR4dMus1cM1xt4pE",
+    "folder": "JlUS4L43QWp3cPhu",
+    "img": "icons/sundries/gaming/rune-card.webp",
+    "name": "Effect: Play Rad Music",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Magical Mixtape]</p>\n<p>For 1 minute, you gain a +10-foot item bonus to your Speed and deal an additional 1d6 precision damage on a successful Strike.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 9
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "land-speed",
+                "type": "item",
+                "value": 10
+            },
+            {
+                "category": "precision",
+                "diceNumber": 1,
+                "dieSize": "d6",
+                "key": "DamageDice",
+                "selector": "strike-damage"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

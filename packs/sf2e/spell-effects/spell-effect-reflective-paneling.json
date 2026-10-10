@@ -49,19 +49,9 @@
                 "key": "ChoiceSet",
                 "predicate": [
                     {
-                        "or": [
-                            {
-                                "lte": [
-                                    "parent:level",
-                                    5
-                                ]
-                            },
-                            {
-                                "gte": [
-                                    "parent:level",
-                                    8
-                                ]
-                            }
+                        "lt": [
+                            "parent:level",
+                            10
                         ]
                     }
                 ],
@@ -111,9 +101,15 @@
                 "key": "ChoiceSet",
                 "predicate": [
                     {
-                        "eq": [
+                        "gte": [
                             "parent:level",
                             8
+                        ]
+                    },
+                    {
+                        "lt": [
+                            "parent:level",
+                            10
                         ]
                     }
                 ],
@@ -123,9 +119,9 @@
                 "key": "Resistance",
                 "predicate": [
                     {
-                        "eq": [
+                        "lt": [
                             "parent:level",
-                            5
+                            8
                         ]
                     }
                 ],
@@ -136,9 +132,15 @@
                 "key": "Resistance",
                 "predicate": [
                     {
-                        "eq": [
+                        "gte": [
                             "parent:level",
                             8
+                        ]
+                    },
+                    {
+                        "lt": [
+                            "parent:level",
+                            10
                         ]
                     }
                 ],
@@ -152,7 +154,7 @@
                 "key": "Resistance",
                 "predicate": [
                     {
-                        "eq": [
+                        "gte": [
                             "parent:level",
                             10
                         ]
@@ -164,7 +166,7 @@
                     "piercing",
                     "slashing"
                 ],
-                "value": 15
+                "value": 20
             }
         ],
         "start": {

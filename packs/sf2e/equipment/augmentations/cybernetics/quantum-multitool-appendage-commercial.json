@@ -35,7 +35,62 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "key": "RollOption",
+                "option": "quantum-multitool",
+                "suboptions": [
+                    {
+                        "label": "Tactical infiltrator's toolkit",
+                        "value": "infiltrator"
+                    },
+                    {
+                        "label": "Tactical maker's toolkit",
+                        "value": "maker"
+                    },
+                    {
+                        "label": "Tactical repair toolkit",
+                        "value": "repair"
+                    }
+                ],
+                "toggleable": true
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "quantum-multitool:infiltrator",
+                    {
+                        "or": [
+                            "action:disable-a-device",
+                            "action:pick-a-lock"
+                        ]
+                    }
+                ],
+                "selector": "thievery",
+                "type": "item",
+                "value": 1
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "quantum-multitool:maker",
+                    "action:craft"
+                ],
+                "selector": "crafting",
+                "type": "item",
+                "value": 1
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "quantum-multitool:repair",
+                    "action:repair"
+                ],
+                "selector": "crafting",
+                "type": "item",
+                "value": 1
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

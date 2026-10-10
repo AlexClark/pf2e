@@ -11,7 +11,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>This unassuming dongle features a hardlight projector, taking the form of a shield (+1 AC, Hardness 8, HP 98, BT 49).</p>\n<p><strong>Activate—System Maintenance</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p><strong>Effect</strong> The firewall projector reduces the @UUID[Compendium.sf2e.conditions.Item.Glitching] value of itself or the gear its installed in by 3.</p>"
+            "value": "<p>This unassuming dongle features a hardlight projector, taking the form of a shield (+1 AC, Hardness 8, HP 98, BT 49). The shield gains the blocking (tech) trait.</p>\n<p><strong>Activate—System Maintenance</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p><strong>Effect</strong> The firewall projector reduces the @UUID[Compendium.sf2e.conditions.Item.Glitching] value of itself or the gear its installed in by 3.</p>"
         },
         "grade": "commercial",
         "hardness": 8,
@@ -59,6 +59,7 @@
             "value": [
                 "blocking-cold",
                 "blocking-electricity",
+                "blocking-tech",
                 "deflecting-cold",
                 "fire",
                 "fortifying-electricity",

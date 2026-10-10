@@ -1,0 +1,50 @@
+{
+    "_id": "nB2bL5sTq6yCe0fI",
+    "folder": "ZfJ4Whszk7bGARUG",
+    "img": "icons/skills/wounds/blood-cells-vessel-blue.webp",
+    "name": "Effect: Necrotize Blood",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Necrotic Infusion (Commercial)] or @UUID[Compendium.sf2e.equipment.Item.Necrotic Infusion (Tactical)]</p>\n<p>Until the start of your next turn, you gain resistance to void damage and weakness to vitality damage equal to twice your level. If the triggering damage would heal undead, you take no damage and are instead healed as if you were undead.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 5
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "Resistance",
+                "type": "void",
+                "value": "2*@actor.level"
+            },
+            {
+                "key": "Weakness",
+                "type": "vitality",
+                "value": "2*@actor.level"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

@@ -6,11 +6,11 @@
     "system": {
         "baseItem": null,
         "bulk": {
-            "value": 0.1
+            "value": 0
         },
         "containerId": null,
         "description": {
-            "value": "<p>Keycard and keypad locks balance security and convenience, trading the keys of commercial locks for chip-based card scanners and numerical codes, respectively. Keycards for keycard locks are level 0 items that cost 1 credit.</p>\n<p>Bypass requires four successful @Check[computers|dc:25] checks or two successful @Check[thievery|dc:30] checks.</p>"
+            "value": "<p>Keycard and keypad locks balance security and convenience, trading the keys of commercial locks for chip-based card scanners and numerical codes, respectively. @UUID[Compendium.sf2e.equipment.Item.Keycard]{Keycards} for keycard locks are level 0 items that cost 1 credit.</p>\n<p>Bypass requires four successful @Check[computers|dc:25] checks or two successful @Check[thievery|dc:30] checks.</p>"
         },
         "hardness": 0,
         "hp": {
@@ -44,7 +44,7 @@
             ]
         },
         "usage": {
-            "value": "other"
+            "value": "held-in-two-hands"
         }
     },
     "type": "equipment"

@@ -12,7 +12,7 @@
         },
         "category": "ancestry",
         "description": {
-            "value": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> You're adjacent to a creature, hazard, or item that has the glitching condition.</p><hr /><p>You know how to manipulate errors in high-tech programming and complex machinery, enhancing or mitigating the resulting glitches. You can either increase or reduce the value of the required target's glitching condition by 1.</p><hr /><p><strong>Special</strong> If you have the repair SRO heritage, you can use Manipulate Glitch on a target up to 30 feet away.</p>"
+            "value": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> You're adjacent to a creature, hazard, or item that has the @UUID[Compendium.sf2e.conditions.Item.Glitching] condition.</p><hr /><p>You know how to manipulate errors in high-tech programming and complex machinery, enhancing or mitigating the resulting glitches. You can either increase or reduce the value of the required target's @UUID[Compendium.sf2e.conditions.Item.Glitching] condition by 1.</p><hr /><p><strong>Special</strong> If you have the repair SRO heritage, you can use Manipulate Glitch on a target up to 30 feet away.</p>"
         },
         "frequency": {
             "max": 1,

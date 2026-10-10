@@ -1,0 +1,49 @@
+{
+    "_id": "LGYF9mUDiZ5lNRQw",
+    "img": "systems/sf2e/icons/equipment/other/syringe.webp",
+    "name": "Effect: Blacklight Serum",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Blacklight Serum]</p>\n<p>Your body sheds bright light in a 15-foot radius and dim light for the next 15 feet.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "hours",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 0
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "TokenLight",
+                "value": {
+                    "alpha": 0.25,
+                    "attenuation": 0.4,
+                    "bright": 15,
+                    "color": "#c44dff",
+                    "coloration": 101,
+                    "dim": 30
+                }
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

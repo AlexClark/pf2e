@@ -4,7 +4,10 @@
     "img": "systems/sf2e/icons/abilities/green-energy-swirling.webp",
     "name": "Cosmic Eddy",
     "system": {
-        "area": null,
+        "area": {
+            "type": "burst",
+            "value": 20
+        },
         "cost": {
             "value": ""
         },

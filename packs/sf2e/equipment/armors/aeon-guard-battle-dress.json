@@ -7,7 +7,7 @@
         "acBonus": 3,
         "baseItem": null,
         "bulk": {
-            "value": 0.1
+            "value": 2
         },
         "category": "medium",
         "checkPenalty": -2,

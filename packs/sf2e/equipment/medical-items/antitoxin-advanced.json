@@ -12,7 +12,7 @@
         "containerId": null,
         "damage": null,
         "description": {
-            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>This specially crafted medicine is designed to absorb and neutralize poisons in your bloodstream. You gain a +3 item bonus to Fortitude saves against poisons for 6 hours.</p>"
+            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>This specially crafted medicine is designed to absorb and neutralize poisons in your bloodstream. You gain a +3 item bonus to Fortitude saves against poisons for 6 hours.</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.Effect: Antitoxin]</p>"
         },
         "hardness": 0,
         "hp": {

@@ -29,7 +29,26 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "RollOption",
+                "option": "uncanny-dash",
+                "predicate": [
+                    "feat:gg-os-frame"
+                ],
+                "toggleable": true
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "feat:gg-os-frame",
+                    "uncanny-dash"
+                ],
+                "selector": "all-speeds",
+                "type": "status",
+                "value": 10
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

@@ -5,13 +5,13 @@
     "name": "Shelter Wall",
     "system": {
         "acBonus": 2,
-        "baseItem": null,
+        "baseItem": "tower-shield",
         "bulk": {
             "value": 2
         },
         "containerId": null,
         "description": {
-            "value": "<p>This large shield is made from metallic alloys used in Akitonian bomb shelters. Its lack of advanced tech allows it to endure nuclear hazards.</p>"
+            "value": "<p>This large shield is made from metallic alloys used in Akitonian bomb shelters. Its lack of advanced tech allows it to endure nuclear hazards.</p>\n<p>Getting the higher bonus for this shield requires using the @UUID[Compendium.sf2e.actions.Item.Take Cover] action while the shield is raised.</p>"
         },
         "grade": "commercial",
         "hardness": 5,

@@ -38,6 +38,27 @@
         "rules": [
             {
                 "key": "FlatModifier",
+                "predicate": [
+                    "perception"
+                ],
+                "selector": [
+                    "initiative"
+                ],
+                "type": "item",
+                "value": 3
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    {
+                        "or": [
+                            "target:type:character",
+                            "target:type:familiar",
+                            "target:type:hazard",
+                            "target:type:npc"
+                        ]
+                    }
+                ],
                 "selector": [
                     "perception"
                 ],

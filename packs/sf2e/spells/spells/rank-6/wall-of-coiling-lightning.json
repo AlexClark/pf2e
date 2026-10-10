@@ -18,7 +18,7 @@
                     "damage"
                 ],
                 "materials": [],
-                "type": "bludgeoning"
+                "type": "electricity"
             }
         },
         "defense": {
@@ -51,7 +51,7 @@
             "title": "Starfinder Tech Core"
         },
         "range": {
-            "value": ""
+            "value": "120 feet"
         },
         "requirements": "",
         "rules": [],

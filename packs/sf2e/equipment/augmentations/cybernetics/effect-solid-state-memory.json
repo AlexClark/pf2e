@@ -1,0 +1,50 @@
+{
+    "_id": "Tm4cK8wQpL2nYs6E",
+    "folder": "k3fPO0HvmMLbqeQx",
+    "img": "systems/sf2e/icons/equipment/other/green-circuit-board.webp",
+    "name": "Effect: Solid State Memory",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Memory Expansion (Advanced)]</p>\n<p>You roll the triggering Recall Knowledge check twice and use the higher result. The question must be relevant to the Lore skill granted by the augmentation.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 10
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "keep": "higher",
+                "key": "RollTwice",
+                "predicate": [
+                    "action:recall-knowledge"
+                ],
+                "removeAfterRoll": true,
+                "selector": [
+                    "skill-check"
+                ]
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

@@ -76,6 +76,7 @@
         "traits": {
             "rarity": "common",
             "value": [
+                "agile",
                 "analog",
                 "deadly-d6",
                 "finesse",

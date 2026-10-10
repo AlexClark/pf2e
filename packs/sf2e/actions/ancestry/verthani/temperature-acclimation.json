@@ -23,7 +23,39 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "RollOption",
+                "option": "temperature-acclimation",
+                "suboptions": [
+                    {
+                        "label": "PF2E.TraitCold",
+                        "value": "cold"
+                    },
+                    {
+                        "label": "PF2E.TraitFire",
+                        "value": "fire"
+                    }
+                ],
+                "toggleable": true
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "temperature-acclimation:cold"
+                ],
+                "type": "cold",
+                "value": "floor(@actor.level/2)"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "temperature-acclimation:fire"
+                ],
+                "type": "fire",
+                "value": "floor(@actor.level/2)"
+            }
+        ],
         "traits": {
             "value": []
         }

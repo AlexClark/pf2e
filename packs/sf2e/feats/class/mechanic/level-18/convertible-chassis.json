@@ -17,6 +17,7 @@
         "level": {
             "value": 18
         },
+        "maxTakable": null,
         "prerequisites": {
             "value": [
                 {

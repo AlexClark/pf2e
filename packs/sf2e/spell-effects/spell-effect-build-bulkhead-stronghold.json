@@ -1,0 +1,42 @@
+{
+    "_id": "Bm7kQ2nWx4YpL9sH",
+    "img": "systems/sf2e/icons/abilities/green-energy-wire-cube.webp",
+    "name": "Spell Effect: Build Bulkhead Stronghold",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Build Bulkhead Stronghold]</p>\n<p>An ally who starts their turn inside the stronghold gains 10 temporary Hit Points. These last until the spell ends, including after the ally leaves. You are not your own ally. Apply this effect when the ally starts a turn inside. If they start another turn inside with fewer than 10 temporary Hit Points from this spell, remove this effect and apply it again. Remove it when the spell ends. Do not leave it on an ally who is outside the stronghold if that would renew the temporary Hit Points.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 10
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "TempHP",
+                "value": 10
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

@@ -1,0 +1,49 @@
+{
+    "_id": "gS5xY9zA2bDeQ8tU",
+    "img": "systems/sf2e/icons/actions/OneAction.webp",
+    "name": "Effect: Eureka!",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.Eureka!]</p>\n<p>Roll your next Life Science Lore or Physical Science Lore check to Recall Knowledge twice and use the higher result.</p>"
+        },
+        "duration": {
+            "expiry": "turn-end",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "keep": "higher",
+                "key": "RollTwice",
+                "predicate": [
+                    "action:recall-knowledge"
+                ],
+                "selector": [
+                    "life-science-lore",
+                    "physical-science-lore"
+                ]
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

@@ -12,7 +12,7 @@
         "damage": {
             "7XtoZ2fVGQFlUr95": {
                 "applyMod": false,
-                "category": null,
+                "category": "persistent",
                 "formula": "3d6",
                 "kinds": [
                     "damage"
@@ -38,7 +38,7 @@
             }
         },
         "description": {
-            "value": "<p>You rewrite the target's DNA as if it was code, painfully warping its biological functions to mimic the processes of a robot: its body becomes visibly robotic as its blood vessels form circuit-like patterns, its bones twist into straight lines, its movements become jerky, and its voice grows halting. The target takes 3d6 slashing damage and 3d6 persistent bleed damage and must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and is @UUID[Compendium.sf2e.conditions.Item.Clumsy]{Clumsy 1} for 1 round.</p>\n<p><strong>Failure</strong> The target takes full damage, is @UUID[Compendium.sf2e.conditions.Item.Clumsy]{Clumsy 2} for 1 minute, and takes a –10-foot penalty to its Speeds for as long as it's clumsy.</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double damage and is also @UUID[Compendium.sf2e.conditions.Item.Stupefied]{Stupefied 1} for as long as it's clumsy.</p><hr /><p><strong>Heightened (+1)</strong> The slashing damage and persistent bleed damage each increase by 1d6.</p>"
+            "value": "<p>You rewrite the target's DNA as if it was code, painfully warping its biological functions to mimic the processes of a robot: its body becomes visibly robotic as its blood vessels form circuit-like patterns, its bones twist into straight lines, its movements become jerky, and its voice grows halting. The target takes 3d6 slashing damage and 3d6 persistent bleed damage and must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and is @UUID[Compendium.sf2e.conditions.Item.Clumsy]{Clumsy 1} for 1 round.</p>\n<p><strong>Failure</strong> The target takes full damage, is @UUID[Compendium.sf2e.conditions.Item.Clumsy]{Clumsy 2} for 1 minute, and takes a –10-foot penalty to its Speeds for as long as it's clumsy.</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double damage and is also @UUID[Compendium.sf2e.conditions.Item.Stupefied]{Stupefied 1} for as long as it's clumsy.</p><hr /><p><strong>Heightened (+1)</strong> The slashing damage and persistent bleed damage each increase by 1d6.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.Spell Effect: Rewire Flesh]</p>"
         },
         "duration": {
             "sustained": false,

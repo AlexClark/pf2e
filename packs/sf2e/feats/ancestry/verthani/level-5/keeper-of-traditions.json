@@ -25,7 +25,46 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "RollOption",
+                "option": "keeper-of-traditions",
+                "toggleable": true
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "action:recall-knowledge",
+                    {
+                        "or": [
+                            "target:trait:verthani",
+                            "keeper-of-traditions"
+                        ]
+                    }
+                ],
+                "selector": [
+                    "society"
+                ],
+                "type": "circumstance",
+                "value": 1
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    {
+                        "or": [
+                            "target:trait:verthani",
+                            "keeper-of-traditions"
+                        ]
+                    }
+                ],
+                "selector": [
+                    "cha-based"
+                ],
+                "type": "circumstance",
+                "value": 1
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

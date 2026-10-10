@@ -25,7 +25,13 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "BaseSpeed",
+                "selector": "climb",
+                "value": 20
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

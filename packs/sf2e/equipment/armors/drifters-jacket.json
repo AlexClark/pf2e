@@ -4,7 +4,7 @@
     "img": "icons/equipment/chest/jacket-suit-leather.webp",
     "name": "Drifter's Jacket",
     "system": {
-        "acBonus": 0,
+        "acBonus": -1,
         "baseItem": null,
         "bulk": {
             "value": 0.1

@@ -29,7 +29,50 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "category": "persistent",
+                "damageType": "acid",
+                "diceNumber": 1,
+                "dieSize": "d4",
+                "key": "DamageDice",
+                "predicate": [
+                    "debilitating-nanites"
+                ],
+                "selector": "melee-strike-damage"
+            },
+            {
+                "key": "Note",
+                "outcome": [
+                    "success"
+                ],
+                "predicate": [
+                    "debilitating-nanites",
+                    "item:melee"
+                ],
+                "selector": "strike-attack-roll",
+                "text": "The target becomes @UUID[Compendium.sf2e.conditions.Item.Clumsy]{Clumsy 1} for 1 round.",
+                "title": "{item|name}"
+            },
+            {
+                "key": "Note",
+                "outcome": [
+                    "criticalSuccess"
+                ],
+                "predicate": [
+                    "debilitating-nanites",
+                    "item:melee"
+                ],
+                "selector": "strike-attack-roll",
+                "text": "The target becomes @UUID[Compendium.sf2e.conditions.Item.Clumsy]{Clumsy 2} for 1 round.",
+                "title": "{item|name}"
+            },
+            {
+                "key": "RollOption",
+                "option": "debilitating-nanites",
+                "toggleable": true
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

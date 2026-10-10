@@ -12,7 +12,7 @@
         "containerId": null,
         "damage": null,
         "description": {
-            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>An antiemetic alleviates stomach problems. For 10 minutes after using an antiemetic, reduce the value of the sickened condition by 1. A condition whose value is reduced to 0 isn't removed; after 8 hours, the condition returns to its original value, unless its duration expired or it was removed by another means.</p>"
+            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>An antiemetic alleviates stomach problems. For 10 minutes after using an antiemetic, reduce the value of the sickened condition by 1. A condition whose value is reduced to 0 isn't removed; after 8 hours, the condition returns to its original value, unless its duration expired or it was removed by another means.</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.Effect: Antiemetic]</p>"
         },
         "hardness": 0,
         "hp": {

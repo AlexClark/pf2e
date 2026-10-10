@@ -4,13 +4,13 @@
     "name": "Spell Effect: Build Booster Ring",
     "system": {
         "description": {
-            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Build Booster Ring]<br />You gain a +30-foot status bonus to your Speeds.</p>"
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Build Booster Ring]</p>\n<p>You gain a +30-foot status bonus to your Speeds until the end of this turn. The same bonus applies to a vehicle's Speeds; set that by hand.</p>"
         },
         "duration": {
-            "expiry": "turn-start",
+            "expiry": "turn-end",
             "sustained": false,
             "unit": "rounds",
-            "value": 1
+            "value": 0
         },
         "fromSpell": false,
         "level": {

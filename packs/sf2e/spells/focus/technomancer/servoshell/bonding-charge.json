@@ -28,7 +28,7 @@
             }
         },
         "description": {
-            "value": "<p><strong>Area</strong> variable line</p>\n<p>You supercharge the bond between yourself and your tech minion, adjusting the signal until it physically carries both your magic and the minion's electricity in a shocking display. You Stride, then discharge a line of electricity in a straight line between yourself and your minion. If you don't have line of effect to your tech minion or end your movement further than 120 feet from your minion, this spell fails. Each other creature in the line takes 3d12 electricity damage (basic Reflex save).</p><hr /><p><strong>Heightened (+2)</strong> Increase the damage by 1d12.</p>"
+            "value": "<p><strong>Requirements</strong> You have a tech minion within 120 feet.</p>\n<p><strong>Area</strong> variable line</p>\n<p>You supercharge the bond between yourself and your tech minion, adjusting the signal until it physically carries both your magic and the minion's electricity in a shocking display. You Stride, then discharge a line of electricity in a straight line between yourself and your minion. If you don't have line of effect to your tech minion or end your movement further than 120 feet from your minion, this spell fails. Each other creature in the line takes 3d12 electricity damage (basic Reflex save).</p><hr /><p><strong>Heightened (+2)</strong> Increase the damage by 1d12.</p>"
         },
         "duration": {
             "sustained": false,
@@ -70,7 +70,8 @@
                 "focus",
                 "force",
                 "manipulate",
-                "technomancer"
+                "technomancer",
+                "traversal"
             ]
         }
     },

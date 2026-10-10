@@ -1,0 +1,43 @@
+{
+    "_id": "9gqKNQ7je6ZysDn6",
+    "img": "systems/sf2e/icons/equipment/other/red-syringe.webp",
+    "name": "Effect: Giantblood Serum (Clumsy)",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Giantblood Serum]</p>\n<p>You are @UUID[Compendium.sf2e.conditions.Item.Clumsy]{clumsy 1}.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 10
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 3
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "inMemoryOnly": true,
+                "key": "GrantItem",
+                "uuid": "Compendium.sf2e.conditions.Item.Clumsy"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

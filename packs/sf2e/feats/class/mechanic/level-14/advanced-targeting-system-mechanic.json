@@ -1,0 +1,46 @@
+{
+    "_id": "D6vOQboz4n7MaX0J",
+    "folder": "AalzExS31arSVHXl",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Advanced Targeting System (Mechanic)",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "class",
+        "description": {
+            "value": "<p>You've improved your targeting system. Once per 10 minutes, when you @UUID[Compendium.sf2e.feats.Item.Activate Targeting System], you can choose to add the fortune trait to that roll. If you do, in addition to the usual effects, you roll the affected attack roll twice and use the higher result.</p>"
+        },
+        "level": {
+            "value": 14
+        },
+        "prerequisites": {
+            "value": [
+                {
+                    "value": "Activate Targeting System"
+                }
+            ]
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "subfeatures": {
+            "proficiencies": {},
+            "senses": {},
+            "suppressedFeatures": []
+        },
+        "traits": {
+            "rarity": "common",
+            "value": [
+                "mechanic"
+            ]
+        }
+    },
+    "type": "feat"
+}

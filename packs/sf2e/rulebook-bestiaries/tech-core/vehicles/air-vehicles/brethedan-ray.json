@@ -60,7 +60,7 @@
         "details": {
             "AC": 0,
             "crew": "1 pilot, 1 crew",
-            "description": "",
+            "description": "<p>Designed to mimic the physical form of the majestic cloud ray, these ships were built to navigate the numerous layers of a gas giant's atmosphere but have been adapted to fly on almost any planet in Near Space. The ray's efficient use of internal space accommodates a relatively large passenger capacity compared to other vehicles of a similar size.</p>",
             "level": {
                 "value": 4
             },
@@ -73,7 +73,7 @@
                 "title": "Starfinder Tech Core"
             },
             "space": {
-                "high": 5,
+                "high": 7,
                 "long": 15,
                 "wide": 15
             },

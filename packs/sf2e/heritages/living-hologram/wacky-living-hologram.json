@@ -10,14 +10,19 @@
             "uuid": "Compendium.sf2e.ancestries.Item.akHnz8mYVUNCQ02e"
         },
         "description": {
-            "value": "<p>You have a big personality and a nonsensical appearance that occasionally breaks the laws of physics. You might be overly animated and cartoonish, or your coloration might change drastically based on your mood. You gain the Cartoonish Stretch action.</p>"
+            "value": "<p>You have a big personality and a nonsensical appearance that occasionally breaks the laws of physics. You might be overly animated and cartoonish, or your coloration might change drastically based on your mood. You gain the @UUID[Compendium.sf2e.actions.Item.Cartoonish Stretch] action.</p>"
         },
         "publication": {
             "license": "ORC",
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "GrantItem",
+                "uuid": "Compendium.sf2e.actions.Item.Cartoonish Stretch"
+            }
+        ],
         "traits": {
             "rarity": "common",
             "value": []

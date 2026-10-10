@@ -35,7 +35,39 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "key": "RollOption",
+                "label": "Delayed",
+                "option": "{item|parentItem.id}-suspended-fire",
+                "toggleable": true,
+                "value": true
+            },
+            {
+                "itemType": "weapon",
+                "key": "ItemAlteration",
+                "mode": "add",
+                "predicate": [
+                    "item:id:{item|parentItem.id}",
+                    "{item|parentItem.id}-suspended-fire"
+                ],
+                "property": "traits",
+                "value": "delayed"
+            },
+            {
+                "itemType": "weapon",
+                "key": "ItemAlteration",
+                "mode": "remove",
+                "predicate": [
+                    "item:id:{item|parentItem.id}",
+                    {
+                        "not": "{item|parentItem.id}-suspended-fire"
+                    }
+                ],
+                "property": "traits",
+                "value": "delayed"
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",
@@ -46,7 +78,7 @@
             ]
         },
         "usage": {
-            "value": "installed-in-a-weapon"
+            "value": "installed-in-an-area-weapon"
         }
     },
     "type": "equipment"

@@ -26,7 +26,23 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": {
+                    "filter": [
+                        "item:tag:mechanic-exocortex"
+                    ]
+                },
+                "flag": "exocortex",
+                "key": "ChoiceSet",
+                "prompt": "SF2E.SpecificRule.Mechanic.Exocortex.Prompt"
+            },
+            {
+                "key": "GrantItem",
+                "uuid": "{item|flags.system.rulesSelections.exocortex}"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

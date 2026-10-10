@@ -1,0 +1,49 @@
+{
+    "_id": "76zSQr3YbPdltcjV",
+    "img": "icons/skills/movement/figure-running-gray.webp",
+    "name": "Effect: Fast Forward",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.Fast Forward]</p>\n<p>You gain a +10-foot status bonus to your Speeds, and you are @UUID[Compendium.sf2e.conditions.Item.Quickened]. You can use the extra action each round only to Stride. If you have Light Hop, you can use that extra action to Light Hop or Stride, and a Light Hop used this way doesn't count toward Light Hop's frequency.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 17
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "all-speeds",
+                "type": "status",
+                "value": 10
+            },
+            {
+                "inMemoryOnly": true,
+                "key": "GrantItem",
+                "uuid": "Compendium.sf2e.conditions.Item.Quickened"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

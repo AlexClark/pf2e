@@ -30,7 +30,66 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "choices": [
+                    {
+                        "label": "Anti-Glitch Response",
+                        "predicate": [
+                            "feat:anti-glitch-response",
+                            {
+                                "not": "hotkey:anti-glitch-response"
+                            }
+                        ],
+                        "value": "anti-glitch-response"
+                    },
+                    {
+                        "label": "Let Me Hear You Cheer",
+                        "predicate": [
+                            "heritage:mascot-living-hologram",
+                            {
+                                "not": "hotkey:let-me-hear-you-cheer"
+                            }
+                        ],
+                        "value": "let-me-hear-you-cheer"
+                    },
+                    {
+                        "label": "Light Hop",
+                        "predicate": [
+                            "feat:light-hop",
+                            {
+                                "not": "hotkey:light-hop"
+                            }
+                        ],
+                        "value": "light-hop"
+                    }
+                ],
+                "flag": "ability",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.Ability",
+                "rollOption": "hotkey"
+            },
+            {
+                "itemType": "feat",
+                "key": "ItemAlteration",
+                "mode": "override",
+                "predicate": [
+                    "item:slug:{item|flags.system.rulesSelections.ability}"
+                ],
+                "property": "frequency-per",
+                "value": "PT10M"
+            },
+            {
+                "itemType": "action",
+                "key": "ItemAlteration",
+                "mode": "override",
+                "predicate": [
+                    "item:slug:{item|flags.system.rulesSelections.ability}"
+                ],
+                "property": "frequency-per",
+                "value": "PT10M"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

@@ -34,7 +34,7 @@
         },
         {
             "_id": "I3afglo5lm08iv58",
-            "img": "systems/sf2e/icons/actions/TwoActions.webp",
+            "img": "systems/sf2e/icons/actions/ThreeActions.webp",
             "name": "Fire Breath",
             "sort": 0,
             "system": {
@@ -42,11 +42,11 @@
                     "value": "action"
                 },
                 "actions": {
-                    "value": 2
+                    "value": 3
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The massive flame cannon built into the dragon of Damoritosh's mouth ignites, dealing @Damage[12d6[fire]|options:area-damage] damage to creatures and objects in a @Template[type:cone|distance:40] or an @Template[type:line|distance:80] (@Check[reflex|dc:33|basic] save). This ability can be used by crew or passengers, in addition to the pilot. Fire Breath requires [[/gmr 1d4 #rounds]]{1d4 rounds} to cool down before it can be used again.</p>"
+                    "value": "<p>The massive flame cannon built into the <em>dragon of Damoritosh</em>'s mouth ignites, dealing @Damage[12d6[fire]|options:area-damage] damage to creatures and objects in a @Template[type:cone|distance:40] or an @Template[type:line|distance:80] (@Check[reflex|dc:33|basic] save). This ability can be used by crew or passengers, in addition to the pilot. Fire Breath requires [[/gmr 1d4 #rounds]]{1d4 rounds} to cool down before it can be used again.</p>"
                 },
                 "publication": {
                     "license": "OGL",
@@ -77,7 +77,7 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The dragon of Damoritosh's intimidating design is magically enhanced to simulate the terrifying presence of an actual dragon. Creatures within a @Template[type:emanation|distance:60], except the crew and passengers, must attempt a @Check[will|dc:32] save. This ability can be used by crew or passengers, in addition to the pilot.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.sf2e.conditions.Item.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.sf2e.conditions.Item.Frightened]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.sf2e.conditions.Item.Frightened]{Frightened 4}.</p>"
+                    "value": "<p>The <em>dragon of Damoritosh</em>'s intimidating design is magically enhanced to simulate the terrifying presence of an actual dragon. Creatures within a @Template[type:emanation|distance:60], except the crew and passengers, must attempt a @Check[will|dc:32] save. This ability can be used by crew or passengers, in addition to the pilot.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.sf2e.conditions.Item.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.sf2e.conditions.Item.Frightened]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.sf2e.conditions.Item.Frightened]{Frightened 4}.</p>"
                 },
                 "publication": {
                     "license": "OGL",

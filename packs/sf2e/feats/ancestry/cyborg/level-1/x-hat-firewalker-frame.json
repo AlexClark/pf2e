@@ -29,7 +29,7 @@
             {
                 "key": "ActiveEffectLike",
                 "mode": "upgrade",
-                "path": "system.skills.computer.rank",
+                "path": "system.skills.computers.rank",
                 "value": 1
             },
             {

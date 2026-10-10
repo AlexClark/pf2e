@@ -69,10 +69,10 @@
                 "value": 11
             },
             "collisionDC": {
-                "value": 0
+                "value": 15
             },
             "collisionDamage": {
-                "value": ""
+                "value": "2d4"
             },
             "emitsSound": "encounter",
             "hardness": 4,
@@ -102,7 +102,7 @@
                 "title": "Starfinder Tech Core"
             },
             "space": {
-                "high": 5,
+                "high": 3,
                 "long": 10,
                 "wide": 5
             },

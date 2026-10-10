@@ -37,7 +37,18 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "key": "Note",
+                "outcome": [
+                    "success",
+                    "criticalSuccess"
+                ],
+                "selector": "{item|id}-ranged-damage",
+                "text": "<p>The creature must succeed at a @Check[fortitude|dc:27] save or be @UUID[Compendium.sf2e.conditions.Item.Dazzled] for 1 round.</p>",
+                "title": "Flashbang Ammunition (Advanced)"
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

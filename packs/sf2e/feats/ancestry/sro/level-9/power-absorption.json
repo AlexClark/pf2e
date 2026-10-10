@@ -30,6 +30,10 @@
             "title": "Starfinder Tech Core"
         },
         "rules": [],
+        "selfEffect": {
+            "name": "Effect: Power Absorption",
+            "uuid": "Compendium.sf2e.feat-effects.Item.Effect: Power Absorption"
+        },
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

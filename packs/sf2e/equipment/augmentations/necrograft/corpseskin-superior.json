@@ -35,7 +35,31 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "key": "RollOption",
+                "label": "PF2E.SpecificRule.SkillVariant.Impersonate",
+                "option": "corpseskin",
+                "toggleable": true
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "action:impersonate",
+                    "corpseskin"
+                ],
+                "selector": [
+                    "deception"
+                ],
+                "type": "item",
+                "value": 3
+            },
+            {
+                "key": "Resistance",
+                "type": "void",
+                "value": 12
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

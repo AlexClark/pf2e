@@ -149,7 +149,7 @@
             "wlEqS": {
                 "img": "systems/sf2e/icons/abilities/blue-circuit-board-2.webp",
                 "level": 1,
-                "name": "Programming Languages",
+                "name": "Programming Language",
                 "uuid": "Compendium.sf2e.class-features.Item.Programming Language"
             }
         },

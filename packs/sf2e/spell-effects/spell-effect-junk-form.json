@@ -1,0 +1,452 @@
+{
+    "_id": "Jf5wK8nRy3LpQ7tH",
+    "img": "icons/commodities/tech/wire-copper-red-wrapped.webp",
+    "name": "Spell Effect: Junk Form",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Junk Form]</p>\n<p>You transform into the chosen junk battle form and gain the tech trait. You can Dismiss the spell. Armor check penalties and Speed penalties are ignored. Armor upgrades and environmental protections keep working. Strikes from this form are the only attacks you can use. You are trained with them. They are Strength based, and you can use your own unarmed attack modifier if it is higher.</p>\n<p><strong>E-Waste</strong> Speed 25 feet (hover) and fly 20 feet. Hover is not a separate Speed. Weakness bludgeoning 5. Resistance electricity 10.</p>\n<p><strong>Static Feedback</strong> (electricity) A creature that hits you with a melee Strike takes 1d4 electricity damage (2d4 if this effect is 8th rank or higher). If the weapon has the tech trait, they must succeed at a Reflex save against your spell DC or the weapon becomes glitching 1.</p>\n<p><strong>Filth</strong> Speed 20 feet. Weakness slashing 5. Resistance poison 10.</p>\n<p><strong>Rancid Stench</strong> (aura, olfactory, poison) 10 feet. A creature that enters or starts its turn in the aura must succeed at a Fortitude save against your spell DC or become sickened 1 (sickened 2 on a critical failure). Creatures can't retch to reduce their sickened value within the aura. If a creature succeeds, or once they recover from this sickened condition, it is temporarily immune to the aura for 24 hours.</p>\n<p><strong>Scrap</strong> Speed 20 feet and climb 20 feet. Weakness electricity 5. Resistance slashing 10.</p>\n<p><strong>Heightened (8th)</strong> Your battle form is Huge, you gain a +15-foot status bonus to your Speeds, and your melee Strikes have 10-foot reach. AC is 21 + your level, you gain 15 temporary Hit Points, your attack modifier is +28, and your damage bonus is +12. Strike damage dice do not increase.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 6
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "choices": [
+                    {
+                        "label": "E-Waste",
+                        "value": "e-waste"
+                    },
+                    {
+                        "label": "Filth",
+                        "value": "filth"
+                    },
+                    {
+                        "label": "Scrap",
+                        "value": "scrap"
+                    }
+                ],
+                "flag": "junkForm",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.Form",
+                "rollOption": "junk-form"
+            },
+            {
+                "brackets": [
+                    {
+                        "start": 6,
+                        "value": {
+                            "armorClass": {
+                                "modifier": "17 + @actor.level"
+                            },
+                            "size": "lg",
+                            "strikes": {
+                                "fan-blade": {
+                                    "damage": {
+                                        "modifier": 6
+                                    },
+                                    "modifier": 22
+                                },
+                                "power-surge": {
+                                    "damage": {
+                                        "modifier": 6
+                                    },
+                                    "modifier": 22
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "start": 8,
+                        "value": {
+                            "armorClass": {
+                                "modifier": "21 + @actor.level"
+                            },
+                            "size": "huge",
+                            "strikes": {
+                                "fan-blade": {
+                                    "damage": {
+                                        "modifier": 12
+                                    },
+                                    "modifier": 28,
+                                    "traits": [
+                                        "unarmed",
+                                        "reach-10"
+                                    ]
+                                },
+                                "power-surge": {
+                                    "damage": {
+                                        "modifier": 12
+                                    },
+                                    "modifier": 28
+                                }
+                            },
+                            "tempHP": 15
+                        }
+                    }
+                ],
+                "hasHands": true,
+                "key": "BattleForm",
+                "overrides": {
+                    "resistances": [
+                        {
+                            "type": "electricity",
+                            "value": 10
+                        }
+                    ],
+                    "senses": {
+                        "darkvision": {}
+                    },
+                    "speeds": {
+                        "fly": 20,
+                        "land": 25
+                    },
+                    "strikes": {
+                        "fan-blade": {
+                            "ability": "str",
+                            "category": "unarmed",
+                            "damage": {
+                                "damageType": "slashing",
+                                "dice": 2,
+                                "die": "d6"
+                            },
+                            "img": "icons/weapons/swords/sword-serrated-white.webp",
+                            "traits": [
+                                "unarmed"
+                            ]
+                        },
+                        "power-surge": {
+                            "ability": "str",
+                            "category": "unarmed",
+                            "damage": {
+                                "damageType": "electricity",
+                                "dice": 2,
+                                "die": "d4"
+                            },
+                            "img": "icons/magic/lightning/bolt-strike-blue.webp",
+                            "range": {
+                                "increment": 60
+                            },
+                            "traits": [
+                                "unarmed"
+                            ]
+                        }
+                    },
+                    "traits": [
+                        "tech"
+                    ],
+                    "weaknesses": [
+                        {
+                            "type": "bludgeoning",
+                            "value": 5
+                        }
+                    ]
+                },
+                "predicate": [
+                    "junk-form:e-waste"
+                ]
+            },
+            {
+                "brackets": [
+                    {
+                        "start": 6,
+                        "value": {
+                            "armorClass": {
+                                "modifier": "17 + @actor.level"
+                            },
+                            "size": "lg",
+                            "strikes": {
+                                "garbage-dump": {
+                                    "damage": {
+                                        "modifier": 6
+                                    },
+                                    "modifier": 22
+                                },
+                                "sludge-slug": {
+                                    "damage": {
+                                        "modifier": 6
+                                    },
+                                    "modifier": 22
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "start": 8,
+                        "value": {
+                            "armorClass": {
+                                "modifier": "21 + @actor.level"
+                            },
+                            "size": "huge",
+                            "strikes": {
+                                "garbage-dump": {
+                                    "damage": {
+                                        "modifier": 12
+                                    },
+                                    "modifier": 28
+                                },
+                                "sludge-slug": {
+                                    "damage": {
+                                        "modifier": 12
+                                    },
+                                    "modifier": 28,
+                                    "traits": [
+                                        "unarmed",
+                                        "reach-10"
+                                    ]
+                                }
+                            },
+                            "tempHP": 15
+                        }
+                    }
+                ],
+                "hasHands": true,
+                "key": "BattleForm",
+                "overrides": {
+                    "resistances": [
+                        {
+                            "type": "poison",
+                            "value": 10
+                        }
+                    ],
+                    "senses": {
+                        "darkvision": {}
+                    },
+                    "speeds": {
+                        "land": 20
+                    },
+                    "strikes": {
+                        "garbage-dump": {
+                            "ability": "str",
+                            "category": "unarmed",
+                            "damage": {
+                                "damageType": "bludgeoning",
+                                "dice": 2,
+                                "die": "d6"
+                            },
+                            "img": "icons/commodities/materials/slime-thick-orange.webp",
+                            "range": {
+                                "increment": 20
+                            },
+                            "traits": [
+                                "unarmed"
+                            ]
+                        },
+                        "sludge-slug": {
+                            "ability": "str",
+                            "category": "unarmed",
+                            "damage": {
+                                "damageType": "bludgeoning",
+                                "dice": 2,
+                                "die": "d8"
+                            },
+                            "img": "icons/commodities/materials/slime-thick-orange.webp",
+                            "traits": [
+                                "unarmed"
+                            ]
+                        }
+                    },
+                    "traits": [
+                        "tech"
+                    ],
+                    "weaknesses": [
+                        {
+                            "type": "slashing",
+                            "value": 5
+                        }
+                    ]
+                },
+                "predicate": [
+                    "junk-form:filth"
+                ]
+            },
+            {
+                "brackets": [
+                    {
+                        "start": 6,
+                        "value": {
+                            "armorClass": {
+                                "modifier": "17 + @actor.level"
+                            },
+                            "size": "lg",
+                            "strikes": {
+                                "scrap-shot": {
+                                    "damage": {
+                                        "modifier": 6
+                                    },
+                                    "modifier": 22
+                                },
+                                "scrap-slug": {
+                                    "damage": {
+                                        "modifier": 6
+                                    },
+                                    "modifier": 22
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "start": 8,
+                        "value": {
+                            "armorClass": {
+                                "modifier": "21 + @actor.level"
+                            },
+                            "size": "huge",
+                            "strikes": {
+                                "scrap-shot": {
+                                    "damage": {
+                                        "modifier": 12
+                                    },
+                                    "modifier": 28
+                                },
+                                "scrap-slug": {
+                                    "damage": {
+                                        "modifier": 12
+                                    },
+                                    "modifier": 28,
+                                    "traits": [
+                                        "unarmed",
+                                        "reach-10"
+                                    ]
+                                }
+                            },
+                            "tempHP": 15
+                        }
+                    }
+                ],
+                "hasHands": true,
+                "key": "BattleForm",
+                "overrides": {
+                    "resistances": [
+                        {
+                            "type": "slashing",
+                            "value": 10
+                        }
+                    ],
+                    "senses": {
+                        "darkvision": {}
+                    },
+                    "speeds": {
+                        "climb": 20,
+                        "land": 20
+                    },
+                    "strikes": {
+                        "scrap-shot": {
+                            "ability": "str",
+                            "category": "unarmed",
+                            "damage": {
+                                "damageType": "bludgeoning",
+                                "dice": 3,
+                                "die": "d8"
+                            },
+                            "img": "icons/commodities/metal/fragments-scrap.webp",
+                            "range": {
+                                "increment": 60
+                            },
+                            "traits": [
+                                "unarmed"
+                            ]
+                        },
+                        "scrap-slug": {
+                            "ability": "str",
+                            "category": "unarmed",
+                            "damage": {
+                                "damageType": "bludgeoning",
+                                "dice": 2,
+                                "die": "d8"
+                            },
+                            "img": "icons/commodities/metal/fragments-scrap.webp",
+                            "traits": [
+                                "unarmed"
+                            ]
+                        }
+                    },
+                    "traits": [
+                        "tech"
+                    ],
+                    "weaknesses": [
+                        {
+                            "type": "electricity",
+                            "value": 5
+                        }
+                    ]
+                },
+                "predicate": [
+                    "junk-form:scrap"
+                ]
+            },
+            {
+                "damageType": "electricity",
+                "diceNumber": 2,
+                "dieSize": "d6",
+                "key": "DamageDice",
+                "predicate": [
+                    "junk-form:e-waste"
+                ],
+                "selector": "fan-blade-damage"
+            },
+            {
+                "damageType": "fire",
+                "diceNumber": 2,
+                "dieSize": "d4",
+                "key": "DamageDice",
+                "predicate": [
+                    "junk-form:e-waste"
+                ],
+                "selector": "power-surge-damage"
+            },
+            {
+                "category": "persistent",
+                "damageType": "poison",
+                "diceNumber": 1,
+                "dieSize": "d6",
+                "key": "DamageDice",
+                "predicate": [
+                    "junk-form:filth"
+                ],
+                "selector": [
+                    "sludge-slug-damage",
+                    "garbage-dump-damage"
+                ]
+            },
+            {
+                "damageType": "slashing",
+                "diceNumber": 2,
+                "dieSize": "d8",
+                "key": "DamageDice",
+                "predicate": [
+                    "junk-form:scrap"
+                ],
+                "selector": "scrap-slug-damage"
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "all-speeds",
+                "type": "status",
+                "value": "match(when(gte(@item.level, 8), 15))"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

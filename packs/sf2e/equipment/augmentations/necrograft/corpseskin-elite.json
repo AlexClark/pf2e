@@ -37,8 +37,15 @@
         "quantity": 1,
         "rules": [
             {
+                "key": "RollOption",
+                "label": "PF2E.SpecificRule.SkillVariant.Impersonate",
+                "option": "corpseskin",
+                "toggleable": true
+            },
+            {
                 "key": "FlatModifier",
                 "predicate": [
+                    "action:impersonate",
                     "corpseskin"
                 ],
                 "selector": [

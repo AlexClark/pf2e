@@ -1,0 +1,55 @@
+{
+    "_id": "1cqM9CHiEYc5pCSk",
+    "folder": "AZKyKWxyWmrno8ol",
+    "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+    "name": "Junk Form",
+    "system": {
+        "area": null,
+        "cost": {
+            "value": ""
+        },
+        "counteraction": false,
+        "damage": {},
+        "defense": null,
+        "description": {
+            "value": "<p>You transform your body into a Large battle form made of junk. When you cast this spell, choose e-waste, filth, or scrap. While in this form, you gain the tech trait. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities regardless of which option you choose:</p><ul><li>AC = 17 + your level. Ignore your armor's check penalty and Speed reduction, but you can still use any armor upgrades or environmental protections you have.</li><li>Darkvision.</li><li>One or more unarmed attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +22, and your damage bonus is +6. These attacks are Strength based (for the purpose of the @UUID[Compendium.sf2e.conditions.Item.Enfeebled] condition, for example). If your unarmed attack modifier is higher, you can use it instead.</li></ul><p>You also gain abilities based on the battle form you choose:</p><ul><li><strong>E-Waste</strong><ul><li>Speed 25 feet (hover), fly 20 feet; Weaknesses bludgeoning 5; Resistances electricity 10.</li><li><strong>Static Feedback</strong> (electricity) A creature that hits you with a melee Strike takes 1d4 electricity damage. If the weapon has the tech trait, they must succeed at a Reflex save against your spell DC or the weapon becomes @UUID[Compendium.sf2e.conditions.Item.Glitching]{glitching 1}.</li><li><strong>Melee</strong> <span class=\"action-glyph\">1</span> fan blade, <strong>Damage</strong> 2d6 slashing plus 2d6 electricity.</li><li><strong>Ranged</strong> <span class=\"action-glyph\">1</span> power surge (range 60 feet), <strong>Damage</strong> 2d4 electricity plus 2d4 fire.</li></ul></li><li><strong>Filth</strong><ul><li>Speed 20 feet; Weaknesses slashing 5; Resistances poison 10.</li><li><strong>Rancid Stench</strong> (aura, olfactory, poison) 10 feet. A creature that enters or starts their turn in the aura must succeed at a Fortitude save against your spell DC or become @UUID[Compendium.sf2e.conditions.Item.Sickened]{sickened 1} (@UUID[Compendium.sf2e.conditions.Item.Sickened]{sickened 2} on a critical failure). Creatures can't retch to reduce their sickened value within the aura. If a creature succeeds, or once they recover from this sickened condition, it's temporarily immune to the aura for 24 hours.</li><li><strong>Melee</strong> <span class=\"action-glyph\">1</span> sludge slug, <strong>Damage</strong> 2d8 bludgeoning plus 1d6 persistent poison.</li><li><strong>Ranged</strong> <span class=\"action-glyph\">1</span> garbage dump (range 20 feet), <strong>Damage</strong> 2d6 bludgeoning plus 1d6 persistent poison.</li></ul></li><li><strong>Scrap</strong><ul><li>Speed 20 feet, climb 20 feet; Weaknesses electricity 5; Resistances slashing 10.</li><li><strong>Melee</strong> <span class=\"action-glyph\">1</span> scrap slug, <strong>Damage</strong> 2d8 bludgeoning plus 2d8 slashing.</li><li><strong>Ranged</strong> <span class=\"action-glyph\">1</span> scrap shot (range 60 feet), <strong>Damage</strong> 3d8 bludgeoning.</li></ul></li></ul><hr /><p><strong>Heightened (8th)</strong> Your battle form is Huge, you gain a +15-foot status bonus to your Speeds, and your melee attacks have 10-foot reach. You instead gain AC = 21 + your level, 15 temporary Hit Points, an attack modifier of +28, and a damage bonus of +12. Static feedback deals 2d4 electricity damage.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.Spell Effect: Junk Form]</p>"
+        },
+        "duration": {
+            "sustained": false,
+            "value": "1 minute"
+        },
+        "level": {
+            "value": 6
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "range": {
+            "value": ""
+        },
+        "requirements": "",
+        "rules": [],
+        "target": {
+            "value": ""
+        },
+        "time": {
+            "value": "2"
+        },
+        "traits": {
+            "rarity": "common",
+            "traditions": [
+                "arcane",
+                "occult"
+            ],
+            "value": [
+                "concentrate",
+                "junk",
+                "manipulate",
+                "polymorph"
+            ]
+        }
+    },
+    "type": "spell"
+}

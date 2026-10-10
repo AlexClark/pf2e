@@ -1,0 +1,130 @@
+{
+    "_id": "hvogla7jHIwyOLRE",
+    "img": "systems/sf2e/icons/equipment/other/red-syringe.webp",
+    "name": "Effect: Giantblood Serum",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Giantblood Serum]</p>\n<p>Apply this effect one minute after drinking the serum. If you were smaller than Large, you and your equipment become Large. Your reach increases by 5 feet (or by 10 feet if you were Tiny), and you gain a +2 status bonus to melee damage. A Large or larger creature gains no benefit from this effect.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 5
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 3
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "PF2E.ActorSizeTiny",
+                        "predicate": [
+                            "self:size:tiny"
+                        ],
+                        "value": "tiny"
+                    },
+                    {
+                        "label": "PF2E.ActorSizeSmall",
+                        "predicate": [
+                            "self:size:small"
+                        ],
+                        "value": "small"
+                    },
+                    {
+                        "label": "PF2E.ActorSizeMedium",
+                        "predicate": [
+                            "self:size:medium"
+                        ],
+                        "value": "medium"
+                    },
+                    {
+                        "label": "PF2E.ActorSizeLarge",
+                        "predicate": [
+                            "self:size:large"
+                        ],
+                        "value": "large"
+                    },
+                    {
+                        "label": "PF2E.ActorSizeHuge",
+                        "predicate": [
+                            "self:size:huge"
+                        ],
+                        "value": "huge"
+                    },
+                    {
+                        "label": "PF2E.ActorSizeGargantuan",
+                        "predicate": [
+                            "self:size:gargantuan"
+                        ],
+                        "value": "gargantuan"
+                    }
+                ],
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.CreatureSize",
+                "rollOption": "giantblood-size"
+            },
+            {
+                "key": "CreatureSize",
+                "predicate": [
+                    "giantblood-size:tiny"
+                ],
+                "reach": {
+                    "add": 10
+                },
+                "resizeEquipment": true,
+                "value": "large"
+            },
+            {
+                "key": "CreatureSize",
+                "predicate": [
+                    {
+                        "or": [
+                            "giantblood-size:small",
+                            "giantblood-size:medium"
+                        ]
+                    }
+                ],
+                "reach": {
+                    "add": 5
+                },
+                "resizeEquipment": true,
+                "value": "large"
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    {
+                        "or": [
+                            "giantblood-size:tiny",
+                            "giantblood-size:small",
+                            "giantblood-size:medium"
+                        ]
+                    }
+                ],
+                "selector": "melee-strike-damage",
+                "type": "status",
+                "value": 2
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

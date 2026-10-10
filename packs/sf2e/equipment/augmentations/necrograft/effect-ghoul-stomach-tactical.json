@@ -1,0 +1,70 @@
+{
+    "_id": "gS4tN9oRr8aEg2hK",
+    "folder": "ZfJ4Whszk7bGARUG",
+    "img": "icons/commodities/biological/organ-stomach.webp",
+    "name": "Effect: Ghoul Stomach (Tactical)",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Ghoul Stomach (Tactical)]</p>\n<p>You have eaten within the last hour. You gain a +5-foot item bonus to your Speeds and a +2 item bonus to Athletics checks to [[/act high-jump]] and [[/act long-jump]]. You do not take the augmentation's –5-foot item penalty to your Speeds.</p>"
+        },
+        "duration": {
+            "expiry": "turn-end",
+            "sustained": false,
+            "unit": "hours",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 11
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "AdjustModifier",
+                "selector": "all-speeds",
+                "slug": "ghoul-stomach-hunger",
+                "suppress": true
+            },
+            {
+                "key": "FlatModifier",
+                "selector": [
+                    "all-speeds"
+                ],
+                "type": "item",
+                "value": 5
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    {
+                        "or": [
+                            "action:high-jump",
+                            "action:long-jump"
+                        ]
+                    }
+                ],
+                "selector": [
+                    "athletics"
+                ],
+                "type": "item",
+                "value": 2
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

@@ -30,6 +30,10 @@
             "title": "Starfinder Tech Core"
         },
         "rules": [],
+        "selfEffect": {
+            "name": "Effect: Empower Healing Circuits",
+            "uuid": "Compendium.sf2e.feat-effects.Item.Effect: Empower Healing Circuits"
+        },
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

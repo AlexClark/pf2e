@@ -12,7 +12,7 @@
         "damage": {},
         "defense": null,
         "description": {
-            "value": "<p>You wish for your next shot to go where you desire. The next time you make a Strike with the locus before the end of your turn, you ignore your target's cover and any flat check required due to the target being @UUID[Compendium.sf2e.conditions.Item.Concealed] or hidden.</p>"
+            "value": "<p>You wish for your next shot to go where you desire. The next time you make a Strike with the locus before the end of your turn, you ignore your target's cover and any flat check required due to the target being @UUID[Compendium.sf2e.conditions.Item.Concealed] or @UUID[Compendium.sf2e.conditions.Item.Hidden].</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.Spell Effect: Wishborne Shot]</p>"
         },
         "duration": {
             "sustained": false,
@@ -35,7 +35,7 @@
             "value": ""
         },
         "time": {
-            "value": "2"
+            "value": "1"
         },
         "traits": {
             "rarity": "common",

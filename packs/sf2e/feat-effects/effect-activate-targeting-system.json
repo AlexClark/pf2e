@@ -1,0 +1,79 @@
+{
+    "_id": "fR4wX8yZ1aCdP7sT",
+    "img": "systems/sf2e/icons/abilities/orange-target-sign.webp",
+    "name": "Effect: Activate Targeting System",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.Activate Targeting System]</p>\n<p>Your Strikes ignore circumstance penalties to the attack roll. If you have Advanced Targeting System (Mechanic), you can also roll the attack twice and use the higher result.</p>"
+        },
+        "duration": {
+            "expiry": "turn-end",
+            "sustained": false,
+            "unit": "rounds",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 8
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "domain": "strike-attack-roll",
+                "key": "RollOption",
+                "option": "activate-targeting-system",
+                "removeAfterRoll": true
+            },
+            {
+                "choices": [
+                    {
+                        "label": "PF2E.UI.RuleElements.ChoiceSet.NoLabel",
+                        "value": "no"
+                    },
+                    {
+                        "label": "PF2E.UI.RuleElements.ChoiceSet.YesLabel",
+                        "value": "yes"
+                    }
+                ],
+                "key": "ChoiceSet",
+                "predicate": [
+                    "feat:advanced-targeting-system-mechanic"
+                ],
+                "prompt": "Add the fortune trait?",
+                "rollOption": "targeting-fortune"
+            },
+            {
+                "key": "AdjustModifier",
+                "predicate": [
+                    "penalty:type:circumstance"
+                ],
+                "selector": "strike-attack-roll",
+                "suppress": true
+            },
+            {
+                "keep": "higher",
+                "key": "RollTwice",
+                "predicate": [
+                    "targeting-fortune:yes"
+                ],
+                "removeAfterRoll": false,
+                "selector": "strike-attack-roll"
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

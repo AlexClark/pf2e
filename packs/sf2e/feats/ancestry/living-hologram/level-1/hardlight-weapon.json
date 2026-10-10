@@ -25,7 +25,276 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "choices": [
+                    {
+                        "label": "Melee, 1d8",
+                        "value": "d8"
+                    },
+                    {
+                        "label": "Melee, 1d6 (agile, finesse)",
+                        "value": "d6-agile"
+                    },
+                    {
+                        "label": "Ranged, 1d6 (range increment 30 feet)",
+                        "value": "ranged-30"
+                    },
+                    {
+                        "label": "Ranged, 1d4 (range increment 60 feet)",
+                        "value": "ranged-60"
+                    }
+                ],
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.UnarmedAttack",
+                "rollOption": "hardlight-weapon"
+            },
+            {
+                "choices": [
+                    {
+                        "label": "PF2E.TraitAcid",
+                        "value": "acid"
+                    },
+                    {
+                        "label": "PF2E.TraitBludgeoning",
+                        "value": "bludgeoning"
+                    },
+                    {
+                        "label": "PF2E.TraitCold",
+                        "value": "cold"
+                    },
+                    {
+                        "label": "PF2E.TraitElectricity",
+                        "value": "electricity"
+                    },
+                    {
+                        "label": "PF2E.TraitFire",
+                        "value": "fire"
+                    },
+                    {
+                        "label": "PF2E.TraitPiercing",
+                        "value": "piercing"
+                    },
+                    {
+                        "label": "PF2E.TraitSlashing",
+                        "value": "slashing"
+                    },
+                    {
+                        "label": "PF2E.TraitSonic",
+                        "value": "sonic"
+                    }
+                ],
+                "flag": "damageType",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.DamageType",
+                "rollOption": "hardlight-weapon-damage"
+            },
+            {
+                "choices": [
+                    {
+                        "label": "PF2E.WeaponGroupCorrosive",
+                        "predicate": [
+                            "hardlight-weapon-damage:acid"
+                        ],
+                        "value": "corrosive"
+                    },
+                    {
+                        "label": "PF2E.WeaponGroupBrawling",
+                        "predicate": [
+                            {
+                                "or": [
+                                    "hardlight-weapon-damage:bludgeoning",
+                                    "hardlight-weapon-damage:piercing",
+                                    "hardlight-weapon-damage:slashing"
+                                ]
+                            }
+                        ],
+                        "value": "brawling"
+                    },
+                    {
+                        "label": "PF2E.WeaponGroupClub",
+                        "predicate": [
+                            "hardlight-weapon-damage:bludgeoning"
+                        ],
+                        "value": "club"
+                    },
+                    {
+                        "label": "PF2E.WeaponGroupHammer",
+                        "predicate": [
+                            "hardlight-weapon-damage:bludgeoning"
+                        ],
+                        "value": "hammer"
+                    },
+                    {
+                        "label": "PF2E.WeaponGroupCryo",
+                        "predicate": [
+                            "hardlight-weapon-damage:cold"
+                        ],
+                        "value": "cryo"
+                    },
+                    {
+                        "label": "PF2E.WeaponGroupShock",
+                        "predicate": [
+                            "hardlight-weapon-damage:electricity"
+                        ],
+                        "value": "shock"
+                    },
+                    {
+                        "label": "PF2E.WeaponGroupFlame",
+                        "predicate": [
+                            "hardlight-weapon-damage:fire"
+                        ],
+                        "value": "flame"
+                    },
+                    {
+                        "label": "PF2E.WeaponGroupLaser",
+                        "predicate": [
+                            "hardlight-weapon-damage:fire"
+                        ],
+                        "value": "laser"
+                    },
+                    {
+                        "label": "PF2E.WeaponGroupKnife",
+                        "predicate": [
+                            {
+                                "or": [
+                                    "hardlight-weapon-damage:piercing",
+                                    "hardlight-weapon-damage:slashing"
+                                ]
+                            }
+                        ],
+                        "value": "knife"
+                    },
+                    {
+                        "label": "PF2E.WeaponGroupSpear",
+                        "predicate": [
+                            "hardlight-weapon-damage:piercing"
+                        ],
+                        "value": "spear"
+                    },
+                    {
+                        "label": "PF2E.WeaponGroupSword",
+                        "predicate": [
+                            "hardlight-weapon-damage:slashing"
+                        ],
+                        "value": "sword"
+                    },
+                    {
+                        "label": "PF2E.WeaponGroupSonic",
+                        "predicate": [
+                            "hardlight-weapon-damage:sonic"
+                        ],
+                        "value": "sonic"
+                    }
+                ],
+                "flag": "group",
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.WeaponGroup",
+                "rollOption": "hardlight-weapon-group"
+            },
+            {
+                "category": "unarmed",
+                "damage": {
+                    "base": {
+                        "damageType": "{item|flags.system.rulesSelections.damageType}",
+                        "dice": 1,
+                        "die": "d8"
+                    }
+                },
+                "group": "{item|flags.system.rulesSelections.group}",
+                "img": "systems/sf2e/icons/default-icons/melee.svg",
+                "key": "Strike",
+                "label": "Hardlight Weapon",
+                "predicate": [
+                    "hardlight-weapon:d8"
+                ],
+                "range": null,
+                "traits": [
+                    "unarmed"
+                ]
+            },
+            {
+                "category": "unarmed",
+                "damage": {
+                    "base": {
+                        "damageType": "{item|flags.system.rulesSelections.damageType}",
+                        "dice": 1,
+                        "die": "d6"
+                    }
+                },
+                "group": "{item|flags.system.rulesSelections.group}",
+                "img": "systems/sf2e/icons/default-icons/melee.svg",
+                "key": "Strike",
+                "label": "Hardlight Weapon",
+                "predicate": [
+                    "hardlight-weapon:d6-agile"
+                ],
+                "range": null,
+                "traits": [
+                    "agile",
+                    "finesse",
+                    "unarmed"
+                ]
+            },
+            {
+                "category": "unarmed",
+                "damage": {
+                    "base": {
+                        "damageType": "{item|flags.system.rulesSelections.damageType}",
+                        "dice": 1,
+                        "die": "d6"
+                    }
+                },
+                "group": "{item|flags.system.rulesSelections.group}",
+                "img": "systems/sf2e/icons/default-icons/weapon.svg",
+                "key": "Strike",
+                "label": "Hardlight Weapon",
+                "predicate": [
+                    "hardlight-weapon:ranged-30"
+                ],
+                "range": {
+                    "increment": 30
+                },
+                "traits": [
+                    "unarmed"
+                ]
+            },
+            {
+                "category": "unarmed",
+                "damage": {
+                    "base": {
+                        "damageType": "{item|flags.system.rulesSelections.damageType}",
+                        "dice": 1,
+                        "die": "d4"
+                    }
+                },
+                "group": "{item|flags.system.rulesSelections.group}",
+                "img": "systems/sf2e/icons/default-icons/weapon.svg",
+                "key": "Strike",
+                "label": "Hardlight Weapon",
+                "predicate": [
+                    "hardlight-weapon:ranged-60"
+                ],
+                "range": {
+                    "increment": 60
+                },
+                "traits": [
+                    "unarmed"
+                ]
+            },
+            {
+                "key": "CriticalSpecialization",
+                "predicate": [
+                    {
+                        "gte": [
+                            "self:level",
+                            5
+                        ]
+                    },
+                    "item:id:{item|id}"
+                ]
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

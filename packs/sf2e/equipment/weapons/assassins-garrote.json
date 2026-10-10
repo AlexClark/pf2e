@@ -23,7 +23,7 @@
             "value": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This thin conductive wire can be spooled out of a bracelet to assassinate via asphyxiation. If you're Grabbing a creature with an assassin's garrote you're trained with, it begins suffocating as long as it remains @UUID[Compendium.sf2e.conditions.Item.Grabbed], and it loses 1 round worth of air each time you damage the creature with the assassin's garrote (in addition to the air it also loses if you score a critical hit).</p>"
         },
         "expend": null,
-        "grade": "tactical",
+        "grade": "commercial",
         "group": "brawling",
         "hardness": 0,
         "hp": {
@@ -80,7 +80,8 @@
                 "analog",
                 "concealable",
                 "finesse",
-                "grapple"
+                "grapple",
+                "tracking-1"
             ]
         },
         "usage": {

@@ -57,7 +57,7 @@
         },
         "details": {
             "description": "<p>Unstable faster-than-light particles released by a powerful energy emission penetrate the starship's shields.</p>",
-            "disable": "<p>@Check[arcana|dc:25] (expert; magic conduit) or Nature (master; magic conduit) to repel particles, or @Check[computers|dc:27] (expert; scanners) or Physical Science Lore (expert; scanners) to calculate evasion protocol</p>",
+            "disable": "<p>@Check[arcana|dc:25] (expert; magic conduit) or @Check[nature|dc:25] (master; magic conduit) to repel particles, or @Check[computers|dc:27] (expert; scanners) or @Check[physical-science-lore|dc:27] (expert; scanners) to calculate evasion protocol</p>",
             "isComplex": false,
             "level": {
                 "value": 10

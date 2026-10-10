@@ -35,7 +35,18 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "itemType": "weapon",
+                "key": "ItemAlteration",
+                "mode": "add",
+                "predicate": [
+                    "item:id:{item|parentItem.id}"
+                ],
+                "property": "traits",
+                "value": "parry"
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

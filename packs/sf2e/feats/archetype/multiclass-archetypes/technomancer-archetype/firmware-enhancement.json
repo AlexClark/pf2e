@@ -29,7 +29,49 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "definition": [
+                    "item:category:martial",
+                    "item:trait:tech"
+                ],
+                "key": "MartialProficiency",
+                "label": "SF2E.SpecificRule.Technomancer.FirmwareEnhancement.MartialTechWeapons",
+                "predicate": [
+                    "feature:dps"
+                ],
+                "slug": "martial-tech-weapons",
+                "value": "max(1,@actor.system.proficiencies.attacks.simple.rank)"
+            },
+            {
+                "key": "CriticalSpecialization",
+                "predicate": [
+                    "feature:dps",
+                    {
+                        "gte": [
+                            "self:level",
+                            5
+                        ]
+                    },
+                    "item:trait:tech",
+                    {
+                        "or": [
+                            "item:category:simple",
+                            "item:category:martial"
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "ActiveEffectLike",
+                "mode": "upgrade",
+                "path": "system.proficiencies.defenses.medium.rank",
+                "predicate": [
+                    "feature:fortrun"
+                ],
+                "value": "max(1,@actor.system.proficiencies.defenses.light.rank)"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

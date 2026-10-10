@@ -6,11 +6,11 @@
     "system": {
         "baseItem": null,
         "bulk": {
-            "value": 0
+            "value": 1
         },
         "containerId": null,
         "description": {
-            "value": "<p>Motion sensors have a standard detection range of 30 feet and can be used to sound an alarm, send an alert to a phone, or even trigger another tech hazard or item. Creatures can detect a motion sensor they aren't already aware of as they would any other trap or hazard, using the higher of the Crafting or Survival DC of whoever installed it. If there's no external power source, each motion sensor takes a battery of the same grade or higher and uses 1 charge per day.</p><hr /><p>Microwave sensors determine if anything is moving.</p><hr /><p><strong>Evade</strong> @Check[acrobatics|dc:30] or @Check[stealth|dc:28]</p>\n<p><strong>Disable</strong> @Check[computers|dc:32] or @Check[thievery|dc:32]</p>"
+            "value": "<p>Motion sensors have a standard detection range of 30 feet and can be used to sound an alarm, send an alert to a phone, or even trigger another tech hazard or item. Creatures can detect a motion sensor they aren't already aware of as they would any other trap or hazard, using the higher of the Crafting or Survival DC of whoever installed it. If there's no external power source, each motion sensor takes a battery of the same grade or higher and uses 1 charge per day.</p><hr /><p>Microwave sensors determine if anything is moving.</p>\n<p><strong>Evade</strong> @Check[acrobatics|dc:30] or @Check[stealth|dc:28]</p>\n<p><strong>Disable</strong> @Check[computers|dc:32] or @Check[thievery|dc:32]</p>"
         },
         "hardness": 0,
         "hp": {
@@ -25,7 +25,9 @@
             "type": null
         },
         "price": {
-            "value": {}
+            "value": {
+                "sp": 1200
+            }
         },
         "publication": {
             "license": "ORC",
@@ -42,7 +44,7 @@
             ]
         },
         "usage": {
-            "value": "other"
+            "value": "held-in-two-hands"
         }
     },
     "type": "equipment"

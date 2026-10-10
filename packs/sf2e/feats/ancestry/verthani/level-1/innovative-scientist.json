@@ -12,7 +12,7 @@
         },
         "category": "ancestry",
         "description": {
-            "value": "<p>You're insatiably curious and driven to experiment, often attempting to push the boundaries of science. You gain the @UUID[Compendium.sf2e.feats.Item.Additional Lore] skill feat for your choice of either Life Science Lore or Physical Science Lore. In addition, you gain the Eureka! action.</p>"
+            "value": "<p>You're insatiably curious and driven to experiment, often attempting to push the boundaries of science. You gain the @UUID[Compendium.sf2e.feats.Item.Additional Lore] skill feat for your choice of either Life Science Lore or Physical Science Lore. In addition, you gain the @UUID[Compendium.sf2e.actions.Item.Eureka!] action.</p>"
         },
         "level": {
             "value": 1
@@ -25,7 +25,16 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "GrantItem",
+                "uuid": "Compendium.sf2e.feats.Item.Additional Lore"
+            },
+            {
+                "key": "GrantItem",
+                "uuid": "Compendium.sf2e.actions.Item.Eureka!"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

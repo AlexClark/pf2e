@@ -1,0 +1,58 @@
+{
+    "_id": "Rf2nM9cVx4QpT6sG",
+    "img": "icons/magic/control/debuff-energy-hold-blue-yellow.webp",
+    "name": "Spell Effect: Rewire Flesh",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Rewire Flesh]</p>\n<p>On a failure or critical failure, you take a –10-foot penalty to your Speeds for as long as you are clumsy. Remove this effect when you are no longer clumsy. Clumsy and stupefied stay on the spell.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 5
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "choices": [
+                    {
+                        "label": "PF2E.Check.Result.Degree.Check.failure",
+                        "value": "failure"
+                    },
+                    {
+                        "label": "PF2E.Check.Result.Degree.Check.criticalFailure",
+                        "value": "critical-failure"
+                    }
+                ],
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.DegreeOfSuccess",
+                "rollOption": "rewire-flesh"
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "all-speeds",
+                "value": -10
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

@@ -81,25 +81,26 @@
             "config": {
                 "modular": [
                     {
-                        "damageType": "fire",
-                        "traits": [
-                            "tech"
-                        ]
-                    },
-                    {
                         "damageType": "piercing",
                         "traits": [
                             "analog",
                             "concussive"
+                        ]
+                    },
+                    {
+                        "damageType": "fire",
+                        "traits": [
+                            "critical-laser",
+                            "tech"
                         ]
                     }
                 ]
             },
             "rarity": "common",
             "value": [
-                "critical-laser",
                 "modular",
-                "powered"
+                "powered",
+                "tech"
             ]
         },
         "usage": {

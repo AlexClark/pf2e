@@ -10,7 +10,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>This set of sensors use a helmet-mounted, heads-up display to provide detailed information about your surroundings.</p>\n<p>You also gain scent as an imprecise sense with a range of 30 feet, and the activation's frequency becomes twice per day.</p>\n<p>Your hearing additionally becomes a precise sense with a range of 30 feet.</p>\n<p><strong>Activate—Scan</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Frequency</strong> three times per day</p><hr /><p><strong>Effect</strong> You gain tremorsense as an imprecise sense with a range of 30 feet for 10 minutes.</p>"
+            "value": "<p>This set of sensors use a helmet-mounted, heads-up display to provide detailed information about your surroundings.</p>\n<p>You also gain scent as an imprecise sense with a range of 30 feet.</p>\n<p>Your hearing additionally becomes a precise sense with a range of 30 feet.</p>\n<p><strong>Activate—Scan</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Frequency</strong> three times per day</p><hr /><p><strong>Effect</strong> You gain tremorsense as an imprecise sense with a range of 30 feet for 10 minutes.</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.Effect: Full-Spectrum Scan]</p>"
         },
         "hardness": 0,
         "hp": {
@@ -35,7 +35,14 @@
             "title": "Starfinder Tech Core"
         },
         "quantity": 1,
-        "rules": [],
+        "rules": [
+            {
+                "acuity": "imprecise",
+                "key": "Sense",
+                "range": 30,
+                "selector": "scent"
+            }
+        ],
         "size": "med",
         "traits": {
             "rarity": "common",

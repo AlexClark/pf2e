@@ -1,0 +1,197 @@
+{
+    "_id": "8LCAoNsjyMiBNtgZ",
+    "img": "systems/sf2e/icons/equipment/other/green-bottle.webp",
+    "name": "Effect: Coagulant",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Coagulant (Commercial)], @UUID[Compendium.sf2e.equipment.Item.Coagulant (Tactical)], @UUID[Compendium.sf2e.equipment.Item.Coagulant (Advanced)], @UUID[Compendium.sf2e.equipment.Item.Coagulant (Superior)]</p>\n<p>You gain resistance to persistent bleed and persistent poison damage, and you lower the DC of flat checks to end persistent bleed or persistent poison damage as if you received particularly appropriate aid.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 10
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 1
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:coagulant-commercial"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Coagulant (Commercial)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:coagulant-tactical"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Coagulant (Tactical)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:coagulant-advanced"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Coagulant (Advanced)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:coagulant-superior"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Coagulant (Superior)"
+                    }
+                ],
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.EquipmentVariety",
+                "rollOption": "coagulant"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "coagulant:coagulant-commercial"
+                ],
+                "type": "bleed",
+                "value": 3
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "coagulant:coagulant-tactical"
+                ],
+                "type": "bleed",
+                "value": 5
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "coagulant:coagulant-advanced"
+                ],
+                "type": "bleed",
+                "value": 10
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "coagulant:coagulant-superior"
+                ],
+                "type": "bleed",
+                "value": 20
+            },
+            {
+                "definition": [
+                    "damage:category:persistent",
+                    "damage:type:poison"
+                ],
+                "key": "Resistance",
+                "label": "PF2E.IWR.Custom.PersistentPoison",
+                "predicate": [
+                    "coagulant:coagulant-commercial"
+                ],
+                "type": "custom",
+                "value": 3
+            },
+            {
+                "definition": [
+                    "damage:category:persistent",
+                    "damage:type:poison"
+                ],
+                "key": "Resistance",
+                "label": "PF2E.IWR.Custom.PersistentPoison",
+                "predicate": [
+                    "coagulant:coagulant-tactical"
+                ],
+                "type": "custom",
+                "value": 5
+            },
+            {
+                "definition": [
+                    "damage:category:persistent",
+                    "damage:type:poison"
+                ],
+                "key": "Resistance",
+                "label": "PF2E.IWR.Custom.PersistentPoison",
+                "predicate": [
+                    "coagulant:coagulant-advanced"
+                ],
+                "type": "custom",
+                "value": 10
+            },
+            {
+                "definition": [
+                    "damage:category:persistent",
+                    "damage:type:poison"
+                ],
+                "key": "Resistance",
+                "label": "PF2E.IWR.Custom.PersistentPoison",
+                "predicate": [
+                    "coagulant:coagulant-superior"
+                ],
+                "type": "custom",
+                "value": 20
+            },
+            {
+                "itemType": "condition",
+                "key": "ItemAlteration",
+                "mode": "downgrade",
+                "predicate": [
+                    {
+                        "or": [
+                            "item:damage:type:bleed",
+                            "item:damage:type:poison"
+                        ]
+                    }
+                ],
+                "property": "pd-recovery-dc",
+                "value": 10
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

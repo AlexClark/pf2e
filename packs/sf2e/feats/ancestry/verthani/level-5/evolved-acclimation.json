@@ -12,7 +12,7 @@
         },
         "category": "ancestry",
         "description": {
-            "value": "<p>You have adapted to extreme temperature, even beyond that of other bioharmonic verthanis. You gain resistance equal to half your level against cold and fire damage. If you use Temperature Acclimation, you gain resistance equal to your level to the triggering damage type for 1 minute, instead of the normal effects of Temperature Acclimation.</p>"
+            "value": "<p>You have adapted to extreme temperature, even beyond that of other bioharmonic verthanis. You gain resistance equal to half your level against cold and fire damage. If you use @UUID[Compendium.sf2e.actions.Item.Temperature Acclimation], you gain resistance equal to your level to the triggering damage type for 1 minute, instead of the normal effects of Temperature Acclimation.</p>"
         },
         "level": {
             "value": 5
@@ -29,7 +29,34 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "Resistance",
+                "type": "cold",
+                "value": "floor(@actor.level/2)"
+            },
+            {
+                "key": "Resistance",
+                "type": "fire",
+                "value": "floor(@actor.level/2)"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "temperature-acclimation:cold"
+                ],
+                "type": "cold",
+                "value": "@actor.level"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "temperature-acclimation:fire"
+                ],
+                "type": "fire",
+                "value": "@actor.level"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

@@ -1,0 +1,144 @@
+{
+    "_id": "k59lh4a2PKzgfHkJ",
+    "img": "systems/sf2e/icons/equipment/other/syringe.webp",
+    "name": "Effect: Adrenosuppressant Serum",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Adrenosuppressant Serum (Commercial)], @UUID[Compendium.sf2e.equipment.Item.Adrenosuppressant Serum (Tactical)], @UUID[Compendium.sf2e.equipment.Item.Adrenosuppressant Serum (Advanced)]</p>\n<p>You gain an item bonus to Will saves, or a higher item bonus to Will saves against fear effects.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "hours",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 2
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:adrenosuppressant-serum-commercial"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Adrenosuppressant Serum (Commercial)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:adrenosuppressant-serum-tactical"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Adrenosuppressant Serum (Tactical)"
+                    },
+                    {
+                        "predicate": [
+                            {
+                                "or": [
+                                    {
+                                        "not": "parent:origin:item"
+                                    },
+                                    "parent:origin:item:slug:adrenosuppressant-serum-advanced"
+                                ]
+                            }
+                        ],
+                        "value": "Compendium.sf2e.equipment.Item.Adrenosuppressant Serum (Advanced)"
+                    }
+                ],
+                "key": "ChoiceSet",
+                "prompt": "PF2E.SpecificRule.Prompt.EquipmentVariety",
+                "rollOption": "adrenosuppressant"
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "will",
+                "slug": "adrenosuppressant",
+                "type": "item",
+                "value": 1
+            },
+            {
+                "key": "AdjustModifier",
+                "mode": "upgrade",
+                "predicate": [
+                    "adrenosuppressant:adrenosuppressant-serum-tactical"
+                ],
+                "selector": "will",
+                "slug": "adrenosuppressant",
+                "value": 2
+            },
+            {
+                "key": "AdjustModifier",
+                "mode": "upgrade",
+                "predicate": [
+                    "adrenosuppressant:adrenosuppressant-serum-advanced"
+                ],
+                "selector": "will",
+                "slug": "adrenosuppressant",
+                "value": 3
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "item:trait:fear"
+                ],
+                "selector": "will",
+                "slug": "adrenosuppressant-fear",
+                "type": "item",
+                "value": 2
+            },
+            {
+                "key": "AdjustModifier",
+                "mode": "upgrade",
+                "predicate": [
+                    "adrenosuppressant:adrenosuppressant-serum-tactical",
+                    "item:trait:fear"
+                ],
+                "selector": "will",
+                "slug": "adrenosuppressant-fear",
+                "value": 3
+            },
+            {
+                "key": "AdjustModifier",
+                "mode": "upgrade",
+                "predicate": [
+                    "adrenosuppressant:adrenosuppressant-serum-advanced",
+                    "item:trait:fear"
+                ],
+                "selector": "will",
+                "slug": "adrenosuppressant-fear",
+                "value": 4
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

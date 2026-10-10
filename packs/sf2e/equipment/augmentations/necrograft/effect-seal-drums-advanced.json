@@ -1,0 +1,63 @@
+{
+    "_id": "sD5aH6nMq3wZc8dG",
+    "folder": "ZfJ4Whszk7bGARUG",
+    "img": "icons/commodities/biological/ear-grey-brown.webp",
+    "name": "Effect: Seal Drums (Advanced)",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.equipment.Item.Hollowed Eardrums (Advanced)]</p>\n<p>Your eardrums are sealed. You take a –1 circumstance penalty to Perception checks to hear, gain resistance 12 to sonic damage, and gain a +1 circumstance bonus to saving throws against auditory effects. You aren't clumsy while @UUID[Compendium.sf2e.conditions.Item.Untethered].</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 14
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "auditory"
+                ],
+                "selector": "perception",
+                "type": "circumstance",
+                "value": -1
+            },
+            {
+                "key": "Resistance",
+                "type": "sonic",
+                "value": 12
+            },
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "auditory"
+                ],
+                "selector": "saving-throw",
+                "type": "circumstance",
+                "value": 1
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "effect"
+}

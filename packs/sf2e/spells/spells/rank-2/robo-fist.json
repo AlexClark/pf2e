@@ -4,7 +4,10 @@
     "img": "icons/equipment/hand/tech-gauntlet-blue.webp",
     "name": "Robo-Fist",
     "system": {
-        "area": null,
+        "area": {
+            "type": "burst",
+            "value": 10
+        },
         "cost": {
             "value": ""
         },
@@ -28,7 +31,7 @@
             }
         },
         "description": {
-            "value": "<p>With a flash of magic, two of your limbs grow wires and plating before snapping together into a robotic structure, ending in an oversized and empowered robot fist. While you maintain these robot fists, the damage die for your fist increases to 1d6 instead of 1d4. You don't take the normal –2 circumstance penalty when making a lethal attack with your fist or any other unarmed attacks</p>\n<p>Up to twice when you Sustain this spell, you can launch one of your robot fists as a rocket, dealing 2d6 fire damage to all creatures in a 10-foot burst up to 60 feet away (basic Reflex save). Once you've launched both your robot fists, the spell ends.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.Spell Effect: Robo-Fist]</p><hr /><p><strong>Heightened (+1)</strong> The fire damage increases by 1d6.</p>"
+            "value": "<p>With a flash of magic, two of your limbs grow wires and plating before snapping together into a robotic structure, ending in an oversized and empowered robot fist. While you maintain these robot fists, the damage die for your fist increases to 1d6 instead of 1d4. You don't take the normal –2 circumstance penalty when making a lethal attack with your fist or any other unarmed attacks</p>\n<p>Up to twice when you Sustain this spell, you can launch one of your robot fists as a rocket, dealing 2d6 fire damage to all creatures in a @Template[type:burst|distance:10] up to 60 feet away (basic Reflex save). Once you've launched both your robot fists, the spell ends.</p>\n<p>@UUID[Compendium.sf2e.spell-effects.Item.Spell Effect: Robo-Fist]</p><hr /><p><strong>Heightened (+1)</strong> The fire damage increases by 1d6.</p>"
         },
         "duration": {
             "sustained": true,

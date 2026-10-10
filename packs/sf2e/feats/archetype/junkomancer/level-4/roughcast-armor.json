@@ -12,7 +12,7 @@
         },
         "category": "class",
         "description": {
-            "value": "<p>You're a wiz at forging armor from junk. During your daily preparations, you can review the formula of one armor upgrade in your formula book of your level or lower. Until your next daily preparations, whenever you cast <em>junk armor</em>, you can Install this Upgrade even if there are no available upgrade slots. If you're a master in Crafting, you gain the armor specialization effect of any <em>junk armor</em> you wear.</p>"
+            "value": "<p>You're a wiz at forging armor from junk. During your daily preparations, you can review the formula of one armor upgrade in your formula book of your level or lower. Until your next daily preparations, whenever you cast @UUID[Compendium.sf2e.spells.Item.Junk Armor], you can Install this Upgrade even if there are no available upgrade slots. If you're a master in Crafting, you gain the armor specialization effect of any @UUID[Compendium.sf2e.spells.Item.Junk Armor] you wear.</p>"
         },
         "level": {
             "value": 4
@@ -35,7 +35,257 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "disabledIf": [
+                    {
+                        "lt": [
+                            "skill:crafting:rank",
+                            3
+                        ]
+                    }
+                ],
+                "disabledValue": false,
+                "key": "RollOption",
+                "option": "roughcast-armor",
+                "phase": "afterDerived",
+                "toggleable": true
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "roughcast-armor",
+                    "armor:category:medium",
+                    "armor:group:composite",
+                    {
+                        "gte": [
+                            "skill:crafting:rank",
+                            3
+                        ]
+                    }
+                ],
+                "type": "piercing",
+                "value": "1 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "roughcast-armor",
+                    "armor:category:medium",
+                    "armor:group:leather",
+                    {
+                        "gte": [
+                            "skill:crafting:rank",
+                            3
+                        ]
+                    }
+                ],
+                "type": "bludgeoning",
+                "value": "1 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "roughcast-armor",
+                    "armor:category:medium",
+                    "armor:group:plate",
+                    {
+                        "gte": [
+                            "skill:crafting:rank",
+                            3
+                        ]
+                    }
+                ],
+                "type": "slashing",
+                "value": "1 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "roughcast-armor",
+                    "armor:category:heavy",
+                    "armor:group:composite",
+                    {
+                        "gte": [
+                            "skill:crafting:rank",
+                            3
+                        ]
+                    }
+                ],
+                "type": "piercing",
+                "value": "2 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "roughcast-armor",
+                    "armor:category:heavy",
+                    "armor:group:leather",
+                    {
+                        "gte": [
+                            "skill:crafting:rank",
+                            3
+                        ]
+                    }
+                ],
+                "type": "bludgeoning",
+                "value": "2 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "roughcast-armor",
+                    "armor:category:heavy",
+                    "armor:group:plate",
+                    {
+                        "gte": [
+                            "skill:crafting:rank",
+                            3
+                        ]
+                    }
+                ],
+                "type": "slashing",
+                "value": "2 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "roughcast-armor",
+                    "armor:category:medium",
+                    "armor:group:skeletal",
+                    {
+                        "gte": [
+                            "skill:crafting:rank",
+                            3
+                        ]
+                    }
+                ],
+                "type": "precision",
+                "value": "3 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "roughcast-armor",
+                    "armor:category:heavy",
+                    "armor:group:skeletal",
+                    {
+                        "gte": [
+                            "skill:crafting:rank",
+                            3
+                        ]
+                    }
+                ],
+                "type": "precision",
+                "value": "5 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "roughcast-armor",
+                    "armor:category:medium",
+                    "armor:group:ceramic",
+                    {
+                        "gte": [
+                            "skill:crafting:rank",
+                            3
+                        ]
+                    }
+                ],
+                "type": [
+                    "acid",
+                    "cold",
+                    "electricity",
+                    "fire"
+                ],
+                "value": "1 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "roughcast-armor",
+                    "armor:category:heavy",
+                    "armor:group:ceramic",
+                    {
+                        "gte": [
+                            "skill:crafting:rank",
+                            3
+                        ]
+                    }
+                ],
+                "type": [
+                    "acid",
+                    "cold",
+                    "electricity",
+                    "fire"
+                ],
+                "value": "2 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "roughcast-armor",
+                    "armor:category:medium",
+                    "armor:group:polymer",
+                    {
+                        "gte": [
+                            "skill:crafting:rank",
+                            3
+                        ]
+                    }
+                ],
+                "type": "area-damage",
+                "value": "1 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "roughcast-armor",
+                    "armor:category:heavy",
+                    "armor:group:polymer",
+                    {
+                        "gte": [
+                            "skill:crafting:rank",
+                            3
+                        ]
+                    }
+                ],
+                "type": "area-damage",
+                "value": "2 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "roughcast-armor",
+                    "armor:category:medium",
+                    "armor:group:chain",
+                    {
+                        "gte": [
+                            "skill:crafting:rank",
+                            3
+                        ]
+                    }
+                ],
+                "type": "critical-hits",
+                "value": "4 + @armor.system.traits.config.resilient"
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "roughcast-armor",
+                    "armor:category:heavy",
+                    "armor:group:chain",
+                    {
+                        "gte": [
+                            "skill:crafting:rank",
+                            3
+                        ]
+                    }
+                ],
+                "type": "critical-hits",
+                "value": "6 + @armor.system.traits.config.resilient"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},

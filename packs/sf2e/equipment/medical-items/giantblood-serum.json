@@ -12,7 +12,7 @@
         "containerId": null,
         "damage": null,
         "description": {
-            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>This thick red serum isn't actually made of giant's blood, but rather a cocktail of proprietary nanites. One minute after you use this serum, you and your equipment grow become Large for 5 minutes. Your reach increases by 5 feet (or by 10 feet if you started out Tiny), and you gain a +2 status bonus to melee damage. You're @UUID[Compendium.sf2e.conditions.Item.Clumsy]{Clumsy 1} for 10 minutes. This serum has no benefits for a Large or larger creature, but they're still clumsy 1 for 10 minutes.</p>"
+            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>This thick red serum isn't actually made of giant's blood, but rather a cocktail of proprietary nanites. One minute after you use this serum, you and your equipment grow and become Large for 5 minutes. Your reach increases by 5 feet (or by 10 feet if you started out Tiny), and you gain a +2 status bonus to melee damage. You're @UUID[Compendium.sf2e.conditions.Item.Clumsy]{Clumsy 1} for 10 minutes. This serum has no benefits for a Large or larger creature, but they're still clumsy 1 for 10 minutes.</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.Effect: Giantblood Serum (Clumsy)]</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.Effect: Giantblood Serum]</p>"
         },
         "hardness": 0,
         "hp": {

@@ -19,7 +19,7 @@ type WeaponTrait = keyof typeof CONFIG.PF2E.weaponTraits;
 type OtherWeaponTag = "improvised" | "shoddy" | "handwraps-of-mighty-blows";
 
 type WeaponRangeIncrement = SetElement<typeof WEAPON_RANGES>;
-type WeaponReloadTime = "-" | "0" | "1" | "2" | "3" | "10";
+type WeaponReloadTime = "-" | "0" | "1" | "2" | "3" | "4" | "10";
 
 type StrikingRuneType = "striking" | "greaterStriking" | "majorStriking" | "mythicStriking";
 

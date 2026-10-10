@@ -1,0 +1,42 @@
+{
+    "_id": "V5cD0eW7rB9iL3oU",
+    "img": "systems/sf2e/icons/abilities/green-plus-sign.webp",
+    "name": "Effect: Empower Healing Circuits",
+    "system": {
+        "description": {
+            "value": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.Empower Healing Circuits]</p>\n<p>You gain fast healing 10. The first time during this effect that a source would restore a variable number of Hit Points to you, it restores the maximum number of Hit Points possible.</p>"
+        },
+        "duration": {
+            "expiry": "turn-start",
+            "sustained": false,
+            "unit": "minutes",
+            "value": 1
+        },
+        "fromSpell": false,
+        "level": {
+            "value": 17
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "FastHealing",
+                "value": 10
+            }
+        ],
+        "start": {
+            "initiative": null,
+            "value": 0
+        },
+        "tokenIcon": {
+            "show": true
+        },
+        "traits": {
+            "value": []
+        }
+    },
+    "type": "effect"
+}

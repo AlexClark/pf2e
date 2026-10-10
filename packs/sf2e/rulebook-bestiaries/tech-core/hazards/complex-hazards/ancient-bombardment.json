@@ -70,7 +70,7 @@
         },
         "details": {
             "description": "<p>Stray munitions from an ancient battle hurtle across space and time, seeking targets they were never intended for.</p>",
-            "disable": "",
+            "disable": "<p>@Check[computers|dc:33] (expert; scanners) to hack a missile, or @Check[piloting|dc:37] (trained; pilot's console) to evade a missile lock (doesn't disable the trap, but each success destroys one missile); destroying all of the missiles disables the hazard</p>",
             "isComplex": true,
             "level": {
                 "value": 14
