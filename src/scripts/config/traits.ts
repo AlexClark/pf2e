@@ -973,7 +973,7 @@ const actionTraits = {
     verthani: "PF2E.TraitVerthani",
 };
 
-const effectTraits = R.omit(actionTraits, [
+const nonEffectTraits = [
     ...R.keys(ancestryTraits),
     ...R.keys(classTraits),
     ...R.keys(weaponActionTraits),
@@ -1049,7 +1049,8 @@ const effectTraits = R.omit(actionTraits, [
     "unstable",
     "vigilante",
     "wand",
-] as const);
+] as const;
+const effectTraits: Omit<typeof actionTraits, (typeof nonEffectTraits)[number]> = R.omit(actionTraits, nonEffectTraits);
 
 const hazardTraits = {
     ...creatureTraits,
@@ -1546,7 +1547,7 @@ const traitDescriptions = {
     "deflecting-cold": "PF2E.TraitDescriptionDeflecting",
     "deflecting-melee-tech": "PF2E.TraitDescriptionDeflecting",
     "deflecting-physical-ranged": "PF2E.TraitDescriptionDeflecting",
-    "deflecting-piercing": "PF2E.TraitDescriptionDeflectingPiercing",
+    "deflecting-piercing": "PF2E.TraitDescriptionDeflecting",
     "deflecting-ranged-fire": "PF2E.TraitDescriptionDeflecting",
     "deflecting-slashing": "PF2E.TraitDescriptionDeflecting",
     "deflecting-sonic": "PF2E.TraitDescriptionDeflecting",

@@ -4,7 +4,7 @@
     "name": "Spell Effect: Force-Fieldpga",
     "system": {
         "description": {
-            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Force-Fieldpga]</p>\n<p>You gain resistance equal to twice the spell's rank against one type of damage you took in the last minute.</p>\n<p><span class=\"action-glyph\">1</span> Delete this effect and apply it again to change the resistance to another type of damage you took in the last minute.</p>"
+            "value": "<p>Granted by @UUID[Compendium.sf2e.spells.Item.Force-FieldPGA]</p>\n<p>You gain resistance equal to twice the spell's rank against one type of damage you took in the last minute.</p>\n<p><span class=\"action-glyph\">1</span> Delete this effect and apply it again to change the resistance to another type of damage you took in the last minute.</p>"
         },
         "duration": {
             "expiry": "turn-start",
