@@ -44,7 +44,7 @@
                     "feature:fortrun"
                 ],
                 "reevaluateOnUpdate": true,
-                "uuid": "Compendium.sf2e.spells.Item.Force-Fieldpga"
+                "uuid": "Compendium.sf2e.spells.Item.Force-FieldPGA"
             },
             {
                 "key": "GrantItem",

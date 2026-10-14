@@ -36,19 +36,18 @@
                 "toggleable": true
             },
             {
-                "definition": [
+                "itemType": "weapon",
+                "key": "ItemAlteration",
+                "mode": "add",
+                "predicate": [
                     "item:melee",
                     "item:usage:hands:2",
+                    "stretching-reach",
                     {
                         "not": "item:trait:reach"
                     }
                 ],
-                "key": "AdjustStrike",
-                "mode": "add",
-                "predicate": [
-                    "stretching-reach"
-                ],
-                "property": "weapon-traits",
+                "property": "traits",
                 "value": "reach"
             }
         ],

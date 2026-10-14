@@ -962,6 +962,7 @@
                 "MagicalWeaponsBrightLight": "magical weapons shedding bright light",
                 "MagicalWood": "magical wood",
                 "NonMagicalAttacks": "non-magical attacks",
+                "NonMagicalPhysical": "non-magical physical damage",
                 "NonWeapons": "non-weapons",
                 "PersistentAcid": "persistent acid",
                 "PersistentFire": "persistent fire",
@@ -4342,7 +4343,7 @@
             "Roseguard": "Roseguard Lore",
             "Sailing": "Sailing Lore",
             "Salvage": "Salvage Lore",
-            "Salvation'sEnd": "Salvation's End Lore",
+            "SalvationsEnd": "Salvation's End Lore",
             "Sandpoint": "Sandpoint Lore",
             "SarkorianHistory": "Sarkorian History Lore",
             "Scam": "Scam Lore",
@@ -7599,6 +7600,7 @@
                 "AdvancedAthamaruWeapons": "Advanced Athamaru Weapons",
                 "AdvancedAzarketiWeapons": "Advanced Azarketi Weapons",
                 "AdvancedBowsAndCrossbows": "Advanced Bows and Crossbows",
+                "AdvancedBugbearWeapons": "Advanced Bugbear Weapons",
                 "AdvancedCatfolkWeapons": "Advanced Catfolk Weapons",
                 "AdvancedConrasuWeapons": "Advanced Conrasu Weapons",
                 "AdvancedDwarfWeapons": "Advanced Dwarven Weapons",
@@ -7659,6 +7661,7 @@
                 "MartialAzarketiWeapons": "Martial Azarketi Weapons",
                 "MartialBombsFirearms": "Martial Bombs & Firearms",
                 "MartialBowsAndCrossbows": "Martial Bows and Crossbows",
+                "MartialBugbearWeapons": "Martial Bugbear Weapons",
                 "MartialCatfolkWeapons": "Martial Catfolk Weapons",
                 "MartialCentaurWeapons": "Martial Centaur Weapons",
                 "MartialConrasuWeapons": "Martial Conrasu Weapons",
@@ -8084,6 +8087,8 @@
                 "Feature": "Select a feature.",
                 "FirstImplement": "Select a first implement.",
                 "Form": "Select a form.",
+                "Grade": "Select a Grade",
+                "Grenade": "Select a grenade",
                 "Heritage": "Select a heritage.",
                 "Immunity": "Select an immunity.",
                 "Item": "Select an item.",
@@ -8839,7 +8844,7 @@
                 "Vigocarp": "Vigocarp"
             },
             "SpellEffectForceFling": {
-                "RollOptionLabel": "Force Fling — Target is a creature you haven’t attacked yet this turn"
+                "RollOptionLabel": "Force Fling — Target is a creature you haven't attacked yet this turn"
             },
             "SpellEffectFurnaceForm": {
                 "Note": "The attacker takes @Damage[3d6[fire]] damage."
@@ -9692,6 +9697,13 @@
                     }
                 }
             },
+            "Vaultlines": {
+                "Background": {
+                    "FleshwarpResearcher": {
+                        "ToggleLabel": "Fleshwarp Researcher — Treating creature with the fleshwarp trait"
+                    }
+                }
+            },
             "VenomGlands": {
                 "Label": "Poison Spray",
                 "Note": "On a critical hit, the target is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}."
@@ -10381,6 +10393,14 @@
                     "Tactical": "Attempt a @Check[flat|dc:20] check. On a success, the critical hit becomes a normal hit.",
                     "Ultimate": "Attempt a @Check[flat|dc:16] check. On a success, the critical hit becomes a normal hit."
                 },
+                "Grenade": {
+                    "Electromag": "Electromag Grenade",
+                    "Flash": "Flash Grenade",
+                    "Frag": "Frag Grenade",
+                    "Glitterbomb": "Glitterbomb",
+                    "Incendiary": "Incendiary Grenade",
+                    "Smoke": "Smoke Grenade"
+                },
                 "Magboots": {
                     "ClimbMetalSurfaces": "Magboots — Climb metal surfaces"
                 },
@@ -10432,14 +10452,14 @@
                         "AcidModule": {
                             "LabelCommercial": "Commercial Acid Module",
                             "LabelTactical": "Tactical Acid Module",
-                            "CriticalNoteCommercial": "On a critical hit, the target also takes a –1 status penalty to its AC until the end of your next turn unless it succeeds at a @Check[type:fortitude|dc:24] save.",
-                            "CriticalNoteTactical": "On a critical hit, the target also takes a –1 status penalty to its AC until the end of your next turn unless it succeeds at a @Check[type:fortitude|dc:34] save."
+                            "CriticalNoteCommercial": "On a critical hit, the target also takes a –1 status penalty to its AC until the end of your next turn unless it succeeds at a @Check[fortitude|dc:24] save.",
+                            "CriticalNoteTactical": "On a critical hit, the target also takes a –1 status penalty to its AC until the end of your next turn unless it succeeds at a @Check[fortitude|dc:34] save."
                         },
                         "BoomRipple": {
                             "LabelCommercial": "Commercial Boom Ripple",
                             "LabelTactical": "Tactical Boom Ripple",
-                            "CriticalNoteCommercial": "On a critical hit, you create a shock wave in a @Template[type:burst|distance:10] at a corner of your choice on the space of the Strike's target or, if you critically hit using the primary target class feature, the shock wave uses the area of your Area Fire instead. Creatures in the area take @Damage[2d6[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:20|basic] save), and creatures that critically fail their save are knocked back 10 feet from the center of the area. This is forced movement.",
-                            "CriticalNoteTactical": "On a critical hit, you create a shock wave in a @Template[type:burst|distance:20] at a corner of your choice on the space of the Strike's target or, if you critically hit using the primary target class feature, the shock wave uses the area of your Area Fire instead. Creatures in the area take @Damage[4d6[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:30|basic] save), and creatures that critically fail their save are knocked back 10 feet from the center of the area. This is forced movement."
+                            "CriticalNoteCommercial": "When you critically hit with this weapon, you create a shock wave in a @Template[type:burst|distance:10] at a corner of your choice on the space of the Strike's target or, if you critically hit using the primary target class feature, the shock wave uses the area of your Area Fire instead. Creatures in the area take @Damage[2d6[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:20|basic|options:area-effect,forced-movement] save), and creatures that critically fail their save are knocked back 10 feet from the center of the area. This is forced movement.",
+                            "CriticalNoteTactical": "When you critically hit with this weapon, you create a shock wave in a @Template[type:burst|distance:20] at a corner of your choice on the space of the Strike's target or, if you critically hit using the primary target class feature, the shock wave uses the area of your Area Fire instead. Creatures in the area take @Damage[4d6[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:30|basic|options:area-effect,forced-movement] save), and creatures that critically fail their save are knocked back 10 feet from the center of the area. This is forced movement."
                         },
                         "DivinityJammer": {
                             "Label": "Divinity Jammer",
@@ -10480,8 +10500,8 @@
                         "RadiationModule": {
                             "LabelCommercial": "Commercial Radiation Module",
                             "LabelTactical": "Tactical Radiation Module",
-                            "CriticalNoteCommercial": "On a critical hit, the target must attempt a @Check[type:fortitude|dc:22] save against severe radiation sickness.",
-                            "CriticalNoteTactical": "On a critical hit, the target must attempt a @Check[type:fortitude|dc:32] save against incredible radiation sickness."
+                            "CriticalNoteCommercial": "On a critical hit, the target must attempt a @Check[fortitude|dc:22] save against severe radiation sickness.",
+                            "CriticalNoteTactical": "On a critical hit, the target must attempt a @Check[fortitude|dc:32] save against incredible radiation sickness."
                         },
                         "ShockModule": {
                             "LabelCommercial": "Commercial Shock Module",
@@ -10853,6 +10873,9 @@
                 },
                 "SuppressingFire": {
                     "Note": "If you make an attack with a weapon that has the area trait, enemies in the affected area who fail their save against your attack become @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the start of your next turn."
+                },
+                "WhirlingSwipe": {
+                    "DCUpgradeLabel": "Backswing or Sweep weapon"
                 }
             },
             "Spellshape": {

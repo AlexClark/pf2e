@@ -37,7 +37,7 @@
             {
                 "key": "SpecialResource",
                 "label": "Mines",
-                "max": "max(0,4+@actor.system.abilities.int.mod+2*floor(@actor.level/5))",
+                "max": "max(0,4+@actor.abilities.int.mod+2*floor(@actor.level/5))",
                 "slug": "mines"
             }
         ],

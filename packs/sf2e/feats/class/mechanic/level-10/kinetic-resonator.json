@@ -29,7 +29,7 @@
             {
                 "key": "Resistance",
                 "type": "physical",
-                "value": "@actor.system.abilities.int.mod"
+                "value": "@actor.abilities.int.mod"
             },
             {
                 "key": "GrantItem",
