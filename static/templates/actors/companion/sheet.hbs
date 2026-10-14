@@ -1,0 +1,33 @@
+<form class="{{cssClass}}" autocomplete="off" spellcheck="false" data-tooltip-class="pf2e">
+    <aside>
+        <div class="logo"></div>
+        <div class="sidebar">
+            {{> (resolvePath "templates/actors/companion/partials/sidebar.hbs")}}
+        </div>
+    </aside>
+    <div class="companion-body">
+        {{> (resolvePath "templates/actors/companion/partials/header.hbs")}}
+        <nav class="sheet-tabs tabs" data-group="primary">
+            <a class="item" data-tab="main">{{localize "PF2E.NPC.MainTab"}}</a>
+            <a class="item{{#if (nor strikes.length actions.length support)}} empty{{/if}}" data-tab="actions">{{localize "PF2E.TabActionsLabel"}}</a>
+            <a class="item{{#unless document.inventory.size}} empty{{/unless}}" data-tab="inventory">{{localize "PF2E.NPC.InventoryTab"}}</a>
+            <a class="item{{#unless skills.length}} empty{{/unless}}" data-tab="skills">{{localize "PF2E.SkillsLabel"}}</a>
+            <a class="item" data-tab="features">
+                {{#if (eq actor.system.profile "robot")}}
+                    {{localize "PF2E.Companion.Customizations"}}
+                {{else}}
+                    {{localize "PF2E.Companion.Specializations"}}
+                {{/if}}
+            </a>
+            <a class="item{{#if (nor document.conditions.active.length document.itemTypes.effect.length)}} empty{{/if}}" data-tab="effects">{{localize "PF2E.NPC.EffectsTab"}}</a>
+        </nav>
+        <section class="sheet-body">
+            {{> (resolvePath "templates/actors/companion/tabs/main.hbs")}}
+            {{> (resolvePath "templates/actors/companion/tabs/actions.hbs")}}
+            {{> (resolvePath "templates/actors/companion/tabs/inventory.hbs")}}
+            {{> (resolvePath "templates/actors/companion/tabs/skills.hbs")}}
+            {{> (resolvePath "templates/actors/companion/tabs/features.hbs")}}
+            {{> (resolvePath "templates/actors/companion/tabs/effects.hbs")}}
+        </section>
+    </div>
+</form>

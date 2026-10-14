@@ -1,0 +1,33 @@
+{
+    "_id": "rjWugy4Yh2hgB7V9",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Emergency Repair",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 1
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Once every 10 minutes, your robot companion can use a single action to initiate an emergency repair sequence, restoring Hit Points equal to its level. If it is superior, it instead restores Hit Points equal to twice its level.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "emergency-repair",
+        "traits": {
+            "otherTags": ["advanced"],
+            "value": []
+        },
+        "frequency": {
+            "max": 1,
+            "per": "PT10M"
+        }
+    },
+    "type": "action"
+}

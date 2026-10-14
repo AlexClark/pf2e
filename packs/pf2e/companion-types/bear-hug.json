@@ -1,0 +1,29 @@
+{
+    "_id": "yvxG1OxOMMsKLxRn",
+    "img": "systems/pf2e/icons/actions/OneAction.webp",
+    "name": "Bear Hug",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 1
+        },
+        "category": "offensive",
+        "description": {
+            "value": "<p><strong>Requirements</strong> The bear's last action was a successful claw Strike.</p>\n<p>The bear makes another claw Strike against the same target. If this Strike hits, the target is also grabbed, as if the bear had successfully Grappled the target.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "action"
+}

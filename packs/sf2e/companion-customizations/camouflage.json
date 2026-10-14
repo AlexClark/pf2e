@@ -1,0 +1,29 @@
+{
+    "_id": "OfdVubgEzAXjwSb0",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Camouflage",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Select one biome, such as plains or urban. Your robot companion can Sneak in that biome even if it is currently observed. Its proficiency rank in Stealth increases to expert, or to master if it was already expert.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "camouflage",
+        "traits": {
+            "otherTags": ["superior"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

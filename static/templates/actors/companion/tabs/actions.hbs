@@ -1,0 +1,68 @@
+<section class="tab actions" data-group="primary" data-tab="actions">
+    <div class="section-container attacks">
+        <div class="section-header">
+            <h4>{{localize "PF2E.NPC.Attacks"}}</h4>
+            <div class="controls">
+                <button type="button" data-action="support">{{localize "PF2E.Companion.Support"}}</button>
+            </div>
+        </div>
+        <div class="section-body">
+            <ol class="actions-list strikes-list item-list">
+                {{#each strikes as |strike|}}
+                    {{> (resolvePath "templates/actors/companion/partials/strike.hbs") strike=strike}}
+                {{/each}}
+            </ol>
+        </div>
+    </div>
+
+    {{#if support}}
+        <div class="section-container support">
+            <div class="section-header">
+                <h4>{{localize "PF2E.Companion.Support"}}</h4>
+            </div>
+            <div class="section-body support-text">{{{support}}}</div>
+        </div>
+    {{/if}}
+
+    <div class="section-container">
+        <div class="section-header">
+            <h4>{{localize "PF2E.ActionsActionsHeader"}}</h4>
+            {{#if editable}}
+                <div class="controls">
+                    <a data-action="browse-abilities" data-tooltip="PF2E.BrowseLabel">
+                        <i class="fa-solid fa-search" inert></i> {{localize "PF2E.BrowseLabel"}}
+                    </a>
+                    <a data-action="create-item" data-type="action" data-action-type="action" data-tooltip="PF2E.NPC.AddAction">
+                        <i class="fa-solid fa-plus" inert></i>
+                    </a>
+                </div>
+            {{/if}}
+        </div>
+        <div class="section-body">
+            <ol class="actions-list item-list">
+                {{#each actions as |action|}}
+                    <li class="item action" data-item-id="{{action.id}}">
+                        <h4>
+                            <span class="name">
+                                <strong>{{action.name}}</strong>
+                                {{#if action.glyph}}<span class="action-glyph">{{action.glyph}}</span>{{/if}}
+                            </span>
+                        </h4>
+                        <div class="controls">
+                            <a data-action="item-to-chat" data-tooltip="PF2E.NPC.SendToChat"><i class="fa-solid fa-fw fa-message" inert></i></a>
+                            {{#if @root.editable}}
+                                <a data-action="edit-item" data-tooltip="CONTROLS.CommonEdit"><i class="fa-solid fa-fw fa-edit" inert></i></a>
+                                <a data-action="delete-item" data-tooltip="Delete"><i class="fa-solid fa-fw fa-trash" inert></i></a>
+                            {{/if}}
+                        </div>
+                        {{#if action.usable}}
+                            <div class="button-group">
+                                <button type="button" class="use-action" data-action="use-action">{{localize "PF2E.Action.Use"}}</button>
+                            </div>
+                        {{/if}}
+                    </li>
+                {{/each}}
+            </ol>
+        </div>
+    </div>
+</section>

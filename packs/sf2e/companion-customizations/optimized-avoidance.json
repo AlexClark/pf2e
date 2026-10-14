@@ -1,0 +1,50 @@
+{
+    "_id": "HyXv8jAwmHl7LDmj",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Optimized Avoidance",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Choose one saving throw. Your robot companion takes no damage when it rolls a success on that save. This doesn't prevent effects other than damage. You can select this customization more than once.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "Fortitude",
+                        "value": "fortitude"
+                    },
+                    {
+                        "label": "Reflex",
+                        "value": "reflex"
+                    },
+                    {
+                        "label": "Will",
+                        "value": "will"
+                    }
+                ],
+                "flag": "save",
+                "key": "ChoiceSet",
+                "prompt": "Select a saving throw."
+            }
+        ],
+        "slug": "optimized-avoidance",
+        "traits": {
+            "otherTags": ["advanced"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

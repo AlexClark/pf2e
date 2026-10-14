@@ -1,0 +1,29 @@
+{
+    "_id": "0TVvdORKbhfBq2YD",
+    "img": "systems/pf2e/icons/actions/OneAction.webp",
+    "name": "Constrict",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 1
+        },
+        "category": "offensive",
+        "description": {
+            "value": "<p><strong>Requirements</strong> The snake has a smaller creature grabbed.</p>\n<p>The snake deals 12 bludgeoning damage to the grabbed creature; the creature must attempt a basic Fortitude save against your class DC. If the snake is a specialized animal companion, increase this damage to 20.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "action"
+}

@@ -1,0 +1,29 @@
+{
+    "_id": "M3WH1oWZXJe4GTzg",
+    "img": "systems/sf2e/icons/actions/TwoActions.webp",
+    "name": "Surgical Strike",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 2
+        },
+        "category": "offensive",
+        "description": {
+            "value": "<p>The robot companion Strides and then makes a blade Strike. If it hits and the robot companion was undetected, the target takes an additional 1d6 precision damage. If your robot companion is burly or deft, increase this damage to 2d6 precision damage. If it was undetected at the start of its Surgical Strike, it remains undetected until after the Strike.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+            "rarity": "common",
+            "value": ["traversal"]
+        }
+    },
+    "type": "action"
+}

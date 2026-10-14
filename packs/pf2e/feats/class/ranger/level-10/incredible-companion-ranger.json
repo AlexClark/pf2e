@@ -29,12 +29,33 @@
             "remaster": true,
             "title": "Pathfinder Player Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "Nimble",
+                        "value": "agility"
+                    },
+                    {
+                        "label": "Savage",
+                        "value": "power"
+                    }
+                ],
+                "flag": "stage",
+                "key": "ChoiceSet",
+                "prompt": "Select an advancement."
+            },
+            {
+                "key": "CompanionGrant",
+                "priority": 200,
+                "profile": "animal",
+                "stage": "{item|flags.system.rulesSelections.stage}"
+            }
+        ],
         "traits": {
             "rarity": "common",
-            "value": [
-                "ranger"
-            ]
+            "value": ["ranger"]
         }
     },
     "type": "feat"

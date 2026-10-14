@@ -1,0 +1,29 @@
+{
+    "_id": "2zZdRWQyWhFpGFM8",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Glow Up",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion's proficiency rank in Diplomacy increases to expert, or to master if it was already expert, and its Charisma modifier increases to at least +3. It must have the artificial personality or sapient customization.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "glow-up",
+        "traits": {
+            "otherTags": ["superior"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

@@ -1,0 +1,29 @@
+{
+    "_id": "ngMEFSwqzkTuwtMX",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Manual Dexterity",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion can use up to two of its limbs as if they were hands to perform manipulate actions.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "manual-dexterity",
+        "traits": {
+            "otherTags": ["commercial"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

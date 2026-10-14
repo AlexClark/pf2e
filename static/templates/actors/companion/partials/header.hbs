@@ -1,0 +1,13 @@
+<header class="companion-header">
+    <div class="charname">
+        <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize "TYPES.Actor.companion"}}" spellcheck="false" />
+        <span class="type-label">{{localize "TYPES.Actor.companion"}}</span>
+        <span class="level">{{actor.level}}</span>
+    </div>
+    <ul class="tags paizo-style">
+        {{#each traits as |trait|}}
+            <li class="tag" data-trait="{{trait.value}}" data-tooltip="{{trait.description}}">{{~localize trait.label~}}</li>
+        {{/each}}
+        <li class="tag size">{{localize sizeLabel}}</li>
+    </ul>
+</header>

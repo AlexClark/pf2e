@@ -1,0 +1,44 @@
+{
+    "_id": "2qXXAJryrOKv82GF",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Light Mounts",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion sheds bright light in a 20-foot radius (and dim light for the next 20 feet). It can turn this light on or off as a single action.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "RollOption",
+                "option": "light-mounts",
+                "toggleable": true
+            },
+            {
+                "key": "TokenLight",
+                "predicate": ["light-mounts"],
+                "value": {
+                    "bright": 20,
+                    "color": "#ffffff",
+                    "dim": 40
+                }
+            }
+        ],
+        "slug": "light-mounts",
+        "traits": {
+            "otherTags": ["commercial"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

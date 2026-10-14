@@ -1,4 +1,4 @@
-import { CreaturePF2e, type FamiliarPF2e } from "@actor";
+import { CreaturePF2e, type CompanionPF2e, type FamiliarPF2e } from "@actor";
 import { Abilities } from "@actor/creature/data.ts";
 import { CreatureSaves } from "@actor/creature/saves.ts";
 import { CreatureUpdateCallbackOptions, ResourceData } from "@actor/creature/types.ts";
@@ -118,6 +118,9 @@ class CharacterPF2e<TParent extends TokenDocumentPF2e | null = TokenDocumentPF2e
     /** A cached reference to this PC's familiar */
     declare familiar: FamiliarPF2e | null;
 
+    /** Companions linked by `system.master.id`. Refreshed during data preparation. */
+    declare companions: CompanionPF2e[];
+
     declare feats: CharacterFeats<this>;
     declare pfsBoons: FeatPF2e<this>[];
     declare divineIntercessions: FeatPF2e<this>[];
@@ -210,16 +213,31 @@ class CharacterPF2e<TParent extends TokenDocumentPF2e | null = TokenDocumentPF2e
 
     protected override _initialize(options?: Record<string, unknown>): void {
         this.familiar ??= null;
+        this.companions = [];
         super._initialize(options);
     }
 
-    /** If one exists, prepare this character's familiar */
+    get activeCompanion(): CompanionPF2e | null {
+        return (
+            this.companions.find((companion) => companion.system.active) ??
+            (this.companions.length === 1 ? this.companions[0] : null)
+        );
+    }
+
+    /** If one exists, prepare this character's familiar and companions */
     override prepareData(): void {
         super.prepareData();
 
         if (game.ready && this.familiar && game.actors.has(this.familiar.id)) {
             this.familiar.reset({ fromMaster: true });
         }
+        if (!game.ready) return;
+        for (const companion of this.companions) {
+            if (game.actors.has(companion.id)) companion.reset({ fromMaster: true });
+        }
+        queueMicrotask(() => {
+            for (const companion of this.companions) void companion.syncAdvancedManeuver();
+        });
     }
 
     /** Setup base ephemeral data to be modified by active effects and derived-data preparation */
@@ -627,6 +645,21 @@ class CharacterPF2e<TParent extends TokenDocumentPF2e | null = TokenDocumentPF2e
         // Set a roll option for whether this character has a familiar
         if (system.attributes.familiarAbilities.value > 0) {
             this.rollOptions.all["self:has-familiar"] = true;
+        }
+
+        this.companions = game.ready
+            ? game.actors.filter(
+                  (actor): actor is CompanionPF2e<null> =>
+                      actor.isOfType("companion") && actor.system.master.id === this.id,
+              )
+            : [];
+        if (this.companions.length > 0) this.rollOptions.all["self:has-companion"] = true;
+        for (const companion of this.companions) {
+            this.rollOptions.all[`self:companion:${companion.system.profile}`] = true;
+            if (companion.role === "drone") this.rollOptions.all["self:has-drone"] = true;
+        }
+        if (this.synthetics.companionGrants.some((grant) => grant.role === "drone")) {
+            this.rollOptions.all["self:has-drone"] = true;
         }
     }
 

@@ -13,7 +13,7 @@ class ArmorStatistic<TActor extends ActorPF2e = ActorPF2e> extends Statistic<TAc
     details: string;
 
     get item(): ArmorPF2e<TActor> | null {
-        return this.actor.isOfType("character") ? this.actor.wornArmor : null;
+        return this.actor.isOfType("character", "companion") ? this.actor.wornArmor : null;
     }
 
     constructor(actor: TActor, data: Omit<ArmorStatisticData, "domains" | "label" | "slug"> = {}) {
@@ -40,7 +40,7 @@ class ArmorStatistic<TActor extends ActorPF2e = ActorPF2e> extends Statistic<TAc
     /** If this statistic belongs to a PC, create bonuses and penalties from their worn armor */
     #createBonusesAndPenalties(): Modifier[] {
         const actor = this.actor;
-        const armor = actor.isOfType("character") ? actor.wornArmor : null;
+        const armor = actor.isOfType("character", "companion") ? actor.wornArmor : null;
         const armorSlug = armor?.baseType ?? armor?.slug ?? sluggify(armor?.name ?? "");
         const itemBonus = armor
             ? new Modifier({

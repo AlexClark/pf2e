@@ -1,0 +1,80 @@
+{
+    "_id": "GxkIYXMxDDhy0sIX",
+    "img": "systems/pf2e/icons/default-icons/companionType.svg",
+    "name": "Crocodile",
+    "system": {
+        "description": {
+            "value": "<p>Your companion is a crocodile.</p>\n<p><strong>Support Benefit</strong> Your crocodile clamps its jaws on your foe, refusing to let go. Until the start of your next turn, if your Strike damages a creature in your crocodile's reach, your crocodile can latch onto the creature. While attached, the crocodile moves along with the target whenever the target moves until the end of your next turn. It can latch onto only one creature in this way, and it must release the creature to make a jaws Strike. If the target is smaller than the crocodile, it takes a \u201310-foot circumstance penalty to its Speeds and can't Fly while the crocodile is latched on.</p>\n<p><strong>Advanced Maneuver</strong> @UUID[Compendium.pf2e.companion-types.Item.Death Roll]{Death Roll}</p>\n<p><strong>Special</strong> The crocodile can hold its breath for about 2 hours.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": "crocodile",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "animal",
+        "kind": "type",
+        "sizes": ["sm"],
+        "abilities": {
+            "str": 3,
+            "dex": 2,
+            "con": 2,
+            "int": -4,
+            "wis": 1,
+            "cha": 0
+        },
+        "ancestryHp": 6,
+        "attacks": [
+            {
+                "slug": "jaws",
+                "name": "jaws",
+                "damage": {
+                    "dice": 1,
+                    "die": "d8",
+                    "type": "piercing"
+                },
+                "traits": [],
+                "range": null
+            },
+            {
+                "slug": "tail",
+                "name": "tail",
+                "damage": {
+                    "dice": 1,
+                    "die": "d6",
+                    "type": "bludgeoning"
+                },
+                "traits": ["finesse"],
+                "range": null
+            }
+        ],
+        "skills": ["stealth"],
+        "senses": [
+            {
+                "type": "low-light-vision",
+                "acuity": "precise",
+                "range": 0
+            }
+        ],
+        "speeds": {
+            "land": 20,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 25
+        },
+        "creatureTraits": [],
+        "replacesCreatureTrait": null,
+        "support": "<p>Your crocodile clamps its jaws on your foe, refusing to let go. Until the start of your next turn, if your Strike damages a creature in your crocodile's reach, your crocodile can latch onto the creature. While attached, the crocodile moves along with the target whenever the target moves until the end of your next turn. It can latch onto only one creature in this way, and it must release the creature to make a jaws Strike. If the target is smaller than the crocodile, it takes a \u201310-foot circumstance penalty to its Speeds and can't Fly while the crocodile is latched on.</p>",
+        "advancedManeuver": "Compendium.pf2e.companion-types.Item.mwRIHLQZ1bTk4VmP",
+        "resistances": [],
+        "imitator": false,
+        "mount": false,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

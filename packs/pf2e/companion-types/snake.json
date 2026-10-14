@@ -1,0 +1,74 @@
+{
+    "_id": "3HXU0SxAMZqAxmyq",
+    "img": "systems/pf2e/icons/default-icons/companionType.svg",
+    "name": "Snake",
+    "system": {
+        "description": {
+            "value": "<p>Your companion is a snake.</p>\n<p><strong>Support Benefit</strong> Your snake holds your enemies with its coils, interfering with reactions. Until the start of your next turn, any creature your snake threatens can't use reactions triggered by your actions unless its level is higher than yours.</p>\n<p><strong>Advanced Maneuver</strong> @UUID[Compendium.pf2e.companion-types.Item.Constrict]{Constrict}</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": "snake",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "animal",
+        "kind": "type",
+        "sizes": ["sm"],
+        "abilities": {
+            "str": 3,
+            "dex": 3,
+            "con": 1,
+            "int": -4,
+            "wis": 1,
+            "cha": 0
+        },
+        "ancestryHp": 6,
+        "attacks": [
+            {
+                "slug": "jaws",
+                "name": "jaws",
+                "damage": {
+                    "dice": 1,
+                    "die": "d8",
+                    "type": "piercing"
+                },
+                "traits": ["finesse"],
+                "range": null
+            }
+        ],
+        "skills": ["stealth"],
+        "senses": [
+            {
+                "type": "low-light-vision",
+                "acuity": "precise",
+                "range": 0
+            },
+            {
+                "type": "scent",
+                "acuity": "imprecise",
+                "range": 30
+            }
+        ],
+        "speeds": {
+            "land": 20,
+            "burrow": 0,
+            "climb": 20,
+            "fly": 0,
+            "swim": 20
+        },
+        "creatureTraits": [],
+        "replacesCreatureTrait": null,
+        "support": "<p>Your snake holds your enemies with its coils, interfering with reactions. Until the start of your next turn, any creature your snake threatens can't use reactions triggered by your actions unless its level is higher than yours.</p>",
+        "advancedManeuver": "Compendium.pf2e.companion-types.Item.0TVvdORKbhfBq2YD",
+        "resistances": [],
+        "imitator": false,
+        "mount": false,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

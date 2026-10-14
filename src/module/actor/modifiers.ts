@@ -1,4 +1,4 @@
-import type { ActorPF2e, CharacterPF2e, NPCPF2e } from "@actor";
+import type { ActorPF2e } from "@actor";
 import type { AttributeString } from "@actor/types.ts";
 import type { ItemPF2e } from "@item";
 import { ZeroToFour } from "@module/data.ts";
@@ -364,7 +364,7 @@ type ModifierOrderedParams = [
  */
 function createAttributeModifier({ actor, attribute, domains, max }: CreateAbilityModifierParams): Modifier {
     const withAttributeBased = domains.includes(`${attribute}-based`) ? domains : [...domains, `${attribute}-based`];
-    const modifierValue = actor.abilities[attribute].mod;
+    const modifierValue = actor.abilities?.[attribute]?.mod ?? 0;
     const cappedValue = Math.min(modifierValue, max ?? modifierValue);
 
     return new Modifier({
@@ -378,7 +378,7 @@ function createAttributeModifier({ actor, attribute, domains, max }: CreateAbili
 }
 
 interface CreateAbilityModifierParams {
-    actor: CharacterPF2e | NPCPF2e;
+    actor: ActorPF2e;
     attribute: AttributeString;
     domains: string[];
     /** An optional maximum for this ability modifier */

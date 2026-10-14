@@ -1,0 +1,29 @@
+{
+    "_id": "uizkvesQUo7WjCe7",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Mount",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion gains the mount ability. While carrying a rider it can use Speeds other than its land Speed, and it can move and Support on the same turn.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "mount",
+        "traits": {
+            "otherTags": ["commercial"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

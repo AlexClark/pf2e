@@ -57,6 +57,21 @@ body,
     }
 }
 
+.actor.sheet.companion {
+    --logo: url("/assets/starfinder_logo.webp");
+}
+
+.actor.sheet.companion aside {
+    background-image: url("/assets/sheet/blue_sidebar_top.webp"), url("/assets/sheet/blue_sidebar_bottom.webp");
+    background-repeat: no-repeat;
+    background-position:
+        center calc(100% - 3.25rem),
+        center bottom;
+    background-size:
+        14rem 100%,
+        14rem 3.25rem;
+}
+
 .actor.sheet.vehicle section.window-content .crb-style {
     background: url("/assets/sheet/sf2e-header.webp"), url("/assets/sheet/background.webp");
     background-size:

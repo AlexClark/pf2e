@@ -251,9 +251,12 @@ class TokenPF2e<TDocument extends TokenDocumentPF2e = TokenDocumentPF2e> extends
             this.isAdjacentTo(flankee) &&
             flanking.canGangUp.includes("animal-companion") &&
             flankingBuddies.some((b) => {
-                if (!b.actor?.isOfType("character")) return false;
-                const traits = b.actor.system.traits.value;
-                return traits.includes("minion") && !traits.includes("construct") && b.isAdjacentTo(flankee);
+                const ally = b.actor;
+                if (!ally || !b.isAdjacentTo(flankee)) return false;
+                if (ally.isOfType("companion")) return ally.system.profile === "animal";
+                if (!ally.isOfType("character")) return false;
+                const traits = ally.system.traits.value;
+                return traits.includes("minion") && !traits.includes("construct");
             });
         if (sideBySide) return true;
 

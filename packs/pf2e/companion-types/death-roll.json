@@ -1,0 +1,29 @@
+{
+    "_id": "mwRIHLQZ1bTk4VmP",
+    "img": "systems/pf2e/icons/actions/OneAction.webp",
+    "name": "Death Roll",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 1
+        },
+        "category": "offensive",
+        "description": {
+            "value": "<p><strong>Requirements</strong> The crocodile has a creature grabbed.</p>\n<p>The crocodile tucks its legs and rolls rapidly, twisting its victim. It makes a jaws Strike with a +2 circumstance bonus to the attack roll against the grabbed creature. If it hits, it also knocks the creature prone. If it misses, it releases the creature.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "action"
+}

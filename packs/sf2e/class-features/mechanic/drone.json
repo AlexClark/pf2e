@@ -25,20 +25,23 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "CompanionGrant",
+                "priority": 200,
+                "profile": "robot",
+                "role": "drone"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},
             "suppressedFeatures": []
         },
         "traits": {
-            "otherTags": [
-                "mechanic-exocortex"
-            ],
+            "otherTags": ["mechanic-exocortex"],
             "rarity": "common",
-            "value": [
-                "mechanic"
-            ]
+            "value": ["mechanic"]
         }
     },
     "type": "feat"

@@ -1,0 +1,57 @@
+{
+    "_id": "gas9aQ0BPUD2d2gl",
+    "img": "systems/sf2e/icons/default-icons/companionType.svg",
+    "name": "Imitator Chassis",
+    "system": {
+        "description": {
+            "value": "<p>Your robot companion was built to imitate living creatures.</p>\n<p><strong>Support Benefit</strong> Your robot companion focuses on your target, distracting one enemy within the first range increment of its weapon or within its reach. Until the start of your next turn, your Strikes against that target that deal damage make the target off-guard until the start of your next turn.</p>\n<p><strong>Advanced Maneuver</strong> @UUID[Compendium.sf2e.companion-types.Item.Disturbing Display]{Disturbing Display}</p>\n<p><strong>Special</strong> Select one ancestry or animal. The robot is the same size as that species, has the same Speeds, and looks like a member of that species. Select one unarmed attack that species has. The robot gains that attack with the agile and finesse traits, and the attack deals 1d4 damage. Record the size, Speed, and attack on the companion sheet.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "imitator-chassis",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "robot",
+        "kind": "type",
+        "sizes": ["tiny", "sm", "med", "lg", "huge", "grg"],
+        "abilities": {
+            "str": 2,
+            "dex": 2,
+            "con": 2,
+            "int": -4,
+            "wis": 2,
+            "cha": 1
+        },
+        "ancestryHp": 4,
+        "attacks": [],
+        "skills": ["deception"],
+        "senses": [
+            {
+                "type": "low-light-vision",
+                "acuity": "precise",
+                "range": 0
+            }
+        ],
+        "speeds": {
+            "land": 25,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 0
+        },
+        "creatureTraits": [],
+        "replacesCreatureTrait": null,
+        "support": "<p>Your robot companion focuses on your target, distracting one enemy within the first range increment of its weapon or within its reach. Until the start of your next turn, your Strikes against that target that deal damage make the target off-guard until the start of your next turn.</p>",
+        "advancedManeuver": "Compendium.sf2e.companion-types.Item.kVpUZXSTsHFiZwNc",
+        "resistances": [],
+        "imitator": true,
+        "mount": false,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

@@ -42,6 +42,7 @@ abstract class RuleElement<TSchema extends RuleElementSchema = RuleElementSchema
     protected static validActorTypes: ActorType[] = [
         "army",
         "character",
+        "companion",
         "familiar",
         "hazard",
         "npc",

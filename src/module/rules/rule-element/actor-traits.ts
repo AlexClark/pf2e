@@ -5,7 +5,14 @@ import { RuleElement, RuleElementSchema } from "./index.ts";
 import fields = foundry.data.fields;
 
 class ActorTraitsRuleElement extends RuleElement<ActorTraitsRuleSchema> {
-    protected static override validActorTypes: ActorType[] = ["character", "npc", "familiar", "hazard", "vehicle"];
+    protected static override validActorTypes: ActorType[] = [
+        "character",
+        "companion",
+        "npc",
+        "familiar",
+        "hazard",
+        "vehicle",
+    ];
 
     static override defineSchema(): ActorTraitsRuleSchema {
         return {
@@ -19,6 +26,7 @@ class ActorTraitsRuleElement extends RuleElement<ActorTraitsRuleSchema> {
     get #traitsDictionary(): Record<string, string> {
         switch (this.actor.type) {
             case "character":
+            case "companion":
             case "familiar":
             case "npc":
                 return CONFIG.PF2E.creatureTraits;

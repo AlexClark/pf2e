@@ -1,0 +1,8 @@
+<section class="tab inventory item-container" data-container-type="actorInventory" data-group="primary" data-tab="inventory">
+    {{#if @root.owner}}
+        {{> (resolvePath "templates/actors/partials/coinage.hbs") owner=@root.owner}}
+    {{/if}}
+    {{> (resolvePath "templates/actors/partials/inventory-header.hbs")}}
+    {{> (resolvePath "templates/actors/partials/inventory.hbs")}}
+    {{> (resolvePath "templates/actors/partials/encumbrance.hbs")}}
+</section>

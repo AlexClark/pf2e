@@ -1,0 +1,29 @@
+{
+    "_id": "G6kaYWd31GvEreTr",
+    "img": "systems/pf2e/icons/actions/OneAction.webp",
+    "name": "Cat Pounce",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 1
+        },
+        "category": "offensive",
+        "description": {
+            "value": "<p>The cat Strides and then Strikes. If the cat was undetected at the start of its Cat Pounce, it remains undetected until after the attack.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+            "rarity": "common",
+            "value": ["flourish"]
+        }
+    },
+    "type": "action"
+}

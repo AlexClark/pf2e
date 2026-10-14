@@ -1,4 +1,14 @@
-import { ArmyPF2e, CharacterPF2e, FamiliarPF2e, HazardPF2e, LootPF2e, NPCPF2e, PartyPF2e, VehiclePF2e } from "@actor";
+import {
+    ArmyPF2e,
+    CharacterPF2e,
+    CompanionPF2e,
+    FamiliarPF2e,
+    HazardPF2e,
+    LootPF2e,
+    NPCPF2e,
+    PartyPF2e,
+    VehiclePF2e,
+} from "@actor";
 import { SenseAcuity } from "@actor/creature/types.ts";
 import { LANGUAGES, SENSE_TYPES } from "@actor/creature/values.ts";
 import type { ActorType, AttributeString, SkillSlug } from "@actor/types.ts";
@@ -12,6 +22,7 @@ import {
     BookPF2e,
     CampaignFeaturePF2e,
     ClassPF2e,
+    CompanionTypePF2e,
     ConditionPF2e,
     ConsumablePF2e,
     ContainerPF2e,
@@ -83,6 +94,7 @@ export type StatusEffectIconTheme = "default" | "blackWhite";
 const actorTypes: Record<ActorType, string> = {
     army: "TYPES.Actor.army",
     character: "TYPES.Actor.character",
+    companion: "TYPES.Actor.companion",
     familiar: "TYPES.Actor.familiar",
     hazard: "TYPES.Actor.hazard",
     loot: "TYPES.Actor.loot",
@@ -868,6 +880,7 @@ export const PF2ECONFIG = {
         defensive: "PF2E.Item.Ability.Category.Defensive",
         offensive: "PF2E.Item.Ability.Category.Offensive",
         familiar: "PF2E.Item.Ability.Category.Familiar",
+        customization: "PF2E.Item.Ability.Category.Customization",
     },
 
     frequencies: {
@@ -1010,6 +1023,7 @@ export const PF2ECONFIG = {
         documentClasses: {
             army: ArmyPF2e,
             character: CharacterPF2e,
+            companion: CompanionPF2e,
             npc: NPCPF2e,
             hazard: HazardPF2e,
             loot: LootPF2e,
@@ -1031,6 +1045,7 @@ export const PF2ECONFIG = {
             book: BookPF2e,
             campaignFeature: CampaignFeaturePF2e,
             class: ClassPF2e,
+            companionType: CompanionTypePF2e,
             condition: ConditionPF2e,
             consumable: ConsumablePF2e,
             deity: DeityPF2e,

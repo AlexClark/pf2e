@@ -1,0 +1,29 @@
+{
+    "_id": "lx5TxipX4mD9m9VD",
+    "img": "systems/sf2e/icons/actions/TwoActions.webp",
+    "name": "Hydraulic Flipper",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 2
+        },
+        "category": "offensive",
+        "description": {
+            "value": "<p>The robot companion makes a melee Strike. On a successful hit, it knocks the target prone.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "action"
+}

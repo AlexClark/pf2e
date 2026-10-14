@@ -1,0 +1,51 @@
+{
+    "_id": "7J9W6bHhJO0ZAuTH",
+    "img": "systems/pf2e/icons/default-icons/companionType.svg",
+    "name": "Wrecker",
+    "system": {
+        "description": {
+            "value": "<p>Your companion smashes things. Its unarmed attacks ignore half an object's Hardness. Its Athletics proficiency increases to master, and its Strength modifier increases by 1.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": "wrecker",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "animal",
+        "kind": "specialization",
+        "sizes": [],
+        "abilities": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+        },
+        "ancestryHp": 0,
+        "attacks": [],
+        "skills": [],
+        "senses": [],
+        "speeds": {
+            "land": 0,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 0
+        },
+        "creatureTraits": [],
+        "replacesCreatureTrait": null,
+        "support": "",
+        "advancedManeuver": "",
+        "resistances": [],
+        "imitator": false,
+        "mount": false,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

@@ -1,0 +1,80 @@
+{
+    "_id": "YmJPJoXcOmWMeqU2",
+    "img": "systems/pf2e/icons/default-icons/companionType.svg",
+    "name": "Scorpion",
+    "system": {
+        "description": {
+            "value": "<p>Your companion is a scorpion.</p>\n<p><strong>Support Benefit</strong> Your scorpion drips poison from its stinger when you create an opening. Until the start of your next turn, your Strikes that damage a creature in your scorpion's reach also deal 1d6 persistent poison damage. If your scorpion is nimble or savage, the persistent poison damage increases to 2d6.</p>\n<p><strong>Advanced Maneuver</strong> @UUID[Compendium.pf2e.companion-types.Item.Grab and Sting]{Grab and Sting}</p>\n<p><strong>Special</strong> The stinger deals an additional 1d4 poison damage, or 2d4 poison damage if the scorpion is specialized.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": "scorpion",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "animal",
+        "kind": "type",
+        "sizes": ["sm"],
+        "abilities": {
+            "str": 3,
+            "dex": 3,
+            "con": 1,
+            "int": -4,
+            "wis": 1,
+            "cha": 0
+        },
+        "ancestryHp": 6,
+        "attacks": [
+            {
+                "slug": "stinger",
+                "name": "stinger",
+                "damage": {
+                    "dice": 1,
+                    "die": "d6",
+                    "type": "piercing"
+                },
+                "traits": [],
+                "range": null
+            },
+            {
+                "slug": "pincer",
+                "name": "pincer",
+                "damage": {
+                    "dice": 1,
+                    "die": "d6",
+                    "type": "slashing"
+                },
+                "traits": ["agile"],
+                "range": null
+            }
+        ],
+        "skills": ["stealth"],
+        "senses": [
+            {
+                "type": "darkvision",
+                "acuity": "precise",
+                "range": 0
+            }
+        ],
+        "speeds": {
+            "land": 30,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 0
+        },
+        "creatureTraits": [],
+        "replacesCreatureTrait": null,
+        "support": "<p>Your scorpion drips poison from its stinger when you create an opening. Until the start of your next turn, your Strikes that damage a creature in your scorpion's reach also deal 1d6 persistent poison damage. If your scorpion is nimble or savage, the persistent poison damage increases to 2d6.</p>",
+        "advancedManeuver": "Compendium.pf2e.companion-types.Item.Mhhh9QrB2I0AbPCE",
+        "resistances": [],
+        "imitator": false,
+        "mount": false,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

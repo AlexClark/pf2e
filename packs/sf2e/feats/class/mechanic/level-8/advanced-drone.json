@@ -29,7 +29,36 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "Deft",
+                        "value": "agility"
+                    },
+                    {
+                        "label": "Burly",
+                        "value": "power"
+                    }
+                ],
+                "flag": "stage",
+                "key": "ChoiceSet",
+                "prompt": "Select an advancement."
+            },
+            {
+                "key": "CompanionGrant",
+                "priority": 200,
+                "profile": "robot",
+                "extraSlots": [
+                    {
+                        "count": 1,
+                        "grade": "advanced"
+                    }
+                ],
+                "stage": "{item|flags.system.rulesSelections.stage}"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},
@@ -37,9 +66,7 @@
         },
         "traits": {
             "rarity": "common",
-            "value": [
-                "mechanic"
-            ]
+            "value": ["mechanic"]
         }
     },
     "type": "feat"

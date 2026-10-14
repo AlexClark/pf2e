@@ -1,0 +1,29 @@
+{
+    "_id": "Mhhh9QrB2I0AbPCE",
+    "img": "systems/pf2e/icons/actions/TwoActions.webp",
+    "name": "Grab and Sting",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 2
+        },
+        "category": "offensive",
+        "description": {
+            "value": "<p>The scorpion holds its foe in place with its pincers in order to sting it. It makes a pincer Strike. If the Strike hits, the target automatically becomes grabbed by the scorpion, which then makes a stinger Strike against it. The grabbed condition lasts until the end of your next turn.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "action"
+}

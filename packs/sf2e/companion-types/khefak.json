@@ -1,0 +1,85 @@
+{
+    "_id": "p6zkCqVc4RC2KU7F",
+    "img": "systems/sf2e/icons/default-icons/companionType.svg",
+    "name": "Khefak",
+    "system": {
+        "description": {
+            "value": "<p>Your companion is a khefak, a hardy, insectile creature common on Akiton that consumes scrap.</p>\n<p><strong>Support Benefit</strong> Your khefak gnaws on a creature's gear. If your target has a shield raised, its shield is no longer raised. In addition, until the end of your next turn, if you attempt to Disarm, Shove, or Trip a creature within your khefak's melee reach and you roll a critical failure, you get a failure instead.</p>\n<p><strong>Advanced Maneuver</strong> @UUID[Compendium.sf2e.companion-types.Item.Grab and Gnaw]{Grab and Gnaw}</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "khefak",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "animal",
+        "kind": "type",
+        "sizes": ["sm"],
+        "abilities": {
+            "str": 2,
+            "dex": 3,
+            "con": 2,
+            "int": -4,
+            "wis": 1,
+            "cha": 0
+        },
+        "ancestryHp": 6,
+        "attacks": [
+            {
+                "slug": "jaws",
+                "name": "jaws",
+                "damage": {
+                    "dice": 1,
+                    "die": "d6",
+                    "type": "piercing"
+                },
+                "traits": ["razing"],
+                "range": null
+            },
+            {
+                "slug": "claw",
+                "name": "claw",
+                "damage": {
+                    "dice": 1,
+                    "die": "d4",
+                    "type": "slashing"
+                },
+                "traits": ["agile"],
+                "range": null
+            }
+        ],
+        "skills": ["survival"],
+        "senses": [
+            {
+                "type": "darkvision",
+                "acuity": "precise",
+                "range": 0
+            },
+            {
+                "type": "tremorsense",
+                "acuity": "imprecise",
+                "range": 30
+            }
+        ],
+        "speeds": {
+            "land": 20,
+            "burrow": 5,
+            "climb": 20,
+            "fly": 0,
+            "swim": 0
+        },
+        "creatureTraits": [],
+        "replacesCreatureTrait": null,
+        "support": "<p>Your khefak gnaws on a creature's gear. If your target has a shield raised, its shield is no longer raised. In addition, until the end of your next turn, if you attempt to Disarm, Shove, or Trip a creature within your khefak's melee reach and you roll a critical failure, you get a failure instead.</p>",
+        "advancedManeuver": "Compendium.sf2e.companion-types.Item.7AJUXbW2VjJdRTKl",
+        "resistances": [],
+        "imitator": false,
+        "mount": false,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

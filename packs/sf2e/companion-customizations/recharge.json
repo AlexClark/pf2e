@@ -1,0 +1,29 @@
+{
+    "_id": "N0z9EpP8VCm3uHlC",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Recharge",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 1
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion can recharge a battery it touches as a single action with the concentrate trait, transferring some of its own power into the battery. After doing so, it becomes clumsy 1 for 1 round.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "recharge",
+        "traits": {
+            "otherTags": ["advanced"],
+            "value": ["concentrate"]
+        }
+    },
+    "type": "action"
+}

@@ -1,0 +1,29 @@
+{
+    "_id": "MxJK1KBSvcVLzXE8",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Upgrade Slot",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion gains one armor upgrade slot.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "upgrade-slot",
+        "traits": {
+            "otherTags": ["commercial"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

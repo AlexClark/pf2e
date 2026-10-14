@@ -30,7 +30,54 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "Ambusher",
+                        "value": "ambusher"
+                    },
+                    {
+                        "label": "Bully",
+                        "value": "bully"
+                    },
+                    {
+                        "label": "Daredevil",
+                        "value": "daredevil"
+                    },
+                    {
+                        "label": "Racer",
+                        "value": "racer"
+                    },
+                    {
+                        "label": "Tracker",
+                        "value": "tracker"
+                    },
+                    {
+                        "label": "Wrecker",
+                        "value": "wrecker"
+                    }
+                ],
+                "flag": "specialization",
+                "key": "ChoiceSet",
+                "prompt": "Select a specialization."
+            },
+            {
+                "key": "CompanionGrant",
+                "priority": 200,
+                "profile": "robot",
+                "extraSlots": [
+                    {
+                        "count": 1,
+                        "grade": "superior",
+                        "once": true
+                    }
+                ],
+                "specialization": "{item|flags.system.rulesSelections.specialization}",
+                "stage": "specialized"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},
@@ -38,9 +85,7 @@
         },
         "traits": {
             "rarity": "common",
-            "value": [
-                "mechanic"
-            ]
+            "value": ["mechanic"]
         }
     },
     "type": "feat"

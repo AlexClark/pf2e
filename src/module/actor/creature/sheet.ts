@@ -303,7 +303,7 @@ abstract class CreatureSheetPF2e<TActor extends CreaturePF2e> extends ActorSheet
         const item = this.actor.inventory.get(itemId, { strict: true });
         const hasStowingContainers = this.actor.itemTypes.backpack.some((i) => i.system.stowing && !i.isInContainer);
         const templatePath = `systems/${SYSTEM_ID}/templates/actors/partials/carry-type.hbs`;
-        const templateArgs = { item, hasStowingContainers };
+        const templateArgs = { item, hasStowingContainers, allowInstalled: this.actor.isOfType("companion") };
         const template = await fa.handlebars.renderTemplate(templatePath, templateArgs);
         const html = createHTMLElement("ul", { innerHTML: template });
 

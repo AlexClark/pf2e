@@ -1,0 +1,69 @@
+{
+    "_id": "tVvHLVl5ofxZMp6z",
+    "img": "systems/sf2e/icons/default-icons/companionType.svg",
+    "name": "Shotalashu",
+    "system": {
+        "description": {
+            "value": "<p>Your companion is a shotalashu, a telepathic creature originally from Castrovel. It has the beast trait instead of the animal trait but otherwise functions as an animal companion.</p>\n<p><strong>Support Benefit</strong> The shotalashu telepathically assails your enemies when you create an opening. Until the start of your next turn, each time you hit a creature in the shotalashu's reach with a Strike, the creature takes 1d6 mental damage from the shotalashu. If your shotalashu is burly or deft, the mental damage increases to 2d6.</p>\n<p><strong>Advanced Maneuver</strong> @UUID[Compendium.sf2e.companion-types.Item.Telepathic Pounce]{Telepathic Pounce}</p>\n<p><strong>Special</strong> The shotalashu has the mount special ability. Bonding with one typically takes a week and a successful DC 21 Occultism check to establish a telepathic link. A rider with telepathy, touch telepathy, group chat, empathic sense, or a spell such as telepathy gains a +4 circumstance bonus to this check. The link lasts until one of them dies.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "shotalashu",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "animal",
+        "kind": "type",
+        "sizes": ["med", "lg"],
+        "abilities": {
+            "str": 2,
+            "dex": 3,
+            "con": 2,
+            "int": -3,
+            "wis": 1,
+            "cha": 2
+        },
+        "ancestryHp": 8,
+        "attacks": [
+            {
+                "slug": "claw",
+                "name": "claw",
+                "damage": {
+                    "dice": 1,
+                    "die": "d6",
+                    "type": "slashing"
+                },
+                "traits": ["agile"],
+                "range": null
+            }
+        ],
+        "skills": ["survival"],
+        "senses": [
+            {
+                "type": "darkvision",
+                "acuity": "precise",
+                "range": 0
+            }
+        ],
+        "speeds": {
+            "land": 40,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 0
+        },
+        "creatureTraits": ["beast"],
+        "replacesCreatureTrait": "animal",
+        "support": "<p>The shotalashu telepathically assails your enemies when you create an opening. Until the start of your next turn, each time you hit a creature in the shotalashu's reach with a Strike, the creature takes 1d6 mental damage from the shotalashu. If your shotalashu is burly or deft, the mental damage increases to 2d6.</p>",
+        "advancedManeuver": "Compendium.sf2e.companion-types.Item.BWp0AOXhHgiN9UAJ",
+        "resistances": [],
+        "imitator": false,
+        "mount": true,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

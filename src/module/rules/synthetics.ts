@@ -1,4 +1,5 @@
 import type { ActorPF2e } from "@actor";
+import type { CompanionGrantData } from "@actor/companion/grants.ts";
 import type { DexterityModifierCapData } from "@actor/character/types.ts";
 import type { SenseData } from "@actor/creature/data.ts";
 import type {
@@ -33,6 +34,7 @@ import type { SpecialResourceRuleElement } from "./rule-element/special-resource
 
 /** Defines a list of data provided by rule elements that an actor can pull from during its data preparation lifecycle */
 interface RuleElementSynthetics {
+    companionGrants: CompanionGrantData[];
     criticalSpecializations: {
         standard: CritSpecSynthetic[];
         alternate: CritSpecSynthetic[];

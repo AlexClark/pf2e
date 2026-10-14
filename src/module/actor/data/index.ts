@@ -1,5 +1,6 @@
 import type { ArmySource } from "@actor/army/data.ts";
 import type { CharacterSource } from "@actor/character/data.ts";
+import type { CompanionSource } from "@actor/companion/data.ts";
 import type { FamiliarSource } from "@actor/familiar/data.ts";
 import type { HazardSource } from "@actor/hazard/data.ts";
 import type { LootSource } from "@actor/loot/data.ts";
@@ -9,7 +10,7 @@ import type { VehicleSource } from "@actor/vehicle/data.ts";
 import type { RollInitiativeOptions } from "@client/documents/combat.d.mts";
 import type { StatisticRollParameters } from "@system/statistic/index.ts";
 
-type CreatureSource = CharacterSource | NPCSource | FamiliarSource;
+type CreatureSource = CharacterSource | NPCSource | FamiliarSource | CompanionSource;
 
 type ActorSourcePF2e = ArmySource | CreatureSource | HazardSource | LootSource | PartySource | VehicleSource;
 
@@ -21,6 +22,7 @@ export type {
     ActorSourcePF2e,
     ArmySource,
     CharacterSource,
+    CompanionSource,
     CreatureSource,
     FamiliarSource,
     HazardSource,

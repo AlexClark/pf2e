@@ -1,0 +1,29 @@
+{
+    "_id": "NcbULsIbWJwV0EAc",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Artificial Personality",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion has an artificial personality and can attempt skill checks that require Charisma. It can speak Common.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "artificial-personality",
+        "traits": {
+            "otherTags": ["commercial"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

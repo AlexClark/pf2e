@@ -1,0 +1,80 @@
+{
+    "_id": "CzSNVui7oCUS9XBE",
+    "img": "systems/pf2e/icons/default-icons/companionType.svg",
+    "name": "Bird",
+    "system": {
+        "description": {
+            "value": "<p>Your companion is a bird.</p>\n<p><strong>Support Benefit</strong> The bird pecks at your foes' eyes when you create an opening. Until the start of your next turn, your Strikes that damage a creature that your bird threatens also deal 1d4 persistent bleed damage, and the target is dazzled until it removes the bleed damage. If your bird is nimble or savage, the persistent bleed damage increases to 2d4.</p>\n<p><strong>Advanced Maneuver</strong> @UUID[Compendium.pf2e.companion-types.Item.Flyby Attack]{Flyby Attack}</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": "bird",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "animal",
+        "kind": "type",
+        "sizes": ["sm"],
+        "abilities": {
+            "str": 2,
+            "dex": 3,
+            "con": 1,
+            "int": -4,
+            "wis": 2,
+            "cha": 0
+        },
+        "ancestryHp": 4,
+        "attacks": [
+            {
+                "slug": "jaws",
+                "name": "jaws",
+                "damage": {
+                    "dice": 1,
+                    "die": "d6",
+                    "type": "piercing"
+                },
+                "traits": ["finesse"],
+                "range": null
+            },
+            {
+                "slug": "talon",
+                "name": "talon",
+                "damage": {
+                    "dice": 1,
+                    "die": "d4",
+                    "type": "slashing"
+                },
+                "traits": ["agile", "finesse"],
+                "range": null
+            }
+        ],
+        "skills": ["stealth"],
+        "senses": [
+            {
+                "type": "low-light-vision",
+                "acuity": "precise",
+                "range": 0
+            }
+        ],
+        "speeds": {
+            "land": 10,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 60,
+            "swim": 0
+        },
+        "creatureTraits": [],
+        "replacesCreatureTrait": null,
+        "support": "<p>The bird pecks at your foes' eyes when you create an opening. Until the start of your next turn, your Strikes that damage a creature that your bird threatens also deal 1d4 persistent bleed damage, and the target is dazzled until it removes the bleed damage. If your bird is nimble or savage, the persistent bleed damage increases to 2d4.</p>",
+        "advancedManeuver": "Compendium.pf2e.companion-types.Item.iS5SmrbocYU4SYif",
+        "resistances": [],
+        "imitator": false,
+        "mount": false,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

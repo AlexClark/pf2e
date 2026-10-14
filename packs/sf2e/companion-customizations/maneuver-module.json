@@ -1,0 +1,273 @@
+{
+    "_id": "8pHPsIOOiBM97W9t",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Maneuver Module",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion gains a +1 circumstance bonus to two of the following actions: Disarm, Grapple, Reposition, Shove, or Trip. If it is superior, the bonus increases to +2. You can select this customization more than once, choosing different actions each time.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "Disarm",
+                        "value": "disarm"
+                    },
+                    {
+                        "label": "Grapple",
+                        "value": "grapple"
+                    },
+                    {
+                        "label": "Reposition",
+                        "value": "reposition"
+                    },
+                    {
+                        "label": "Shove",
+                        "value": "shove"
+                    },
+                    {
+                        "label": "Trip",
+                        "value": "trip"
+                    }
+                ],
+                "flag": "first",
+                "key": "ChoiceSet",
+                "prompt": "Select the first maneuver.",
+                "rollOption": "maneuver-first"
+            },
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "Disarm",
+                        "predicate": [
+                            {
+                                "not": "parent:maneuver-first:disarm"
+                            }
+                        ],
+                        "value": "disarm"
+                    },
+                    {
+                        "label": "Grapple",
+                        "predicate": [
+                            {
+                                "not": "parent:maneuver-first:grapple"
+                            }
+                        ],
+                        "value": "grapple"
+                    },
+                    {
+                        "label": "Reposition",
+                        "predicate": [
+                            {
+                                "not": "parent:maneuver-first:reposition"
+                            }
+                        ],
+                        "value": "reposition"
+                    },
+                    {
+                        "label": "Shove",
+                        "predicate": [
+                            {
+                                "not": "parent:maneuver-first:shove"
+                            }
+                        ],
+                        "value": "shove"
+                    },
+                    {
+                        "label": "Trip",
+                        "predicate": [
+                            {
+                                "not": "parent:maneuver-first:trip"
+                            }
+                        ],
+                        "value": "trip"
+                    }
+                ],
+                "flag": "second",
+                "key": "ChoiceSet",
+                "prompt": "Select the second maneuver.",
+                "rollOption": "maneuver-second"
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "athletics",
+                "slug": "maneuver-disarm",
+                "type": "circumstance",
+                "value": 1,
+                "hideIfDisabled": true,
+                "predicate": [
+                    "action:disarm",
+                    {
+                        "or": ["parent:maneuver-first:disarm", "parent:maneuver-second:disarm"]
+                    },
+                    {
+                        "not": "self:companion:stage:specialized"
+                    }
+                ]
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "athletics",
+                "slug": "maneuver-disarm-superior",
+                "type": "circumstance",
+                "value": 2,
+                "hideIfDisabled": true,
+                "predicate": [
+                    "action:disarm",
+                    {
+                        "or": ["parent:maneuver-first:disarm", "parent:maneuver-second:disarm"]
+                    },
+                    "self:companion:stage:specialized"
+                ]
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "athletics",
+                "slug": "maneuver-grapple",
+                "type": "circumstance",
+                "value": 1,
+                "hideIfDisabled": true,
+                "predicate": [
+                    "action:grapple",
+                    {
+                        "or": ["parent:maneuver-first:grapple", "parent:maneuver-second:grapple"]
+                    },
+                    {
+                        "not": "self:companion:stage:specialized"
+                    }
+                ]
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "athletics",
+                "slug": "maneuver-grapple-superior",
+                "type": "circumstance",
+                "value": 2,
+                "hideIfDisabled": true,
+                "predicate": [
+                    "action:grapple",
+                    {
+                        "or": ["parent:maneuver-first:grapple", "parent:maneuver-second:grapple"]
+                    },
+                    "self:companion:stage:specialized"
+                ]
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "athletics",
+                "slug": "maneuver-reposition",
+                "type": "circumstance",
+                "value": 1,
+                "hideIfDisabled": true,
+                "predicate": [
+                    "action:reposition",
+                    {
+                        "or": ["parent:maneuver-first:reposition", "parent:maneuver-second:reposition"]
+                    },
+                    {
+                        "not": "self:companion:stage:specialized"
+                    }
+                ]
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "athletics",
+                "slug": "maneuver-reposition-superior",
+                "type": "circumstance",
+                "value": 2,
+                "hideIfDisabled": true,
+                "predicate": [
+                    "action:reposition",
+                    {
+                        "or": ["parent:maneuver-first:reposition", "parent:maneuver-second:reposition"]
+                    },
+                    "self:companion:stage:specialized"
+                ]
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "athletics",
+                "slug": "maneuver-shove",
+                "type": "circumstance",
+                "value": 1,
+                "hideIfDisabled": true,
+                "predicate": [
+                    "action:shove",
+                    {
+                        "or": ["parent:maneuver-first:shove", "parent:maneuver-second:shove"]
+                    },
+                    {
+                        "not": "self:companion:stage:specialized"
+                    }
+                ]
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "athletics",
+                "slug": "maneuver-shove-superior",
+                "type": "circumstance",
+                "value": 2,
+                "hideIfDisabled": true,
+                "predicate": [
+                    "action:shove",
+                    {
+                        "or": ["parent:maneuver-first:shove", "parent:maneuver-second:shove"]
+                    },
+                    "self:companion:stage:specialized"
+                ]
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "athletics",
+                "slug": "maneuver-trip",
+                "type": "circumstance",
+                "value": 1,
+                "hideIfDisabled": true,
+                "predicate": [
+                    "action:trip",
+                    {
+                        "or": ["parent:maneuver-first:trip", "parent:maneuver-second:trip"]
+                    },
+                    {
+                        "not": "self:companion:stage:specialized"
+                    }
+                ]
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "athletics",
+                "slug": "maneuver-trip-superior",
+                "type": "circumstance",
+                "value": 2,
+                "hideIfDisabled": true,
+                "predicate": [
+                    "action:trip",
+                    {
+                        "or": ["parent:maneuver-first:trip", "parent:maneuver-second:trip"]
+                    },
+                    "self:companion:stage:specialized"
+                ]
+            }
+        ],
+        "slug": "maneuver-module",
+        "traits": {
+            "otherTags": ["advanced"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

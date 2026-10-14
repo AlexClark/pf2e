@@ -1,0 +1,36 @@
+{
+    "_id": "VQtxqaCMJ3bD63HW",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Olfactory Receptors",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion can use scent as an imprecise sense within 30 feet.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "acuity": "imprecise",
+                "key": "Sense",
+                "range": 30,
+                "selector": "scent"
+            }
+        ],
+        "slug": "olfactory-receptors",
+        "traits": {
+            "otherTags": ["commercial"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

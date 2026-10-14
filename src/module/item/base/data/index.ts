@@ -7,6 +7,7 @@ import type { BackgroundSource } from "@item/background/data.ts";
 import type { BookSource } from "@item/book/data.ts";
 import type { CampaignFeatureSource } from "@item/campaign-feature/data.ts";
 import type { ClassSource } from "@item/class/data.ts";
+import type { CompanionTypeSource } from "@item/companion-type/data.ts";
 import type { ConditionSource } from "@item/condition/data.ts";
 import type { ConsumableSource } from "@item/consumable/data.ts";
 import type { ContainerSource } from "@item/container/data.ts";
@@ -35,6 +36,7 @@ type NonPhysicalItemType =
     | "background"
     | "campaignFeature"
     | "class"
+    | "companionType"
     | "condition"
     | "deity"
     | "effect"
@@ -67,6 +69,7 @@ type ItemSourcePF2e =
     | BackgroundSource
     | CampaignFeatureSource
     | ClassSource
+    | CompanionTypeSource
     | DeitySource
     | FeatSource
     | HeritageSource

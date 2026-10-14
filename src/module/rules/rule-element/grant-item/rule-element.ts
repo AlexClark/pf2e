@@ -19,7 +19,7 @@ import type { GrantItemSchema } from "./schema.ts";
 import fields = foundry.data.fields;
 
 class GrantItemRuleElement extends RuleElement<GrantItemSchema> {
-    static override validActorTypes: ActorType[] = ["army", "character", "npc", "familiar"];
+    static override validActorTypes: ActorType[] = ["army", "character", "companion", "npc", "familiar"];
 
     /** The id of the granted item */
     grantedId: string | null = null;

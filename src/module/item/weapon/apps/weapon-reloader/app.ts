@@ -1,5 +1,4 @@
 import { CreaturePF2e } from "@actor";
-import type { CharacterPF2e } from "@actor/character/document.ts";
 import { CreatureSheetPF2e } from "@actor/creature/sheet.ts";
 import { type PhysicalItemPF2e, WeaponPF2e } from "@item";
 import { getLoadedAmmo } from "@item/weapon/helpers.ts";
@@ -13,7 +12,7 @@ import * as R from "remeda";
 import Root from "./app.svelte";
 
 interface WeaponReloaderConfiguration extends fa.ApplicationConfiguration {
-    weapon: WeaponPF2e<CharacterPF2e>;
+    weapon: WeaponPF2e;
 }
 
 class WeaponReloader extends SvelteApplicationMixin<
@@ -68,7 +67,7 @@ class WeaponReloader extends SvelteApplicationMixin<
         options: DeepPartial<fa.ApplicationConfiguration> & Partial<Pick<WeaponReloaderConfiguration, "weapon">>,
     ): fa.ApplicationConfiguration {
         const weapon = options.weapon;
-        if (!(weapon instanceof WeaponPF2e) || !weapon.actor?.isOfType("character")) {
+        if (!(weapon instanceof WeaponPF2e) || !weapon.actor?.isOfType("character", "companion")) {
             throw ErrorPF2e("Unable to render without weapon");
         }
         return super._initializeApplicationOptions(options);
@@ -77,6 +76,9 @@ class WeaponReloader extends SvelteApplicationMixin<
     protected override async _prepareContext(): Promise<ReloadWeaponContext> {
         const weapon = this.options.weapon;
         const actor = weapon.actor;
+        if (!actor?.isOfType("character", "companion")) {
+            throw ErrorPF2e("Unable to render without weapon");
+        }
         const compatible = [
             ...actor.itemTypes.ammo.filter((i) => !i.isStowed),
             ...actor.itemTypes.weapon.filter((w) => w.system.usage.canBeAmmo),
@@ -95,8 +97,7 @@ class WeaponReloader extends SvelteApplicationMixin<
                     compatible.map((c) => ({
                         ...getBasePhysicalItemViewData(c),
                         quantity: c.quantity,
-                        uses: c.isOfType("ammo") && c.uses.max > 1 ? c.uses : null,
-                        depleted: c.quantity === 0 || (c.isOfType("ammo") && c.uses.value === 0),
+                        ...ammoUses(c),
                     })),
                     (c) => (c.depleted ? 1 : 0),
                 ),
@@ -106,7 +107,12 @@ class WeaponReloader extends SvelteApplicationMixin<
 
     async reloadWeapon(ammoId: string, all = false): Promise<void> {
         const weapon = this.options.weapon;
-        const ammo = weapon.actor.inventory.get(ammoId, { strict: true });
+        const actor = weapon.actor;
+        if (!actor?.isOfType("character", "companion")) return;
+        // inventory.get on the character | companion union is not a single callable signature.
+        const ammo = actor.isOfType("character")
+            ? actor.inventory.get(ammoId, { strict: true })
+            : actor.inventory.get(ammoId, { strict: true });
         const capacity = weapon.system.ammo?.capacity ?? 0;
         const loaded = getLoadedAmmo(weapon).filter(
             (a) => !(a.isOfType("ammo") && a.isMagazine && a.system.uses.value === 0),
@@ -148,7 +154,9 @@ class WeaponReloader extends SvelteApplicationMixin<
             glyph: this.glyph,
         };
 
-        const traits = [traitSlugToObject("manipulate", CONFIG.PF2E.actionTraits)];
+        // An installed mount reloads without the manipulate trait.
+        const traits =
+            weapon.carryType === "installed" ? [] : [traitSlugToObject("manipulate", CONFIG.PF2E.actionTraits)];
         const message = `PF2E.Actions.${actionKey}.${annotationKey}.Description`;
         const flavor = await fa.handlebars.renderTemplate(templates.flavor, { action: flavorAction, traits });
         const content = await fa.handlebars.renderTemplate(templates.content, {
@@ -182,7 +190,8 @@ class WeaponReloader extends SvelteApplicationMixin<
         options: fa.ApplicationRenderOptions,
     ): Promise<void> {
         await super._onFirstRender(context, options);
-        this.options.weapon.actor.apps[this.id] = this;
+        const actor = this.options.weapon.actor;
+        if (actor) actor.apps[this.id] = this;
         const signal = this.#closeSignal.signal;
         document.addEventListener("click", this.#closeListener, { capture: true, signal });
         document.addEventListener("wheel", this.#closeListener, { capture: true, signal });
@@ -196,10 +205,23 @@ class WeaponReloader extends SvelteApplicationMixin<
     protected override _tearDown(options: fa.ApplicationClosingOptions): void {
         super._tearDown(options);
         this.#closeSignal.abort();
-        delete this.options.weapon.actor.apps[this.id];
+        const actor = this.options.weapon.actor;
+        if (actor) delete actor.apps[this.id];
 
         if (typeof this.#hook === "number") Hooks.off("renderCreatureSheetPF2e", this.#hook);
     }
+}
+
+/** `isOfType` does not narrow an ammo item owned by either a character or a companion. */
+function ammoUses(item: { type: string; quantity: number; uses?: ValueAndMax }): {
+    uses: ValueAndMax | null;
+    depleted: boolean;
+} {
+    const uses = item.type === "ammo" ? item.uses : undefined;
+    return {
+        uses: uses && uses.max > 1 ? uses : null,
+        depleted: item.quantity === 0 || (!!uses && uses.value === 0),
+    };
 }
 
 interface ReloadWeaponState {

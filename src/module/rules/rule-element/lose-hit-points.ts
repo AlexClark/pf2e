@@ -6,7 +6,7 @@ import fields = foundry.data.fields;
 
 /** Reduce current hit points without applying damage */
 class LoseHitPointsRuleElement extends RuleElement<LoseHitPointsRuleSchema> {
-    static override validActorTypes: ActorType[] = ["character", "familiar", "npc"];
+    static override validActorTypes: ActorType[] = ["character", "companion", "familiar", "npc"];
 
     static override defineSchema(): LoseHitPointsRuleSchema {
         return {

@@ -29,12 +29,16 @@
             "remaster": true,
             "title": "Pathfinder Player Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "CompanionGrant",
+                "priority": 200,
+                "profile": "animal"
+            }
+        ],
         "traits": {
             "rarity": "common",
-            "value": [
-                "druid"
-            ]
+            "value": ["druid"]
         }
     },
     "type": "feat"

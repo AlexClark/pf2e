@@ -1,0 +1,29 @@
+{
+    "_id": "PMVBM5H3ICrvXMq0",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Network",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion has an integrated hacking kit and can connect to an adjacent computer as a single action. While it is connected, you can attempt Computers checks on that computer as if you were adjacent to it.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "network",
+        "traits": {
+            "otherTags": ["tactical"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

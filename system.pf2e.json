@@ -48,6 +48,7 @@
                     "details.description"
                 ]
             },
+            "companion": {},
             "familiar": {},
             "hazard": {
                 "htmlFields": [
@@ -71,6 +72,7 @@
             }
         },
         "Item": {
+            "companionType": {},
             "treasure": {
                 "htmlFields": [
                     "description.value",
@@ -1064,6 +1066,19 @@
             "name": "feats-srd",
             "label": "Feats",
             "path": "packs/feats",
+            "type": "Item",
+            "banner": "systems/pf2e/assets/compendium-banner/green.webp",
+            "system": "pf2e",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            },
+            "flags": {}
+        },
+        {
+            "name": "companion-types",
+            "label": "Companion Types",
+            "path": "packs/companion-types",
             "type": "Item",
             "banner": "systems/pf2e/assets/compendium-banner/green.webp",
             "system": "pf2e",

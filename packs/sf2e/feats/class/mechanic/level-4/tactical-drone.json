@@ -29,7 +29,21 @@
             "remaster": true,
             "title": "Starfinder Tech Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "CompanionGrant",
+                "priority": 200,
+                "profile": "robot",
+                "extraSlots": [
+                    {
+                        "count": 1,
+                        "grade": "tactical"
+                    }
+                ],
+                "independent": true,
+                "stage": "mature"
+            }
+        ],
         "subfeatures": {
             "proficiencies": {},
             "senses": {},
@@ -37,9 +51,7 @@
         },
         "traits": {
             "rarity": "common",
-            "value": [
-                "mechanic"
-            ]
+            "value": ["mechanic"]
         }
     },
     "type": "feat"

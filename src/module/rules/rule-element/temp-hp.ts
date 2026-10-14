@@ -10,7 +10,7 @@ import fields = foundry.data.fields;
  * @category RuleElement
  */
 class TempHPRuleElement extends RuleElement<TempHPRuleSchema> {
-    static override validActorTypes: ActorType[] = ["character", "npc", "familiar"];
+    static override validActorTypes: ActorType[] = ["character", "companion", "npc", "familiar"];
 
     static override defineSchema(): TempHPRuleSchema {
         return {

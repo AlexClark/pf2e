@@ -1,0 +1,51 @@
+{
+    "_id": "kJG3caP6FPO9K6EG",
+    "img": "systems/pf2e/icons/default-icons/companionType.svg",
+    "name": "Tracker",
+    "system": {
+        "description": {
+            "value": "<p>Your companion is an incredible tracker. It can move at full Speed while following tracks. Its proficiency rank in Survival increases to expert (or master if it was already an expert from its type), and its Wisdom modifier increases by 1.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": "tracker",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "animal",
+        "kind": "specialization",
+        "sizes": [],
+        "abilities": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+        },
+        "ancestryHp": 0,
+        "attacks": [],
+        "skills": [],
+        "senses": [],
+        "speeds": {
+            "land": 0,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 0
+        },
+        "creatureTraits": [],
+        "replacesCreatureTrait": null,
+        "support": "",
+        "advancedManeuver": "",
+        "resistances": [],
+        "imitator": false,
+        "mount": false,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

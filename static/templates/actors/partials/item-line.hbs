@@ -92,7 +92,7 @@
                             <i class="fa-solid fa-slash fa-stack-2x"></i>
                         </span>
                     </a>
-                {{else if (or (eq @root.actor.type "character") (eq @root.actor.type "npc"))}}
+                {{else if (or (eq @root.actor.type "character") (eq @root.actor.type "npc") (eq @root.actor.type "companion"))}}
                     <a
                         class="item-carry-type{{#if item.isEquipped}} active{{/if}}{{#if notifyEquip}} notify{{/if}}"
                         data-tooltip="PF2E.Actor.Inventory.CarryType.OpenMenu"
@@ -180,5 +180,6 @@
     {{~else if (eq equipped.carryType "stowed")}}<i class="fa-solid fa-box fa-fw"></i>
     {{~else if (eq equipped.carryType "dropped")}}<i class="fa-solid fa-grip-lines fa-fw"></i>
     {{~else if (eq equipped.carryType "implanted")}}<i class="fa-solid fa-plug fa-fw"></i>
+    {{~else if (eq equipped.carryType "installed")}}<i class="fa-solid fa-link fa-fw"></i>
     {{~else}}<i class="fa-solid fa-shirt fa-fw"></i>{{/if~}}
 {{/inline}}

@@ -1,0 +1,51 @@
+{
+    "_id": "t17373iLKpltrbEM",
+    "img": "systems/sf2e/icons/default-icons/companionType.svg",
+    "name": "Daredevil",
+    "system": {
+        "description": {
+            "value": "<p>Your companion joins the fray with grace. It gains the deny advantage ability, so it isn't off-guard to hidden, undetected, or flanking creatures unless such a creature's level is greater than yours. Its proficiency rank in Acrobatics increases to master, and its Dexterity modifier increases by 1. Its proficiency rank in unarmored defense increases to expert.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "daredevil",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "animal",
+        "kind": "specialization",
+        "sizes": [],
+        "abilities": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+        },
+        "ancestryHp": 0,
+        "attacks": [],
+        "skills": [],
+        "senses": [],
+        "speeds": {
+            "land": 0,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 0
+        },
+        "creatureTraits": [],
+        "replacesCreatureTrait": null,
+        "support": "",
+        "advancedManeuver": "",
+        "resistances": [],
+        "imitator": false,
+        "mount": false,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

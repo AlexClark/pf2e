@@ -1,0 +1,80 @@
+{
+    "_id": "oQQL1sjCYg0iwD1P",
+    "img": "systems/pf2e/icons/default-icons/companionType.svg",
+    "name": "Riding Drake",
+    "system": {
+        "description": {
+            "value": "<p>Your companion is a riding drake.</p>\n<p><strong>Support Benefit</strong> Your drake snorts fire in your foes' faces. Until the start of your next turn, each time you Strike while riding the drake and hit a creature in the drake's reach, the creature takes 1d4 fire damage from the drake. If your drake is nimble or savage, the fire damage increases to 2d4.</p>\n<p><strong>Advanced Maneuver</strong> @UUID[Compendium.pf2e.companion-types.Item.Fire Breath]{Fire Breath}</p>\n<p><strong>Special</strong> The riding drake has the dragon trait instead of the animal trait, and it has the mount special ability.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": "riding-drake",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "animal",
+        "kind": "type",
+        "sizes": ["lg"],
+        "abilities": {
+            "str": 2,
+            "dex": 1,
+            "con": 2,
+            "int": -4,
+            "wis": 1,
+            "cha": 2
+        },
+        "ancestryHp": 8,
+        "attacks": [
+            {
+                "slug": "jaws",
+                "name": "jaws",
+                "damage": {
+                    "dice": 1,
+                    "die": "d8",
+                    "type": "piercing"
+                },
+                "traits": [],
+                "range": null
+            },
+            {
+                "slug": "tail",
+                "name": "tail",
+                "damage": {
+                    "dice": 1,
+                    "die": "d6",
+                    "type": "bludgeoning"
+                },
+                "traits": [],
+                "range": null
+            }
+        ],
+        "skills": ["intimidation"],
+        "senses": [
+            {
+                "type": "darkvision",
+                "acuity": "precise",
+                "range": 0
+            }
+        ],
+        "speeds": {
+            "land": 45,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 0
+        },
+        "creatureTraits": ["dragon"],
+        "replacesCreatureTrait": "animal",
+        "support": "<p>Your drake snorts fire in your foes' faces. Until the start of your next turn, each time you Strike while riding the drake and hit a creature in the drake's reach, the creature takes 1d4 fire damage from the drake. If your drake is nimble or savage, the fire damage increases to 2d4.</p>",
+        "advancedManeuver": "Compendium.pf2e.companion-types.Item.ro0MQdbFJEuSMxz5",
+        "resistances": [],
+        "imitator": false,
+        "mount": true,
+        "rarity": "uncommon"
+    },
+    "type": "companionType"
+}

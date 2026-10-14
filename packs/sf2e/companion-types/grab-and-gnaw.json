@@ -1,0 +1,29 @@
+{
+    "_id": "7AJUXbW2VjJdRTKl",
+    "img": "systems/sf2e/icons/actions/TwoActions.webp",
+    "name": "Grab and Gnaw",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 2
+        },
+        "category": "offensive",
+        "description": {
+            "value": "<p>The khefak makes a claw Strike. If the Strike hits, the target automatically becomes grabbed by the khefak until the end of your next turn, and one item the target is wielding or wearing takes damage from the khefak's jaws attack.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "action"
+}

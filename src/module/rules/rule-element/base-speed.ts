@@ -23,7 +23,7 @@ function getSpeedFormulaDependsOn(formula: unknown, selfType: MovementType): Mov
  * @category RuleElement
  */
 class BaseSpeedRuleElement extends RuleElement<BaseSpeedRuleSchema> {
-    protected static override validActorTypes: ActorType[] = ["character", "familiar", "npc"];
+    protected static override validActorTypes: ActorType[] = ["character", "companion", "familiar", "npc"];
 
     static override autogenForms = true;
 

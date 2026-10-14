@@ -1,0 +1,36 @@
+{
+    "_id": "2rwD71HtNJhe1dYg",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Grounded",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion loses its weakness to electricity.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "Weakness",
+                "mode": "remove",
+                "type": ["electricity"],
+                "value": 0
+            }
+        ],
+        "slug": "grounded",
+        "traits": {
+            "otherTags": ["commercial"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

@@ -1,0 +1,29 @@
+{
+    "_id": "yryVPP25XcJ971kp",
+    "img": "systems/pf2e/icons/actions/TwoActions.webp",
+    "name": "Gallop",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 2
+        },
+        "category": "interaction",
+        "description": {
+            "value": "<p>The horse Strides twice at a +10-foot circumstance bonus to Speed.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+            "rarity": "common",
+            "value": ["move"]
+        }
+    },
+    "type": "action"
+}

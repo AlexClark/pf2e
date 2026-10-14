@@ -41,7 +41,12 @@ class ClientDatabaseBackendPF2e extends foundry.data.ClientDatabaseBackend {
                         data._stats.compendiumSource = `Compendium.${operation.pack}.${type}.${data._id}`;
                     }
                     const document = documentClass.fromSource(data, { pack: operation.pack }) as ActorPF2e | ItemPF2e;
-                    const migrations = MigrationList.constructFromVersion(document.schemaVersion);
+                    // Null means this schema saved no version. The ready hook stamps it. Replaying older
+                    // migrations here rewrites embedded items that are already current.
+                    const migrations =
+                        document.schemaVersion === null
+                            ? []
+                            : MigrationList.constructFromVersion(document.schemaVersion);
                     if (migrations.length > 0) {
                         try {
                             await MigrationRunner.ensureSchemaVersion(document, migrations);

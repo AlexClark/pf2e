@@ -579,5 +579,28 @@ aside {
                 box-shadow: inset 0 0 0 1px rgba(white, 0.5);
             }
         }
+
+        ol.companions {
+            gap: var(--space-2);
+
+            li {
+                gap: var(--space-4);
+
+                input[type="checkbox"] {
+                    flex: 0 0 auto;
+                    width: auto;
+                }
+
+                a {
+                    flex: 1;
+                    min-width: 0;
+                }
+
+                .profile {
+                    flex: 0 0 auto;
+                    font-weight: 500;
+                }
+            }
+        }
     }
 }

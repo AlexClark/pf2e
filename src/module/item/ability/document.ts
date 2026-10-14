@@ -54,8 +54,12 @@ class AbilityItemPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> exten
         if (this.suppressed) return;
 
         const actor = this.actor;
-        if (actor?.isOfType("familiar") && this.system.category === "familiar") {
-            const slug = this.slug ?? sluggify(this.name);
+        const category = this.system.category;
+        const slug = this.slug ?? sluggify(this.name);
+        if (actor?.isOfType("familiar") && category === "familiar") {
+            actor.rollOptions.all[`self:ability:${slug}`] = true;
+        }
+        if (actor?.isOfType("companion") && category === "customization") {
             actor.rollOptions.all[`self:ability:${slug}`] = true;
         }
     }

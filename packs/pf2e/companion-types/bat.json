@@ -1,0 +1,85 @@
+{
+    "_id": "0eiRp4YtzmLYUWER",
+    "img": "systems/pf2e/icons/default-icons/companionType.svg",
+    "name": "Bat",
+    "system": {
+        "description": {
+            "value": "<p>Your companion is a bat.</p>\n<p><strong>Support Benefit</strong> Your bat flaps around your foes' arms and faces, getting in the way of their attacks. Until the start of your next turn, creatures in your bat's reach that you damage with Strikes take a \u20131 circumstance penalty to their attack rolls.</p>\n<p><strong>Advanced Maneuver</strong> @UUID[Compendium.pf2e.companion-types.Item.Wing Thrash]{Wing Thrash}</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": "bat",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "animal",
+        "kind": "type",
+        "sizes": ["sm"],
+        "abilities": {
+            "str": 2,
+            "dex": 3,
+            "con": 2,
+            "int": -4,
+            "wis": 1,
+            "cha": 0
+        },
+        "ancestryHp": 6,
+        "attacks": [
+            {
+                "slug": "jaws",
+                "name": "jaws",
+                "damage": {
+                    "dice": 1,
+                    "die": "d6",
+                    "type": "piercing"
+                },
+                "traits": ["finesse"],
+                "range": null
+            },
+            {
+                "slug": "wing",
+                "name": "wing",
+                "damage": {
+                    "dice": 1,
+                    "die": "d4",
+                    "type": "slashing"
+                },
+                "traits": ["agile", "finesse"],
+                "range": null
+            }
+        ],
+        "skills": ["stealth"],
+        "senses": [
+            {
+                "type": "echolocation",
+                "acuity": "precise",
+                "range": 20
+            },
+            {
+                "type": "low-light-vision",
+                "acuity": "precise",
+                "range": 0
+            }
+        ],
+        "speeds": {
+            "land": 15,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 30,
+            "swim": 0
+        },
+        "creatureTraits": [],
+        "replacesCreatureTrait": null,
+        "support": "<p>Your bat flaps around your foes' arms and faces, getting in the way of their attacks. Until the start of your next turn, creatures in your bat's reach that you damage with Strikes take a \u20131 circumstance penalty to their attack rolls.</p>",
+        "advancedManeuver": "Compendium.pf2e.companion-types.Item.T4VC82zl0BZNp4xF",
+        "resistances": [],
+        "imitator": false,
+        "mount": false,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

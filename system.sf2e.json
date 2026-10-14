@@ -48,6 +48,7 @@
                     "details.description"
                 ]
             },
+            "companion": {},
             "familiar": {},
             "hazard": {
                 "htmlFields": [
@@ -71,6 +72,7 @@
             }
         },
         "Item": {
+            "companionType": {},
             "melee": {
                 "htmlFields": [
                     "description.value",
@@ -322,6 +324,32 @@
             "name": "feats",
             "label": "Feats",
             "path": "packs/feats",
+            "type": "Item",
+            "banner": "systems/sf2e/assets/compendium-banner/green.webp",
+            "system": "sf2e",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            },
+            "flags": {}
+        },
+        {
+            "name": "companion-types",
+            "label": "Companion Types",
+            "path": "packs/companion-types",
+            "type": "Item",
+            "banner": "systems/sf2e/assets/compendium-banner/green.webp",
+            "system": "sf2e",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            },
+            "flags": {}
+        },
+        {
+            "name": "companion-customizations",
+            "label": "Companion Customizations",
+            "path": "packs/companion-customizations",
             "type": "Item",
             "banner": "systems/sf2e/assets/compendium-banner/green.webp",
             "system": "sf2e",

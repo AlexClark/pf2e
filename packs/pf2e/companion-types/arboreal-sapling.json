@@ -1,0 +1,69 @@
+{
+    "_id": "XgOrfUMI6bRb6AcV",
+    "img": "systems/pf2e/icons/default-icons/companionType.svg",
+    "name": "Arboreal Sapling",
+    "system": {
+        "description": {
+            "value": "<p>Your companion is an arboreal sapling.</p>\n<p><strong>Support Benefit</strong> Your arboreal sapling plants roots around your foe, impeding its movement. Until the start of your next turn, if you hit and deal damage to a creature in your arboreal sapling's reach, the first square the creature moves into after taking that damage is difficult terrain.</p>\n<p><strong>Advanced Maneuver</strong> @UUID[Compendium.pf2e.companion-types.Item.Throw Rock]{Throw Rock}</p>\n<p><strong>Special</strong> The arboreal sapling has the plant trait instead of the animal trait. Access: member of the leaf order.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": "arboreal-sapling",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "animal",
+        "kind": "type",
+        "sizes": ["sm"],
+        "abilities": {
+            "str": 3,
+            "dex": 1,
+            "con": 2,
+            "int": -4,
+            "wis": 2,
+            "cha": 0
+        },
+        "ancestryHp": 8,
+        "attacks": [
+            {
+                "slug": "branch",
+                "name": "branch",
+                "damage": {
+                    "dice": 1,
+                    "die": "d8",
+                    "type": "bludgeoning"
+                },
+                "traits": [],
+                "range": null
+            }
+        ],
+        "skills": ["stealth"],
+        "senses": [
+            {
+                "type": "low-light-vision",
+                "acuity": "precise",
+                "range": 0
+            }
+        ],
+        "speeds": {
+            "land": 25,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 0
+        },
+        "creatureTraits": ["plant"],
+        "replacesCreatureTrait": "animal",
+        "support": "<p>Your arboreal sapling plants roots around your foe, impeding its movement. Until the start of your next turn, if you hit and deal damage to a creature in your arboreal sapling's reach, the first square the creature moves into after taking that damage is difficult terrain.</p>",
+        "advancedManeuver": "Compendium.pf2e.companion-types.Item.fG9yX5zU2EoUQn8Q",
+        "resistances": [],
+        "imitator": false,
+        "mount": false,
+        "rarity": "uncommon"
+    },
+    "type": "companionType"
+}

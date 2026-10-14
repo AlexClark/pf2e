@@ -1,0 +1,73 @@
+{
+    "_id": "4xgmUrk9WqeWJfeC",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Resistant Panels",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Choose acid, bludgeoning, cold, fire, piercing, slashing, or sonic. Your robot companion gains resistance equal to half its level (rounded up) against that damage type. You can select this customization more than once.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "Acid",
+                        "value": "acid"
+                    },
+                    {
+                        "label": "Bludgeoning",
+                        "value": "bludgeoning"
+                    },
+                    {
+                        "label": "Cold",
+                        "value": "cold"
+                    },
+                    {
+                        "label": "Fire",
+                        "value": "fire"
+                    },
+                    {
+                        "label": "Piercing",
+                        "value": "piercing"
+                    },
+                    {
+                        "label": "Slashing",
+                        "value": "slashing"
+                    },
+                    {
+                        "label": "Sonic",
+                        "value": "sonic"
+                    }
+                ],
+                "flag": "type",
+                "key": "ChoiceSet",
+                "prompt": "Select a damage type.",
+                "rollOption": "resistant-panels"
+            },
+            {
+                "key": "Resistance",
+                "predicate": ["parent:resistant-panels:{item|flags.system.rulesSelections.type}"],
+                "type": ["{item|flags.system.rulesSelections.type}"],
+                "value": "ceil(@actor.level / 2)"
+            }
+        ],
+        "slug": "resistant-panels",
+        "traits": {
+            "otherTags": ["advanced"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

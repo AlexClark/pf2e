@@ -15,7 +15,7 @@ import fields = foundry.data.fields;
  * Change a creature's size
  */
 class CreatureSizeRuleElement extends RuleElement<CreatureSizeRuleSchema> {
-    protected static override validActorTypes: ActorType[] = ["character", "npc", "familiar"];
+    protected static override validActorTypes: ActorType[] = ["character", "companion", "npc", "familiar"];
 
     static override defineSchema(): CreatureSizeRuleSchema {
         return {

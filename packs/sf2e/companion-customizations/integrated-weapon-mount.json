@@ -1,0 +1,29 @@
+{
+    "_id": "Cf1D7w6S8ukcPHLt",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Integrated Weapon Mount",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion has one weapon mount. You can install or uninstall a weapon as a 10-minute activity with the manipulate trait. A one-handed weapon requires one mount, and a two-handed weapon requires two. An installed weapon is wielded, can't be Disarmed, and can be reloaded with an Interact that loses the manipulate trait and doesn't require hands. You can take this customization repeatedly.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "integrated-weapon-mount",
+        "traits": {
+            "otherTags": ["commercial"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

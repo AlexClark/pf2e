@@ -1,0 +1,29 @@
+{
+    "_id": "B5hFGq6HmuPf75pu",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Hardened Chassis",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion's Hit Points increase by 2 per level.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "hardened-chassis",
+        "traits": {
+            "otherTags": ["tactical"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

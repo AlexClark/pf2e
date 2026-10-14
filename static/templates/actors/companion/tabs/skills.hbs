@@ -1,0 +1,25 @@
+<section class="tab skills" data-group="primary" data-tab="skills">
+    <div class="section-container skills">
+        <div class="section-header">
+            <h4>{{localize "PF2E.CoreSkillsHeader"}}</h4>
+        </div>
+        <div class="section-body">
+            {{#if skills.length}}
+                <ul class="skill-list">
+                    {{#each skills as |skill|}}
+                        <li data-statistic="{{skill.slug}}">
+                            <a class="d20" data-action="roll-check">
+                                {{> (resolvePath "templates/actors/character/icons/d20.hbs")}}
+                            </a>
+                            <a class="modifier" data-action="roll-check" data-tooltip="{{skill.breakdown}}">{{numberFormat skill.value decimals=0 sign=true}}</a>
+                            <div class="name">{{skill.label}}</div>
+                            <span class="pf-rank" data-rank="{{skill.rank}}">{{lookup @root.numberToRank skill.rank}}</span>
+                        </li>
+                    {{/each}}
+                </ul>
+            {{else}}
+                <p class="empty-note">{{localize "PF2E.Companion.NoSkills"}}</p>
+            {{/if}}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,44 @@
+{
+    "_id": "ghjRnzaS3nFdR5Aa",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Linguistic Upload",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion can speak two additional languages. It must have the artificial personality or sapient customization to select this customization.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": "languages",
+                "flag": "first",
+                "key": "ChoiceSet",
+                "prompt": "Select the first language."
+            },
+            {
+                "adjustName": false,
+                "choices": "languages",
+                "flag": "second",
+                "key": "ChoiceSet",
+                "prompt": "Select the second language."
+            }
+        ],
+        "slug": "linguistic-upload",
+        "traits": {
+            "otherTags": ["commercial"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

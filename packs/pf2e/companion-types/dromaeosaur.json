@@ -1,0 +1,85 @@
+{
+    "_id": "Xc1EpjRvb7rHP0Bk",
+    "img": "systems/pf2e/icons/default-icons/companionType.svg",
+    "name": "Dromaeosaur",
+    "system": {
+        "description": {
+            "value": "<p>Your companion is a dromaeosaur.</p>\n<p><strong>Support Benefit</strong> Your raptor constantly darts into flanking position. Until the start of your next turn, it counts as being in its space or an empty space of your choice within 10 feet when determining whether you and your companion are flanking; you can choose a different space for each of your attacks.</p>\n<p><strong>Advanced Maneuver</strong> @UUID[Compendium.pf2e.companion-types.Item.Darting Attack]{Darting Attack}</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": "dromaeosaur",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "animal",
+        "kind": "type",
+        "sizes": ["sm"],
+        "abilities": {
+            "str": 2,
+            "dex": 3,
+            "con": 2,
+            "int": -4,
+            "wis": 1,
+            "cha": 0
+        },
+        "ancestryHp": 6,
+        "attacks": [
+            {
+                "slug": "jaws",
+                "name": "jaws",
+                "damage": {
+                    "dice": 1,
+                    "die": "d8",
+                    "type": "piercing"
+                },
+                "traits": ["finesse"],
+                "range": null
+            },
+            {
+                "slug": "talon",
+                "name": "talon",
+                "damage": {
+                    "dice": 1,
+                    "die": "d6",
+                    "type": "slashing"
+                },
+                "traits": ["agile", "finesse"],
+                "range": null
+            }
+        ],
+        "skills": ["stealth"],
+        "senses": [
+            {
+                "type": "low-light-vision",
+                "acuity": "precise",
+                "range": 0
+            },
+            {
+                "type": "scent",
+                "acuity": "imprecise",
+                "range": 30
+            }
+        ],
+        "speeds": {
+            "land": 50,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 0
+        },
+        "creatureTraits": [],
+        "replacesCreatureTrait": null,
+        "support": "<p>Your raptor constantly darts into flanking position. Until the start of your next turn, it counts as being in its space or an empty space of your choice within 10 feet when determining whether you and your companion are flanking; you can choose a different space for each of your attacks.</p>",
+        "advancedManeuver": "Compendium.pf2e.companion-types.Item.lb16mk0HfLm6C12d",
+        "resistances": [],
+        "imitator": false,
+        "mount": false,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

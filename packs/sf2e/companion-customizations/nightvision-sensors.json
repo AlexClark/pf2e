@@ -1,0 +1,34 @@
+{
+    "_id": "s0d7z6NRTNLL6tPM",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Nightvision Sensors",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion gains darkvision.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "Sense",
+                "selector": "darkvision"
+            }
+        ],
+        "slug": "nightvision-sensors",
+        "traits": {
+            "otherTags": ["commercial"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

@@ -15,7 +15,7 @@ import fields = foundry.data.fields;
  * @category RuleElement
  */
 class SenseRuleElement extends RuleElement<SenseRuleSchema> {
-    protected static override validActorTypes: ActorType[] = ["character", "familiar", "npc"];
+    protected static override validActorTypes: ActorType[] = ["character", "companion", "familiar", "npc"];
 
     static override defineSchema(): SenseRuleSchema {
         return {

@@ -4,9 +4,19 @@ import * as R from "remeda";
 
 const ATTRIBUTE_ABBREVIATIONS = new Set(["str", "dex", "con", "int", "wis", "cha"] as const);
 
-const CREATURE_ACTOR_TYPES = ["character", "npc", "familiar"] as const;
+const CREATURE_ACTOR_TYPES = ["character", "npc", "familiar", "companion"] as const;
 
-const ACTOR_TYPES = ["army", "character", "familiar", "hazard", "loot", "npc", "party", "vehicle"] as const;
+const ACTOR_TYPES = [
+    "army",
+    "character",
+    "companion",
+    "familiar",
+    "hazard",
+    "loot",
+    "npc",
+    "party",
+    "vehicle",
+] as const;
 
 const SAVE_TYPES = ["fortitude", "reflex", "will"] as const;
 

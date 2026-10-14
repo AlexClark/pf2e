@@ -1,0 +1,29 @@
+{
+    "_id": "iS5SmrbocYU4SYif",
+    "img": "systems/pf2e/icons/actions/TwoActions.webp",
+    "name": "Flyby Attack",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 2
+        },
+        "category": "offensive",
+        "description": {
+            "value": "<p>The bird Flies and makes a talon Strike at any point along the way.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "action"
+}

@@ -22,6 +22,7 @@ type ActorType = (typeof ACTOR_TYPES)[number];
 interface ActorInstances<TParent extends TokenDocumentPF2e | null> {
     army: ActorInstance.ArmyPF2e<TParent>;
     character: ActorInstance.CharacterPF2e<TParent>;
+    companion: ActorInstance.CompanionPF2e<TParent>;
     creature: ActorInstance.CreaturePF2e<TParent>;
     familiar: ActorInstance.FamiliarPF2e<TParent>;
     hazard: ActorInstance.HazardPF2e<TParent>;

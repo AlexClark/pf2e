@@ -1,0 +1,166 @@
+<header>
+    <h2>{{localize "PF2E.HitPointsHeader"}}</h2>
+    {{#if data.attributes.hp.modifiers}}
+        <button type="button" class="hover" data-tooltip-content="#{{options.id}}-hp-modifiers">{{localize "PF2E.ModifiersTitle"}}</button>
+    {{/if}}
+</header>
+<div class="hitpoints">
+    <div class="hp-big">
+        <div class="container temp-hp">
+            <label for="{{options.id}}-hp-temp" class="sidebar_label">{{localize "PF2E.TempHitPointsShortLabel"}}</label>
+            <div class="data-value">
+                <input name="system.attributes.hp.temp" id="{{options.id}}-hp-temp" type="text" value="{{data.attributes.hp.temp}}" placeholder="0" data-dtype="Number" data-allow-delta data-min="0" />
+            </div>
+        </div>
+        <div class="container current-hp">
+            <label for="{{options.id}}-hp" class="sidebar_label">{{localize "PF2E.CurrentHitPointsShortLabel"}}</label>
+            <div class="data-value">
+                <input name="system.attributes.hp.value" id="{{options.id}}-hp" type="text" value="{{data.attributes.hp.value}}" placeholder="0" data-dtype="Number" data-allow-delta data-min="0" />
+            </div>
+        </div>
+        <div class="container max-hp">
+            <span class="sidebar_label">{{localize "PF2E.MaxHitPointsShortLabel"}}</span>
+            <div class="data-value">
+                <h2>{{#if data.attributes.hp.max}}{{data.attributes.hp.max}}{{else}}—{{/if}}</h2>
+            </div>
+        </div>
+    </div>
+    {{#if (eq actor.system.profile "animal")}}
+        <div class="hp-small">
+            <a class="roll-icon{{#unless data.attributes.dying.value}} disabled{{/unless}}" data-action="recovery-check" data-tooltip="PF2E.Check.Specific.Recovery">
+                {{> (resolvePath "templates/actors/character/icons/d20.hbs")}}
+            </a>
+            <a class="condition-pips" data-action="adjust-condition-value" data-condition="dying" data-tooltip="PF2E.condition.dying.summary">
+                <span class="sidebar_label">{{localize "PF2E.condition.dying.name"}}</span>
+                {{> (resolvePath "templates/actors/partials/dying-pips.hbs")}}
+            </a>
+        </div>
+    {{/if}}
+</div>
+{{#with data.attributes.hp}}
+    {{> (resolvePath "templates/actors/partials/modifiers-tooltip.hbs") title="PF2E.HitPointsHeader"}}
+{{/with}}
+
+{{#if (eq actor.system.profile "robot")}}
+    <header>
+        <h2>{{localize "PF2E.Companion.ProfileRobot"}}</h2>
+    </header>
+    <div class="robot-status">
+        {{#if actor.system.shutdown}}<span class="badge">{{localize "PF2E.Companion.Shutdown"}}</span>{{/if}}
+        {{#if actor.system.destroyed}}<span class="badge">{{localize "PF2E.Companion.Destroyed"}}</span>{{/if}}
+        <div class="status-buttons">
+            <button type="button" data-action="reboot" {{#unless actor.system.shutdown}}disabled{{/unless}}>{{localize "PF2E.Companion.Reboot"}}</button>
+            <button type="button" data-action="repair-full" {{#if actor.system.destroyed}}disabled{{/if}}>{{localize "PF2E.Companion.Repair"}}</button>
+        </div>
+    </div>
+{{/if}}
+
+<header>
+    <h2>{{localize "PF2E.ArmorClassLabel"}}</h2>
+    <button type="button" class="hover" data-tooltip-content="#{{options.id}}-ac-modifiers">{{localize "PF2E.ModifiersTitle"}}</button>
+</header>
+<div class="armor-class">
+    <div class="ac">
+        <div class="data-value">
+            <h2>{{#if data.attributes.ac.value}}{{data.attributes.ac.value}}{{else}}—{{/if}}</h2>
+        </div>
+        <span class="sidebar_label">{{localize "PF2E.ArmorClassShortLabel"}}</span>
+    </div>
+</div>
+{{#with data.attributes.ac}}
+    {{> (resolvePath "templates/actors/partials/modifiers-tooltip.hbs") title="PF2E.ArmorClassLabel"}}
+{{/with}}
+{{#if companionDC}}
+    <p class="companion-dc">{{localize "PF2E.Companion.ClassDC" dc=companionDC}}</p>
+{{/if}}
+
+<header>
+    <h2>{{localize "PF2E.PerceptionHeader"}}</h2>
+</header>
+<section class="perception">
+    <div class="roll-data">
+        <a class="roll-icon" data-action="roll-check" data-statistic="perception" data-tooltip="PF2E.Check.Specific.Perception.Label">
+            {{> (resolvePath "templates/actors/character/icons/d20.hbs")}}
+        </a>
+        <a class="roll-icon" data-action="roll-check" data-statistic="perception" data-secret data-tooltip="PF2E.Check.Specific.Perception.Secret"><i class="fa-solid fa-eye-slash"></i></a>
+        <a class="modifier hover" data-tooltip-content="#{{options.id}}-perception-modifiers">
+            {{numberFormat data.perception.value decimals=0 sign=true}}
+        </a>
+        <span class="pf-rank" data-rank="{{data.perception.rank}}">{{lookup @root.numberToRank data.perception.rank}}</span>
+    </div>
+    {{#if data.perception.senses}}
+        <ol class="tags senses">
+            {{#each data.perception.senses as |sense|}}
+                {{#if sense.label}}
+                    <li class="tag tag_secondary">{{sense.label}}</li>
+                {{/if}}
+            {{/each}}
+        </ol>
+    {{/if}}
+</section>
+{{#with data.perception}}
+    {{> (resolvePath "templates/actors/partials/modifiers-tooltip.hbs") title="PF2E.PerceptionHeader"}}
+{{/with}}
+
+<header>
+    <h2>{{localize "PF2E.SavesHeader"}}</h2>
+</header>
+<ul class="saves">
+    {{#each data.saves as |save slug|}}
+        <li class="roll-data" data-save="{{slug}}">
+            <h2 class="sidebar_label">{{localize save.label}}</h2>
+            <span class="pf-rank" data-rank="{{save.rank}}">{{lookup @root.numberToRank save.rank}}</span>
+            <div class="save-roll">
+                <a class="roll-icon" data-action="roll-check" data-statistic="{{save.slug}}">
+                    {{> (resolvePath "templates/actors/character/icons/d20.hbs")}}
+                </a>
+                <a class="modifier hover" data-tooltip-content="#{{@root.options.id}}-{{save.slug}}-modifiers">{{numberFormat save.totalModifier decimals=0 sign=true}}</a>
+            </div>
+            {{#with save}}
+                {{> (resolvePath "templates/actors/partials/modifiers-tooltip.hbs") title=label}}
+            {{/with}}
+        </li>
+    {{/each}}
+</ul>
+
+<header>
+    <h2>{{localize "PF2E.ImmunitiesLabel"}}</h2>
+    {{#if editable}}
+        <button type="button" data-action="edit-immunities">
+            <i class="fa-solid fa-pen-to-square"></i> {{localize "PF2E.Edit"}}
+        </button>
+    {{/if}}
+</header>
+<ol class="immunities tags">
+    {{#each data.attributes.immunities as |immunity|}}
+        <li class="tag tag_secondary" data-immunity="{{immunity.type}}">{{immunity.label}}</li>
+    {{/each}}
+</ol>
+
+<header>
+    <h2>{{localize "PF2E.WeaknessesLabel"}}</h2>
+    {{#if editable}}
+        <button type="button" data-action="edit-weaknesses">
+            <i class="fa-solid fa-pen-to-square"></i> {{localize "PF2E.Edit"}}
+        </button>
+    {{/if}}
+</header>
+<ol class="weaknesses tags">
+    {{#each data.attributes.weaknesses as |weakness|}}
+        <li class="tag tag_secondary" data-weakness="{{weakness.type}}">{{weakness.label}}</li>
+    {{/each}}
+</ol>
+
+<header>
+    <h2>{{localize "PF2E.ResistancesLabel"}}</h2>
+    {{#if editable}}
+        <button type="button" data-action="edit-resistances">
+            <i class="fa-solid fa-pen-to-square"></i> {{localize "PF2E.Edit"}}
+        </button>
+    {{/if}}
+</header>
+<ol class="resistances tags">
+    {{#each data.attributes.resistances as |resistance|}}
+        <li class="tag tag_secondary" data-resistance="{{resistance.type}}">{{resistance.label}}</li>
+    {{/each}}
+</ol>

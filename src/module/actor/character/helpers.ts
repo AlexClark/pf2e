@@ -309,9 +309,9 @@ function getWeaponAuxiliaryActions(weapon: WeaponPF2e<CharacterPF2e>): WeaponAux
  * Returns data for usable ammo if the weapon requires ammo.
  * Built in ammo will require special handling, and isn't supported yet.
  */
-function getAttackAmmo(
-    weapon: WeaponPF2e<CharacterPF2e>,
-    { ammos }: { ammos: (AmmoPF2e<CharacterPF2e> | WeaponPF2e<CharacterPF2e>)[] },
+function getAttackAmmo<TParent extends ActorPF2e | null>(
+    weapon: WeaponPF2e<TParent>,
+    { ammos }: { ammos: (AmmoPF2e<TParent> | WeaponPF2e<TParent>)[] },
 ): AttackAmmunitionData | null {
     if (!weapon.system.expend) return null;
 

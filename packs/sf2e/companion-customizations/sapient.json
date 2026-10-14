@@ -1,0 +1,35 @@
+{
+    "_id": "40FgLvbtcaJb6C5Z",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Sapient",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion is no longer immune to mental damage. Its Intelligence modifier increases to at least +0, and it can attempt actions with the mental trait. It can speak Common. You must still Command it in battle for it to act.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "Immunity",
+                "mode": "remove",
+                "type": ["mental"]
+            }
+        ],
+        "slug": "sapient",
+        "traits": {
+            "otherTags": ["advanced"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

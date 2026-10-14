@@ -1,0 +1,29 @@
+{
+    "_id": "57xZuGXATyvflBH3",
+    "img": "systems/pf2e/icons/actions/OneAction.webp",
+    "name": "Badger Rage",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 1
+        },
+        "category": "offensive",
+        "description": {
+            "value": "<p><strong>Requirements</strong> The badger isn't fatigued or raging.</p>\n<p>The badger enters a state of pure rage that lasts for 1 minute, until there are no enemies it can perceive, or until it falls unconscious, whichever comes first. It can't voluntarily stop raging. While raging, it deals 4 additional damage with its jaws Strike and 2 additional damage with its claw Strike, takes a \u20131 penalty to AC, and can't use actions that have the concentrate trait. The animal companion can Seek even while raging. After it has stopped raging, it can't use Badger Rage again for 1 minute.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+            "rarity": "common",
+            "value": ["concentrate", "emotion", "mental"]
+        }
+    },
+    "type": "action"
+}

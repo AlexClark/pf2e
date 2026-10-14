@@ -1,0 +1,35 @@
+{
+    "_id": "bzudPKGAh2gYPLD6",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Burrower",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion gains a burrow Speed of 20 feet.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "BaseSpeed",
+                "selector": "burrow",
+                "value": 20
+            }
+        ],
+        "slug": "burrower",
+        "traits": {
+            "otherTags": ["tactical"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

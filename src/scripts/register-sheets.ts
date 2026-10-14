@@ -1,5 +1,6 @@
 import { ArmySheetPF2e } from "@actor/army/sheet.ts";
 import { CharacterSheetPF2e } from "@actor/character/sheet.ts";
+import { CompanionSheetPF2e } from "@actor/companion/sheet.ts";
 import { FamiliarSheetPF2e } from "@actor/familiar/sheet.ts";
 import { HazardSheetPF2e } from "@actor/hazard/sheet.ts";
 import { LootSheetPF2e } from "@actor/loot/sheet.ts";
@@ -84,6 +85,13 @@ export function registerSheets(): void {
         makeDefault: true,
     });
 
+    // Companion
+    fd.collections.Actors.registerSheet("pf2e", CompanionSheetPF2e, {
+        types: ["companion"],
+        label: _loc(sheetLabel, { type: localizeType("companion") }),
+        makeDefault: true,
+    });
+
     // Familiar
     fd.collections.Actors.registerSheet("pf2e", FamiliarSheetPF2e, {
         types: ["familiar"],
@@ -115,7 +123,7 @@ export function registerSheets(): void {
     // ITEM
     fd.collections.Items.unregisterSheet("core", appv1.sheets.ItemSheet);
 
-    const itemTypes = ["lore", "spellcastingEntry"];
+    const itemTypes = ["companionType", "lore", "spellcastingEntry"];
     for (const itemType of itemTypes) {
         fd.collections.Items.registerSheet("pf2e", ItemSheetPF2e, {
             types: [itemType],

@@ -1,0 +1,29 @@
+{
+    "_id": "H1IggMdp0aP6hnZK",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Cameras",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion is equipped with cameras, enabling you to see what it sees using your comm unit or another similar device.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "cameras",
+        "traits": {
+            "otherTags": ["commercial"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

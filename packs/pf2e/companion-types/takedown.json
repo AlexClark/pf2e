@@ -1,0 +1,29 @@
+{
+    "_id": "c3DS7o6lqiAy2stb",
+    "img": "systems/pf2e/icons/actions/OneAction.webp",
+    "name": "Takedown",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 1
+        },
+        "category": "offensive",
+        "description": {
+            "value": "<p><strong>Requirements</strong> The animal companion's last action was a successful jaws Strike.</p>\n<p>The wolf automatically knocks the target of its jaws Strike prone.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "action"
+}

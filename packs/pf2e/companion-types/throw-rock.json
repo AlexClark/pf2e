@@ -1,0 +1,29 @@
+{
+    "_id": "fG9yX5zU2EoUQn8Q",
+    "img": "systems/pf2e/icons/actions/OneAction.webp",
+    "name": "Throw Rock",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 1
+        },
+        "category": "offensive",
+        "description": {
+            "value": "<p>The arboreal sapling Interacts to pick up a rock within reach or retrieve a stowed rock, then throws it with a ranged rock Strike that deals 2d6 bludgeoning damage (3d6 if the sapling is specialized) with a range increment of 30 feet.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+            "rarity": "common",
+            "value": []
+        }
+    },
+    "type": "action"
+}

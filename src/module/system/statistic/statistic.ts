@@ -67,7 +67,7 @@ class Statistic<TActor extends ActorPF2e = ActorPF2e> extends BaseStatistic<TAct
         // Add some base modifiers depending on data values
         // If this is a character with an attribute, add/set the attribute modifier
         const attributeModifier =
-            actor.isOfType("character") && data.attribute
+            actor.isOfType("character", "companion") && data.attribute
                 ? (data.modifiers.find((m) => m.type === "ability" && m.ability === data.attribute) ??
                   createAttributeModifier({ actor, attribute: data.attribute, domains }))
                 : null;
@@ -75,7 +75,7 @@ class Statistic<TActor extends ActorPF2e = ActorPF2e> extends BaseStatistic<TAct
 
         // If this is a character with a proficiency, add a proficiency modifier
         const proficiencyModifier =
-            actor.isOfType("character") && typeof data.rank === "number"
+            actor.isOfType("character", "companion") && typeof data.rank === "number"
                 ? (data.modifiers.find((m) => m.type === "proficiency") ??
                   createProficiencyModifier({ actor, rank: data.rank, domains }))
                 : null;

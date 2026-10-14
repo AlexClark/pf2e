@@ -1,0 +1,89 @@
+{
+    "_id": "M0p5lBjMFhFdHDfJ",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "High Speed",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion increases one of its Speeds to 40 feet.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "PF2E.Actor.Speed.Type.Land",
+                        "value": "land"
+                    },
+                    {
+                        "label": "PF2E.Actor.Speed.Type.Burrow",
+                        "value": "burrow"
+                    },
+                    {
+                        "label": "PF2E.Actor.Speed.Type.Climb",
+                        "value": "climb"
+                    },
+                    {
+                        "label": "PF2E.Actor.Speed.Type.Fly",
+                        "value": "fly"
+                    },
+                    {
+                        "label": "PF2E.Actor.Speed.Type.Swim",
+                        "value": "swim"
+                    }
+                ],
+                "flag": "speed",
+                "key": "ChoiceSet",
+                "prompt": "Select a Speed.",
+                "rollOption": "high-speed"
+            },
+            {
+                "key": "BaseSpeed",
+                "selector": "land",
+                "value": 40,
+                "predicate": ["parent:high-speed:land"]
+            },
+            {
+                "key": "BaseSpeed",
+                "selector": "burrow",
+                "value": 40,
+                "predicate": ["parent:high-speed:burrow"]
+            },
+            {
+                "key": "BaseSpeed",
+                "selector": "climb",
+                "value": 40,
+                "predicate": ["parent:high-speed:climb"]
+            },
+            {
+                "key": "BaseSpeed",
+                "selector": "fly",
+                "value": 40,
+                "predicate": ["parent:high-speed:fly"]
+            },
+            {
+                "key": "BaseSpeed",
+                "selector": "swim",
+                "value": 40,
+                "predicate": ["parent:high-speed:swim"]
+            }
+        ],
+        "slug": "high-speed",
+        "traits": {
+            "otherTags": ["tactical"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

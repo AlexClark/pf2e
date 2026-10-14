@@ -1,0 +1,37 @@
+{
+    "_id": "uX6z2LreYVJl2DKG",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Assistant",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Select one skill both you and your robot companion are trained in. If your robot companion is within your reach, you gain a +1 circumstance bonus to checks with that skill.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": "skills",
+                "flag": "skill",
+                "key": "ChoiceSet",
+                "prompt": "Select a skill you are both trained in."
+            }
+        ],
+        "slug": "assistant",
+        "traits": {
+            "otherTags": ["tactical"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

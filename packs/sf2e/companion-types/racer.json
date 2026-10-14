@@ -1,0 +1,51 @@
+{
+    "_id": "kYj5StdD7L5IVCv4",
+    "img": "systems/sf2e/icons/default-icons/companionType.svg",
+    "name": "Racer",
+    "system": {
+        "description": {
+            "value": "<p>Your companion races. It gains a +10-foot status bonus to its land Speed, swim Speed, or fly Speed (your choice). Its proficiency in Fortitude saves increases to legendary, and its Constitution modifier increases by 1.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "racer",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "animal",
+        "kind": "specialization",
+        "sizes": [],
+        "abilities": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+        },
+        "ancestryHp": 0,
+        "attacks": [],
+        "skills": [],
+        "senses": [],
+        "speeds": {
+            "land": 0,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 0
+        },
+        "creatureTraits": [],
+        "replacesCreatureTrait": null,
+        "support": "",
+        "advancedManeuver": "",
+        "resistances": [],
+        "imitator": false,
+        "mount": false,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

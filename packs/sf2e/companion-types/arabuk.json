@@ -1,0 +1,89 @@
+{
+    "_id": "HaxkEaTzxyumHGNh",
+    "img": "systems/sf2e/icons/default-icons/companionType.svg",
+    "name": "Arabuk",
+    "system": {
+        "description": {
+            "value": "<p>Your companion is an arabuk, a carnivorous predator resembling a snow leopard and an elk with crystalline antlers.</p>\n<p><strong>Support Benefit</strong> Your arabuk shakes its head, causing a painful cacophony of sound to issue from its crystalline antlers. Until the start of your next turn, your Strikes that damage a creature within your arabuk's reach make the target off-guard until the end of your next turn.</p>\n<p><strong>Advanced Maneuver</strong> @UUID[Compendium.sf2e.companion-types.Item.Striding Strike]{Striding Strike}</p>\n<p><strong>Special</strong> Snow vision: snow doesn't impair an arabuk's vision, and it ignores concealment from snowfall. It has resistance to cold and sonic equal to half its level (minimum 1).</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "arabuk",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "animal",
+        "kind": "type",
+        "sizes": ["med"],
+        "abilities": {
+            "str": 3,
+            "dex": 1,
+            "con": 2,
+            "int": -4,
+            "wis": 2,
+            "cha": 0
+        },
+        "ancestryHp": 8,
+        "attacks": [
+            {
+                "slug": "jaws",
+                "name": "jaws",
+                "damage": {
+                    "dice": 1,
+                    "die": "d8",
+                    "type": "piercing"
+                },
+                "traits": [],
+                "range": null
+            },
+            {
+                "slug": "antler",
+                "name": "antler",
+                "damage": {
+                    "dice": 1,
+                    "die": "d6",
+                    "type": "bludgeoning"
+                },
+                "traits": [],
+                "range": null
+            }
+        ],
+        "skills": ["stealth"],
+        "senses": [
+            {
+                "type": "darkvision",
+                "acuity": "precise",
+                "range": 0
+            }
+        ],
+        "speeds": {
+            "land": 30,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 0
+        },
+        "creatureTraits": [],
+        "replacesCreatureTrait": null,
+        "support": "<p>Your arabuk shakes its head, causing a painful cacophony of sound to issue from its crystalline antlers. Until the start of your next turn, your Strikes that damage a creature within your arabuk's reach make the target off-guard until the end of your next turn.</p>",
+        "advancedManeuver": "Compendium.sf2e.companion-types.Item.9Qq6Za0ejxIQuCZE",
+        "resistances": [
+            {
+                "type": "cold",
+                "formula": "half-level"
+            },
+            {
+                "type": "sonic",
+                "formula": "half-level"
+            }
+        ],
+        "imitator": false,
+        "mount": false,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

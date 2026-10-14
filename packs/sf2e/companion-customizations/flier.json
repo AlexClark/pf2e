@@ -1,0 +1,35 @@
+{
+    "_id": "18z7vwJgKUIergIZ",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Flier",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion gains a fly Speed of 20 feet.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "BaseSpeed",
+                "selector": "fly",
+                "value": 20
+            }
+        ],
+        "slug": "flier",
+        "traits": {
+            "otherTags": ["commercial"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

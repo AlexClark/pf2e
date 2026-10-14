@@ -1,0 +1,175 @@
+<section class="tab main" data-group="primary" data-tab="main">
+    <div class="profile">
+        <div class="image-container">
+            <img
+                class="actor-image"
+                src="{{actor.img}}"
+                alt="{{actor.name}}"
+                {{#if editable}}data-edit="img"{{/if}}
+            />
+            <a class="hover-icon" data-action="show-image" data-tooltip="SIDEBAR.CharArt"><i class="fa-solid fa-image fa-fw"></i></a>
+        </div>
+        <div class="identity">
+            <label>
+                <span>{{localize "PF2E.Companion.Master"}}</span>
+                <select name="system.master.id">
+                    {{selectOptions masters selected=actor.system.master.id valueAttr="id" labelAttr="name" blank=(localize "PF2E.Companion.SelectMaster")}}
+                </select>
+            </label>
+            <label>
+                <span>{{localize "PF2E.Companion.Profile"}}</span>
+                <select name="system.profile">
+                    {{selectOptions profileOptions selected=actor.system.profile}}
+                </select>
+            </label>
+            <label>
+                <span>{{localize "PF2E.Companion.Type"}}</span>
+                <select data-action="set-type">
+                    <option value="">{{localize "PF2E.Companion.SelectType"}}</option>
+                    {{#each types as |type|}}
+                        {{#if (eq type.system.kind "type")}}
+                            {{#if (eq type.system.profile ../actor.system.profile)}}
+                                <option value="{{type.uuid}}" {{#if (eq type.uuid ../actor.system.typeUuid)}}selected{{/if}}>{{type.name}}</option>
+                            {{/if}}
+                        {{/if}}
+                    {{/each}}
+                </select>
+            </label>
+            <label>
+                <span>
+                    {{localize "PF2E.Companion.Stage"}}
+                    {{#if grantedStage}}<em>{{localize "PF2E.Companion.GrantedValue" value=grantedStage}}</em>{{/if}}
+                </span>
+                <select name="system.stage">
+                    {{selectOptions stages selected=stage valueAttr="value" labelAttr="label"}}
+                </select>
+            </label>
+            <label>
+                <span>
+                    {{localize "PF2E.Companion.Track"}}
+                    {{#if grantedTrack}}<em>{{localize "PF2E.Companion.GrantedValue" value=grantedTrack}}</em>{{/if}}
+                </span>
+                <select name="system.advanced">
+                    {{selectOptions tracks selected=advanced valueAttr="value" labelAttr="label" blank=(localize "PF2E.Companion.TrackUnset")}}
+                </select>
+            </label>
+            {{#if showSize}}
+                <label>
+                    <span>{{localize "PF2E.Size"}}</span>
+                    <select name="system.sizeChoice">
+                        {{selectOptions sizeChoices selected=actor.system.sizeChoice localize=true blank=(localize "PF2E.Companion.SizeDefault")}}
+                    </select>
+                </label>
+            {{/if}}
+            <label class="check">
+                <input type="checkbox" data-action="update-field" data-field="system.active" {{checked actor.system.active}} />
+                <span>{{localize "PF2E.Companion.Active"}}</span>
+            </label>
+            {{#if showDrone}}
+                <label class="check">
+                    <input type="checkbox" data-action="update-field" data-field="system.role" {{checked drone}} />
+                    <span>
+                        {{localize "PF2E.Companion.Drone"}}
+                        {{#if droneGranted}}<em>{{localize "PF2E.Companion.Granted"}}</em>{{/if}}
+                    </span>
+                </label>
+            {{/if}}
+            {{#if showGrow}}
+                <label class="check">
+                    <input type="checkbox" data-action="update-field" data-field="system.grow.mature" {{checked actor.system.grow.mature}} />
+                    <span>{{localize "PF2E.Companion.GrowMature"}}</span>
+                </label>
+                <label class="check">
+                    <input type="checkbox" data-action="update-field" data-field="system.grow.power" {{checked actor.system.grow.power}} />
+                    <span>{{localize "PF2E.Companion.GrowPower"}}</span>
+                </label>
+            {{/if}}
+        </div>
+    </div>
+
+    {{#if showImitator}}
+        <div class="section-container imitator">
+            <div class="section-header">
+                <h4>{{localize "PF2E.Companion.Type"}}</h4>
+            </div>
+            <div class="section-body identity">
+                <label>
+                    <span>{{localize "PF2E.Size"}}</span>
+                    <input name="system.imitator.size" type="text" value="{{actor.system.imitator.size}}" />
+                </label>
+                <label>
+                    <span>{{localize "PF2E.Speed"}}</span>
+                    <input name="system.imitator.speed" type="number" value="{{actor.system.imitator.speed}}" />
+                </label>
+                <label>
+                    <span>{{localize "PF2E.Companion.Attack"}}</span>
+                    <input name="system.imitator.attack" type="text" value="{{actor.system.imitator.attack}}" />
+                </label>
+            </div>
+        </div>
+    {{/if}}
+
+    <div class="section-container languages">
+        <div class="section-header">
+            <h4>{{localize "PF2E.Actor.Creature.Language.Plural"}}</h4>
+            {{#if editable}}
+                <div class="controls">
+                    <button type="button" class="tag-selector" data-tag-selector="languages">
+                        <i class="fa-solid fa-fw fa-edit"></i>{{localize "PF2E.Edit"}}
+                    </button>
+                </div>
+            {{/if}}
+        </div>
+        <div class="section-body">
+            <ul class="comma-separated">
+                {{#each languages as |language|}}
+                    <li>{{language.label}}</li>
+                {{/each}}
+                {{#if data.details.languages.details}}<li>{{data.details.languages.details}}</li>{{/if}}
+            </ul>
+        </div>
+    </div>
+
+    <div class="subsection speeds">
+        <header>
+            <span>{{localize "PF2E.Actor.Speed.Plural"}}</span>
+        </header>
+        <div class="speeds">
+            {{#each speeds as |speed|}}
+                <div class="speed">
+                    <div class="label">{{localize speed.label}}</div>
+                    {{#if speed.value}}
+                        <div class="value" data-tooltip="{{speed.breakdown}}">
+                            {{{icon}}}
+                            <span class="number">{{speed.value}}</span>
+                            <span class="unit">{{localize "PF2E.TravelSpeed.FeetAcronym"}}</span>
+                        </div>
+                    {{else}}
+                        <div class="value empty">&mdash;</div>
+                    {{/if}}
+                </div>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="section-container abilities">
+        <div class="section-header">
+            <h4>{{localize "PF2E.Actor.Creature.AttributeModifiers"}}</h4>
+        </div>
+        <div class="section-body">
+            <div class="subsection attributes">
+                <ul>
+                    {{#each abilityRows as |ability|}}
+                        <li class="attribute" data-attribute="{{ability.key}}">
+                            <h2 class="abbreviation">
+                                <a data-action="roll-attribute">{{localize ability.shortLabel}}</a>
+                            </h2>
+                            <input class="modifier" type="text" inputmode="numeric" name="system.abilityOverrides.{{ability.key}}" value="{{ability.value}}" placeholder="{{ability.bookLabel}}" />
+                            <div class="label">{{localize ability.label}}</div>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

@@ -30,6 +30,7 @@ export { ClassPF2e } from "./class/document.ts";
 // Others
 export { AbilityItemPF2e } from "./ability/document.ts";
 export { CampaignFeaturePF2e } from "./campaign-feature/document.ts";
+export { CompanionTypePF2e } from "./companion-type/document.ts";
 export { DeityPF2e } from "./deity/document.ts";
 export { FeatPF2e } from "./feat/document.ts";
 export { HeritagePF2e } from "./heritage/document.ts";

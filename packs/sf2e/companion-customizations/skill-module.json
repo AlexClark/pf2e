@@ -1,0 +1,37 @@
+{
+    "_id": "BDbld9XwFOTOAigu",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Skill Module",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Choose a skill. Your robot companion becomes trained in that skill. You can select this customization repeatedly, choosing a different skill each time.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": "skills",
+                "flag": "skill",
+                "key": "ChoiceSet",
+                "prompt": "Select a skill."
+            }
+        ],
+        "slug": "skill-module",
+        "traits": {
+            "otherTags": ["commercial"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

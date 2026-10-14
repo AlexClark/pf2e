@@ -93,6 +93,14 @@ async function migrateActorSource(source: PreCreate<ActorSourcePF2e>): Promise<A
         source.system = { _migration: { version: MigrationRunnerBase.LATEST_SCHEMA_VERSION } };
     }
 
+    // Record the current schema version when the source has none yet.
+    if (source.system && source.system._migration?.version == null) {
+        source.system._migration = {
+            version: MigrationRunnerBase.LATEST_SCHEMA_VERSION,
+            previous: source.system._migration?.previous ?? null,
+        };
+    }
+
     const lowestSchemaVersion = Math.min(
         source.system?._migration?.version ?? MigrationRunnerBase.LATEST_SCHEMA_VERSION,
         ...(source.items ?? []).map((i) => i?.system?._migration?.version ?? MigrationRunnerBase.LATEST_SCHEMA_VERSION),
@@ -359,7 +367,7 @@ function getStrikeAttackDomains(
     }
 
     const actor = weapon.actor;
-    if (actor.isOfType("character", "npc")) {
+    if (actor.isOfType("character", "npc", "companion")) {
         const defaultAttributeModifier = createAttributeModifier({
             actor,
             attribute: weapon.defaultAttribute,
@@ -457,7 +465,7 @@ function getAttackDamageDomains(
 
 /** Create a strike or area/auto fire statistic from a melee item: for use by NPCs and Hazards */
 function attackFromMeleeItem(item: MeleePF2e<ActorPF2e>): NPCAttackAction {
-    if (!["hazard", "npc"].includes(item.actor.type)) {
+    if (!item.actor.isOfType("hazard", "npc", "companion")) {
         throw ErrorPF2e("Attempted to create melee-item strike statistic for non-NPC/hazard");
     }
 
@@ -469,7 +477,11 @@ function strikeFromMeleeItem(item: MeleePF2e<ActorPF2e>): NPCStrike {
     const actor = item.actor;
     const meleeOrRanged = item.isMelee ? "melee" : "ranged";
     const baseOptions = [`self:action:slug:strike`, meleeOrRanged, ...item.system.traits.value];
-    const domains = getStrikeAttackDomains(item, actor.isOfType("npc") ? 1 : null, baseOptions);
+    const domains = getStrikeAttackDomains(
+        item,
+        actor.isOfType("companion") ? actor.attackRank : actor.isOfType("npc") ? 1 : null,
+        baseOptions,
+    );
 
     const synthetics = actor.synthetics;
     const modifiers = [
@@ -664,7 +676,7 @@ function strikeFromMeleeItem(item: MeleePF2e<ActorPF2e>): NPCStrike {
         statistic: strike,
         baseOptions,
         actionTraits,
-        proficiencyRank: 1,
+        proficiencyRank: actor.isOfType("companion") ? actor.attackRank : 1,
     });
     strike.damage = damageRoll.damage;
     strike.critical = damageRoll.critical;

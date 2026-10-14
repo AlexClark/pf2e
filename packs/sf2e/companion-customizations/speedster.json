@@ -1,0 +1,36 @@
+{
+    "_id": "9OvuqAOGqBvBOGqM",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Speedster",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion gains a +10-foot status bonus to all its Speeds.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "all-speeds",
+                "type": "status",
+                "value": 10
+            }
+        ],
+        "slug": "speedster",
+        "traits": {
+            "otherTags": ["superior"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

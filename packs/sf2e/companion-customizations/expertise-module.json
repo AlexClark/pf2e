@@ -1,0 +1,37 @@
+{
+    "_id": "VzFuMsUIt8Fb2iqG",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Expertise Module",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Choose a skill your robot companion is trained in, including one granted by a skill module. Your robot companion becomes expert in that skill. You can select this customization repeatedly, choosing a different skill each time.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": "skills",
+                "flag": "skill",
+                "key": "ChoiceSet",
+                "prompt": "Select a trained skill."
+            }
+        ],
+        "slug": "expertise-module",
+        "traits": {
+            "otherTags": ["tactical"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

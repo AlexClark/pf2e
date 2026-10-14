@@ -1,0 +1,74 @@
+{
+    "_id": "lbgCGYuBroExF1Nn",
+    "img": "systems/pf2e/icons/default-icons/companionType.svg",
+    "name": "Wolf",
+    "system": {
+        "description": {
+            "value": "<p>Your companion is a wolf.</p>\n<p><strong>Support Benefit</strong> Your wolf tears tendons with each opening. Until the start of your next turn, your Strikes that damage creatures your wolf threatens give the target a \u20135-foot status penalty to its Speeds for 1 minute (\u201310 feet on a critical success).</p>\n<p><strong>Advanced Maneuver</strong> @UUID[Compendium.pf2e.companion-types.Item.Takedown]{Takedown}</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": "wolf",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "animal",
+        "kind": "type",
+        "sizes": ["sm"],
+        "abilities": {
+            "str": 2,
+            "dex": 3,
+            "con": 2,
+            "int": -4,
+            "wis": 1,
+            "cha": 0
+        },
+        "ancestryHp": 6,
+        "attacks": [
+            {
+                "slug": "jaws",
+                "name": "jaws",
+                "damage": {
+                    "dice": 1,
+                    "die": "d8",
+                    "type": "piercing"
+                },
+                "traits": ["finesse"],
+                "range": null
+            }
+        ],
+        "skills": ["survival"],
+        "senses": [
+            {
+                "type": "low-light-vision",
+                "acuity": "precise",
+                "range": 0
+            },
+            {
+                "type": "scent",
+                "acuity": "imprecise",
+                "range": 30
+            }
+        ],
+        "speeds": {
+            "land": 40,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 0
+        },
+        "creatureTraits": [],
+        "replacesCreatureTrait": null,
+        "support": "<p>Your wolf tears tendons with each opening. Until the start of your next turn, your Strikes that damage creatures your wolf threatens give the target a \u20135-foot status penalty to its Speeds for 1 minute (\u201310 feet on a critical success).</p>",
+        "advancedManeuver": "Compendium.pf2e.companion-types.Item.c3DS7o6lqiAy2stb",
+        "resistances": [],
+        "imitator": false,
+        "mount": false,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

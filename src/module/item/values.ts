@@ -12,6 +12,7 @@ const ITEM_TYPES = [
     "book",
     "campaignFeature",
     "class",
+    "companionType",
     "condition",
     "consumable",
     "deity",

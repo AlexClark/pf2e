@@ -1,0 +1,29 @@
+{
+    "_id": "lb16mk0HfLm6C12d",
+    "img": "systems/pf2e/icons/actions/OneAction.webp",
+    "name": "Darting Attack",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 1
+        },
+        "category": "offensive",
+        "description": {
+            "value": "<p>The raptor Steps up to 10 feet and then Strikes, or Strikes and then Steps up to 10 feet.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+            "rarity": "common",
+            "value": ["flourish"]
+        }
+    },
+    "type": "action"
+}

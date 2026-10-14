@@ -1,0 +1,29 @@
+{
+    "_id": "uvynUynRFyACAkZo",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Agility Optimization",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion's movement doesn't trigger reactions. Its proficiency rank in Acrobatics increases to expert, or to master if it was already expert.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "agility-optimization",
+        "traits": {
+            "otherTags": ["superior"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

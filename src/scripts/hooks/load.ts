@@ -1,6 +1,7 @@
 import { ActorPF2e, ActorProxyPF2e } from "@actor";
 import { ArmySystemData } from "@actor/army/data.ts";
 import { AutomaticBonusProgression } from "@actor/character/automatic-bonus-progression.ts";
+import { CompanionSystemData } from "@actor/companion/data.ts";
 import { FamiliarSystemData } from "@actor/familiar/data.ts";
 import { HazardSystemData } from "@actor/hazard/data.ts";
 import { resetActors } from "@actor/helpers.ts";
@@ -13,6 +14,7 @@ import { AbilitySystemData } from "@item/ability/index.ts";
 import { AfflictionSystemData } from "@item/affliction/data.ts";
 import { CampaignFeatureSystemData } from "@item/campaign-feature/data.ts";
 import { ClassSystemData } from "@item/class/data.ts";
+import { CompanionTypeSystemData } from "@item/companion-type/data.ts";
 import { ConditionSystemData } from "@item/condition/data.ts";
 import { EffectSystemData } from "@item/effect/data.ts";
 import { FeatSystemData } from "@item/feat/data.ts";
@@ -100,6 +102,7 @@ export class Load {
 
         // Actor system data models
         CONFIG.Actor.dataModels.army = ArmySystemData;
+        CONFIG.Actor.dataModels.companion = CompanionSystemData;
         CONFIG.Actor.dataModels.familiar = FamiliarSystemData;
         CONFIG.Actor.dataModels.hazard = HazardSystemData;
         CONFIG.Actor.dataModels.loot = LootSystemData;
@@ -113,6 +116,7 @@ export class Load {
         CONFIG.Item.dataModels.action = AbilitySystemData;
         CONFIG.Item.dataModels.campaignFeature = CampaignFeatureSystemData;
         CONFIG.Item.dataModels.class = ClassSystemData;
+        CONFIG.Item.dataModels.companionType = CompanionTypeSystemData;
         CONFIG.Item.dataModels.condition = ConditionSystemData;
         CONFIG.Item.dataModels.effect = EffectSystemData;
         CONFIG.Item.dataModels.feat = FeatSystemData;
@@ -156,6 +160,7 @@ export class Load {
 
         // Inline link icons
         CONFIG.Actor.typeIcons = {
+            companion: "fa-solid fa-paw",
             familiar: "fa-solid fa-cat",
             hazard: "fa-solid fa-hill-rockslide",
             loot: "fa-solid fa-treasure-chest",

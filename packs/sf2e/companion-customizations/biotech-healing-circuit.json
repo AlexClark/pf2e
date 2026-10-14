@@ -1,0 +1,35 @@
+{
+    "_id": "laG7IpNOeawyGjCa",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Biotech Healing Circuit",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion is no longer immune to healing and can be healed as if it were a living creature.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "Immunity",
+                "mode": "remove",
+                "type": ["healing"]
+            }
+        ],
+        "slug": "biotech-healing-circuit",
+        "traits": {
+            "otherTags": ["tactical"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

@@ -9,6 +9,7 @@ import { BaseSpeedRuleElement } from "./rule-element/base-speed.ts";
 import { RuleElement } from "./rule-element/base.ts";
 import { BattleFormRuleElement } from "./rule-element/battle-form/rule-element.ts";
 import { ChoiceSetRuleElement } from "./rule-element/choice-set/rule-element.ts";
+import { CompanionGrantRuleElement } from "./rule-element/companion-grant.ts";
 import { CraftingAbilityRuleElement } from "./rule-element/crafting-ability.ts";
 import { CreatureSizeRuleElement } from "./rule-element/creature-size.ts";
 import { CritSpecRuleElement } from "./rule-element/crit-spec.ts";
@@ -57,6 +58,7 @@ class RuleElements {
         BaseSpeed: BaseSpeedRuleElement,
         BattleForm: BattleFormRuleElement,
         ChoiceSet: ChoiceSetRuleElement,
+        CompanionGrant: CompanionGrantRuleElement,
         CraftingAbility: CraftingAbilityRuleElement,
         CreatureSize: CreatureSizeRuleElement,
         CriticalSpecialization: CritSpecRuleElement,

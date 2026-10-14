@@ -549,6 +549,24 @@ class CharacterSheetPF2e<TActor extends CharacterPF2e> extends CreatureSheetPF2e
         super.activateListeners($html);
         const html = $html[0];
 
+        html.querySelector<HTMLElement>("[data-action=add-companion]")?.addEventListener("click", () => {
+            void CONFIG.PF2E.Actor.documentClasses.companion.createFor(this.actor);
+        });
+        for (const link of html.querySelectorAll<HTMLElement>("[data-action=open-companion]")) {
+            link.addEventListener("click", (event) => {
+                event.preventDefault();
+                const companion = game.actors.get(link.dataset.companionId ?? "");
+                void companion?.sheet?.render(true);
+            });
+        }
+        for (const box of html.querySelectorAll<HTMLInputElement>("[data-action=toggle-companion-active]")) {
+            box.addEventListener("change", (event) => {
+                event.stopPropagation();
+                const companion = game.actors.get(box.dataset.companionId ?? "");
+                if (companion?.isOfType("companion")) void companion.update({ "system.active": box.checked });
+            });
+        }
+
         this.#activateNavListeners(html);
 
         // Toggle the availability of the roll-initiative link

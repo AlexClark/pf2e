@@ -30,12 +30,50 @@
             "remaster": true,
             "title": "Pathfinder Player Core"
         },
-        "rules": [],
+        "rules": [
+            {
+                "adjustName": false,
+                "choices": [
+                    {
+                        "label": "Ambusher",
+                        "value": "ambusher"
+                    },
+                    {
+                        "label": "Bully",
+                        "value": "bully"
+                    },
+                    {
+                        "label": "Daredevil",
+                        "value": "daredevil"
+                    },
+                    {
+                        "label": "Racer",
+                        "value": "racer"
+                    },
+                    {
+                        "label": "Tracker",
+                        "value": "tracker"
+                    },
+                    {
+                        "label": "Wrecker",
+                        "value": "wrecker"
+                    }
+                ],
+                "flag": "specialization",
+                "key": "ChoiceSet",
+                "prompt": "Select a specialization."
+            },
+            {
+                "key": "CompanionGrant",
+                "priority": 200,
+                "profile": "animal",
+                "specialization": "{item|flags.system.rulesSelections.specialization}",
+                "stage": "specialized"
+            }
+        ],
         "traits": {
             "rarity": "common",
-            "value": [
-                "druid"
-            ]
+            "value": ["druid"]
         }
     },
     "type": "feat"

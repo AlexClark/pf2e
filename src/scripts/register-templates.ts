@@ -72,6 +72,18 @@ export function registerTemplates(): void {
         "actors/npc/partials/action.hbs",
         "actors/npc/partials/attack.hbs",
 
+        // Companion sheet
+        "actors/companion/sheet.hbs",
+        "actors/companion/partials/header.hbs",
+        "actors/companion/partials/sidebar.hbs",
+        "actors/companion/partials/strike.hbs",
+        "actors/companion/tabs/main.hbs",
+        "actors/companion/tabs/actions.hbs",
+        "actors/companion/tabs/skills.hbs",
+        "actors/companion/tabs/inventory.hbs",
+        "actors/companion/tabs/features.hbs",
+        "actors/companion/tabs/effects.hbs",
+
         // Item Sheet Partials
         "items/action-details.hbs",
         "items/action-sidebar.hbs",

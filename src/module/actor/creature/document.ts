@@ -593,7 +593,7 @@ abstract class CreaturePF2e<
      */
     async addCustomModifier(stat: string, label: string, value: number, type: string): Promise<void> {
         stat = stat === "armor" ? "ac" : stat;
-        if (!this.isOfType("character", "npc")) return;
+        if (!this.isOfType("character", "npc", "companion")) return;
         if (stat.length === 0) throw ErrorPF2e("A custom modifier's statistic must be a non-empty string");
         if (label.length === 0) throw ErrorPF2e("A custom modifier's label must be a non-empty string");
 

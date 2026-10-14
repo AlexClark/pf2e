@@ -1,0 +1,69 @@
+{
+    "_id": "PaSiYJuc7lHA9woh",
+    "img": "systems/sf2e/icons/default-icons/companionType.svg",
+    "name": "Tank Chassis",
+    "system": {
+        "description": {
+            "value": "<p>Your companion is built to endure.</p>\n<p><strong>Support Benefit</strong> Your robot companion assists you in battle. You gain a +1 circumstance bonus on your next attack roll to Strike a foe within the robot companion's melee reach. The bonus lasts until the first time you Strike or until the beginning of your next turn, whichever comes first.</p>\n<p><strong>Advanced Maneuver</strong> @UUID[Compendium.sf2e.companion-types.Item.Ram Slam]{Ram Slam}</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "tank-chassis",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "robot",
+        "kind": "type",
+        "sizes": ["med", "lg"],
+        "abilities": {
+            "str": 2,
+            "dex": 1,
+            "con": 3,
+            "int": -4,
+            "wis": 2,
+            "cha": -1
+        },
+        "ancestryHp": 10,
+        "attacks": [
+            {
+                "slug": "battering-ram",
+                "name": "battering ram",
+                "damage": {
+                    "dice": 1,
+                    "die": "d6",
+                    "type": "bludgeoning"
+                },
+                "traits": ["shove"],
+                "range": null
+            }
+        ],
+        "skills": ["intimidation"],
+        "senses": [
+            {
+                "type": "low-light-vision",
+                "acuity": "precise",
+                "range": 0
+            }
+        ],
+        "speeds": {
+            "land": 20,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 0
+        },
+        "creatureTraits": [],
+        "replacesCreatureTrait": null,
+        "support": "<p>Your robot companion assists you in battle. You gain a +1 circumstance bonus on your next attack roll to Strike a foe within the robot companion's melee reach. The bonus lasts until the first time you Strike or until the beginning of your next turn, whichever comes first.</p>",
+        "advancedManeuver": "Compendium.sf2e.companion-types.Item.VE9BcylQ5nBB0pcq",
+        "resistances": [],
+        "imitator": false,
+        "mount": false,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

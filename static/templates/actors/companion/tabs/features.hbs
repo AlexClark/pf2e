@@ -1,0 +1,101 @@
+<section class="tab features" data-group="primary" data-tab="features">
+    {{#if (eq actor.system.profile "robot")}}
+        {{#each grades as |grade|}}
+            <div class="section-container grade">
+                <div class="section-header">
+                    <h4>
+                        {{localize grade.label}}
+                        <span class="slot-count">
+                            <input type="text" inputmode="numeric" name="system.slotOverrides.{{grade.grade}}" value="{{grade.override}}" data-tooltip="{{localize "PF2E.Companion.BookSlots" value=grade.book}}" />
+                            <span>({{grade.book}})</span>
+                        </span>
+                    </h4>
+                    {{#if @root.editable}}
+                        <div class="controls">
+                            <a data-action="add-customization" data-grade="{{grade.grade}}" data-tooltip="PF2E.Companion.AddCustomization">
+                                <i class="fa-solid fa-plus" inert></i>
+                            </a>
+                        </div>
+                    {{/if}}
+                </div>
+                <div class="section-body">
+                    <ol class="feat-list">
+                        {{#each grade.feats as |feat|}}
+                            <li class="item{{#if feat.inactive}} inactive{{/if}}" data-item-id="{{feat.id}}">
+                                <img src="{{feat.img}}" alt="" />
+                                <span class="name">{{feat.name}}</span>
+                                {{#if feat.needsPersonality}}<em>{{localize "PF2E.Companion.NeedsPersonality"}}</em>{{/if}}
+                                {{#if feat.inactive}}<em>{{localize "PF2E.Companion.Inactive"}}</em>{{/if}}
+                                <span class="controls">
+                                    <a data-action="edit-item" data-tooltip="CONTROLS.CommonEdit"><i class="fa-solid fa-fw fa-edit" inert></i></a>
+                                    <a data-action="delete-item" data-tooltip="Delete"><i class="fa-solid fa-fw fa-trash" inert></i></a>
+                                </span>
+                            </li>
+                        {{/each}}
+                    </ol>
+                </div>
+            </div>
+        {{/each}}
+        {{#if otherFeats.length}}
+            <div class="section-container">
+                <div class="section-header"><h4>{{localize "PF2E.Companion.Customizations"}}</h4></div>
+                <div class="section-body">
+                    <ol class="feat-list">
+                        {{#each otherFeats as |feat|}}
+                            <li class="item" data-item-id="{{feat.id}}">
+                                <span class="name">{{feat.name}}</span>
+                                <span class="controls">
+                                    <a data-action="edit-item"><i class="fa-solid fa-fw fa-edit" inert></i></a>
+                                    <a data-action="delete-item"><i class="fa-solid fa-fw fa-trash" inert></i></a>
+                                </span>
+                            </li>
+                        {{/each}}
+                    </ol>
+                </div>
+            </div>
+        {{/if}}
+    {{else}}
+        <div class="section-container">
+            <div class="section-header">
+                <h4>
+                    {{localize "PF2E.Companion.Specializations"}}
+                    {{#if grantedSpecializations}}<em>{{localize "PF2E.Companion.GrantedValue" value=grantedSpecializations}}</em>{{/if}}
+                </h4>
+            </div>
+            <div class="section-body specializations">
+                <select data-action="set-specializations" multiple>
+                    {{#each specializations as |spec|}}
+                        <option value="{{spec.slug}}" {{#if (includes ../selectedSpecializations spec.slug)}}selected{{/if}}>{{spec.name}}</option>
+                    {{/each}}
+                </select>
+                {{#if showRacer}}
+                    <label>
+                        <span>{{localize "PF2E.Companion.RacerSpeed"}}</span>
+                        <select name="system.racerSpeed">
+                            {{selectOptions speedOptions selected=actor.system.racerSpeed localize=true}}
+                        </select>
+                    </label>
+                {{/if}}
+            </div>
+        </div>
+        {{#if feats.length}}
+            <div class="section-container">
+                <div class="section-header"><h4>{{localize "PF2E.Companion.Customizations"}}</h4></div>
+                <div class="section-body">
+                    <ol class="feat-list">
+                        {{#each feats as |feat|}}
+                            <li class="item{{#if feat.inactive}} inactive{{/if}}" data-item-id="{{feat.id}}">
+                                <span class="name">{{feat.name}}</span>
+                                {{#if feat.inactive}}<em>{{localize "PF2E.Companion.Inactive"}}</em>{{/if}}
+                                <span class="controls">
+                                    <a data-action="edit-item"><i class="fa-solid fa-fw fa-edit" inert></i></a>
+                                    <a data-action="delete-item"><i class="fa-solid fa-fw fa-trash" inert></i></a>
+                                </span>
+                            </li>
+                        {{/each}}
+                    </ol>
+                </div>
+            </div>
+        {{/if}}
+    {{/if}}
+</section>

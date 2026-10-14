@@ -1,0 +1,29 @@
+{
+    "_id": "VE9BcylQ5nBB0pcq",
+    "img": "systems/sf2e/icons/actions/TwoActions.webp",
+    "name": "Ram Slam",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 2
+        },
+        "category": "offensive",
+        "description": {
+            "value": "<p>Your robot companion Strides in a straight line and makes a battering ram Strike. As long as it moved at least 20 feet and successfully hit, the target is pushed back 10 feet.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+            "rarity": "common",
+            "value": ["traversal"]
+        }
+    },
+    "type": "action"
+}

@@ -1,0 +1,51 @@
+{
+    "_id": "UNGSWYVOwW5A25Ah",
+    "img": "systems/pf2e/icons/default-icons/companionType.svg",
+    "name": "Bully",
+    "system": {
+        "description": {
+            "value": "<p>Your companion terrorizes foes with dominance displays and pushes them around the battlefield. Its proficiency ranks for Athletics and Intimidation increase to expert (or master if it was already expert from its type), its Strength modifier increases by 1, and its Charisma modifier increases by 3.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "rules": [],
+        "slug": "bully",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "animal",
+        "kind": "specialization",
+        "sizes": [],
+        "abilities": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+        },
+        "ancestryHp": 0,
+        "attacks": [],
+        "skills": [],
+        "senses": [],
+        "speeds": {
+            "land": 0,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 0
+        },
+        "creatureTraits": [],
+        "replacesCreatureTrait": null,
+        "support": "",
+        "advancedManeuver": "",
+        "resistances": [],
+        "imitator": false,
+        "mount": false,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

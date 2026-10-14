@@ -1,0 +1,69 @@
+{
+    "_id": "QdcftGUtEZhMYTI3",
+    "img": "systems/sf2e/icons/default-icons/companionType.svg",
+    "name": "Surveillance Chassis",
+    "system": {
+        "description": {
+            "value": "<p>Your companion is small and lightweight to enable flight and more easily pass unseen.</p>\n<p><strong>Support Benefit</strong> Your robot companion is alert and ready to warn you of danger. Until the end of your next turn, creatures adjacent to the surveillance chassis can't flank you or cause you to become off-guard.</p>\n<p><strong>Advanced Maneuver</strong> @UUID[Compendium.sf2e.companion-types.Item.Blinding Spotlight]{Blinding Spotlight}</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "surveillance-chassis",
+        "traits": {
+            "otherTags": []
+        },
+        "profile": "robot",
+        "kind": "type",
+        "sizes": ["sm"],
+        "abilities": {
+            "str": 0,
+            "dex": 3,
+            "con": 1,
+            "int": -4,
+            "wis": 3,
+            "cha": 0
+        },
+        "ancestryHp": 4,
+        "attacks": [
+            {
+                "slug": "spark",
+                "name": "spark",
+                "damage": {
+                    "dice": 1,
+                    "die": "d4",
+                    "type": "electricity"
+                },
+                "traits": [],
+                "range": 30
+            }
+        ],
+        "skills": ["stealth"],
+        "senses": [
+            {
+                "type": "darkvision",
+                "acuity": "precise",
+                "range": 0
+            }
+        ],
+        "speeds": {
+            "land": 25,
+            "burrow": 0,
+            "climb": 0,
+            "fly": 20,
+            "swim": 0
+        },
+        "creatureTraits": [],
+        "replacesCreatureTrait": null,
+        "support": "<p>Your robot companion is alert and ready to warn you of danger. Until the end of your next turn, creatures adjacent to the surveillance chassis can't flank you or cause you to become off-guard.</p>",
+        "advancedManeuver": "Compendium.sf2e.companion-types.Item.hmmAwL0K4kUjNm3y",
+        "resistances": [],
+        "imitator": false,
+        "mount": false,
+        "rarity": "common"
+    },
+    "type": "companionType"
+}

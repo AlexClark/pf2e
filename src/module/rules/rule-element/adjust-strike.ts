@@ -15,7 +15,7 @@ import { ModelPropsFromRESchema, ResolvableValueField, RuleElementSchema, RuleEl
 import fields = foundry.data.fields;
 
 class AdjustStrikeRuleElement extends RuleElement<AdjustStrikeSchema> {
-    protected static override validActorTypes: ActorType[] = ["character", "familiar", "npc"];
+    protected static override validActorTypes: ActorType[] = ["character", "companion", "familiar", "npc"];
 
     constructor(data: AdjustStrikeSource, options: RuleElementOptions) {
         super({ ...data, priority: 110 }, options);

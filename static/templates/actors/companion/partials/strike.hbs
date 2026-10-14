@@ -1,0 +1,94 @@
+<li class="item action" data-strike data-action-index="{{strike.index}}"{{#if strike.weaponId}} data-weapon-id="{{strike.weaponId}}"{{/if}}>
+    <h4>
+        {{#if strike.description}}
+            <a class="name" data-action="toggle-summary">
+                <strong>{{localize strike.attackType}}</strong>
+                <span class="action-glyph">{{strike.glyph}}</span>
+                {{strike.name}}
+            </a>
+        {{else}}
+            <span class="name">
+                <strong>{{localize strike.attackType}}</strong>
+                <span class="action-glyph">{{strike.glyph}}</span>
+                {{strike.name}}
+            </span>
+        {{/if}}
+        {{#if strike.traitsAndTags}}
+            <span class="traits">
+                {{#each strike.traitsAndTags as |trait|}}
+                    {{#if @first}}<span class="parenthesis">(</span><ul class="comma-separated">{{/if~}}
+                    <li{{#if trait.description}} data-tooltip="{{trait.description}}"{{/if}}>{{trait.label}}</li>
+                    {{~#if @last}}</ul><span class="parenthesis">)</span>{{/if}}
+                {{/each}}
+            </span>
+        {{/if}}
+    </h4>
+    <div class="button-group">
+        <div class="subsection attack">
+            {{#each strike.variants as |variant index|}}
+                <button type="button" class="attack-button" data-action="strike-attack" data-variant-index="{{index}}" {{#if variant.breakdown}}data-tooltip="{{variant.breakdown}}"{{/if}}>
+                    {{variant.label}}
+                </button>
+            {{/each}}
+        </div>
+        {{#if strike.damageFormula}}
+            <div class="subsection damage">
+                <button type="button" data-action="strike-damage">{{strike.damageFormula}}</button>
+                <button type="button" data-action="strike-critical">{{localize "PF2E.CriticalDamageLabel"}}</button>
+            </div>
+        {{/if}}
+    </div>
+    {{#if strike.ammunition}}
+    {{#if strike.ammunition.requiresReload}}
+        <div class="ammo">
+            {{#each strike.ammunition.loaded as |ammo|}}
+                <div class="loaded {{#if (eq ammo.id ../strike.ammunition.selected.id)}}selected{{/if}}" data-item-id="{{ammo.id}}">
+                    <button type="button" class="inline-control" data-action="select-ammo"{{#if (eq ammo.id ../strike.ammunition.selected.id)}} inert{{/if}}>
+                        <img src="{{ammo.img}}" /><span class="name">{{ammo.name}}</span>
+                    </button>
+                    <span class="magazine">
+                        <i class="icon"></i>
+                        <input
+                            type="text"
+                            data-action="change-ammo-quantity"
+                            data-allow-delta
+                            value="{{ammo.quantity}}"
+                            data-min="0"
+                            data-max="{{ammo.max}}"
+                        />
+                    </span>
+                    <button type="button" class="use-action unload" data-action="unload">
+                        <i class="fa-solid fa-eject" inert></i>
+                    </button>
+                </div>
+            {{/each}}
+            {{#if strike.ammunition.remaining}}
+                <div class="empty plain">
+                    <a class="name" data-action="reload" data-anchor-id="{{@root.options.id}}-{{strike.weaponId}}-reload">
+                        <span>{{localize "PF2E.Actions.Interact.Reload.Title"}} <span class="action-glyph">{{strike.ammunition.reloadGlyph}}</span></span>
+                    </a>
+                    <span class="remaining">
+                        {{#if (gt strike.ammunition.capacity 1)}}
+                            {{localize "PF2E.Actor.Character.EmptyMultipleLabel" value=strike.ammunition.remaining}}
+                        {{else}}
+                            {{localize "PF2E.Actor.Character.EmptyLabel"}}
+                        {{/if}}
+                    </span>
+                </div>
+            {{/if}}
+        </div>
+    {{else}}
+        <div class="ammo">
+            <select data-action="link-ammo">
+                {{selectOptions strike.ammunition.compatible selected=strike.ammunition.selected.id valueAttr="id" blank="PF2E.NoAmmoLabel" localize=true}}
+            </select>
+        </div>
+    {{/if}}
+    {{/if}}
+    {{#if strike.effects}}
+        <div class="effects">{{localize "PF2E.Actor.AttackEffects.PlusList" list=strike.effects}}</div>
+    {{/if}}
+    {{#if strike.description}}
+        <div class="item-summary">{{{strike.description}}}</div>
+    {{/if}}
+</li>

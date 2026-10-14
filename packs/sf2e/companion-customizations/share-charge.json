@@ -1,0 +1,29 @@
+{
+    "_id": "zJkBoSVa77lF9A3N",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Share Charge",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion can use items that require a battery, even when the item has no battery or charges, by providing the power from its own reserves.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "share-charge",
+        "traits": {
+            "otherTags": ["tactical"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

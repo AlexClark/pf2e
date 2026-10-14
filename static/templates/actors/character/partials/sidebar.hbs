@@ -334,3 +334,24 @@
         <li class="tag tag_secondary" data-resistance="{{resistance.type}}">{{resistance.label}}</li>
     {{/each}}
 </ol>
+
+{{!-- Companions --}}
+<header>
+    <h2>{{localize "PF2E.Companion.Label"}}</h2>
+    {{#if editable}}
+        <button type="button" data-action="add-companion">
+            <i class="fa-solid fa-plus"></i> {{localize "PF2E.Companion.Add"}}
+        </button>
+    {{/if}}
+</header>
+<ol class="companions">
+    {{#each actor.companions as |companion|}}
+        <li>
+            <input type="checkbox" data-action="toggle-companion-active" data-companion-id="{{companion.id}}" aria-label="{{localize "PF2E.Companion.Active"}}" {{checked companion.system.active}} />
+            <a data-action="open-companion" data-companion-id="{{companion.id}}">{{companion.name}}</a>
+            <span class="profile">
+                {{#if (eq companion.system.profile "robot")}}{{localize "PF2E.Companion.ProfileRobot"}}{{else}}{{localize "PF2E.Companion.ProfileAnimal"}}{{/if}}
+            </span>
+        </li>
+    {{/each}}
+</ol>

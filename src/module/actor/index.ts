@@ -5,6 +5,7 @@ export { ActorPF2e, ActorProxyPF2e } from "./base.ts";
 export { CreaturePF2e } from "./creature/document.ts";
 
 export { CharacterPF2e } from "./character/document.ts";
+export { CompanionPF2e } from "./companion/document.ts";
 export { FamiliarPF2e } from "./familiar/document.ts";
 export { NPCPF2e } from "./npc/document.ts";
 

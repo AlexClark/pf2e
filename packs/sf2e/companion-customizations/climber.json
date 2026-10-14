@@ -1,0 +1,35 @@
+{
+    "_id": "ubu58ZxiLwILoiv4",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Climber",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion gains a climb Speed of 20 feet.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "BaseSpeed",
+                "selector": "climb",
+                "value": 20
+            }
+        ],
+        "slug": "climber",
+        "traits": {
+            "otherTags": ["commercial"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

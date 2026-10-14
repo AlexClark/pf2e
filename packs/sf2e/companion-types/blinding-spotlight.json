@@ -1,0 +1,29 @@
+{
+    "_id": "hmmAwL0K4kUjNm3y",
+    "img": "systems/sf2e/icons/actions/TwoActions.webp",
+    "name": "Blinding Spotlight",
+    "system": {
+        "actionType": {
+            "value": "action"
+        },
+        "actions": {
+            "value": 2
+        },
+        "category": "offensive",
+        "description": {
+            "value": "<p>Your robot companion shines a powerful spotlight on a creature it can see within 60 feet. The target becomes dazzled until the end of your next turn or until it uses the Avert Gaze action, whichever comes first. This Points Out the creature if it was undetected by you or one or more of your allies.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+            "rarity": "common",
+            "value": ["light"]
+        }
+    },
+    "type": "action"
+}

@@ -12,7 +12,7 @@ import fields = foundry.data.fields;
  * @category RuleElement
  */
 class FastHealingRuleElement extends RuleElement<FastHealingRuleSchema> {
-    static override validActorTypes: ActorType[] = ["army", "character", "npc", "familiar"];
+    static override validActorTypes: ActorType[] = ["army", "character", "companion", "npc", "familiar"];
 
     static override defineSchema(): FastHealingRuleSchema {
         return {

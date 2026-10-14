@@ -1,0 +1,35 @@
+{
+    "_id": "k4FW6pNrl11Yqi1Z",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Aquatic Adaptation",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion gains a swim Speed of 20 feet.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "BaseSpeed",
+                "selector": "swim",
+                "value": 20
+            }
+        ],
+        "slug": "aquatic-adaptation",
+        "traits": {
+            "otherTags": ["commercial"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

@@ -1,0 +1,29 @@
+{
+    "_id": "7TUFAWlvA0xWcDoa",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Speakers",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion is equipped with speakers, enabling you to speak through it.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [],
+        "slug": "speakers",
+        "traits": {
+            "otherTags": ["commercial"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

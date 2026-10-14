@@ -1,0 +1,54 @@
+{
+    "_id": "KXqDKAJI7kvFztiw",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Armored Plates",
+    "system": {
+        "actionType": {
+            "value": "passive"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "customization",
+        "description": {
+            "value": "<p>Your robot companion gains a +1 item bonus to AC, or a +2 item bonus to AC if it is a superior robot companion. It still uses its unarmored proficiency to calculate its AC.</p>"
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Tech Core"
+        },
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "selector": "ac",
+                "slug": "armored-plates",
+                "type": "item",
+                "value": 1,
+                "fromEquipment": false,
+                "hideIfDisabled": true,
+                "predicate": [
+                    {
+                        "not": "self:companion:stage:specialized"
+                    }
+                ]
+            },
+            {
+                "key": "FlatModifier",
+                "selector": "ac",
+                "slug": "armored-plates-superior",
+                "type": "item",
+                "value": 2,
+                "fromEquipment": false,
+                "hideIfDisabled": true,
+                "predicate": ["self:companion:stage:specialized"]
+            }
+        ],
+        "slug": "armored-plates",
+        "traits": {
+            "otherTags": ["commercial"],
+            "value": []
+        }
+    },
+    "type": "action"
+}

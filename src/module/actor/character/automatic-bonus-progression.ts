@@ -108,6 +108,44 @@ class AutomaticBonusProgression {
         }
     }
 
+    /**
+     * Attack potency and defense potency. Companion strikes read `strike-attack-roll`, including unarmed attacks.
+     * Save and perception potency stay off: companions do not take those item bonuses.
+     */
+    static applyToCompanion(actor: ActorPF2e): void {
+        if (!actor.isOfType("companion") || !this.isEnabled(actor)) return;
+
+        const { level, synthetics } = actor;
+        const attack = this.getAttackPotency(level);
+        const ac = this.getDefensePotency(level);
+
+        if (attack > 0) {
+            const modifiers = (synthetics.modifiers["strike-attack-roll"] ??= []);
+            modifiers.push(
+                () =>
+                    new Modifier({
+                        slug: "attack-potency",
+                        label: "PF2E.AutomaticBonusProgression.attackPotency",
+                        modifier: attack,
+                        type: "potency",
+                    }),
+            );
+        }
+
+        if (ac > 0) {
+            const modifiers = (synthetics.modifiers["ac"] ??= []);
+            modifiers.push(
+                () =>
+                    new Modifier({
+                        slug: "defense-potency",
+                        label: "PF2E.AutomaticBonusProgression.defensePotency",
+                        modifier: ac,
+                        type: "potency",
+                    }),
+            );
+        }
+    }
+
     /** Remove stored runes from specific magic weapons or otherwise set prior to enabling ABP */
     static cleanupRunes(item: ArmorPF2e | WeaponPF2e): void {
         if (!this.isEnabled(item.actor)) return;

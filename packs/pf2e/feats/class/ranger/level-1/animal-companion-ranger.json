@@ -42,16 +42,17 @@
                         "text": "PF2E.SpecificRule.Ranger.AnimalCompanion.HuntPreyAddendum"
                     }
                 ]
+            },
+            {
+                "key": "CompanionGrant",
+                "priority": 200,
+                "profile": "animal"
             }
         ],
         "traits": {
-            "otherTags": [
-                "hunters-edge-sharing"
-            ],
+            "otherTags": ["hunters-edge-sharing"],
             "rarity": "common",
-            "value": [
-                "ranger"
-            ]
+            "value": ["ranger"]
         }
     },
     "type": "feat"
