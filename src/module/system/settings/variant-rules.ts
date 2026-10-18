@@ -100,7 +100,7 @@ export class VariantRulesSettings extends fa.api.HandlebarsApplicationMixin(fa.a
             }),
             onChange: (value) => {
                 game.pf2e.settings.variants.pwol.enabled = !!value;
-                resetActors(game.actors.filter((a) => a.type === "character"));
+                resetActors(game.actors.filter((a) => a.isOfType("character", "companion")));
             },
         },
         proficiencyUntrainedModifier: {

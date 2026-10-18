@@ -1,6 +1,7 @@
 import type { ActorPF2e } from "@actor";
 import { AutomaticBonusProgression as ABP } from "@actor/character/automatic-bonus-progression.ts";
 import { getAttackAmmo } from "@actor/character/helpers.ts";
+import { createProficiencyModifier } from "@actor/modifiers.ts";
 import type { NPCStrike } from "@actor/npc/data.ts";
 import { attackFromMeleeItem } from "@actor/helpers.ts";
 import type { MeleeSource } from "@item/melee/data.ts";
@@ -107,9 +108,10 @@ function strikeFromSource(
 
 function naturalStrike(actor: CompanionPF2e, attack: BuiltAttack): NPCStrike | null {
     const traits = attack.traits.includes("unarmed") ? attack.traits : [...attack.traits, "unarmed"];
+    const ability = actor.system.abilities[attack.attackAttribute].mod;
     const source = meleeSource(
         attack.name,
-        attack.attackModifier,
+        strikeAttackBonus(actor, ability),
         attack.damageFormula,
         attack.damageType,
         traits,
@@ -128,10 +130,7 @@ function weaponStrike(actor: CompanionPF2e, weapon: WeaponPF2e<CompanionPF2e>): 
     const ranged = weapon.isRanged;
     const attribute = !ranged && weapon.traits.has("finesse") ? "dex" : ranged ? "dex" : "str";
     const ability = actor.system.abilities[attribute].mod;
-    const rank = actor.attackRank;
-    const level = actor.level;
-    const proficiency = rank <= 0 ? 0 : level + 2 * rank;
-    const modifier = proficiency + ability;
+    const modifier = strikeAttackBonus(actor, ability);
     const flat = ranged ? 0 : ability;
     const formula = flat === 0 ? `${dice}${die}` : flat > 0 ? `${dice}${die}+${flat}` : `${dice}${die}${flat}`;
     const traits = [...weapon.system.traits.value];
@@ -173,6 +172,19 @@ function prepareCompanionStrikes(actor: CompanionPF2e): NPCStrike[] {
     }
 
     return strikes;
+}
+
+/**
+ * Ability plus proficiency. Proficiency without level uses the configured rank modifiers and omits level.
+ * With the variant off, trained and above stay level + 2 per rank.
+ */
+function strikeAttackBonus(actor: CompanionPF2e, ability: number): number {
+    const proficiency = createProficiencyModifier({
+        actor,
+        rank: actor.attackRank,
+        domains: ["attack", "attack-roll", "strike-attack-roll"],
+    });
+    return ability + proficiency.modifier;
 }
 
 export { prepareCompanionStrikes };
