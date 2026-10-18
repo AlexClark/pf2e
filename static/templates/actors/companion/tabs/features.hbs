@@ -1,4 +1,27 @@
 <section class="tab features" data-group="primary" data-tab="features">
+    <div class="section-container">
+        <div class="section-header">
+            <h4>
+                {{localize "PF2E.Companion.Specializations"}}
+                {{#if grantedSpecializations}}<em>{{localize "PF2E.Companion.GrantedValue" value=grantedSpecializations}}</em>{{/if}}
+            </h4>
+        </div>
+        <div class="section-body specializations">
+            <select data-action="set-specializations" multiple>
+                {{#each specializations as |spec|}}
+                    <option value="{{spec.slug}}" {{#if (includes ../selectedSpecializations spec.slug)}}selected{{/if}}>{{spec.name}}</option>
+                {{/each}}
+            </select>
+            {{#if showRacer}}
+                <label>
+                    <span>{{localize "PF2E.Companion.RacerSpeed"}}</span>
+                    <select name="system.racerSpeed">
+                        {{selectOptions speedOptions selected=actor.system.racerSpeed localize=true}}
+                    </select>
+                </label>
+            {{/if}}
+        </div>
+    </div>
     {{#if (eq actor.system.profile "robot")}}
         {{#each grades as |grade|}}
             <div class="section-container grade">
@@ -55,29 +78,6 @@
             </div>
         {{/if}}
     {{else}}
-        <div class="section-container">
-            <div class="section-header">
-                <h4>
-                    {{localize "PF2E.Companion.Specializations"}}
-                    {{#if grantedSpecializations}}<em>{{localize "PF2E.Companion.GrantedValue" value=grantedSpecializations}}</em>{{/if}}
-                </h4>
-            </div>
-            <div class="section-body specializations">
-                <select data-action="set-specializations" multiple>
-                    {{#each specializations as |spec|}}
-                        <option value="{{spec.slug}}" {{#if (includes ../selectedSpecializations spec.slug)}}selected{{/if}}>{{spec.name}}</option>
-                    {{/each}}
-                </select>
-                {{#if showRacer}}
-                    <label>
-                        <span>{{localize "PF2E.Companion.RacerSpeed"}}</span>
-                        <select name="system.racerSpeed">
-                            {{selectOptions speedOptions selected=actor.system.racerSpeed localize=true}}
-                        </select>
-                    </label>
-                {{/if}}
-            </div>
-        </div>
         {{#if feats.length}}
             <div class="section-container">
                 <div class="section-header"><h4>{{localize "PF2E.Companion.Customizations"}}</h4></div>

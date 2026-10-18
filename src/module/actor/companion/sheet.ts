@@ -414,6 +414,7 @@ function companionTypeChoices(): CompanionTypeChoice[] {
 }
 
 function specializationChoices(types: CompanionTypeChoice[]): { slug: string; name: string }[] {
+    // The six specializations are stored with profile "animal". Robots use that same list.
     return types
         .filter((type) => type.system.kind === "specialization" && type.system.profile === "animal")
         .map((type) => ({ slug: type.slug, name: type.name }))
