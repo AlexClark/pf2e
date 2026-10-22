@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Consults the Spirits"
+                    "value": "Consults the Spirits",
+                    "checked": [
+                        {
+                            "kind": "feat",
+                            "name": "Consult the Spirits (Rivethun Emissary)"
+                        }
+                    ],
+                    "checkedFor": "694aa33a19d0dcd06899df7ef3f569e7e47e9d263a5a8c5bdda73d534f18a92e"
                 }
             ]
         },

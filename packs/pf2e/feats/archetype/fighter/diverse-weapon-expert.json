@@ -23,7 +23,43 @@
                     "value": "Fighter Dedication"
                 },
                 {
-                    "value": "expert in any kind of weapon or unarmed attacks"
+                    "value": "expert in any kind of weapon or unarmed attacks",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "simple",
+                                        "minRank": 2
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "martial",
+                                        "minRank": 2
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "advanced",
+                                        "minRank": 2
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "unarmed",
+                                        "minRank": 2
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "80895ad05a98b4d50833d4d252a0d8eaeefb294ebe68b94fad572617afb4e334"
                 }
             ]
         },

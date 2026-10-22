@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Ruffian Rogue"
+                    "value": "Ruffian Rogue",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Ruffian"
+                        }
+                    ],
+                    "checkedFor": "4e2ba3c8801c424882095dc38552def884070d2d018f053af6ddabbf540cc004"
                 }
             ]
         },

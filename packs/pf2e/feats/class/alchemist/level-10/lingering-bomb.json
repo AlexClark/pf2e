@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "bomber research field"
+                    "value": "bomber research field",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Bomber"
+                        }
+                    ],
+                    "checkedFor": "de62b0d332c2cd3d18659d47cb1846ea8ae69ab09ea8a1f7a5a4efbb6bf471b2"
                 }
             ]
         },

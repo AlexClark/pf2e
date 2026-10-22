@@ -23,7 +23,29 @@
                     "value": "Eternal Legend Dedication"
                 },
                 {
-                    "value": "master in Fortitude or Reflex saves"
+                    "value": "master in Fortitude or Reflex saves",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "fortitude",
+                                        "minRank": 3
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "reflex",
+                                        "minRank": 3
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "8bd7bf15a684d5aab56b62ea0765dad20baede37eca23efe11dacaabf0aa7d25"
                 }
             ]
         },

@@ -20,7 +20,17 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "You aren't unholy"
+                    "value": "You aren't unholy",
+                    "checked": [
+                        {
+                            "kind": "not",
+                            "atom": {
+                                "kind": "trait",
+                                "trait": "unholy"
+                            }
+                        }
+                    ],
+                    "checkedFor": "0d2cb9b2bb78c9352c51d31d7abf159404e9ae81bcb14e57f96b52b4e39e6cef"
                 }
             ]
         },

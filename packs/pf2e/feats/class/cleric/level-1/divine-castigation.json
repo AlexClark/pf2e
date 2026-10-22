@@ -20,7 +20,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "holy or unholy trait"
+                    "value": "holy or unholy trait",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "trait",
+                                        "trait": "holy"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "trait",
+                                        "trait": "unholy"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "2f810df6f50779a17ae39f7c33f158dc0d604ab9441d12b406ea4ac7ce1021e7"
                 }
             ]
         },

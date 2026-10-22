@@ -23,7 +23,17 @@
                     "value": "You have a fiendish patron deity"
                 },
                 {
-                    "value": "you are not holy"
+                    "value": "you are not holy",
+                    "checked": [
+                        {
+                            "kind": "not",
+                            "atom": {
+                                "kind": "trait",
+                                "trait": "holy"
+                            }
+                        }
+                    ],
+                    "checkedFor": "7d912f54ef29331e4dfe96b7c524d0b2bd92f81e68ea2c96bff326c16edea81c"
                 }
             ]
         },

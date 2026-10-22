@@ -20,7 +20,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Predictive Purchase"
+                    "value": "Predictive Purchase",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Predictive Purchase (Investigator)"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Predictive Purchase (Rogue)"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "751fd9629e49341cb1695f6cb8d405c74893e108cc94d029d3481696fabe810b"
                 }
             ]
         },

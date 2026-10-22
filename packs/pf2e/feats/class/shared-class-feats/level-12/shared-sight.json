@@ -20,7 +20,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Soulsight"
+                    "value": "Soulsight",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Soulsight (Bard)"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Soulsight (Sorcerer)"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "636f5d3edb48c963fe4fbbdeab323687e8673c8fa2acdeff3c37e55a185ea966"
                 }
             ]
         },

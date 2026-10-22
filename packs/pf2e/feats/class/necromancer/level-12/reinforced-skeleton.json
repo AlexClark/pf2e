@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "bone grim fascination"
+                    "value": "bone grim fascination",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Bone"
+                        }
+                    ],
+                    "checkedFor": "0173e0f9d20d64b2181bab04f98a86f29a037f12cc3f7e2e35669b58b0f6dc56"
                 }
             ]
         },

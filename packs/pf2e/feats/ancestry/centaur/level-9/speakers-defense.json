@@ -20,7 +20,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "budding speaker centaur heritage or Speaker in Training"
+                    "value": "budding speaker centaur heritage or Speaker in Training",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Budding Speaker Centaur"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Speaker in Training"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "97324855305e1822633d2c203465c2204fd9b62a2ec0d4bd56cfb47b466109d5"
                 }
             ]
         },

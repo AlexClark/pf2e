@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "courageous anthem"
+                    "value": "courageous anthem",
+                    "checked": [
+                        {
+                            "kind": "spell",
+                            "slug": "courageous-anthem"
+                        }
+                    ],
+                    "checkedFor": "035d31f77c7170ef9953a4865235f3d4cb1c8abb52fe2bcafea5c37e3fb0aed1"
                 }
             ]
         },

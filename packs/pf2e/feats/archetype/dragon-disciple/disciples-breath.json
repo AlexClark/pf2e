@@ -23,7 +23,15 @@
                     "value": "Dragon Disciple Dedication"
                 },
                 {
-                    "value": "dragon breath sorcerer bloodline spell"
+                    "value": "dragon breath sorcerer bloodline spell",
+                    "checked": [
+                        {
+                            "kind": "spell",
+                            "slug": "dragon-breath",
+                            "source": "focus"
+                        }
+                    ],
+                    "checkedFor": "8d271cff5344e2922ddb2d6c3307a03d1b064ed53e6d0e0158602a4fa0ac22db"
                 }
             ]
         },

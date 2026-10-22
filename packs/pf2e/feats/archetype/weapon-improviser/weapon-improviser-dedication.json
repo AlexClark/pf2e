@@ -20,7 +20,15 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "trained in all martial weapons"
+                    "value": "trained in all martial weapons",
+                    "checked": [
+                        {
+                            "kind": "proficiency",
+                            "statistic": "martial",
+                            "minRank": 1
+                        }
+                    ],
+                    "checkedFor": "dc0da7e9d784b207013a5eb50308494b51e331e9670b408459cc59bb0185e3ea"
                 }
             ]
         },

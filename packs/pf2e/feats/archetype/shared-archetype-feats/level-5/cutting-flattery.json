@@ -20,7 +20,32 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Dandy Dedication or Pirate Dedication, trained in Intimidation"
+                    "value": "Dandy Dedication or Pirate Dedication, trained in Intimidation",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Dandy Dedication"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Pirate Dedication"
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "kind": "proficiency",
+                            "statistic": "intimidation",
+                            "minRank": 1
+                        }
+                    ],
+                    "checkedFor": "fda870c0ef9aff1ba9f7edbed5fe0454216f3fd977a0c75f45c8d06a93c233f4"
                 }
             ]
         },

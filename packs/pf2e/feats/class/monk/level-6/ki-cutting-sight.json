@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Inner Upheaval"
+                    "value": "Inner Upheaval",
+                    "checked": [
+                        {
+                            "kind": "spell",
+                            "slug": "inner-upheaval"
+                        }
+                    ],
+                    "checkedFor": "429b700b618d5f7fae507c589b355cd913e4a30ba129cb821847565372cb2aa1"
                 }
             ]
         },

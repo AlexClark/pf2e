@@ -20,7 +20,17 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "You don't have the Galloping Grip feat."
+                    "value": "You don't have the Galloping Grip feat.",
+                    "checked": [
+                        {
+                            "kind": "not",
+                            "atom": {
+                                "kind": "feat",
+                                "name": "Galloping Grip"
+                            }
+                        }
+                    ],
+                    "checkedFor": "a8fb0a7c4c520b6b12a1ce46b43430745a173ca5f8518f75486cd983f645f7cb"
                 }
             ]
         },

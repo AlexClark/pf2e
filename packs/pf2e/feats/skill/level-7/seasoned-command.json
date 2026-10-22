@@ -20,7 +20,29 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "master in either Diplomacy or Intimidation"
+                    "value": "master in either Diplomacy or Intimidation",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "diplomacy",
+                                        "minRank": 3
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "intimidation",
+                                        "minRank": 3
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "aa7fc2752981370552989a4a808394661a82c1ba8e5467250761183581cefbed"
                 }
             ]
         },

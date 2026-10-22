@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Double or Nothing"
+                    "value": "Double or Nothing",
+                    "checked": [
+                        {
+                            "kind": "feat",
+                            "name": "Double Or Nothing"
+                        }
+                    ],
+                    "checkedFor": "6f791b33ebacdeb3bd82643806e05e80a6dea2588501837b0a096320bfed36ac"
                 }
             ]
         },

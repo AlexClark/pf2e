@@ -23,7 +23,165 @@
                     "value": "Oozemorph Dedication"
                 },
                 {
-                    "value": "at least two other class feats from the Oozemorph archetype"
+                    "value": "at least two other class feats from the Oozemorph archetype",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Vacate Vision"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Uncanny Suction"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Vacate Vision"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Rubbery Skin"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Vacate Vision"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Peculiar Anatomy"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Vacate Vision"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Oozemorph Dedication"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Vacate Vision"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Disturbing Defense"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Uncanny Suction"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Rubbery Skin"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Uncanny Suction"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Peculiar Anatomy"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Uncanny Suction"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Oozemorph Dedication"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Uncanny Suction"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Disturbing Defense"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Rubbery Skin"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Peculiar Anatomy"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Rubbery Skin"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Oozemorph Dedication"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Rubbery Skin"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Disturbing Defense"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Peculiar Anatomy"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Oozemorph Dedication"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Peculiar Anatomy"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Disturbing Defense"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Oozemorph Dedication"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Disturbing Defense"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "39185214a319b98b14e3c3bd0015ecdd4a8fdcd7d05654c5fdcf82107fb49b77"
                 }
             ]
         },

@@ -23,7 +23,14 @@
                     "value": "Spellstrike"
                 },
                 {
-                    "value": "starlit span hybrid study"
+                    "value": "starlit span hybrid study",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Starlit Span"
+                        }
+                    ],
+                    "checkedFor": "ae329851e2a9df192003a0d8988bf81cae83165c2582e797f1ae2e04976cdaab"
                 }
             ]
         },

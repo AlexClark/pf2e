@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "You have a focus pool."
+                    "value": "You have a focus pool.",
+                    "checked": [
+                        {
+                            "kind": "focus-pool",
+                            "min": 1
+                        }
+                    ],
+                    "checkedFor": "c8de575031919cf2dcff7031e65be9d31a715468a0039c1db3a2a6f2c8a7916f"
                 }
             ]
         },

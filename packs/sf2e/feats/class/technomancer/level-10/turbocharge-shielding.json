@@ -24,7 +24,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "FORTRUN programming language"
+                    "value": "FORTRUN programming language",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "FORTRUN"
+                        }
+                    ],
+                    "checkedFor": "5019c0137f0d235be7aaa0a45c995b3856b743e1ed8ed050cbf874eb79b4097e"
                 }
             ]
         },

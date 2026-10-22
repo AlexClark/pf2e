@@ -20,7 +20,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "DPS++ or Viper programming language"
+                    "value": "DPS++ or Viper programming language",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "DPS++"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Viper"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "a7fa1667f7b49d084221bb07d6335b1ea347b3cd0584b71621ffe8756c6528f6"
                 }
             ]
         },

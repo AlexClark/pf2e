@@ -24,7 +24,32 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Celebrity Dedication or Dandy Dedication, trained in Deception"
+                    "value": "Celebrity Dedication or Dandy Dedication, trained in Deception",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Celebrity Dedication"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Dandy Dedication"
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "kind": "proficiency",
+                            "statistic": "deception",
+                            "minRank": 1
+                        }
+                    ],
+                    "checkedFor": "78b75ff532567750981ff6e8c920cdafcf0a3e7ad2a89e89aca352d94ad7045b"
                 }
             ]
         },

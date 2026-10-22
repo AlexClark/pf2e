@@ -7,14 +7,23 @@
         label: string;
         /** Localized result summary, announced while a search is active */
         resultsLabel: string;
+        onkeydown?: (event: KeyboardEvent) => void;
     }
 
-    const { search, label, resultsLabel }: SearchInputProps = $props();
+    const { search, label, resultsLabel, onkeydown }: SearchInputProps = $props();
 </script>
 
 <div class="search">
     <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-    <input type="search" spellcheck="false" bind:value={search.query} placeholder={label} aria-label={label} />
+    <input
+        type="search"
+        spellcheck="false"
+        data-keyboard-focus="true"
+        bind:value={search.query}
+        placeholder={label}
+        aria-label={label}
+        {onkeydown}
+    />
 </div>
 <p class="search-results" role="status">
     {#if search.active}

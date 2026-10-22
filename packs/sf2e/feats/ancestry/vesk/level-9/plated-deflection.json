@@ -20,7 +20,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "plated vesk heritage or Armor Ace"
+                    "value": "plated vesk heritage or Armor Ace",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Plated Vesk"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Armor Ace"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "2200e6d9cdb078095293240cf4c1a435a838fee778a1f4a1f34f3eefc3fc99ac"
                 }
             ]
         },

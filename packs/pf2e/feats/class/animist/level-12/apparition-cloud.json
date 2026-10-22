@@ -20,7 +20,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Spirit Familiar"
+                    "value": "Spirit Familiar",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Spirit Familiar (Animist)"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Spirit Familiar (Witch)"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "944ac83571c18af406defde4eaa4e793779e0ca3497fc5b392cba88d482be61c"
                 }
             ]
         },

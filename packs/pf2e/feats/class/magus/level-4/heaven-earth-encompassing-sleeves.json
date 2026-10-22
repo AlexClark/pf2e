@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "unfurling brocade hybrid study"
+                    "value": "unfurling brocade hybrid study",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Unfurling Brocade"
+                        }
+                    ],
+                    "checkedFor": "5e9dfd8b5277e5437214491e10a7c683b34dc693606eb35910770a8d8adba4d2"
                 }
             ]
         },

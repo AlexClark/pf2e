@@ -23,7 +23,27 @@
                     "value": "expert in Society"
                 },
                 {
-                    "value": "Connections or Criminal Connections"
+                    "value": "Connections or Criminal Connections",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Leverage Connections"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Criminal Connections"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "4a9e3fd5dd3d86d9a54a6ca63bef2c7654bfc1943fa237ad7472d6f5c38f7ba7"
                 }
             ]
         },

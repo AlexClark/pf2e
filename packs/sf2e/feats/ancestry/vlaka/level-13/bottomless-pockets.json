@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Just the Thing..."
+                    "value": "Just the Thing...",
+                    "checked": [
+                        {
+                            "kind": "feat",
+                            "name": "Just the Thing..."
+                        }
+                    ],
+                    "checkedFor": "94587a12cbbe051a994368d94247c72996009b1934de6509876cc43d32dd71f1"
                 }
             ]
         },

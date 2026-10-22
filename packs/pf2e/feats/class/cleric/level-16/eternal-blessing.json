@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "holy"
+                    "value": "holy",
+                    "checked": [
+                        {
+                            "kind": "trait",
+                            "trait": "holy"
+                        }
+                    ],
+                    "checkedFor": "1551d1eb020a113540d8ceb787d53b17750037ceeade4ceeafb67919ebbd7265"
                 }
             ]
         },

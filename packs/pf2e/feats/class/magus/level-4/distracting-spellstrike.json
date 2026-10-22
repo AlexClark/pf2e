@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "laughing shadow hybrid study"
+                    "value": "laughing shadow hybrid study",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Laughing Shadow"
+                        }
+                    ],
+                    "checkedFor": "c1d806ea4f035093c319e34f0c0240f65bfe455f7baa78e589c3869a911976f2"
                 },
                 {
                     "value": "Spellstrike"

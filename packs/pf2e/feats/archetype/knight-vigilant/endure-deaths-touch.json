@@ -23,7 +23,29 @@
                     "value": "Knight Vigilant Dedication"
                 },
                 {
-                    "value": "expert in medium or heavy armor"
+                    "value": "expert in medium or heavy armor",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "medium",
+                                        "minRank": 2
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "heavy",
+                                        "minRank": 2
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "4bed49c0b974c18236774f3b26f8bd4d097814b2eace849802ed598dbc95a057"
                 }
             ]
         },

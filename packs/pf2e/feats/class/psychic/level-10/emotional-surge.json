@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "emotional acceptance subconscious mind"
+                    "value": "emotional acceptance subconscious mind",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Emotional Acceptance"
+                        }
+                    ],
+                    "checkedFor": "bf74f5eb20b4c9101a83d1f2a61716015eb40333534391a4f6fd3806fe299a8a"
                 }
             ]
         },

@@ -23,7 +23,14 @@
                     "value": "Agile Hand"
                 },
                 {
-                    "value": "Pickpocket skill feat"
+                    "value": "Pickpocket skill feat",
+                    "checked": [
+                        {
+                            "kind": "feat",
+                            "name": "Pickpocket"
+                        }
+                    ],
+                    "checkedFor": "fd92a6b5d355a59452a19dee7927cb3a65c364d504d41d0ccd36c5d21306c8a5"
                 }
             ]
         },

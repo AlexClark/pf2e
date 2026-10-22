@@ -23,7 +23,43 @@
                     "value": "Hedge Mage Dedication"
                 },
                 {
-                    "value": "master in either Arcana, Nature, Occultism, or Religion"
+                    "value": "master in either Arcana, Nature, Occultism, or Religion",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "arcana",
+                                        "minRank": 3
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "nature",
+                                        "minRank": 3
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "occultism",
+                                        "minRank": 3
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "religion",
+                                        "minRank": 3
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "329cb803b4660e105fa2271461acf5223ff3462d5d24a94ed62ad87a2cd16b2b"
                 }
             ]
         },

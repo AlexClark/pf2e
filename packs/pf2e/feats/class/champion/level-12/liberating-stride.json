@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "liberator cause"
+                    "value": "liberator cause",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Liberation"
+                        }
+                    ],
+                    "checkedFor": "ef8dda6598e5f60fe964fb7f25a0faecd7965ddfbb4ab71eb25e2ac6d2495bed"
                 }
             ]
         },

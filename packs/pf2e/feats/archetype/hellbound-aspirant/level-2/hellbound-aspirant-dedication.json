@@ -20,7 +20,17 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "You do not have the holy trait."
+                    "value": "You do not have the holy trait.",
+                    "checked": [
+                        {
+                            "kind": "not",
+                            "atom": {
+                                "kind": "trait",
+                                "trait": "holy"
+                            }
+                        }
+                    ],
+                    "checkedFor": "9b1e14292f1ae031cbe4e7008d414018033e959e7f9333b53d1c88068e42951a"
                 }
             ]
         },

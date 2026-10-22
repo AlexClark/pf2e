@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "reaper fatal method"
+                    "value": "reaper fatal method",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Reaper"
+                        }
+                    ],
+                    "checkedFor": "5706e720a52ff117e26c9f843441890fcbfd85f46335a9cf4f97f4478e99abc6"
                 }
             ]
         },

@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "chirurgeon research field"
+                    "value": "chirurgeon research field",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Chirurgeon"
+                        }
+                    ],
+                    "checkedFor": "ade4eb8a94c6136c8924eeed9bce108cf81d9aacdab49ee83716742ff60223a8"
                 }
             ]
         },

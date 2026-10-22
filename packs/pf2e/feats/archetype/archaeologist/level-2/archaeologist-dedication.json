@@ -20,7 +20,20 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "trained in Society, and Thievery"
+                    "value": "trained in Society, and Thievery",
+                    "checked": [
+                        {
+                            "kind": "proficiency",
+                            "statistic": "society",
+                            "minRank": 1
+                        },
+                        {
+                            "kind": "proficiency",
+                            "statistic": "thievery",
+                            "minRank": 1
+                        }
+                    ],
+                    "checkedFor": "7aaa51201732278516bd6891e480d0f5039ee632fb41fa67afa54b1757ff5a85"
                 }
             ]
         },

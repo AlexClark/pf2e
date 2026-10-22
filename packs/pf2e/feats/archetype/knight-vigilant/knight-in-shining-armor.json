@@ -23,7 +23,36 @@
                     "value": "Knight Vigilant Dedication"
                 },
                 {
-                    "value": "expert in light armor, medium armor, or unarmored defense"
+                    "value": "expert in light armor, medium armor, or unarmored defense",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "light",
+                                        "minRank": 2
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "medium",
+                                        "minRank": 2
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "unarmored",
+                                        "minRank": 2
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "7822e12361e2e93007135a172b6a6a4d2e243b850a34c6dcb931133c8a8e9b73"
                 },
                 {
                     "value": "trained in heavy armor"

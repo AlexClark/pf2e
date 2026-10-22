@@ -20,7 +20,15 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "shields of the spirit"
+                    "value": "shields of the spirit",
+                    "checked": [
+                        {
+                            "kind": "spell",
+                            "slug": "shields-of-the-spirit",
+                            "source": "focus"
+                        }
+                    ],
+                    "checkedFor": "3dfce0a4237605aae020952438394ac85d16d67dc10121f35feeb4c8c2a6ea24"
                 }
             ]
         },

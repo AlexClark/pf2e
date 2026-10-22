@@ -20,7 +20,7 @@
         {{/if}}
     </li>
 {{else}}
-        {{> emptySlot slot=featSlot}}
+        {{> emptySlot slot=featSlot groupId=groupId}}
 {{/if}}
 
 {{#*inline "nestedSlots"}}
@@ -29,7 +29,7 @@
             {{#if childSlot.feat}}
                 {{> nestedSlot slot=childSlot}}
             {{else}}
-                {{> emptySlot slot=childSlot}}
+                {{> emptySlot slot=childSlot groupId=groupId}}
             {{/if}}
         {{/each}}
     </ol>
@@ -66,6 +66,13 @@
         </div>
         <div class="item-controls">
             {{#if @root.editable}}
+                {{#if (includes @root.featBrowserGroups groupId)}}
+                    <a
+                        data-action="open-feat-browser"
+                        data-level="{{slot.level}}"
+                        data-tooltip="PF2E.Actor.Character.FeatBrowser.Open"
+                    ><i class="fa-solid fa-fw fa-list-check"></i></a>
+                {{/if}}
                 <a
                     data-action="browse-feats"
                     data-level="{{slot.level}}"

@@ -20,7 +20,115 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Two of the five elemental stances (Ironblood Stance, Mountain Stance, Reflective Ripple Stance, Stoked Flame Stance, and Tangled Forest Stance)"
+                    "value": "Two of the five elemental stances (Ironblood Stance, Mountain Stance, Reflective Ripple Stance, Stoked Flame Stance, and Tangled Forest Stance)",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Ironblood Stance"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Mountain Stance"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Ironblood Stance"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Reflective Ripple Stance"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Ironblood Stance"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Stoked Flame Stance"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Ironblood Stance"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Tangled Forest Stance"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Mountain Stance"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Reflective Ripple Stance"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Mountain Stance"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Stoked Flame Stance"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Mountain Stance"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Tangled Forest Stance"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Reflective Ripple Stance"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Stoked Flame Stance"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Reflective Ripple Stance"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Tangled Forest Stance"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Stoked Flame Stance"
+                                    },
+                                    {
+                                        "kind": "feat",
+                                        "name": "Tangled Forest Stance"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "9dcf70f6885db62f1926f1fd03e20b1dee6dc943a9d40d72b7c30b9906554fa6"
                 }
             ]
         },

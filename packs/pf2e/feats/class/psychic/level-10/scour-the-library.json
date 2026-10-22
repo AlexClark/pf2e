@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "gathered lore subconscious mind"
+                    "value": "gathered lore subconscious mind",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Gathered Lore"
+                        }
+                    ],
+                    "checkedFor": "1ceefe3e1e80ad922a7512aff0eda485477b483ad19ac2f2688b6631718a1969"
                 }
             ]
         },

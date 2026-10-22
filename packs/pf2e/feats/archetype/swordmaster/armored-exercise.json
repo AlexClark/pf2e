@@ -23,7 +23,36 @@
                     "value": "Swordmaster Dedication"
                 },
                 {
-                    "value": "trained in light, medium, or heavy armor"
+                    "value": "trained in light, medium, or heavy armor",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "light",
+                                        "minRank": 1
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "medium",
+                                        "minRank": 1
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "heavy",
+                                        "minRank": 1
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "6df5f4cc3afffb66b89c98157ca209a2b208ee66f5942d31a0c7a96c89883f3a"
                 }
             ]
         },

@@ -20,7 +20,19 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "master in Crafting, Quick Repair"
+                    "value": "master in Crafting, Quick Repair",
+                    "checked": [
+                        {
+                            "kind": "proficiency",
+                            "statistic": "crafting",
+                            "minRank": 3
+                        },
+                        {
+                            "kind": "feat",
+                            "name": "Quick Repair"
+                        }
+                    ],
+                    "checkedFor": "f44a85f201001cfbb3b5bad004da312f48ca5ba59e3110dfe0f74164e6101eee"
                 }
             ]
         },

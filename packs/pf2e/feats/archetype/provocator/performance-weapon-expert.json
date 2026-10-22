@@ -23,7 +23,43 @@
                     "value": "Provocator Dedication"
                 },
                 {
-                    "value": "expert in any kind of weapon or unarmed attack"
+                    "value": "expert in any kind of weapon or unarmed attack",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "simple",
+                                        "minRank": 2
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "martial",
+                                        "minRank": 2
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "advanced",
+                                        "minRank": 2
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "unarmed",
+                                        "minRank": 2
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "90eddc9bdb2679a579d8b3bdd9d1ef9892803f2b30023cec487e89a45d3bd003"
                 }
             ]
         },

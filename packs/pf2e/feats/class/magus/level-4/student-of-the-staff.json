@@ -23,7 +23,14 @@
                     "value": "Arcane Cascade"
                 },
                 {
-                    "value": "twisting tree hybrid study"
+                    "value": "twisting tree hybrid study",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Twisting Tree"
+                        }
+                    ],
+                    "checkedFor": "d90aba68686b950bf3db9a6b196a973207118a4d25b4687225849d5f53ac6067"
                 }
             ]
         },

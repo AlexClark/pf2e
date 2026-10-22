@@ -23,7 +23,33 @@
                     "value": "Grenadier Dedication"
                 },
                 {
-                    "value": "primary target or suppressing fire class features"
+                    "value": "primary target or suppressing fire class features",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Primary Target"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Primary Target"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Suppressing Fire"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "0147989b1e6cc2e029ba533bd8466fa97a62b2bc31942a4ed4568ab300320ed1"
                 }
             ]
         },

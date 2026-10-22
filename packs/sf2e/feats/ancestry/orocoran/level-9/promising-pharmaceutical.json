@@ -20,7 +20,33 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "bloodfilter orocoran heritage, trained in Crafting or Medicine"
+                    "value": "bloodfilter orocoran heritage, trained in Crafting or Medicine",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Bloodfilter Orocoran"
+                        },
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "crafting",
+                                        "minRank": 1
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "medicine",
+                                        "minRank": 1
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "322b26ffb272fa6f2a273814429531f774bcadae6e624b46f2ce64038a9ee83c"
                 }
             ]
         },

@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "precise discipline subconscious mind"
+                    "value": "precise discipline subconscious mind",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Precise Discipline"
+                        }
+                    ],
+                    "checkedFor": "c12849dcbdfe83cfb98821487c3348df6dee036de34c7424b6d75eb3548f980d"
                 }
             ]
         },

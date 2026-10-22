@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "mutagenist research field"
+                    "value": "mutagenist research field",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Mutagenist"
+                        }
+                    ],
+                    "checkedFor": "785c37b8aa032c8f686b501800311be86d299aee3f4b7c2191c76b88074bd669"
                 }
             ]
         },

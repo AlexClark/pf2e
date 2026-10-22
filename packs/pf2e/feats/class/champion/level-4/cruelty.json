@@ -20,7 +20,15 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "touch of the void"
+                    "value": "touch of the void",
+                    "checked": [
+                        {
+                            "kind": "spell",
+                            "slug": "touch-of-the-void",
+                            "source": "focus"
+                        }
+                    ],
+                    "checkedFor": "efaf83c4545da0304c8f88606bc16350164e08644a358dc4b317f7e6d28059a4"
                 }
             ]
         },

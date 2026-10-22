@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "puppeteer fatal method"
+                    "value": "puppeteer fatal method",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Puppeteer"
+                        }
+                    ],
+                    "checkedFor": "d1e69fe170fff23e8739031e1b6e3a545ea917d9467856a9174c9cd3c8498c16"
                 }
             ]
         },

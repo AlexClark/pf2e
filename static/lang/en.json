@@ -161,6 +161,26 @@
                         "ViewSheet": "View Sheet"
                     }
                 },
+                "FeatBrowser": {
+                    "Archetype": "Archetype",
+                    "Class": "Class",
+                    "Dedication": "New dedication",
+                    "Failed": "Feat checks could not be built.",
+                    "IncludeSkillFeats": "Include skill feats",
+                    "NotMet": "Requirements not met",
+                    "Open": "Feat browser",
+                    "Other": "Other",
+                    "SearchPlaceholder": "Search feats",
+                    "SearchResults": "Matching feats: {count}",
+                    "ShowAll": "Shift-click or right-click to show all",
+                    "ShowOnly": "Shift-click or right-click to show only this",
+                    "ShowUnqualified": "Show feats you don't qualify for",
+                    "ShowUnqualifiedCount": "Show feats you don't qualify for ({count})",
+                    "Take": "Take",
+                    "Title": "Feats",
+                    "Unverified": "Unverified",
+                    "Verified": "Verified"
+                },
                 "Attribute": {
                     "Apex": "Apex Attribute",
                     "Boosts": "Attribute Boosts",

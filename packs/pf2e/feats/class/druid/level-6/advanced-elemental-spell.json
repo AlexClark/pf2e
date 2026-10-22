@@ -20,7 +20,39 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "flame stone storm or wave order"
+                    "value": "flame stone storm or wave order",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Flame Order"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Stone Order"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Storm Order"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Wave Order"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "bb69ff19019ba7dfa1bc0777841dfd3163f7511f4234beeef4db28efddfa5dad"
                 }
             ]
         },

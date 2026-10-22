@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "mystic bond class feature"
+                    "value": "mystic bond class feature",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Mystic Bond"
+                        }
+                    ],
+                    "checkedFor": "dd6583307dc33cb10cb2d114daa3c3ce847942f1401393f2d4809629732d2c33"
                 },
                 {
                     "value": "spellcaster class feature that chooses spells from the primal spell list"

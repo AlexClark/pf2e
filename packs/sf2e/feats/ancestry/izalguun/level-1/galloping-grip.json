@@ -20,7 +20,17 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "You don't have the Consistently Quadrupedal feat."
+                    "value": "You don't have the Consistently Quadrupedal feat.",
+                    "checked": [
+                        {
+                            "kind": "not",
+                            "atom": {
+                                "kind": "feat",
+                                "name": "Consistently Quadrupedal"
+                            }
+                        }
+                    ],
+                    "checkedFor": "19a165a57b176419877760d41b36996f69134f2a4753b9273a0f5c4a96fef57a"
                 }
             ]
         },

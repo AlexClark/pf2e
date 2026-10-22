@@ -23,7 +23,33 @@
                     "value": "zoophonia muse"
                 },
                 {
-                    "value": "mature animal companion"
+                    "value": "mature animal companion",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Mature Animal Companion (Druid)"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Mature Animal Companion (Ranger)"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Mature Beastmaster Companion"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "f8c34d82c334eba6dd305939dc46a10922c1cd7e9a3f5721a9ea964100e33033"
                 }
             ]
         },

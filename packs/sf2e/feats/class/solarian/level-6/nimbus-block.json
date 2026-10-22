@@ -20,7 +20,18 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Nimbus Ward and Solar Shield"
+                    "value": "Nimbus Ward and Solar Shield",
+                    "checked": [
+                        {
+                            "kind": "feat",
+                            "name": "Nimbus Ward"
+                        },
+                        {
+                            "kind": "feat",
+                            "name": "Solar Shield"
+                        }
+                    ],
+                    "checkedFor": "b5b97b2620b58bdb572a617eab6517cba9c19370b6abc0c3be69ed22dd388b03"
                 }
             ]
         },

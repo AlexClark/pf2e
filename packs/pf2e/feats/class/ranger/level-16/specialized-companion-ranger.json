@@ -21,7 +21,33 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Incredible Companion"
+                    "value": "Incredible Companion",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Incredible Companion (Druid)"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Incredible Companion (Ranger)"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Incredible Beastmaster Companion"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "0d39751f48c6f8600ec3a24ae63cd45a22d5480cdca99f6f1fb4fdc221cd15b5"
                 }
             ]
         },

@@ -24,7 +24,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "You are unholy"
+                    "value": "You are unholy",
+                    "checked": [
+                        {
+                            "kind": "trait",
+                            "trait": "unholy"
+                        }
+                    ],
+                    "checkedFor": "f6e23bce9a6461a9a330270c039a851aead7981557ba880f00dfffccf184626f"
                 }
             ]
         },

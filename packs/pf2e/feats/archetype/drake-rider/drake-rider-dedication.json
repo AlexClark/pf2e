@@ -20,7 +20,20 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "trained in Nature, Charisma +1"
+                    "value": "trained in Nature, Charisma +1",
+                    "checked": [
+                        {
+                            "kind": "proficiency",
+                            "statistic": "nature",
+                            "minRank": 1
+                        },
+                        {
+                            "kind": "attribute",
+                            "ability": "cha",
+                            "minMod": 1
+                        }
+                    ],
+                    "checkedFor": "f7fde73c7e084f65e256d8b104dcd528301cc8a4266a211ad12c3773a23216f0"
                 }
             ]
         },

@@ -26,7 +26,51 @@
                     "value": "ability to cast spells from spell slots"
                 },
                 {
-                    "value": "at least one spell with the air, cold, earth, fire, plant, or water trait"
+                    "value": "at least one spell with the air, cold, earth, fire, plant, or water trait",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "spell",
+                                        "trait": "air"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "spell",
+                                        "trait": "cold"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "spell",
+                                        "trait": "earth"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "spell",
+                                        "trait": "fire"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "spell",
+                                        "trait": "plant"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "spell",
+                                        "trait": "water"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "11a6aaf5f0fd20ba84b9629832172c191fd90998bd52580536a9bbcc716f5fc2"
                 }
             ]
         },

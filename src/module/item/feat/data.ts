@@ -125,7 +125,31 @@ class FeatSystemData extends ItemSystemModel<FeatPF2e, FeatSystemSchema> {
                 value: new fields.ArrayField(
                     new fields.SchemaField({
                         value: new fields.StringField({ required: true, nullable: false, initial: undefined }),
+                        checked: new fields.ArrayField(new fields.ObjectField({ required: true, nullable: false }), {
+                            required: false,
+                            nullable: false,
+                            initial: undefined,
+                        }),
+                        checkedFor: new fields.StringField({
+                            required: false,
+                            nullable: false,
+                            initial: undefined,
+                        }),
                     }),
+                ),
+                compiled: new fields.SchemaField(
+                    {
+                        version: new fields.NumberField({
+                            required: true,
+                            nullable: false,
+                            integer: true,
+                            initial: undefined,
+                        }),
+                        clauses: new fields.ArrayField(
+                            new fields.ArrayField(new fields.ObjectField({ required: true, nullable: false })),
+                        ),
+                    },
+                    { required: false, nullable: false, initial: undefined },
                 ),
             }),
             frequency: new FrequencyField(),
@@ -271,7 +295,27 @@ type FeatSystemSchema = Omit<ItemSystemSchema, "traits"> & {
         value: fields.ArrayField<
             fields.SchemaField<{
                 value: fields.StringField<string, string, true, false, false>;
+                checked: fields.ArrayField<
+                    fields.ObjectField<object, object, true, false, false>,
+                    object[],
+                    object[],
+                    false,
+                    false,
+                    false
+                >;
+                checkedFor: fields.StringField<string, string, false, false, false>;
             }>
+        >;
+        compiled: fields.SchemaField<
+            {
+                version: fields.NumberField<number, number, true, false, false>;
+                clauses: fields.ArrayField<fields.ArrayField<fields.ObjectField<object, object, true, false, false>>>;
+            },
+            { version: number; clauses: object[][] },
+            { version: number; clauses: object[][] },
+            false,
+            false,
+            false
         >;
     }>;
     location: fields.StringField<string, string, true, true, true>;

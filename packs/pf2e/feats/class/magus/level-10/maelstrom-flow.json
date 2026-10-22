@@ -24,7 +24,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "resurgent maelstrom hybrid study"
+                    "value": "resurgent maelstrom hybrid study",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Resurgent Maelstrom"
+                        }
+                    ],
+                    "checkedFor": "9fd5dd56dee5d5f09dafab975fb4a20b1d16a57a2b4f9c85b31876424c33f996"
                 }
             ]
         },

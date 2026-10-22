@@ -20,7 +20,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Fang Sharpener or razortooth goblin heritage"
+                    "value": "Fang Sharpener or razortooth goblin heritage",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Fang Sharpener"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Razortooth Goblin"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "c6c953a87507773f72b50e860a299f5054286c00921bf9e8ca7c6204d9801759"
                 }
             ]
         },

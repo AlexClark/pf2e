@@ -21,6 +21,7 @@ import systemPF2eJSON from "../../system.pf2e.json" with { type: "json" };
 import systemSF2eJSON from "../../system.sf2e.json" with { type: "json" };
 import duplicates from "../duplicates.json" with { type: "json" };
 import { CompendiumPack, isActorSource, isItemSource } from "./compendium-pack.ts";
+import { stripCompiledPrerequisites } from "./prereq-hash.ts";
 import { PackError, getFolderPath, getPackJSONPaths } from "./helpers.ts";
 import { DBFolder, LevelDatabase } from "./level-database.ts";
 import type { PackEntry } from "./types.ts";
@@ -576,6 +577,7 @@ class PackExtractor {
                 delete (source.system as { badge?: unknown }).badge;
             }
         } else if (source.type === "feat") {
+            stripCompiledPrerequisites(source.system);
             const isFeat = !["ancestryfeature", "classfeature", "pfsboon", "deityboon", "curse"].includes(
                 source.system.category,
             );

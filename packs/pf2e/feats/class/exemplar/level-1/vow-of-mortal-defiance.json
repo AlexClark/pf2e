@@ -20,7 +20,30 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "You are not sanctified with the holy or unholy trait"
+                    "value": "You are not sanctified with the holy or unholy trait",
+                    "checked": [
+                        {
+                            "kind": "not",
+                            "atom": {
+                                "kind": "or",
+                                "any": [
+                                    [
+                                        {
+                                            "kind": "trait",
+                                            "trait": "holy"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "kind": "trait",
+                                            "trait": "unholy"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    "checkedFor": "d29a27451359c90054d1054be52850fb4cef0268706a68eb8184968d7f18d4de"
                 }
             ]
         },

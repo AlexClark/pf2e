@@ -20,7 +20,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Ricochet Stance"
+                    "value": "Ricochet Stance",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Ricochet Stance (Fighter)"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Ricochet Stance (Rogue)"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "b5d78602b96b5a0adda03d4cfe003c485f2455c0321c9dc1188d53ced5a466ca"
                 }
             ]
         },

@@ -20,7 +20,93 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "a mature animal companion or an advanced construct companion"
+                    "value": "a mature animal companion or an advanced construct companion",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Mature Animal Companion (Druid)"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Mature Animal Companion (Ranger)"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Mature Beastmaster Companion"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Mature Trained Companion"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Mature Dragon Companion"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Mature Megafauna Companion"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Battle-Tested Companion"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Loyal Warhorse"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Impressive Mount"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Apocalypse Rider Dedication"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Advanced Construct Companion"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Advanced Reanimated Companion"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Let My Creature Live!"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "00b72af2b784650cc11626c4d145fa090e44c625dc0e6a75234a3a8e2692c36a"
                 }
             ]
         },

@@ -21,7 +21,43 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Master in Arcana, Nature, Occultism or Religion"
+                    "value": "Master in Arcana, Nature, Occultism or Religion",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "arcana",
+                                        "minRank": 3
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "nature",
+                                        "minRank": 3
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "occultism",
+                                        "minRank": 3
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "religion",
+                                        "minRank": 3
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "db3db7e1ed1a7cb7bb688b556cb2f8b5b422073a1e8fbe4f298ededcddb10a0c"
                 },
                 {
                     "value": "Recognize Spell"

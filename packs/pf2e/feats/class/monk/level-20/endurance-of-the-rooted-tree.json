@@ -20,7 +20,15 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Wholeness of Body"
+                    "value": "Wholeness of Body",
+                    "checked": [
+                        {
+                            "kind": "spell",
+                            "slug": "harmonize-self",
+                            "source": "focus"
+                        }
+                    ],
+                    "checkedFor": "5f70d8988272b83675ab33924804ffeaec9b5f6da89b697cc3f9e30e05e01426"
                 }
             ]
         },

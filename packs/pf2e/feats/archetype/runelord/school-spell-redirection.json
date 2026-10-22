@@ -20,7 +20,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Counterspell"
+                    "value": "Counterspell",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Counterspell (Prepared)"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Counterspell (Spontaneous)"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "8cf3154ed50fbd29480b6d4b23bbbfe28d31df78e98beb4108bccb997a9ca392"
                 },
                 {
                     "value": "Runelord Dedication"

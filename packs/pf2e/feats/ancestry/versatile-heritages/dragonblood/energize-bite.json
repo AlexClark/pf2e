@@ -20,7 +20,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Breath of the Dragon"
+                    "value": "Breath of the Dragon",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Breath of the Dragon (Dragonblood)"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Breath of the Dragon (Dragon Disciple)"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "fd916c3c85fb7379c3f844cab3e562697f6f1fb15d5ca70b29c9aed3b45aafff"
                 },
                 {
                     "value": "jaws unarmed attack"

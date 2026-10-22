@@ -20,7 +20,17 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "You aren’t an aeonheart living hologram."
+                    "value": "You aren’t an aeonheart living hologram.",
+                    "checked": [
+                        {
+                            "kind": "not",
+                            "atom": {
+                                "kind": "feature",
+                                "name": "Aeonheart Living Hologram"
+                            }
+                        }
+                    ],
+                    "checkedFor": "cc48b904198ea40617c6aa227153960c9c71ebd1eb412039887cd62081ac1aa2"
                 }
             ]
         },

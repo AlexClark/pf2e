@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "redeemer cause"
+                    "value": "redeemer cause",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Redemption"
+                        }
+                    ],
+                    "checkedFor": "59daf671345b5a05c48f6b97f592444079aa1d84fe17d2561f88da921d26eab8"
                 }
             ]
         },

@@ -20,7 +20,33 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Mature Animal Companion"
+                    "value": "Mature Animal Companion",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Mature Animal Companion (Druid)"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Mature Animal Companion (Ranger)"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Mature Beastmaster Companion"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "92d5543c6ed9b13ee95dbcc3d0409a427041e58b0092f0ccf199f471007e0598"
                 }
             ]
         },

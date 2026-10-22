@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "spirit grim fascination"
+                    "value": "spirit grim fascination",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Spirit"
+                        }
+                    ],
+                    "checkedFor": "1b98064d64a0fd93865f528ba940ab3cc443f31be21e2c8586b4b803078823ab"
                 }
             ]
         },

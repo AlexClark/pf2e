@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "toxicologist research field"
+                    "value": "toxicologist research field",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Toxicologist"
+                        }
+                    ],
+                    "checkedFor": "7e0bb3bb1524e2179b78cc7e581196d87df05d43edcbc39ca7331da68557b77c"
                 }
             ]
         },

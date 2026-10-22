@@ -55,6 +55,7 @@ import { CreatureSheetPF2e } from "../creature/sheet.ts";
 import { ManageAttackProficiencies } from "../sheet/popups/manage-attack-proficiencies.ts";
 import { ABCPicker } from "./apps/abc-picker/app.ts";
 import { AttributeBuilder } from "./apps/attribute-builder/app.ts";
+import { FEAT_BROWSER_GROUPS, FeatBrowser } from "./apps/feat-browser/app.ts";
 import { FormulaPicker } from "./apps/formula-picker/app.ts";
 import { AutomaticBonusProgression } from "./automatic-bonus-progression.ts";
 import { CharacterConfig } from "./config.ts";
@@ -121,6 +122,7 @@ class CharacterSheetPF2e<TActor extends CharacterPF2e> extends CreatureSheetPF2e
         }
 
         sheetData.effectiveMaxHP = Math.max(actor.hitPoints.max - actor.hitPoints.unrecoverable, 0);
+        sheetData.featBrowserGroups = FEAT_BROWSER_GROUPS;
 
         sheetData.numberToRank = R.mapToObj([0, 1, 2, 3, 4] as const, (n) => [n, _loc(`PF2E.ProficiencyLevel${n}`)]);
 
@@ -1022,6 +1024,21 @@ class CharacterSheetPF2e<TActor extends CharacterPF2e> extends CreatureSheetPF2e
             return this.#onClickBrowseFeats(anchor);
         };
 
+        handlers["open-feat-browser"] = (_, anchor) => {
+            const groupId = htmlClosest(anchor, "[data-group-id]")?.dataset.groupId;
+            if (!tupleHasValue(FEAT_BROWSER_GROUPS, groupId)) return;
+            const slotId = htmlClosest(anchor, "[data-slot-id]")?.dataset.slotId ?? null;
+            const parsedLevel = Number(anchor.dataset.level);
+            const level = Number.isInteger(parsedLevel) && parsedLevel > 0 ? parsedLevel : this.actor.level;
+            const uniqueId = `feat-browser-${this.actor.uuid}-${groupId}-${slotId}`;
+            const existing = foundry.applications.instances.get(uniqueId);
+            const browser =
+                existing instanceof FeatBrowser
+                    ? existing
+                    : new FeatBrowser({ actor: this.actor, groupId, slotId, level });
+            return browser.render({ force: true });
+        };
+
         // CRAFTING
 
         handlers["formula-to-chat"] = async (event) => {
@@ -1670,6 +1687,8 @@ interface CharacterSheetData<TActor extends CharacterPF2e = CharacterPF2e> exten
     deity: DeityPF2e<CharacterPF2e> | null;
     /** Max HP minus unrecoverable HP */
     effectiveMaxHP: number;
+    /** Empty-slot groups that show the feat browser beside the compendium spyglass. */
+    featBrowserGroups: readonly string[];
     hasStamina: boolean;
     /** This actor has actual containers for stowing, rather than just containers serving as a UI convenience */
     hasRealContainers: boolean;

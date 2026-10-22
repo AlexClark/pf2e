@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Celebrity Archetype"
+                    "value": "Celebrity Archetype",
+                    "checked": [
+                        {
+                            "kind": "feat",
+                            "name": "Celebrity Dedication"
+                        }
+                    ],
+                    "checkedFor": "464e2b501a083974e11e7d74bcf2085c21f840fbec870c823f0e32bfbe03779d"
                 }
             ]
         },

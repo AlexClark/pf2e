@@ -21,7 +21,33 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Puff Up, Shed Skin, or Squirt Blood"
+                    "value": "Puff Up, Shed Skin, or Squirt Blood",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "action",
+                                        "name": "Puff Up"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Shed Skin"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Squirt Blood"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "4393e438b29b309ceefaa489f41951ea58e1241abe95fd078b163d0e95771740"
                 }
             ]
         },

@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "volatile spark hybrid study"
+                    "value": "volatile spark hybrid study",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Volatile Spark"
+                        }
+                    ],
+                    "checkedFor": "0c0e6186e6639aba9cb034d25df7d1a4a0efae05273d78455ab4ae8966189743"
                 }
             ]
         },

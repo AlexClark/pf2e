@@ -20,7 +20,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "You have a bond with the Sympathetic Bond feat or dragonkin partner bond feature."
+                    "value": "You have a bond with the Sympathetic Bond feat or dragonkin partner bond feature.",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Sympathetic Bond"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Partner Bond"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "3c4236fd1c8815bfe85433dd7be276d8185dfcbf9c9fe68dffe6bfb7c4a35e70"
                 }
             ]
         },

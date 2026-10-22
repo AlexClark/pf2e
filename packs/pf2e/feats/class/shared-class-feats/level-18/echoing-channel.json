@@ -20,7 +20,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Embodiment of Balance or Cleric"
+                    "value": "Embodiment of Balance or Cleric",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Embodiment of the Balance"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "class",
+                                        "slug": "cleric"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "6c844f5b4b403d9a51ef4b6e99212863e8291bcc8cbd52d4e6241025014d687e"
                 }
             ]
         },

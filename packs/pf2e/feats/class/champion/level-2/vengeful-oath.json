@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "paladin cause"
+                    "value": "paladin cause",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Justice"
+                        }
+                    ],
+                    "checkedFor": "38066a8ca9632d0177e0c72deef4a4611301224db33aebc353eec44a8fb0845a"
                 }
             ]
         },

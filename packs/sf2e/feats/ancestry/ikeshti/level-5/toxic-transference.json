@@ -20,7 +20,33 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Compact Predator, Puff Up, or Squirt Blood"
+                    "value": "Compact Predator, Puff Up, or Squirt Blood",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Compact Predator"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "action",
+                                        "name": "Puff Up"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Squirt Blood"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "22614a7b3dc69d78afc7c03e1d5f70cd372b257cfa7baf751ba9513dff9ca015"
                 }
             ]
         },

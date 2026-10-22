@@ -23,7 +23,33 @@
                     "value": "Demolitionist Dedication"
                 },
                 {
-                    "value": "Bomber's field discovery, Directional Bombs, or Expanded Splash"
+                    "value": "Bomber's field discovery, Directional Bombs, or Expanded Splash",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Field Discovery (Bomber)"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Directional Bombs"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Expanded Splash"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "808e51e39dac6b63097a255b0fb107c67669b5e5abe44a72ced08307b3c41555"
                 }
             ]
         },

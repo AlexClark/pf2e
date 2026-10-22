@@ -24,7 +24,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "ServoShell programming language"
+                    "value": "ServoShell programming language",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Servoshell"
+                        }
+                    ],
+                    "checkedFor": "68c9f249f6ccd49a50a252f9fcac286be4ff184b900b3a6f0c560d6d56542d13"
                 }
             ]
         },

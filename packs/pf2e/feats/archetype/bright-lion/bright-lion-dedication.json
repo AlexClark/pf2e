@@ -29,7 +29,14 @@
                     "value": "trained in Stealth"
                 },
                 {
-                    "value": "Bright Lion Background"
+                    "value": "Bright Lion Background",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Bright Lion"
+                        }
+                    ],
+                    "checkedFor": "9d8c34038c9fc429c32a7abbe012665d1520a486305c0f04c5cde7bcf6e6d863"
                 }
             ]
         },

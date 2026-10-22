@@ -21,7 +21,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "seneschal witch"
+                    "value": "seneschal witch",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Seneschal"
+                        }
+                    ],
+                    "checkedFor": "e9a9f6639c6154882e5545f43d6c18f7739fee6385571c64bd314e383d61727e"
                 }
             ]
         },

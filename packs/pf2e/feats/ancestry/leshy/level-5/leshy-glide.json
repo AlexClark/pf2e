@@ -20,7 +20,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "leaf leshy heritage or Cat Fall skill feat"
+                    "value": "leaf leshy heritage or Cat Fall skill feat",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Leaf Leshy"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Cat Fall"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "b14e90c43d6edd5faa2a7f244ea1e7513554b965dc5aefc57d26aa3b201f6bfc"
                 }
             ]
         },

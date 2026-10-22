@@ -23,7 +23,17 @@
                     "value": "Cultivator Dedication"
                 },
                 {
-                    "value": "you aren't holy"
+                    "value": "you aren't holy",
+                    "checked": [
+                        {
+                            "kind": "not",
+                            "atom": {
+                                "kind": "trait",
+                                "trait": "holy"
+                            }
+                        }
+                    ],
+                    "checkedFor": "20b466d12c2628035a226788a4265ea914b09d9e47b138022cea5c62eb010f88"
                 }
             ]
         },

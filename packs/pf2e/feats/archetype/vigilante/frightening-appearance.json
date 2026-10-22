@@ -23,7 +23,27 @@
                     "value": "expert in Intimidation"
                 },
                 {
-                    "value": "Startling Appearance"
+                    "value": "Startling Appearance",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Startling Appearance (Fleshwarp)"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Startling Appearance (Vigilante)"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "fdc2d0c9e20a9bfa7f4e3a354a8d5dcb4c1a9359794d9538d6873c7a50e74665"
                 }
             ]
         },

@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "twofold tine hybrid study"
+                    "value": "twofold tine hybrid study",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Twofold Tine"
+                        }
+                    ],
+                    "checkedFor": "072c0da20f0b00d5602aaa18b19a8f83a32518bdd1e1b451f24c98b7082e4526"
                 }
             ]
         },

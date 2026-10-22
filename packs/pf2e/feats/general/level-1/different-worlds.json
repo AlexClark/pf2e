@@ -20,7 +20,26 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "ability to select ancestry feats from multiple ancestries"
+                    "value": "ability to select ancestry feats from multiple ancestries",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "versatile"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Adopted Ancestry"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "572190b183209929e759af475de01b25577823b820206f91fb8f2c84f765f0ba"
                 }
             ]
         },

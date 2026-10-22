@@ -20,7 +20,43 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "trained in Arcana, Nature, Occultism or Religion"
+                    "value": "trained in Arcana, Nature, Occultism or Religion",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "arcana",
+                                        "minRank": 1
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "nature",
+                                        "minRank": 1
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "occultism",
+                                        "minRank": 1
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "religion",
+                                        "minRank": 1
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "e1fd0801c9374df9a65dd98c39c80a0789af8fb71a5631e35bc570c117aa7557"
                 }
             ]
         },

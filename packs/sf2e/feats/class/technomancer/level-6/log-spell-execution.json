@@ -24,7 +24,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Viper programming language"
+                    "value": "Viper programming language",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Viper"
+                        }
+                    ],
+                    "checkedFor": "7b878677ec328fc7116345e6d1f9fdf21e93180ac7e9a0ebd5bd4506db3caf35"
                 }
             ]
         },

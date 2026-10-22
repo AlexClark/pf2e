@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "wandering reverie subconscious mind"
+                    "value": "wandering reverie subconscious mind",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Wandering Reverie"
+                        }
+                    ],
+                    "checkedFor": "3d05de98e2823a8b52b105827648aacbc32941b869a6bb7b80545ea3dee2bd69"
                 }
             ]
         },

@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "inexorable iron hybrid study"
+                    "value": "inexorable iron hybrid study",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Inexorable Iron"
+                        }
+                    ],
+                    "checkedFor": "027d6ad03cafe14cb1ebe5214a43875c08ad29fd389e1228263f53e11db3a18f"
                 }
             ]
         },

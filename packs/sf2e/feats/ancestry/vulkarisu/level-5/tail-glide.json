@@ -20,7 +20,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Sky-Sworn Vulkarisu heritage or Cat Fall"
+                    "value": "Sky-Sworn Vulkarisu heritage or Cat Fall",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Sky-Sworn Vulkarisu"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Cat Fall"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "f2c8b4477c38f2c0d109f48b5dc2d96f2b03d52500174212701299f4baaad9da"
                 }
             ]
         },

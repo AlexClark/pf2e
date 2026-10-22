@@ -20,7 +20,19 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "expert in Athletics, Assistive Shove"
+                    "value": "expert in Athletics, Assistive Shove",
+                    "checked": [
+                        {
+                            "kind": "proficiency",
+                            "statistic": "athletics",
+                            "minRank": 2
+                        },
+                        {
+                            "kind": "feat",
+                            "name": "Assistive Shove"
+                        }
+                    ],
+                    "checkedFor": "fdcb3badd99946b017d22515a512d1f37e82f48a2e418903cf9402cfc8ee882b"
                 }
             ]
         },

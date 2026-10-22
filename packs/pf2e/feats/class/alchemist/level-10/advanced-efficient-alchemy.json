@@ -20,7 +20,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Efficient Alchemy"
+                    "value": "Efficient Alchemy",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Efficient Alchemy (Paragon)"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Efficient Alchemy (Alchemist)"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "505fd3b5407e37a1c21fb47c8fbf85a7193269e40c41b01e76ac4cb2e807d928"
                 }
             ]
         },

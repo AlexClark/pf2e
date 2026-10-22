@@ -23,7 +23,14 @@
                     "value": "champion's aura"
                 },
                 {
-                    "value": "unholy"
+                    "value": "unholy",
+                    "checked": [
+                        {
+                            "kind": "trait",
+                            "trait": "unholy"
+                        }
+                    ],
+                    "checkedFor": "bdfe7a719630f1191652aec1df878855567f2e332921f634720314bf06a54b14"
                 }
             ]
         },

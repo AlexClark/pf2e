@@ -23,7 +23,14 @@
                     "value": "Godless Healing"
                 },
                 {
-                    "value": "You follow the Laws of Mortality"
+                    "value": "You follow the Laws of Mortality",
+                    "checked": [
+                        {
+                            "kind": "deity",
+                            "slug": "laws-of-mortality"
+                        }
+                    ],
+                    "checkedFor": "3e3f812d333c72b5e64118d815cbf9c73ce391b80894e5582a0076c294625eef"
                 }
             ]
         },

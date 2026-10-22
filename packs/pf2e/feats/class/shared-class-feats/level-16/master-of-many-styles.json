@@ -20,10 +20,24 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Opening Stance (Fighter)"
+                    "value": "Opening Stance (Fighter)",
+                    "checked": [
+                        {
+                            "kind": "feat",
+                            "name": "Opening Stance"
+                        }
+                    ],
+                    "checkedFor": "6801232f8d711e2e863f3cdfdc3df943403a0b818ac62bfc5fdf15d327657741"
                 },
                 {
-                    "value": "Reflexive Stance (Monk)"
+                    "value": "Reflexive Stance (Monk)",
+                    "checked": [
+                        {
+                            "kind": "feat",
+                            "name": "Reflexive Stance"
+                        }
+                    ],
+                    "checkedFor": "830cc2b3f25e0e80178489fca2626a897b3a8c7bd6f30e60677a7eb61dc6e2de"
                 }
             ]
         },

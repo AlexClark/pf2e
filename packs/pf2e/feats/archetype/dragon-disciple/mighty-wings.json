@@ -23,7 +23,15 @@
                     "value": "Dragon Disciple Dedication"
                 },
                 {
-                    "value": "dragon wings sorcerer bloodline spell"
+                    "value": "dragon wings sorcerer bloodline spell",
+                    "checked": [
+                        {
+                            "kind": "spell",
+                            "slug": "dragon-wings",
+                            "source": "focus"
+                        }
+                    ],
+                    "checkedFor": "9e5b19aa562225a19f9cbba9ed83dd7a3abd8a8f24f5ab468c10f4dd376d181d"
                 }
             ]
         },

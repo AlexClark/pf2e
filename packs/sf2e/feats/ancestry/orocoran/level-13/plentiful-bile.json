@@ -21,7 +21,33 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Coat in Bile, slitherskin orocoran heritage, or Spew Acidic Bile"
+                    "value": "Coat in Bile, slitherskin orocoran heritage, or Spew Acidic Bile",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Coat in Bile"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Slitherskin Orocoran"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Spew Acidic Bile"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "c4f008e3651a1646b60c8e229eb9d01317eed85373eb69a8cfa21180dd1f36eb"
                 }
             ]
         },

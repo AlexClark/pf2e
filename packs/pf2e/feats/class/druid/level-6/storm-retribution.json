@@ -23,7 +23,15 @@
                     "value": "storm order"
                 },
                 {
-                    "value": "tempest surge order spell"
+                    "value": "tempest surge order spell",
+                    "checked": [
+                        {
+                            "kind": "spell",
+                            "slug": "tempest-surge",
+                            "source": "focus"
+                        }
+                    ],
+                    "checkedFor": "dfe319d9a09c9782c3e56ca3884138ad0b9b07dafcda09a689e7f2dd2cc6dc05"
                 }
             ]
         },

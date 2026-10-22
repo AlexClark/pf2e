@@ -24,7 +24,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Anomalous Provenance lineage"
+                    "value": "Anomalous Provenance lineage",
+                    "checked": [
+                        {
+                            "kind": "feat",
+                            "name": "Anomalous Provenance"
+                        }
+                    ],
+                    "checkedFor": "bcee0d0adfe683f3fdcd927079219740b2151abce8119da66b20251a3ca30432"
                 }
             ]
         },

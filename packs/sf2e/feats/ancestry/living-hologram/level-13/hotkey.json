@@ -21,7 +21,33 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Anti-Glitch Response, Light Hop, or mascot living hologram heritage"
+                    "value": "Anti-Glitch Response, Light Hop, or mascot living hologram heritage",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Anti-Glitch Response"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Light Hop"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Mascot Living Hologram"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "d12003b8c0091fca9f97e9f57c22ef60db607a88c4a0b9dee8e08a182097cfa3"
                 }
             ]
         },

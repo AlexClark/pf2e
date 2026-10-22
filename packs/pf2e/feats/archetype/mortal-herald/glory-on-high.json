@@ -23,7 +23,15 @@
                     "value": "Mortal Herald Dedication"
                 },
                 {
-                    "value": "fly Speed of at least 20 feet"
+                    "value": "fly Speed of at least 20 feet",
+                    "checked": [
+                        {
+                            "kind": "speed",
+                            "mode": "fly",
+                            "feet": 20
+                        }
+                    ],
+                    "checkedFor": "650730f36fe7b0d12f5abd3aaa0067ee639ca86b44a79ca886c4fff7d3b222db"
                 }
             ]
         },

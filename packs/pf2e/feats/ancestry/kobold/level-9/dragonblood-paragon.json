@@ -20,7 +20,39 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "strongjaw kobold heritage, venomtail kobold heritage, Dracomancer, or Kobold Breath"
+                    "value": "strongjaw kobold heritage, venomtail kobold heritage, Dracomancer, or Kobold Breath",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Strongjaw Kobold"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Venomtail Kobold"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Dracomancer"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Kobold Breath"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "b9e3a866444663024c7e206d85d217a7c6b95f474e44ef650c599527f1d7b721"
                 }
             ]
         },

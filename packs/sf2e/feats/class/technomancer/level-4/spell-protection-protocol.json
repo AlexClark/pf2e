@@ -24,7 +24,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "FORTRUN or ServoShell programming language"
+                    "value": "FORTRUN or ServoShell programming language",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "FORTRUN"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feature",
+                                        "name": "Servoshell"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "33be021832e26905d35098bde0037156a928f27beb44d7da35ee9b5c756fc25b"
                 }
             ]
         },

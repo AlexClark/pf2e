@@ -23,7 +23,18 @@
                     "value": "harmful font or healing font"
                 },
                 {
-                    "value": "deity that allows clerics to have both fonts"
+                    "value": "deity that allows clerics to have both fonts",
+                    "checked": [
+                        {
+                            "kind": "deity",
+                            "font": "heal"
+                        },
+                        {
+                            "kind": "deity",
+                            "font": "harm"
+                        }
+                    ],
+                    "checkedFor": "4fcb5c54a6637083eedf5ad8daa7ef01a0c3dfa2203c2bd4aa52d214ff3ed983"
                 }
             ]
         },

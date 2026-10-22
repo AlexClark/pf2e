@@ -24,7 +24,27 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Celebrity or Dandy"
+                    "value": "Celebrity or Dandy",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Celebrity Dedication"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Dandy Dedication"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "fbe52a0fac9f4b5fcda6f149d98b728f0f30ba142eb92d1dec9534155118481e"
                 },
                 {
                     "value": "legendary in Performance"

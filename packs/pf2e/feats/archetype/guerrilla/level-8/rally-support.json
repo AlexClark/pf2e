@@ -23,7 +23,29 @@
                     "value": "Guerrilla Dedication"
                 },
                 {
-                    "value": "trained in either Diplomacy or Intimidation"
+                    "value": "trained in either Diplomacy or Intimidation",
+                    "checked": [
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "diplomacy",
+                                        "minRank": 1
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "proficiency",
+                                        "statistic": "intimidation",
+                                        "minRank": 1
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "89bd89d30a9755e00ee5bc1231707df05fb653d514eacfaac8b57a5e084f15d5"
                 }
             ]
         },

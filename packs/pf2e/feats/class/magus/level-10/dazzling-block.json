@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "sparkling targe hybrid study"
+                    "value": "sparkling targe hybrid study",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Sparkling Targe"
+                        }
+                    ],
+                    "checkedFor": "b5f6e31a8fcc1f31e10bde4e440c1eccb254e7fbe1bd6bb7775bb2160bbad663"
                 }
             ]
         },

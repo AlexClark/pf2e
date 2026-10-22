@@ -24,7 +24,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "DPS++ programming language"
+                    "value": "DPS++ programming language",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "DPS++"
+                        }
+                    ],
+                    "checkedFor": "cc18e97ecb7672e981802c0792aa3eeb986abd42c6880835bc3d0a326a1e3df4"
                 }
             ]
         },

@@ -23,7 +23,15 @@
                     "value": "ability to cast spells from slots"
                 },
                 {
-                    "value": "at least one summon spell in your spellbook or repertoire"
+                    "value": "at least one summon spell in your spellbook or repertoire",
+                    "checked": [
+                        {
+                            "kind": "spell",
+                            "trait": "summon",
+                            "source": "slot"
+                        }
+                    ],
+                    "checkedFor": "d423e8f502d69795891cad32ac032534cc18ca6c60edaea7a980dc09099eb3f7"
                 }
             ]
         },

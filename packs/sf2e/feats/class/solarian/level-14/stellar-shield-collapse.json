@@ -20,7 +20,31 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Solar Shield plus either Black Hole or Supernova"
+                    "value": "Solar Shield plus either Black Hole or Supernova",
+                    "checked": [
+                        {
+                            "kind": "feat",
+                            "name": "Solar Shield"
+                        },
+                        {
+                            "kind": "or",
+                            "any": [
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Black Hole"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "kind": "feat",
+                                        "name": "Supernova"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    "checkedFor": "78d2f16dd0ae3d0152839c0f4764ead960feafd6deaf2caa0d7706b1f67c0fdd"
                 }
             ]
         },

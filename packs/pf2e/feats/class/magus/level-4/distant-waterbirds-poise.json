@@ -20,7 +20,14 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "aloof firmament hybrid study"
+                    "value": "aloof firmament hybrid study",
+                    "checked": [
+                        {
+                            "kind": "feature",
+                            "name": "Aloof Firmament"
+                        }
+                    ],
+                    "checkedFor": "124e0309cf8384a6e8f887ed9655fbd87977f6224b483921203c1af008a63405"
                 },
                 {
                     "value": "Spellstrike"
